@@ -1,0 +1,212 @@
+import { ShieldCheck } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
+
+// ================================
+// Partner Data
+// ================================
+
+const partners = [
+  {
+    id: 1,
+    companyName: "State Bank of India",
+    logo: "sbi.png",
+    website: "#",
+  },
+  {
+    id: 2,
+    companyName: "HDFC Bank",
+    logo: "HDFC.png",
+    website: "#",
+  },
+  {
+    id: 3,
+    companyName: "ICICI Bank",
+    logo: "ICIC.webp",
+    website: "#",
+  },
+  {
+    id: 4,
+    companyName: "Axis Bank",
+    logo: "axisb.webp",
+    website: "#",
+  },
+  {
+    id: 5,
+    companyName: "Kotak Mahindra Bank",
+    logo: "kotak.jfif",
+    website: "#",
+  },
+  {
+    id: 6,
+    companyName: "Bajaj Finance",
+    logo: "bajaj.jfif",
+    website: "#",
+  },
+];
+
+const BankingPartners = () => {
+  return (
+    <section className="relative overflow-hidden bg-gray-50 py-24">
+
+      {/* Background Decoration */}
+
+      <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-emerald-100 blur-3xl opacity-40"></div>
+
+      <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-blue-100 blur-3xl opacity-40"></div>
+
+      <div className="relative mx-auto max-w-7xl px-6">
+
+        {/* Trust Badge */}
+
+        <div className="flex justify-center">
+
+          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2">
+
+            <ShieldCheck
+              size={18}
+              className="text-emerald-600"
+            />
+
+            <span className="text-sm font-semibold text-emerald-700">
+              Trusted Financial Network
+            </span>
+
+          </div>
+
+        </div>
+
+        {/* Heading */}
+
+        <div className="mx-auto mt-8 max-w-3xl text-center">
+
+          <h2 className="text-4xl font-bold text-gray-900 md:text-5xl">
+
+            Our Banking &
+
+            <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+              {" "}
+              Financial Partners
+            </span>
+
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
+
+            We collaborate with trusted banks and financial institutions to
+            provide secure, transparent, and reliable financial solutions
+            tailored to every customer's financial journey.
+
+          </p>
+
+        </div>
+
+        {/* Partners Grid */}
+
+        {/* <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
+
+          {partners.map((partner) => (
+
+            <PartnerCard
+              key={partner.id}
+              partner={partner}
+            />
+
+          ))}
+
+        </div> */}
+        {/* {swiperjs} */}
+<div className="mt-16">
+
+  <Swiper
+    modules={[Autoplay]}
+    spaceBetween={24}
+    loop={true}
+    speed={5000}
+    autoplay={{
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    }}
+    breakpoints={{
+      320: {
+        slidesPerView: 2,
+      },
+      640: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 5,
+      },
+      1280: {
+        slidesPerView: 6,
+      },
+    }}
+  >
+    {partners.map((partner) => (
+      <SwiperSlide key={partner.id}>
+        <div
+          className="
+          group
+          flex
+          h-40
+          items-center
+          justify-center
+          rounded-3xl
+          border
+          border-gray-200
+          bg-white
+          p-8
+          shadow-sm
+          transition-all
+          duration-300
+          hover:-translate-y-2
+          hover:border-emerald-300
+          hover:shadow-xl
+        "
+        >
+          <img
+            src={partner.logo}
+            alt={partner.companyName}
+            className="
+              h-20
+              w-auto
+              object-contain
+              transition-all
+              duration-300
+             
+            "
+          />
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+
+</div>
+        {/* Bottom Note */}
+
+        <div className="mx-auto mt-16 max-w-4xl text-center">
+
+          <p className="text-lg leading-8 text-gray-600">
+
+            Our partnerships with leading financial institutions enable us to
+            deliver trusted financial solutions, competitive offers, faster
+            approvals, and a seamless customer experience.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+};
+
+export default BankingPartners;
