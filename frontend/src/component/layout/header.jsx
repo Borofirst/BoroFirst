@@ -9,7 +9,7 @@ const Header = () => {
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
     { name: "Solutions", path: "/solutions" },
-    { name: "Pricing", path: "/pricing" },
+    { name: "blogs", path: "/blogs" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -46,13 +46,6 @@ const Header = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex items-center gap-4">
-          <Link
-            to="/login"
-            className="px-5 py-2.5 rounded-xl border border-emerald-700 text-emerald-600 font-semibold hover:bg-emerald-50 transition"
-          >
-            Login
-          </Link>
-
           <Link
             to="/signup"
             className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#186A07] to-[#0B2578] text-white font-semibold shadow-lg hover:scale-105 transition"

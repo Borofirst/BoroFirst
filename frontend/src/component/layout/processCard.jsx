@@ -14,7 +14,7 @@
       {/* Card */}
       <div className="ml-16 rounded-3xl border border-gray-200 bg-white/90 p-8 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-emerald-300 hover:shadow-2xl lg:ml-0 lg:mt-8">
         {/* Icon */}
-        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+        <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#186A07] shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
           <Icon className="h-10 w-10 text-white" />
         </div>
 

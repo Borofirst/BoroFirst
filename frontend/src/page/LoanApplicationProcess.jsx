@@ -26,7 +26,7 @@ const LoanApplicationProcess = () => {
 
           <h2 className="mt-6 text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
             Apply for Your Loan in
-            <span className="block text-emerald-600">
+            <span className="block text-[#186A07]">
               Just 4 Simple Steps
             </span>
           </h2>
@@ -63,7 +63,7 @@ const LoanApplicationProcess = () => {
         </div>
         {/* Bottom CTA */}
         <div className="mt-24">
-          <div className="relative overflow-hidden rounded-[32px] border border-emerald-100 bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 px-8 py-12 shadow-2xl">
+          <div className="relative overflow-hidden rounded-3xl border border-emerald-100 bg-gradient-to-r from-[bg-gradient-to-r from-[#186A07] to-[#0B2578]] to-[#0B2578] px-8 py-12 shadow-2xl">
 
             {/* Decorative Blur */}
             <div className="absolute -left-20 -top-20 h-56 w-56 rounded-full bg-white/10 blur-3xl"></div>

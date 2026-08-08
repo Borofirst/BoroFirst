@@ -7,8 +7,8 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Heading */}
         <div className="max-w-3xl mx-auto text-center">
-          <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
-            WHY CHOOSE US
+          <span className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-[#186A07]">
+            WHY CHOOSE US?
           </span>
 
           <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
 
           {/* Center */}
           <div className="flex justify-center">
-            <div className="relative flex h-80 w-80 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-blue-600 shadow-2xl">
+            <div className="relative flex h-80 w-80 items-center justify-center rounded-full bg-gradient-to-r from-[#186A07] to-[#0B2578] shadow-2xl">
               <div className="absolute h-72 w-72 rounded-full border-2 border-white/30"></div>
 
               <ShieldCheck size={90} className="text-white" />
@@ -64,7 +64,7 @@ const WhyChooseUs = () => {
         <div className="mt-24 grid grid-cols-2 gap-6 rounded-3xl bg-white p-8 shadow-lg md:grid-cols-4">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <h3 className="text-3xl font-bold text-emerald-600">
+              <h3 className="text-3xl font-bold text-[#186A07]">
                 {stat.number}
               </h3>
 
