@@ -1,5 +1,5 @@
 import { ShieldCheck } from "lucide-react";
-import {features,stats} from "../data/whyChooseus"
+import { features, stats } from "../data/whyChooseus";
 
 const WhyChooseUs = () => {
   return (
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
 
           {/* Center */}
           <div className="flex justify-center">
-            <div className="relative flex h-80 w-80 items-center justify-center rounded-full bg-gradient-to-r from-[#186A07] to-[#0B2578] shadow-2xl">
+            <div className="relative flex h-80 w-80 items-center justify-center rounded-full bg-linear-to-r from-[#186A07] to-[#0B2578] shadow-2xl">
               <div className="absolute h-72 w-72 rounded-full border-2 border-white/30"></div>
 
               <ShieldCheck size={90} className="text-white" />
@@ -97,13 +97,9 @@ const FeatureCard = ({ item }) => {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-gray-900">
-            {item.title}
-          </h3>
+          <h3 className="text-xl font-semibold text-gray-900">{item.title}</h3>
 
-          <p className="mt-3 text-gray-600 leading-7">
-            {item.description}
-          </p>
+          <p className="mt-3 text-gray-600 leading-7">{item.description}</p>
         </div>
       </div>
     </div>

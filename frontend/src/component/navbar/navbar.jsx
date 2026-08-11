@@ -17,17 +17,16 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
-
         {/* Logo */}
-      <Link to="/" className="flex items-center gap-3">
-  <div className="flex items-center justify-center mt-3">
-    <img
-      src="/Borofirst-Logos-1-1.webp"
-      alt="Borofirst Logo"
-      className="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105"
-    />
-  </div>
-</Link>
+        <Link to="/" className="flex items-center gap-3">
+          <div className="flex items-center justify-center mt-3">
+            <img
+              src="/Borofirst-Logos-1-1.webp"
+              alt="Borofirst Logo"
+              className="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-10">
@@ -38,27 +37,23 @@ const Navbar = () => {
               className="relative font-medium text-slate-700 hover:text-emerald-600 transition group"
             >
               {item.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-linear-to-r from-emerald-500 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
         </nav>
-
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex items-center gap-4">
           <Link
             to="/signup"
-            className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#186A07] to-[#0B2578] text-white font-semibold shadow-lg hover:scale-105 transition"
+            className="px-6 py-2.5 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] text-white font-semibold shadow-lg hover:scale-105 transition"
           >
             Get Started
           </Link>
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden"
-        >
+        <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden">
           {isOpen ? (
             <X className="w-7 h-7 text-slate-700" />
           ) : (
@@ -74,7 +69,6 @@ const Navbar = () => {
         }`}
       >
         <div className="bg-white border-t border-slate-200 px-6 py-6 space-y-5">
-
           {navLinks.map((item) => (
             <Link
               key={item.name}
@@ -96,12 +90,11 @@ const Navbar = () => {
 
             <Link
               to="/signup"
-              className="text-center py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-blue-600 text-white font-semibold"
+              className="text-center py-3 rounded-xl bg-linear-to-r from-emerald-500 to-blue-600 text-white font-semibold"
             >
               Get Started
             </Link>
           </div>
-
         </div>
       </div>
     </header>

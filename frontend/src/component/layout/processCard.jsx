@@ -1,5 +1,5 @@
-    export const ProcessCard = ({ step }) => {
-     const Icon = step.icon;
+export const ProcessCard = ({ step }) => {
+  const Icon = step.icon;
 
   return (
     <div className="group relative">
@@ -20,17 +20,13 @@
 
         {/* Content */}
         <div className="mt-8 text-center">
-          <h3 className="text-xl font-bold text-gray-900">
-            {step.title}
-          </h3>
+          <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
 
-          <p className="mt-4 leading-7 text-gray-600">
-            {step.description}
-          </p>
+          <p className="mt-4 leading-7 text-gray-600">{step.description}</p>
         </div>
 
         {/* Bottom Accent */}
-        <div className="mx-auto mt-8 h-1 w-20 rounded-full bg-gradient-to-r from-emerald-500 to-blue-500 transition-all duration-300 group-hover:w-full"></div>
+        <div className="mx-auto mt-8 h-1 w-20 rounded-full bg-linear-to-r from-emerald-500 to-blue-500 transition-all duration-300 group-hover:w-full"></div>
       </div>
     </div>
   );

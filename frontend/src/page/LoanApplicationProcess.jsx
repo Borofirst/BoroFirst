@@ -26,24 +26,22 @@ const LoanApplicationProcess = () => {
 
           <h2 className="mt-6 text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
             Apply for Your Loan in
-            <span className="block text-[#186A07]">
-              Just 4 Simple Steps
-            </span>
+            <span className="block text-[#186A07]">Just 4 Simple Steps</span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Our streamlined application process ensures a fast, secure,
-            and hassle-free borrowing experience from start to finish.
+            Our streamlined application process ensures a fast, secure, and
+            hassle-free borrowing experience from start to finish.
           </p>
         </div>
 
         {/* Timeline Container */}
         <div className="relative mt-24">
           {/* Desktop Timeline Line */}
-          <div className="absolute left-0 right-0 top-1/2 hidden h-1 -translate-y-1/2 rounded-full bg-gradient-to-r from-emerald-500 via-emerald-400 to-blue-500 lg:block"></div>
+          <div className="absolute left-0 right-0 top-1/2 hidden h-1 -translate-y-1/2 rounded-full bg-linear-to-r from-emerald-500 via-emerald-400 to-blue-500 lg:block"></div>
 
           {/* Mobile Timeline Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-emerald-500 via-emerald-400 to-blue-500 lg:hidden"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-1 rounded-full bg-linear-to-b from-emerald-500 via-emerald-400 to-blue-500 lg:hidden"></div>
 
           {/* Timeline Grid */}
           <div className="grid gap-5 lg:grid-cols-5">
@@ -63,14 +61,12 @@ const LoanApplicationProcess = () => {
         </div>
         {/* Bottom CTA */}
         <div className="mt-24">
-          <div className="relative overflow-hidden rounded-3xl border border-emerald-100 bg-gradient-to-r from-[bg-gradient-to-r from-[#186A07] to-[#0B2578]] to-[#0B2578] px-8 py-12 shadow-2xl">
-
+          <div className="relative overflow-hidden rounded-3xl border border-emerald-100 bg-linear-to-r from-[bg-linear-to-r from-[#186A07] to-[#0B2578]] to-[#0B2578] px-8 py-12 shadow-2xl">
             {/* Decorative Blur */}
             <div className="absolute -left-20 -top-20 h-56 w-56 rounded-full bg-white/10 blur-3xl"></div>
             <div className="absolute -right-20 -bottom-20 h-56 w-56 rounded-full bg-white/10 blur-3xl"></div>
 
             <div className="relative z-10 flex flex-col items-center justify-between gap-8 lg:flex-row">
-
               {/* CTA Content */}
               <div className="max-w-2xl text-center lg:text-left">
                 <span className="inline-flex rounded-full bg-white/20 px-4 py-2 text-sm font-semibold uppercase tracking-wider text-white">
@@ -82,16 +78,15 @@ const LoanApplicationProcess = () => {
                 </h3>
 
                 <p className="mt-4 text-lg leading-8 text-emerald-50">
-                  Apply today and receive expert guidance throughout your
-                  loan journey. Our team is here to make the process
-                  simple, secure, and stress-free.
+                  Apply today and receive expert guidance throughout your loan
+                  journey. Our team is here to make the process simple, secure,
+                  and stress-free.
                 </p>
               </div>
 
               {/* CTA Button */}
               <button className="group inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-semibold text-emerald-700 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
                 Apply for Loan
-
                 <svg
                   className="transition-transform duration-300 group-hover:translate-x-1"
                   width="20"
@@ -107,11 +102,9 @@ const LoanApplicationProcess = () => {
                   <path d="M13 5l7 7-7 7" />
                 </svg>
               </button>
-
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

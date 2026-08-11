@@ -34,7 +34,7 @@ const ProductCard = ({ product }) => {
     "
     >
       {/* Top Accent */}
-      <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-[#186A07] to-[#0B2578]"></div>
+      <div className="absolute left-0 top-0 h-1 w-full bg-linear-to-r from-[#186A07] to-[#0B2578]"></div>
 
       {/* Badge */}
 
@@ -57,7 +57,7 @@ const ProductCard = ({ product }) => {
         items-center
         justify-center
         rounded-2xl
-       bg-gradient-to-r
+       bg-linear-to-r
         from-[#186A07] 
         to-[#0B2578]
         text-white
@@ -74,7 +74,6 @@ const ProductCard = ({ product }) => {
       {/* Content */}
 
       <div className="mt-8">
-
         <h3
           className="
           text-xl
@@ -88,10 +87,7 @@ const ProductCard = ({ product }) => {
           {product.title}
         </h3>
 
-        <p className="mt-4 text-gray-600 leading-7">
-          {product.description}
-        </p>
-
+        <p className="mt-4 text-gray-600 leading-7">{product.description}</p>
       </div>
 
       {/* Spacer */}
@@ -121,9 +117,9 @@ const ProductCard = ({ product }) => {
         />
       </button> */}
       <button className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl border border-gray-200 py-3 font-semibold text-gray-700 transition-all duration-300 hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-600">
-  Learn More
-  <ArrowRight size={18} />
-</button>
+        Learn More
+        <ArrowRight size={18} />
+      </button>
 
       {/* Hover Glow */}
 

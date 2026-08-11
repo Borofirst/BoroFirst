@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -21,7 +20,6 @@ import {
   MdAccessTime,
   MdOpenInNew,
 } from "react-icons/md";
-
 
 const Footer = () => {
   // =========================================
@@ -148,33 +146,33 @@ const Footer = () => {
   // Social Links
   // =========================================
 
-const socialLinks = [
-  {
-    name: "Facebook",
-    icon: FaFacebookF,
-    url: "#",
-  },
-  {
-    name: "Instagram",
-    icon: FaInstagram,
-    url: "#",
-  },
-  {
-    name: "LinkedIn",
-    icon: FaLinkedinIn,
-    url: "#",
-  },
-  {
-    name: "YouTube",
-    icon: FaYoutube,
-    url: "#",
-  },
-  {
-    name: "X",
-    icon: FaXTwitter,
-    url: "#",
-  },
-];
+  const socialLinks = [
+    {
+      name: "Facebook",
+      icon: FaFacebookF,
+      url: "#",
+    },
+    {
+      name: "Instagram",
+      icon: FaInstagram,
+      url: "#",
+    },
+    {
+      name: "LinkedIn",
+      icon: FaLinkedinIn,
+      url: "#",
+    },
+    {
+      name: "YouTube",
+      icon: FaYoutube,
+      url: "#",
+    },
+    {
+      name: "X",
+      icon: FaXTwitter,
+      url: "#",
+    },
+  ];
 
   // =========================================
   // Trust Points
@@ -187,424 +185,294 @@ const socialLinks = [
     "Trusted Financial Network",
   ];
 
-
-
-
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-b from-slate-300 via-slate-900 to-slate-950 text-white">
+    <footer className="relative overflow-hidden bg-linear-to-b from-slate-300 via-slate-900 to-slate-950 text-white">
       {/* =========================================
           Main Footer Content
       ========================================= */}
 
       <section className="relative px-2 pb-5 pt-5 sm:px-6 lg:px-6">
-
         <div className="mx-auto max-w-7xl">
-
- {/* =========================================
+          {/* =========================================
     Main Footer Navigation
 ========================================= */}
 
-<div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-10">
-
-  {/* =========================================
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-10">
+            {/* =========================================
       Brand Column
   ========================================= */}
 
-  <div className="lg:col-span-4">
+            <div className="lg:col-span-4">
+              {/* Logo */}
 
-    {/* Logo */}
+              <Link to="/" className="group inline-flex items-center">
+                <img
+                  src="/Borofirst-Logos-1-1.webp"
+                  alt="BoroFirst"
+                  className="h-12 w-auto"
+                />
+              </Link>
 
-    <Link
-      to="/"
-      className="group inline-flex items-center"
-    >
+              {/* Description */}
 
-        <img
-          src="/Borofirst-Logos-1-1.webp"
-          alt="BoroFirst"
-          className="h-12 w-auto"
-        />
+              <p className="mt-6 max-w-sm text-sm leading-7 text-white">
+                Helping individuals and businesses access smarter financial
+                solutions with transparency, simplicity, and confidence.
+              </p>
 
-    </Link>
+              {/* Trust Badge */}
 
+              <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-gray-800 bg-gray-900/70 px-4 py-2.5">
+                <FaShieldAlt size={17} className="text-emerald-400" />
 
-    {/* Description */}
+                <span className="text-xs font-medium text-gray-300">
+                  Secure & Confidential
+                </span>
+              </div>
 
-    <p className="mt-6 max-w-sm text-sm leading-7 text-white">
+              {/* Social Media */}
 
-      Helping individuals and businesses access smarter
-      financial solutions with transparency, simplicity,
-      and confidence.
+              <div className="mt-7">
+                <p className="mb-4 text-sm font-semibold text-white">
+                  Follow Us
+                </p>
 
-    </p>
+                <div className="flex items-center gap-3">
+                  {socialLinks.map((social) => {
+                    const Icon = social.icon;
 
+                    return (
+                      <a
+                        key={social.name}
+                        href={social.url}
+                        aria-label={`Follow BoroFirst on ${social.name}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex h-10 w-10 items-center justify-center rounded-xl border border-gray-800 bg-gray-900 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:bg-linear-to-br hover:from-emerald-500 hover:to-blue-600 hover:text-white hover:shadow-lg hover:shadow-emerald-500/10"
+                      >
+                        <Icon
+                          size={16}
+                          className="transition-transform duration-300 group-hover:scale-110"
+                        />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
 
-    {/* Trust Badge */}
-
-    <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-gray-800 bg-gray-900/70 px-4 py-2.5">
-
-      <FaShieldAlt
-        size={17}
-        className="text-emerald-400"
-      />
-
-      <span className="text-xs font-medium text-gray-300">
-        Secure & Confidential
-      </span>
-
-    </div>
-
-
-    {/* Social Media */}
-
-    <div className="mt-7">
-
-      <p className="mb-4 text-sm font-semibold text-white">
-        Follow Us
-      </p>
-
-      <div className="flex items-center gap-3">
-
-        {socialLinks.map((social) => {
-
-          const Icon = social.icon;
-
-          return (
-            <a
-              key={social.name}
-              href={social.url}
-              aria-label={`Follow BoroFirst on ${social.name}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex h-10 w-10 items-center justify-center rounded-xl border border-gray-800 bg-gray-900 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:bg-gradient-to-br hover:from-emerald-500 hover:to-blue-600 hover:text-white hover:shadow-lg hover:shadow-emerald-500/10"
-            >
-
-              <Icon
-                size={16}
-                className="transition-transform duration-300 group-hover:scale-110"
-              />
-
-            </a>
-          );
-
-        })}
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  {/* =========================================
+            {/* =========================================
       Company
   ========================================= */}
 
-  <div className="lg:col-span-2">
+            <div className="lg:col-span-2">
+              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+                Company
+              </h3>
 
-    <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
-      Company
-    </h3>
+              <nav aria-label="Company navigation">
+                <ul className="space-y-3.5">
+                  {companyLinks.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        to={link.path}
+                        className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+                      >
+                        <span>{link.name}</span>
 
-    <nav aria-label="Company navigation">
+                        <MdOpenInNew
+                          size={14}
+                          className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
 
-      <ul className="space-y-3.5">
-
-        {companyLinks.map((link) => (
-
-          <li key={link.name}>
-
-            <Link
-              to={link.path}
-              className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
-            >
-
-              <span>
-                {link.name}
-              </span>
-
-              <MdOpenInNew
-                size={14}
-                className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
-              />
-
-            </Link>
-
-          </li>
-
-        ))}
-
-      </ul>
-
-    </nav>
-
-  </div>
-
-
-  {/* =========================================
+            {/* =========================================
       Loan Products
   ========================================= */}
 
-  <div className="lg:col-span-2">
+            <div className="lg:col-span-2">
+              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+                Loan Products
+              </h3>
 
-    <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
-      Loan Products
-    </h3>
+              <nav aria-label="Loan products navigation">
+                <ul className="space-y-3.5">
+                  {loanProducts.map((loan) => (
+                    <li key={loan.name}>
+                      <Link
+                        to={loan.path}
+                        className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+                      >
+                        <span>{loan.name}</span>
 
-    <nav aria-label="Loan products navigation">
+                        <MdOpenInNew
+                          size={14}
+                          className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
 
-      <ul className="space-y-3.5">
-
-        {loanProducts.map((loan) => (
-
-          <li key={loan.name}>
-
-            <Link
-              to={loan.path}
-              className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
-            >
-
-              <span>
-                {loan.name}
-              </span>
-
-              <MdOpenInNew
-                size={14}
-                className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
-              />
-
-            </Link>
-
-          </li>
-
-        ))}
-
-      </ul>
-
-    </nav>
-
-  </div>
-
-
-  {/* =========================================
+            {/* =========================================
       Financial Services
   ========================================= */}
 
-  <div className="lg:col-span-2">
+            <div className="lg:col-span-2">
+              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+                Financial Services
+              </h3>
 
-    <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
-      Financial Services
-    </h3>
+              <nav aria-label="Financial services navigation">
+                <ul className="space-y-3.5">
+                  {financialServices.map((service) => (
+                    <li key={service.name}>
+                      <Link
+                        to={service.path}
+                        className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+                      >
+                        <span>{service.name}</span>
 
-    <nav aria-label="Financial services navigation">
+                        <MdOpenInNew
+                          size={14}
+                          className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
 
-      <ul className="space-y-3.5">
-
-        {financialServices.map((service) => (
-
-          <li key={service.name}>
-
-            <Link
-              to={service.path}
-              className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
-            >
-
-              <span>
-                {service.name}
-              </span>
-
-              <MdOpenInNew
-                size={14}
-                className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
-              />
-
-            </Link>
-
-          </li>
-
-        ))}
-
-      </ul>
-
-    </nav>
-
-  </div>
-
-
-  {/* =========================================
+            {/* =========================================
       Resources
   ========================================= */}
 
-  <div className="lg:col-span-2">
+            <div className="lg:col-span-2">
+              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+                Resources
+              </h3>
 
-    <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
-      Resources
-    </h3>
+              <nav aria-label="Resources navigation">
+                <ul className="space-y-3.5">
+                  {resourceLinks.map((resource) => (
+                    <li key={resource.name}>
+                      <Link
+                        to={resource.path}
+                        className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+                      >
+                        <span>{resource.name}</span>
 
-    <nav aria-label="Resources navigation">
+                        <MdOpenInNew
+                          size={14}
+                          className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+          </div>
 
-      <ul className="space-y-3.5">
-
-        {resourceLinks.map((resource) => (
-
-          <li key={resource.name}>
-
-            <Link
-              to={resource.path}
-              className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
-            >
-
-              <span>
-                {resource.name}
-              </span>
-
-              <MdOpenInNew
-                size={14}
-                className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
-              />
-
-            </Link>
-
-          </li>
-
-        ))}
-
-      </ul>
-
-    </nav>
-
-  </div>
-
-</div>
-
-  {/* =========================================
+          {/* =========================================
       Trust & Security
   ========================================= */}
-<div className="mt-5 border-gray-800 ">
-  <div className=" grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="mt-5 border-gray-800 ">
+            <div className=" grid grid-cols-2 gap-3 sm:grid-cols-4">
+              {trustPoints.map((point) => (
+                <div
+                  key={point}
+                  className="flex items-center gap-2 rounded-xl border border-gray-800 bg-gray-900/40 px-3 py-3"
+                >
+                  <FaCheckCircle
+                    size={14}
+                    className="shrink-0 text-emerald-400"
+                  />
 
-    {trustPoints.map((point) => (
+                  <span className="text-xs font-medium text-gray-400">
+                    {point}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
 
-      <div
-        key={point}
-        className="flex items-center gap-2 rounded-xl border border-gray-800 bg-gray-900/40 px-3 py-3"
-      >
-
-        <FaCheckCircle
-          size={14}
-          className="shrink-0 text-emerald-400"
-        />
-
-        <span className="text-xs font-medium text-gray-400">
-          {point}
-        </span>
-
-      </div>
-
-    ))}
-
-  </div>
-
-</div>
-
-
-
-{/* =========================================
+          {/* =========================================
     Bottom Footer
 ========================================= */}
 
-<div className="mt-5 border-t border-gray-800 pt-3">
+          <div className="mt-5 border-t border-gray-800 pt-3">
+            <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+              {/* Copyright */}
 
-  <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+              <div className="text-center lg:text-left">
+                <p className="text-xs text-gray-500 sm:text-sm">
+                  © {new Date().getFullYear()} BoroFirst. All Rights Reserved.
+                </p>
+              </div>
 
-    {/* Copyright */}
+              {/* Legal Navigation */}
 
-    <div className="text-center lg:text-left">
+              <nav aria-label="Legal navigation">
+                <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 lg:justify-end">
+                  <li>
+                    <Link
+                      to="/privacy-policy"
+                      className="text-xs text-gray-500 transition-colors duration-300 hover:text-emerald-400 sm:text-sm"
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
 
-      <p className="text-xs text-gray-500 sm:text-sm">
+                  <li className="hidden h-3 w-px bg-gray-800 sm:block" />
 
-        © {new Date().getFullYear()} BoroFirst.
-        All Rights Reserved.
+                  <li>
+                    <Link
+                      to="/terms-conditions"
+                      className="text-xs text-gray-500 transition-colors duration-300 hover:text-emerald-400 sm:text-sm"
+                    >
+                      Terms & Conditions
+                    </Link>
+                  </li>
 
-      </p>
+                  <li className="hidden h-3 w-px bg-gray-800 sm:block" />
+                  <li>
+                    <Link
+                      to="/disclaimer"
+                      className="text-xs text-gray-500 transition-colors duration-300 hover:text-emerald-400 sm:text-sm"
+                    >
+                      Disclaimer
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
-    </div>
+            {/* Bottom Brand Statement */}
 
+            <div className="flex flex-col items-center justify-center gap-2 sm:flex-row mt-3">
+              <span className="text-xs text-gray-600">
+                Financial Freedom Starts Here
+              </span>
 
-    {/* Legal Navigation */}
+              <span className="hidden text-gray-700 sm:block">•</span>
 
-    <nav aria-label="Legal navigation">
-
-      <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 lg:justify-end">
-
-        <li>
-
-          <Link
-            to="/privacy-policy"
-            className="text-xs text-gray-500 transition-colors duration-300 hover:text-emerald-400 sm:text-sm"
-          >
-            Privacy Policy
-          </Link>
-
-        </li>
-
-        <li className="hidden h-3 w-px bg-gray-800 sm:block" />
-
-        <li>
-
-          <Link
-            to="/terms-conditions"
-            className="text-xs text-gray-500 transition-colors duration-300 hover:text-emerald-400 sm:text-sm"
-          >
-            Terms & Conditions
-          </Link>
-
-        </li>
-
-        <li className="hidden h-3 w-px bg-gray-800 sm:block" />
-        <li>
-
-          <Link
-            to="/disclaimer"
-            className="text-xs text-gray-500 transition-colors duration-300 hover:text-emerald-400 sm:text-sm"
-          >
-            Disclaimer
-          </Link>
-
-        </li>
-
-
-      </ul>
-
-    </nav>
-
-  </div>
-
-
-  {/* Bottom Brand Statement */}
-
-  <div className="flex flex-col items-center justify-center gap-2 sm:flex-row mt-3">
-
-    <span className="text-xs text-gray-600">
-      Financial Freedom Starts Here
-    </span>
-
-    <span className="hidden text-gray-700 sm:block">
-      •
-    </span>
-
-    <span className="text-xs text-gray-600">
-      Built around transparency and customer-first financial solutions.
-    </span>
-
-  </div>
-
-</div>
-
+              <span className="text-xs text-gray-600">
+                Built around transparency and customer-first financial
+                solutions.
+              </span>
+            </div>
+          </div>
         </div>
-
       </section>
-
     </footer>
   );
 };

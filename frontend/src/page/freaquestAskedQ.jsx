@@ -9,7 +9,6 @@ import {
 } from "lucide-react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
-
 // ======================================
 // FAQ DATA
 // ======================================
@@ -35,14 +34,13 @@ const faqData = [
     answer:
       "Most loan applications are reviewed within 24 to 72 hours after successful document verification. Some instant loan products may be approved even faster.",
   },
-  
+
   {
     id: 4,
     question: "How can I contact customer support?",
     answer:
       "Our customer support team is available through phone, email, and live chat during business hours to assist you with any queries regarding our financial products and services.",
   },
-
 
   {
     id: 5,
@@ -85,8 +83,6 @@ const faqData = [
     answer:
       "Absolutely. We use industry-standard encryption, secure servers, and strict privacy practices to ensure your personal and financial information remains protected.",
   },
-
-
 ];
 
 const FAQSection = () => {
@@ -94,7 +90,6 @@ const FAQSection = () => {
 
   return (
     <section className="relative overflow-hidden bg-gray-50 py-24">
-
       {/* Background */}
 
       <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-emerald-100 blur-3xl opacity-40"></div>
@@ -102,59 +97,41 @@ const FAQSection = () => {
       <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-blue-100 blur-3xl opacity-40"></div>
 
       <div className="relative mx-auto max-w-7xl px-6">
-
         <div className="grid gap-16 lg:grid-cols-[420px_1fr]">
-
           {/* ===================== */}
           {/* LEFT SIDE */}
           {/* ===================== */}
 
           <div className="lg:sticky lg:top-28 h-fit">
-
             {/* Badge */}
 
             <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2">
+              <HelpCircle size={18} className="text-emerald-600" />
 
-              <HelpCircle
-                size={18}
-                className="text-emerald-600"
-              />
-
-              <span className="font-semibold text-emerald-700">
-                Need Help?
-              </span>
-
+              <span className="font-semibold text-emerald-700">Need Help?</span>
             </div>
 
             {/* Heading */}
 
             <h2 className="mt-8 text-4xl font-bold leading-tight text-gray-900">
-
               Frequently Asked
-
-              <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
                 {" "}
                 Questions
               </span>
-
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-gray-600">
-
               Find quick answers to the most commonly asked questions about
               loans, investments, insurance, eligibility, repayments,
               documentation, and customer support.
-
             </p>
 
             {/* Support Card */}
 
             <div className="mt-12 rounded-3xl border border-gray-200 bg-white p-8 shadow-lg">
-
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-r from-[#186A07] to-[#0B2578] text-white">
-
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-r from-[#186A07] to-[#0B2578] text-white">
                 <Headphones size={30} />
-
               </div>
 
               <h3 className="mt-6 text-2xl font-bold text-gray-900">
@@ -162,10 +139,8 @@ const FAQSection = () => {
               </h3>
 
               <p className="mt-4 leading-7 text-gray-600">
-
                 Our financial experts are always ready to guide you through
                 every step of your loan or investment journey.
-
               </p>
 
               <button
@@ -177,7 +152,7 @@ const FAQSection = () => {
                 justify-center
                 gap-3
                 rounded-2xl
-                bg-gradient-to-r 
+                bg-linear-to-r 
                 from-[#186A07]
                  to-[#0B2578]
                 px-6
@@ -191,33 +166,25 @@ const FAQSection = () => {
               "
               >
                 <PhoneCall size={20} />
-
                 Contact Support
-
                 <ArrowRight size={18} />
-
               </button>
-
             </div>
-
           </div>
 
           {/* ===================== */}
           {/* RIGHT SIDE */}
-       
+
           {/* ===================== */}
 
-        <div className="space-y-2">
+          <div className="space-y-2">
+            {faqData.map((faq, index) => {
+              const isOpen = activeFAQ === index;
 
-  {faqData.map((faq, index) => {
-
-    const isOpen = activeFAQ === index;
-
-    return (
-
-      <div
-        key={faq.id}
-        className={`
+              return (
+                <div
+                  key={faq.id}
+                  className={`
           group
           overflow-hidden
           rounded-3xl
@@ -233,15 +200,12 @@ const FAQSection = () => {
               : "border-gray-200 hover:border-emerald-200 hover:shadow-lg"
           }
         `}
-      >
+                >
+                  {/* Header */}
 
-        {/* Header */}
-
-        <button
-          onClick={() =>
-            setActiveFAQ(isOpen ? null : index)
-          }
-          className="
+                  <button
+                    onClick={() => setActiveFAQ(isOpen ? null : index)}
+                    className="
             flex
             w-full
             items-center
@@ -250,12 +214,10 @@ const FAQSection = () => {
             p-4
             text-left
           "
-        >
-
-          <div className="flex items-center gap-5">
-
-            <div
-              className={`
+                  >
+                    <div className="flex items-center gap-5">
+                      <div
+                        className={`
                 flex
                 h-10
                 w-10
@@ -267,35 +229,30 @@ const FAQSection = () => {
 
                 ${
                   isOpen
-                    ? "bg-gradient-to-r from-[#186A07] to-[#0B2578] text-white"
+                    ? "bg-linear-to-r from-[#186A07] to-[#0B2578] text-white"
                     : "bg-gray-100 text-gray-500 group-hover:bg-[#EAF5E8] group-hover:text-[#186A07]"
                 }
               `}
-            >
-              <HelpCircle size={22} />
-            </div>
+                      >
+                        <HelpCircle size={22} />
+                      </div>
 
-            <h3
-              className={`
+                      <h3
+                        className={`
                 text-lg
                 font-semibold
                 transition-colors
                 duration-300
 
-                ${
-                  isOpen
-                    ? "text-[#186A07]"
-                    : "text-gray-900"
-                }
+                ${isOpen ? "text-[#186A07]" : "text-gray-900"}
               `}
-            >
-              {faq.question}
-            </h3>
+                      >
+                        {faq.question}
+                      </h3>
+                    </div>
 
-          </div>
-
-          <div
-            className={`
+                    <div
+                      className={`
               flex
               h-10
               w-10
@@ -307,67 +264,44 @@ const FAQSection = () => {
 
               ${
                 isOpen
-                  ? "bg-gradient-to-r from-[#186A07] to-[#0B2578] rotate-180 text-white"
+                  ? "bg-linear-to-r from-[#186A07] to-[#0B2578] rotate-180 text-white"
                   : "bg-gray-100"
               }
             `}
-          >
+                    >
+                      <div>
+                        {isOpen ? (
+                          <FiMinus className="h-5 w-5" />
+                        ) : (
+                          <FiPlus className="h-5 w-5" />
+                        )}
+                      </div>
+                    </div>
+                  </button>
 
-<div>
-  {isOpen ? (
-    <FiMinus className="h-5 w-5" />
-  ) : (
-    <FiPlus className="h-5 w-5" />
-  )}
-</div>
+                  {/* Answer */}
 
-      </div>
-
-        </button>
-
-        {/* Answer */}
-
-        <div
-          className={`
+                  <div
+                    className={`
             grid
             transition-all
             duration-500
 
-            ${
-              isOpen
-                ? "grid-rows-[1fr]"
-                : "grid-rows-[0fr]"
-            }
+            ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}
           `}
-        >
-
-          <div className="overflow-hidden">
-
-            <div className="border-t border-gray-100 px-5 pb-5 pt-6">
-
-              <p className="leading-6 text-gray-600">
-
-                {faq.answer}
-
-              </p>
-
-            </div>
-
+                  >
+                    <div className="overflow-hidden">
+                      <div className="border-t border-gray-100 px-5 pb-5 pt-6">
+                        <p className="leading-6 text-gray-600">{faq.answer}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-
         </div>
-
       </div>
-
-    );
-
-  })}
-
-</div>
-        </div>
-
-      </div>
-
     </section>
   );
 };

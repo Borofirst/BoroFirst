@@ -8,19 +8,19 @@ import {
   Home,
   Coins,
   Landmark,
-  RefreshCcw
+  RefreshCcw,
 } from "lucide-react";
 
 export const loanProduct = [
-    {
-  icon: Home,
-  title: "Home Loan",
-  description:
-    "Own your dream home with affordable EMIs, attractive interest rates, and quick loan approvals.",
-  amount: "Up to ₹5 Crore",
-  button: "Apply Now",
-  color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
-},
+  {
+    icon: Home,
+    title: "Home Loan",
+    description:
+      "Own your dream home with affordable EMIs, attractive interest rates, and quick loan approvals.",
+    amount: "Up to ₹5 Crore",
+    button: "Apply Now",
+    color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
+  },
   {
     icon: BriefcaseBusiness,
     title: "Business Loan",
@@ -28,9 +28,8 @@ export const loanProduct = [
       "Grow your business with quick approvals, flexible funds, and collateral-free financing for your next big opportunity.",
     amount: "Up to ₹1 Crore",
     button: "Get Started",
-     color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
+    color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
   },
-
 
   {
     icon: GraduationCap,
@@ -39,7 +38,7 @@ export const loanProduct = [
       "Turn your academic goals into reality with flexible financing for higher education in India or abroad.",
     amount: "Up to ₹75 Lakhs",
     button: "Know More",
-        color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
+    color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
   },
 
   {
@@ -49,7 +48,7 @@ export const loanProduct = [
       "Unlock the value of your residential or commercial property with competitive interest rates.",
     amount: "Up to 80% Property Value",
     button: "Apply Now",
-    color: "bg-gradient-to-br from-[#186A07] via-[#13509A] to-[#0B2578]",
+    color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578]",
   },
 
   {
@@ -59,7 +58,7 @@ export const loanProduct = [
       "Meet your personal and financial needs with quick approvals, flexible loan amounts, and convenient repayment options with minimal documentation..",
     amount: "Up to ₹25 Lakhs",
     button: "Apply Now",
-    color: "bg-gradient-to-r from-[#186A07] to-[#0B2578]",
+    color: "bg-linear-to-r from-[#186A07] to-[#0B2578]",
   },
 
   {
@@ -69,7 +68,7 @@ export const loanProduct = [
       "Protect your family, health, home, vehicle, and business with comprehensive insurance plans.",
     amount: "Affordable Premiums",
     button: "View Plans",
-    color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
+    color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
   },
 
   {
@@ -79,29 +78,26 @@ export const loanProduct = [
       "Own your preferred pre-owned car with flexible financing, quick processing, and repayment options that fit your budget",
     amount: "Up to 90% Financing",
     button: "Apply Now",
-      color: "bg-gradient-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
+    color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
   },
 
+  {
+    icon: Coins,
+    title: "Gold Loan",
+    description:
+      "Get instant funds by pledging your gold jewellery with minimal documentation and fast disbursal.",
+    amount: "Up to 75% Gold Value",
+    button: "Get Loan",
+    color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
+  },
 
-{
-  icon: Coins,
-  title: "Gold Loan",
-  description:
-    "Get instant funds by pledging your gold jewellery with minimal documentation and fast disbursal.",
-  amount: "Up to 75% Gold Value",
-  button: "Get Loan",
-  color: "bg-gradient-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
-},
-
-{
-  icon: Landmark,
-  title: "Mortgage Loan",
-  description:
-    "Leverage your residential or commercial property to secure high-value loans at competitive rates.",
-  amount: "Up to ₹10 Crore",
-  button: "Know More",
-  color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
-},
-
+  {
+    icon: Landmark,
+    title: "Mortgage Loan",
+    description:
+      "Leverage your residential or commercial property to secure high-value loans at competitive rates.",
+    amount: "Up to ₹10 Crore",
+    button: "Know More",
+    color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
+  },
 ];
-
