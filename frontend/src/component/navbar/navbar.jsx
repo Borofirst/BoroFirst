@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, TrendingUp } from "lucide-react";
 
-const Header = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
@@ -108,4 +108,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

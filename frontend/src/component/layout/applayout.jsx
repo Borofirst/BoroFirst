@@ -3,8 +3,8 @@
 import { Outlet, useNavigation } from "react-router"
 
 
-import Footer from "./footer";
-import Header from "./header";
+import Navbar from "../navbar/navbar";
+import Footer from "../footer/footer";
 
 
 export const Applayout=()=>{
@@ -15,7 +15,7 @@ export const Applayout=()=>{
 
     return(
         <>
-        <Header/>
+        <Navbar/>
        <Outlet/>    {/*an outlet should be used in parent rout element to render their child element */}
         <Footer/>
 

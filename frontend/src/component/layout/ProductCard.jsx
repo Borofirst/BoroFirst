@@ -34,7 +34,7 @@ const ProductCard = ({ product }) => {
     "
     >
       {/* Top Accent */}
-      <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-emerald-500 via-green-500 to-blue-600"></div>
+      <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-[#186A07] to-[#0B2578]"></div>
 
       {/* Badge */}
 
@@ -57,9 +57,9 @@ const ProductCard = ({ product }) => {
         items-center
         justify-center
         rounded-2xl
-        bg-gradient-to-br
-        from-emerald-500
-        to-blue-600
+       bg-gradient-to-r
+        from-[#186A07] 
+        to-[#0B2578]
         text-white
         shadow-lg
         transition-all

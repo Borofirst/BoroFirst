@@ -131,7 +131,7 @@ const FAQSection = () => {
 
               Frequently Asked
 
-              <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
                 {" "}
                 Questions
               </span>
@@ -150,7 +150,7 @@ const FAQSection = () => {
 
             <div className="mt-12 rounded-3xl border border-gray-200 bg-white p-8 shadow-lg">
 
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-blue-600 text-white">
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-r from-[#186A07] to-[#0B2578] text-white">
 
                 <Headphones size={30} />
 
@@ -176,9 +176,9 @@ const FAQSection = () => {
                 justify-center
                 gap-3
                 rounded-2xl
-                bg-gradient-to-r
-                from-emerald-600
-                to-blue-600
+                bg-gradient-to-r 
+                from-[#186A07]
+                 to-[#0B2578]
                 px-6
                 py-4
                 font-semibold
@@ -266,8 +266,8 @@ const FAQSection = () => {
 
                 ${
                   isOpen
-                    ? "bg-gradient-to-br from-emerald-500 to-blue-600 text-white"
-                    : "bg-gray-100 text-gray-500 group-hover:bg-emerald-100 group-hover:text-emerald-600"
+                    ? "bg-gradient-to-r from-[#186A07] to-[#0B2578] text-white"
+                    : "bg-gray-100 text-gray-500 group-hover:bg-[#EAF5E8] group-hover:text-[#186A07]"
                 }
               `}
             >
@@ -283,7 +283,7 @@ const FAQSection = () => {
 
                 ${
                   isOpen
-                    ? "text-emerald-600"
+                    ? "text-[#186A07]"
                     : "text-gray-900"
                 }
               `}

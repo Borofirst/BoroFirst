@@ -87,7 +87,7 @@ const BankingPartners = () => {
 
             Our Banking &
 
-            <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
               {" "}
               Financial Partners
             </span>
@@ -104,21 +104,7 @@ const BankingPartners = () => {
 
         </div>
 
-        {/* Partners Grid */}
-
-        {/* <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
-
-          {partners.map((partner) => (
-
-            <PartnerCard
-              key={partner.id}
-              partner={partner}
-            />
-
-          ))}
-
-        </div> */}
-        {/* {swiperjs} */}
+        
 <div className="mt-16">
 
   <Swiper

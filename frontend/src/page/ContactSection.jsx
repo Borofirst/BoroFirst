@@ -80,7 +80,7 @@ const contactInfo = [
 const socialLinks = [
   {
     icon: FaFacebookF,
-    href: "https://www.facebook.com/borofirst",
+    href: "https://www.facebook.com/profile.php?id=61593126121262",
   },
 
   {

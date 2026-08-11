@@ -22,7 +22,7 @@ const FeaturedFinancialProducts = () => {
 
           <h2 className="mt-6 text-4xl font-bold text-gray-900 md:text-5xl">
             Featured Financial
-            <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
               {" "}
               Products
             </span>

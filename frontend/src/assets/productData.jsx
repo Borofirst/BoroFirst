@@ -12,21 +12,31 @@ import {
 } from "lucide-react";
 
 export const loanProduct = [
+    {
+  icon: Home,
+  title: "Home Loan",
+  description:
+    "Own your dream home with affordable EMIs, attractive interest rates, and quick loan approvals.",
+  amount: "Up to ₹5 Crore",
+  button: "Apply Now",
+  color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
+},
   {
-    icon: HandCoins,
-    title: "Personal Loan",
+    icon: BriefcaseBusiness,
+    title: "Business Loan",
     description:
-      "Quick unsecured loans for travel, weddings, medical expenses, or any personal need.",
-    amount: "Up to ₹25 Lakhs",
-    button: "Apply Now",
-    color: "bg-gradient-to-r from-[#186A07] to-[#0B2578]",
+      "Grow your business with quick approvals, flexible funds, and collateral-free financing for your next big opportunity.",
+    amount: "Up to ₹1 Crore",
+    button: "Get Started",
+     color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
   },
+
 
   {
     icon: GraduationCap,
-    title: "Student Study Loan",
+    title: "Education Loan",
     description:
-      "Finance your higher education in India or abroad with flexible repayment options.",
+      "Turn your academic goals into reality with flexible financing for higher education in India or abroad.",
     amount: "Up to ₹75 Lakhs",
     button: "Know More",
         color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
@@ -43,13 +53,13 @@ export const loanProduct = [
   },
 
   {
-    icon: BriefcaseBusiness,
-    title: "Business Loan",
+    icon: HandCoins,
+    title: "Personal Loan",
     description:
-      "Fuel your business expansion with fast approvals and collateral-free funding.",
-    amount: "Up to ₹1 Crore",
-    button: "Get Started",
-     color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
+      "Meet your personal and financial needs with quick approvals, flexible loan amounts, and convenient repayment options with minimal documentation..",
+    amount: "Up to ₹25 Lakhs",
+    button: "Apply Now",
+    color: "bg-gradient-to-r from-[#186A07] to-[#0B2578]",
   },
 
   {
@@ -66,20 +76,12 @@ export const loanProduct = [
     icon: CarFront,
     title: "Used Car Loan",
     description:
-      "Buy your dream pre-owned car with low interest rates and quick approvals.",
+      "Own your preferred pre-owned car with flexible financing, quick processing, and repayment options that fit your budget",
     amount: "Up to 90% Financing",
     button: "Apply Now",
       color: "bg-gradient-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
   },
-  {
-  icon: Home,
-  title: "Home Loan",
-  description:
-    "Own your dream home with affordable EMIs, attractive interest rates, and quick loan approvals.",
-  amount: "Up to ₹5 Crore",
-  button: "Apply Now",
-  color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
-},
+
 
 {
   icon: Coins,
@@ -101,14 +103,5 @@ export const loanProduct = [
   color: "bg-gradient-to-tr from-[#0B2578] to-[#186A07]",
 },
 
-{
-  icon: RefreshCcw,
-  title: "Balance Transfer",
-  description:
-    "Transfer your existing loan to enjoy lower interest rates, reduced EMIs, and additional top-up benefits.",
-  amount: "Lower EMI Options",
-  button: "Transfer Now",
-  color: "bg-gradient-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
-},
 ];
 
