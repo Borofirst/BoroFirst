@@ -7,6 +7,7 @@ import {
   Plus,
   Minus,
 } from "lucide-react";
+import { FiPlus, FiMinus } from "react-icons/fi";
 
 
 // ======================================
@@ -306,39 +307,21 @@ const FAQSection = () => {
 
               ${
                 isOpen
-                  ? "bg-emerald-100 rotate-180"
+                  ? "bg-gradient-to-r from-[#186A07] to-[#0B2578] rotate-180 text-white"
                   : "bg-gray-100"
               }
             `}
           >
 
-            <svg
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              {isOpen ? (
-                <path
-                  d="M5 12h14"
-                  strokeLinecap="round"
-                />
-              ) : (
-                <>
-                  <path
-                    d="M12 5v14"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M5 12h14"
-                    strokeLinecap="round"
-                  />
-                </>
-              )}
-            </svg>
+<div>
+  {isOpen ? (
+    <FiMinus className="h-5 w-5" />
+  ) : (
+    <FiPlus className="h-5 w-5" />
+  )}
+</div>
 
-          </div>
+      </div>
 
         </button>
 

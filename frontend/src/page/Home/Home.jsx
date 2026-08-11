@@ -27,8 +27,8 @@ const Home = () => {
 <LoanApplicationProcess/>
 <FeaturedFinancialProducts/>
 <BankingPartners/>
-<FAQSection/>
 <ContactSection/>
+<FAQSection/>
      </>
   )
 }

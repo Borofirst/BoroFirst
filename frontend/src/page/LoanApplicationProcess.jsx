@@ -46,7 +46,7 @@ const LoanApplicationProcess = () => {
           <div className="absolute left-8 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-emerald-500 via-emerald-400 to-blue-500 lg:hidden"></div>
 
           {/* Timeline Grid */}
-          <div className="grid gap-14 lg:grid-cols-4">
+          <div className="grid gap-5 lg:grid-cols-5">
             {processSteps.map((step, index) => (
               <div
                 key={step.id}

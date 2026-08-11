@@ -12,8 +12,8 @@ import "swiper/css";
 const partners = [
   {
     id: 1,
-    companyName: "State Bank of India",
-    logo: "sbi.png",
+    companyName: "IDBI Bank of India",
+    logo: "IDBI.webp",
     website: "#",
   },
   {
@@ -40,10 +40,53 @@ const partners = [
     logo: "kotak.jfif",
     website: "#",
   },
+ 
   {
     id: 6,
-    companyName: "Bajaj Finance",
-    logo: "bajaj.jfif",
+    companyName: "Punjab Natonal Bank",
+    logo: "pnb.webp",
+    website: "#",
+  },
+  {
+    id: 7,
+    companyName: "RBL Bank",
+    logo: "RBL.jpg",
+    website: "#",
+  },
+  {
+    id: 8,
+    companyName: "Punjab Natonal Bank",
+    logo: "central.png",
+    website: "#",
+  },
+  {
+    id: 9,
+    companyName: "BCB Bank",
+    logo: "BCB.webp",
+    website: "#",
+  },
+  // {
+  //   id: 10,
+  //   companyName: "Bandhan Bank",
+  //   logo: "bandhan.png",
+  //   website: "#",
+  // },
+  // {
+  //   id: 11,
+  //   companyName: "Aditya Birla Group",
+  //   logo: "bandhan.png",
+  //   website: "#",
+  // },
+  {
+    id: 12,
+    companyName: "cholamandalam Finance",
+    logo: "chola.png",
+    website: "#",
+  },
+  {
+    id: 13,
+    companyName: "TATA Capital ",
+    logo: "bandhan.png",
     website: "#",
   },
 ];
@@ -139,29 +182,21 @@ const BankingPartners = () => {
       <SwiperSlide key={partner.id}>
         <div
           className="
-          group
-          flex
+        //   // // group
+           flex
           h-40
           items-center
           justify-center
-          rounded-3xl
-          border
-          border-gray-200
-          bg-white
-          p-8
-          shadow-sm
-          transition-all
-          duration-300
-          hover:-translate-y-2
-          hover:border-emerald-300
-          hover:shadow-xl
+          p-4
+           rounded-3xl
+     
         "
         >
           <img
             src={partner.logo}
             alt={partner.companyName}
             className="
-              h-20
+              h-full
               w-auto
               object-contain
               transition-all
@@ -196,3 +231,18 @@ const BankingPartners = () => {
 };
 
 export default BankingPartners;
+    //  flex
+    //       h-40
+    //       items-center
+    //       justify-center
+    //       rounded-3xl
+    //       border
+    //       border-gray-200
+    //       bg-white
+    //       p-8
+    //       shadow-sm
+    //       transition-all
+    //       duration-300
+    //       hover:-translate-y-2
+    //       hover:border-emerald-300
+    //       hover:shadow-xl

@@ -266,7 +266,7 @@ const resetForm = () => {
 
               Connect with us now
 
-              <span className="bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
                 {" "}
                 Financial Goals
               </span>
@@ -323,9 +323,9 @@ const resetForm = () => {
                         items-center
                         justify-center
                         rounded-2xl
-                        bg-gradient-to-br
-                        from-emerald-500
-                        to-blue-600
+                       bg-linear-to-r 
+                       from-[#186A07]
+                        to-[#0B2578]
                         text-white
                         transition-transform
                         duration-300
@@ -383,7 +383,7 @@ const resetForm = () => {
 
   <FaCheckCircle
   size={20}
-  className="text-emerald-600"
+  className="text-[#186A07]"
 />
 
                     <span className="text-gray-700">
@@ -402,9 +402,9 @@ const resetForm = () => {
 
             <div className="mt-10">
 
-              {/* <h3 className="text-lg font-bold text-gray-900">
-                Connect With Us
-              </h3> */}
+              <h3 className="text-lg font-bold text-gray-900">
+                Connect With Us:-
+              </h3>
 
               <div className="mt-5 flex gap-4">
 
@@ -434,9 +434,9 @@ const resetForm = () => {
                         duration-300
                         hover:-translate-y-1
                         hover:border-transparent
-                        hover:bg-gradient-to-r
-                        hover:from-emerald-500
-                        hover:to-blue-600
+                        hover:bg-linear-to-r
+                        hover:from-[#186A07]
+                        hover:to-[#0B2578]
                         hover:text-white
                         hover:shadow-lg
                       "

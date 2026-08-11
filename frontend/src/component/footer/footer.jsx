@@ -191,7 +191,7 @@ const socialLinks = [
 
 
   return (
-    <footer className="relative overflow-hidden bg-gray-950 text-white">
+    <footer className="relative overflow-hidden bg-gradient-to-b from-slate-300 via-slate-900 to-slate-950 text-white">
       {/* =========================================
           Main Footer Content
       ========================================= */}
@@ -230,7 +230,7 @@ const socialLinks = [
 
     {/* Description */}
 
-    <p className="mt-6 max-w-sm text-sm leading-7 text-gray-400">
+    <p className="mt-6 max-w-sm text-sm leading-7 text-white">
 
       Helping individuals and businesses access smarter
       financial solutions with transparency, simplicity,
@@ -316,7 +316,7 @@ const socialLinks = [
 
             <Link
               to={link.path}
-              className="group inline-flex items-center gap-2 text-sm text-gray-400 transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+              className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
             >
 
               <span>
@@ -361,7 +361,7 @@ const socialLinks = [
 
             <Link
               to={loan.path}
-              className="group inline-flex items-center gap-2 text-sm text-gray-400 transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+              className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
             >
 
               <span>
@@ -406,7 +406,7 @@ const socialLinks = [
 
             <Link
               to={service.path}
-              className="group inline-flex items-center gap-2 text-sm text-gray-400 transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+              className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
             >
 
               <span>
@@ -451,7 +451,7 @@ const socialLinks = [
 
             <Link
               to={resource.path}
-              className="group inline-flex items-center gap-2 text-sm text-gray-400 transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+              className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
             >
 
               <span>

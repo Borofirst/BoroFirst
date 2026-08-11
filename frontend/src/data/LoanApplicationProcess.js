@@ -9,28 +9,35 @@ export const processSteps = [
   {
     id: "01",
     icon: FileText,
-    title: "Submit Your Application",
+    title: "Customer Lead",
     description:
       "Complete a simple online application by providing your personal and financial details.",
   },
   {
     id: "02",
     icon: FileCheck,
-    title: "Document Verification",
+    title: " Document Collection & Check Eligibility ",
     description:
-      "Our experts verify your documents securely to ensure a smooth approval process.",
+      "Our experts verify your documents securelyand check Eligibility to ensure a smooth approval process.",
   },
   {
     id: "03",
     icon: BadgeCheck,
-    title: "Loan Approval",
+    title: "Submite Application To Bank and document  verification ",
     description:
       "After successful verification, your application is reviewed and approved quickly.",
   },
   {
     id: "04",
     icon: Wallet,
-    title: "Receive Your Funds",
+    title: "Approval & Loan Sanction",
+    description:
+      "Once approved, the loan amount is transferred directly to your bank account.",
+  },
+  {
+    id: "04",
+    icon: Wallet,
+    title: "Disbursement / Fund Received",
     description:
       "Once approved, the loan amount is transferred directly to your bank account.",
   },
