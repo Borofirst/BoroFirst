@@ -58,8 +58,8 @@ const contactInfo = [
     icon: MdLocationOn,
     title: "Visit Office",
     value: "323 SEC-12/A, AVAS VIKAS SIKANDRA, Avas Vikas Colony, Sadar, ",
-    description: "Agra- 282007, Uttar Pradesh",
-     href:"#",
+    description: "Agra, Uttar Pradesh- 282007",
+     href:"https://www.google.com/maps/search/?api=1&query=323+SEC-12%2FA%2C+AVAS+VIKAS+SIKANDRA%2C+Avas+Vikas+Colony%2C+Sadar%2C+Agra%2C+Uttar+Pradesh+282007",
   },
 
   {
@@ -67,7 +67,7 @@ const contactInfo = [
     title: "Working Hours",
     value: "Monday - Saturday",
     description: "9:00 AM - 7:00 PM",
-     href: "#",
+     href: "/",
   },
 ];
 
@@ -223,7 +223,7 @@ const handleSubmit = async (e) => {
     const response =await submitContactForm(formData);
     console.log(response);
 
-    if (response.data.success) {
+    if (response.success) {
       setSuccess("success");
 
       setFormData({
@@ -265,7 +265,7 @@ const handleSubmit = async (e) => {
     });
   };
 
-  // console.log(formData);
+
 
   return (
     <section className="relative overflow-hidden bg-gray-50 py-24">
@@ -313,15 +313,18 @@ const handleSubmit = async (e) => {
 
             {/* Contact Cards */}
         
-            {/* <WhatsAppButton/> */}
+
         <div className="mt-10 space-y-5">
            <WhatsAppButton/>
               {contactInfo.map((item, index) => {
                 const Icon = item.icon;
 
                 return (
-                  <div
+    
+                    <a
                     key={index}
+             href={item.href}
+            
                     className="
                       group
                       flex
@@ -340,6 +343,8 @@ const handleSubmit = async (e) => {
                       hover:shadow-xl
                     "
                   >
+          
+        
                     <div
                       className="
                         flex
@@ -357,11 +362,9 @@ const handleSubmit = async (e) => {
                         group-hover:scale-110
                       "
                     >
-               <a
-             href={item.href}
-            >
+          
                       <Icon size={24} />
-</a>
+
                     </div>
 
                     <div>
@@ -377,7 +380,8 @@ const handleSubmit = async (e) => {
                         {item.description}
                       </p>
                     </div>
-                  </div>
+                  </a> 
+            
                 );
               })}
             </div>
@@ -695,9 +699,9 @@ const handleSubmit = async (e) => {
         justify-center
         gap-3
         rounded-2xl
-        bg-linear-to-r
-        from-emerald-600
-        to-blue-600
+      bg-linear-to-r 
+      from-[#186A07] 
+      to-[#0B2578]
         px-6
         py-4
         font-semibold

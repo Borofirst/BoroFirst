@@ -3,6 +3,7 @@ import "./App.css"
 import { createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router";
 import Home from "./page/Home/Home";
 import { Applayout } from "./component/layout/applayout";
+import HomeLoan from "./page/LoanCardPage/HomeLoan";
 
 
 
@@ -21,31 +22,35 @@ const App=()=>{
      element:<Home/>
   },
 
-  //   {
-  //    path:"/about",
-  //    element:<About/>
-  // },
-  //   {
-  //    path:"/movies",
-  //    element:<Movies/>,
-  //    loader:getMoviesData,
-  // },
-    
-  //   {
-  //    path:"/movies/:movieID",
-  //    element:<MoviesDetaile/>,
-  //    loader:getMoviesDetail, 
-  // },
-  //   {
-  //    path:"/contect",
-  //    element:<Contect/>,
-  //    action:contactData,
-  // },
-  // {
-  //   path:"*",
-  //   element:<Errorpage/>
-  // }
-
+    {
+     path:"/home-loan",
+     element:<HomeLoan/>
+  },
+    {
+     path:"/loan-againt-property",
+     element:<HomeLoan/>
+  },
+    {
+     path:"/personal-loan",
+     element:<HomeLoan/>
+  },
+    {
+     path:"/business-loan",
+     element:<HomeLoan/>
+  },
+    {
+     path:"/education-loan",
+     element:<HomeLoan/>
+  },
+    {
+     path:"/car-loan",
+     element:<HomeLoan/>
+  },
+    {
+     path:"/general-insurance",
+     element:<HomeLoan/>
+  },
+  
         ]
       },
     

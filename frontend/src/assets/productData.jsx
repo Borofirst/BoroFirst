@@ -20,6 +20,7 @@ export const loanProduct = [
     amount: "Up to ₹5 Crore",
     button: "Apply Now",
     color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
+      service:"/home-loan",
   },
   {
     icon: Building2,
@@ -29,6 +30,7 @@ export const loanProduct = [
     amount: "Up to 80% Property Value",
     button: "Apply Now",
     color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578]",
+    service:"/loan-againt-property"
   },
   
   {
@@ -39,6 +41,7 @@ export const loanProduct = [
     amount: "Up to ₹25 Lakhs",
     button: "Apply Now",
     color: "bg-linear-to-r from-[#186A07] to-[#0B2578]",
+    service:"/personal-loan"
   },
   {
     icon: BriefcaseBusiness,
@@ -48,6 +51,7 @@ export const loanProduct = [
     amount: "Up to ₹1 Crore",
     button: "Get Started",
     color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
+    service:"/business-loan"
   },
 
   {
@@ -58,6 +62,7 @@ export const loanProduct = [
     amount: "Up to ₹75 Lakhs",
     button: "Know More",
     color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
+    service:"/education-loan"
   },
 
   
@@ -69,6 +74,7 @@ export const loanProduct = [
     amount: "Up to 90% Financing",
     button: "Apply Now",
     color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
+    service:"/car-loan"
   },
 
   {
@@ -79,6 +85,7 @@ export const loanProduct = [
     amount: "Affordable Premiums",
     button: "View Plans",
     color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
+    service:"/general-insurance"
   },
 
   {
@@ -89,6 +96,7 @@ export const loanProduct = [
     amount: "Up to 75% Gold Value",
     button: "Get Loan",
     color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
+    service:"/gold-loan"
   },
 
   {
@@ -99,5 +107,6 @@ export const loanProduct = [
     amount: "Up to ₹10 Crore",
     button: "Know More",
     color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
+    service:"/Mortgage-loan"
   },
 ];

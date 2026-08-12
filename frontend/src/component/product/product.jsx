@@ -1,7 +1,10 @@
 import React from "react";
 import { loanProduct } from "../../assets/productData";
+import { Link } from "react-router-dom";
+
 
 const Product = () => {
+
   return (
     <section className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -9,11 +12,9 @@ const Product = () => {
           <span className="inline-block px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 font-semibold">
             Our Financial Solutions
           </span>
-
           <h2 className="mt-5 text-4xl lg:text-5xl font-bold text-slate-900">
             Loans & Financial Services
           </h2>
-
           <p className="mt-5 text-lg text-slate-600 leading-8">
             Explore our comprehensive range of financial products designed to
             support your personal, educational, business, and investment goals.
@@ -22,6 +23,7 @@ const Product = () => {
         {/* Cards Here */}
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {loanProduct.map((item, index) => {
+            console.log(loanProduct);
             const Icon = item.icon;
             return (
               <div
@@ -56,9 +58,9 @@ const Product = () => {
                     <button className="mt-8 flex items-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">
                       Apply Now
                     </button>
-                    <button className="mt-8 flex items-center gap-2 rounded-xl bg-[#0B2578] px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">
+                    <Link to={`${item.service}`} className="mt-8 flex items-center gap-2 rounded-xl bg-[#0B2578] px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">
                       Know More
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

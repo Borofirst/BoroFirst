@@ -24,9 +24,9 @@ createTransporter().verify((error, success) => {
 });
 
 export const sendContactNotification = async (contact) => {
-  // console.log("EMAIL_USER:", process.env.EMAIL_USER);
-  // console.log("EMAIL_PASSWORD exists:", Boolean(process.env.EMAIL_PASSWORD));
-  // console.log("CONTACT_RECEIVER_EMAIL:", process.env.CONTACT_RECEIVER_EMAIL);
+  console.log("EMAIL_USER:", process.env.EMAIL_USER);
+  console.log("EMAIL_PASSWORD exists:", Boolean(process.env.EMAIL_PASSWORD));
+  console.log("CONTACT_RECEIVER_EMAIL:", process.env.CONTACT_RECEIVER_EMAIL);
 
   const mailOptions = {
     from: `"BoroFirst Website" <${process.env.EMAIL_USER}>`,

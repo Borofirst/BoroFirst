@@ -15,6 +15,7 @@ import FAQSection from '../freaquestAskedQ';
 import ContactSection from '../ContactSection';
 import { Header } from '../../component/header/header';
 import Product from '../../component/product/product';
+import LoanCalculator from '../LoanCalculator';
 const Home = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const Home = () => {
 {/* card */}
 <Product/>
 <LoanNeedSection/>
+<LoanCalculator/>
 <WhyChooseUs/>
 <LoanApplicationProcess/>
 <FeaturedFinancialProducts/>
