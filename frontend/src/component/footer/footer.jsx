@@ -186,7 +186,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative overflow-hidden bg-linear-to-b from-slate-300 via-slate-900 to-slate-950 text-white">
+    <footer className="relative overflow-hidden bg-linear-to-br from-slate-300 via-slate-800 to-slate-950 text-white">
       {/* =========================================
           Main Footer Content
       ========================================= */}

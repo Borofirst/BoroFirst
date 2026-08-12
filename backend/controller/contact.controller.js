@@ -13,6 +13,7 @@ export const createContact = async (req, res, next) => {
       purpose,
       message,
     } = req.body;
+    console.log(req.body);
 
     // Basic validation
     if (
@@ -57,10 +58,12 @@ export const createContact = async (req, res, next) => {
       purpose,
       message,
     });
+   
+    // contact.save(); 
 
     // Send notification email
     try {
-      await sendContactNotification(contact);
+     const responce = await sendContactNotification(contact);
     } catch (emailError) {
       console.error("Email notification failed:", emailError.message);
 

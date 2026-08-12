@@ -26,7 +26,7 @@ const LoanApplicationProcess = () => {
 
           <h2 className="mt-6 text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
             Apply for Your Loan in
-            <span className="block text-[#186A07]">Just 4 Simple Steps</span>
+            <span className="block text-[#186A07]">Just 5 Simple Steps</span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">

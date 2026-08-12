@@ -22,6 +22,25 @@ export const loanProduct = [
     color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
   },
   {
+    icon: Building2,
+    title: "Loan Against Property",
+    description:
+      "Unlock the value of your residential or commercial property with competitive interest rates.",
+    amount: "Up to 80% Property Value",
+    button: "Apply Now",
+    color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578]",
+  },
+  
+  {
+    icon: HandCoins,
+    title: "Personal Loan",
+    description:
+      "Meet your personal and financial needs with quick approvals, flexible loan amounts, and convenient repayment options with minimal documentation..",
+    amount: "Up to ₹25 Lakhs",
+    button: "Apply Now",
+    color: "bg-linear-to-r from-[#186A07] to-[#0B2578]",
+  },
+  {
     icon: BriefcaseBusiness,
     title: "Business Loan",
     description:
@@ -41,24 +60,15 @@ export const loanProduct = [
     color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
   },
 
+  
   {
-    icon: Building2,
-    title: "Loan Against Property",
+    icon: CarFront,
+    title: "Car Loan",
     description:
-      "Unlock the value of your residential or commercial property with competitive interest rates.",
-    amount: "Up to 80% Property Value",
+      "Own your preferred owned car with flexible financing, quick processing, and repayment options that fit your budget",
+    amount: "Up to 90% Financing",
     button: "Apply Now",
-    color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578]",
-  },
-
-  {
-    icon: HandCoins,
-    title: "Personal Loan",
-    description:
-      "Meet your personal and financial needs with quick approvals, flexible loan amounts, and convenient repayment options with minimal documentation..",
-    amount: "Up to ₹25 Lakhs",
-    button: "Apply Now",
-    color: "bg-linear-to-r from-[#186A07] to-[#0B2578]",
+    color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
   },
 
   {
@@ -69,16 +79,6 @@ export const loanProduct = [
     amount: "Affordable Premiums",
     button: "View Plans",
     color: "bg-linear-to-tr from-[#0B2578] to-[#186A07]",
-  },
-
-  {
-    icon: CarFront,
-    title: "Used Car Loan",
-    description:
-      "Own your preferred pre-owned car with flexible financing, quick processing, and repayment options that fit your budget",
-    amount: "Up to 90% Financing",
-    button: "Apply Now",
-    color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
   },
 
   {

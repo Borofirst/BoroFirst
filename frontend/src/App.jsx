@@ -6,6 +6,7 @@ import { Applayout } from "./component/layout/applayout";
 
 
 
+
 const App=()=>{
   const router=createBrowserRouter(
     [
@@ -19,6 +20,7 @@ const App=()=>{
      path:"/",
      element:<Home/>
   },
+
   //   {
   //    path:"/about",
   //    element:<About/>

@@ -20,6 +20,9 @@ import {
 } from "react-icons/md";
 
 import { BsPatchQuestionFill } from "react-icons/bs";
+import { submitContactForm } from "../service/contectService";
+import WhatsAppButton from "./whatupbuttonn";
+import { href } from "react-router-dom";
 
 // =========================================
 // Loan Types
@@ -40,25 +43,23 @@ const loanTypes = [
 // Contact Information
 // =========================================
 
+
 const contactInfo = [
   {
     icon: FaPhoneAlt,
     title: "Call Us",
     value: "+91 7060162526",
     description: "Mon - Sat (9:00 AM - 7:00 PM)",
+    href:"tel:+917060162526",
   },
 
-  {
-    icon: FaWhatsapp,
-    title: "Whatup",
-    description: "We'll reply within 1 hours",
-  },
 
   {
     icon: MdLocationOn,
     title: "Visit Office",
     value: "323 SEC-12/A, AVAS VIKAS SIKANDRA, Avas Vikas Colony, Sadar, ",
     description: "Agra- 282007, Uttar Pradesh",
+     href:"#",
   },
 
   {
@@ -66,6 +67,7 @@ const contactInfo = [
     title: "Working Hours",
     value: "Monday - Saturday",
     description: "9:00 AM - 7:00 PM",
+     href: "#",
   },
 ];
 
@@ -199,6 +201,53 @@ const ContactSection = () => {
     return Object.keys(newErrors).length === 0;
   };
 
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  console.log("vk")
+
+  const isValid = validateForm();
+
+  if (!isValid) {
+    return;
+  }
+
+  try {
+    setLoading(true);
+    setSuccess("");
+
+    // const response = await axios.post(
+    //   "http://localhost:5000/api/contact",
+    //   formData
+    // );
+
+    const response =await submitContactForm(formData);
+    console.log(response);
+
+    if (response.data.success) {
+      setSuccess("success");
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        city: "",
+        loanType: "",
+        loanAmount: "",
+        purpose: "",
+        message: "",
+      });
+
+      setErrors({});
+    }
+  } catch (error) {
+    console.error("Contact form error:", error);
+
+    setSubmitStatus("error");
+  } finally {
+    setLoading(false);
+  }
+};
+
   // =========================================
   // Reset Form
   // =========================================
@@ -216,7 +265,7 @@ const ContactSection = () => {
     });
   };
 
-  console.log(formData);
+  // console.log(formData);
 
   return (
     <section className="relative overflow-hidden bg-gray-50 py-24">
@@ -263,8 +312,10 @@ const ContactSection = () => {
             </p>
 
             {/* Contact Cards */}
-
-            <div className="mt-10 space-y-5">
+        
+            {/* <WhatsAppButton/> */}
+        <div className="mt-10 space-y-5">
+           <WhatsAppButton/>
               {contactInfo.map((item, index) => {
                 const Icon = item.icon;
 
@@ -306,7 +357,11 @@ const ContactSection = () => {
                         group-hover:scale-110
                       "
                     >
+               <a
+             href={item.href}
+            >
                       <Icon size={24} />
+</a>
                     </div>
 
                     <div>
@@ -326,6 +381,7 @@ const ContactSection = () => {
                 );
               })}
             </div>
+
 
             {/* Trust Highlights */}
 
@@ -405,7 +461,7 @@ const ContactSection = () => {
           {/* RIGHT SIDE - CONTACT FORM */}
           {/* ================================= */}
 
-          <div className="rounded-[32px] border border-gray-200 bg-white p-8 shadow-xl lg:p-10">
+          <div className="rounded-4xl border border-gray-200 bg-white p-8 shadow-xl lg:p-10">
             {/* Form Heading */}
 
             <div>
@@ -428,7 +484,7 @@ const ContactSection = () => {
 
             <form
               className="mt-10 space-y-6"
-              // onSubmit={handleSubmit}
+              onSubmit={handleSubmit}
             >
               {/* Row 1 */}
 
