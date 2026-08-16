@@ -11,11 +11,12 @@ import WhyChooseUs from '../whyChooseuse';
 import LoanApplicationProcess from '../LoanApplicationProcess';
 import FeaturedFinancialProducts from '../FeaturedFinancialProducts';
 import BankingPartners from '../partner';
-import FAQSection from '../freaquestAskedQ';
 import ContactSection from '../ContactSection';
 import { Header } from '../../component/header/header';
 import Product from '../../component/product/product';
 import LoanCalculator from '../LoanCalculator';
+import FAQSection from '../../component/common/FAQSection';
+import {HomePagefaqData} from "../../data/HomePageFAQDATA";
 const Home = () => {
   return (
     <>
@@ -30,7 +31,7 @@ const Home = () => {
 <FeaturedFinancialProducts/>
 <BankingPartners/>
 <ContactSection/>
-<FAQSection/>
+<FAQSection faqs={HomePagefaqData}/>
      </>
   )
 }

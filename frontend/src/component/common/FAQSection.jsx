@@ -13,79 +13,9 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 // FAQ DATA
 // ======================================
 
-const faqData = [
-  {
-    id: 1,
-    question: "Who can apply for a loan?",
-    answer:
-      "Individuals aged 21–65 years with a stable source of income, valid identity proof, address proof, and the required financial documents can apply for a loan. Eligibility may vary depending on the loan product and lender policies.",
-  },
 
-  {
-    id: 2,
-    question: "What documents are required for loan approval?",
-    answer:
-      "Typically, you will need your Aadhaar Card, PAN Card, address proof, income proof, salary slips or business financial statements, recent bank statements, and passport-size photographs.",
-  },
 
-  {
-    id: 3,
-    question: "How long does the loan approval process take?",
-    answer:
-      "Most loan applications are reviewed within 24 to 72 hours after successful document verification. Some instant loan products may be approved even faster.",
-  },
-
-  {
-    id: 4,
-    question: "How can I contact customer support?",
-    answer:
-      "Our customer support team is available through phone, email, and live chat during business hours to assist you with any queries regarding our financial products and services.",
-  },
-
-  {
-    id: 5,
-    question: "How are EMI payments calculated?",
-    answer:
-      "EMIs are calculated using the loan amount, interest rate, and repayment tenure. Our EMI calculator can help you estimate your monthly repayments before applying.",
-  },
-
-  {
-    id: 6,
-    question: "Can I repay my loan before the tenure ends?",
-    answer:
-      "Yes. Most lenders allow part-prepayment or complete foreclosure of loans. Applicable charges, if any, depend on the lender's terms and conditions.",
-  },
-
-  {
-    id: 7,
-    question: "Are there any hidden charges?",
-    answer:
-      "No. We believe in complete transparency. All applicable processing fees, documentation charges, and taxes are clearly communicated before loan approval.",
-  },
-
-  {
-    id: 8,
-    question: "Why should I choose health insurance?",
-    answer:
-      "Health insurance helps protect you and your family from unexpected medical expenses while ensuring access to quality healthcare without financial stress.",
-  },
-
-  {
-    id: 9,
-    question: "What are the benefits of SIP investments?",
-    answer:
-      "Systematic Investment Plans (SIPs) help build long-term wealth through disciplined investing, rupee cost averaging, and the power of compounding.",
-  },
-
-  {
-    id: 10,
-    question: "Is my personal information secure?",
-    answer:
-      "Absolutely. We use industry-standard encryption, secure servers, and strict privacy practices to ensure your personal and financial information remains protected.",
-  },
-];
-
-const FAQSection = () => {
+const FAQSection = ({faqs}) => {
   const [activeFAQ, setActiveFAQ] = useState(0);
 
   return (
@@ -113,9 +43,9 @@ const FAQSection = () => {
 
             {/* Heading */}
 
-            <h2 className="mt-8 text-4xl font-bold leading-tight text-gray-900">
+            <h2 className="mt-8  leading-tight text-4xl font-bold text-gray-900 md:text-5xl">
               Frequently Asked
-              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+              <span className=" text-[#186A07]  bg-clip-text ">
                 {" "}
                 Questions
               </span>
@@ -143,8 +73,8 @@ const FAQSection = () => {
                 every step of your loan or investment journey.
               </p>
 
-              <button
-                className="
+          
+                <a className="
                 mt-8
                 flex
                 w-full
@@ -163,12 +93,13 @@ const FAQSection = () => {
                 duration-300
                 hover:scale-[1.02]
                 hover:shadow-xl
-              "
-              >
+              " href="tel:+917060162526">
                 <PhoneCall size={20} />
+
                 Contact Support
                 <ArrowRight size={18} />
-              </button>
+                </a>
+            
             </div>
           </div>
 
@@ -178,7 +109,7 @@ const FAQSection = () => {
           {/* ===================== */}
 
           <div className="space-y-2">
-            {faqData.map((faq, index) => {
+            {faqs.map((faq, index) => {
               const isOpen = activeFAQ === index;
 
               return (

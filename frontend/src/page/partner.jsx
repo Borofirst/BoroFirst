@@ -10,83 +10,107 @@ import "swiper/css";
 // ================================
 
 const partners = [
-  {
-    id: 1,
-    companyName: "IDBI Bank of India",
-    logo: "IDBI.webp",
-    website: "#",
-  },
+  // {
+  //   id: 1,
+  //   companyName: "IDBI Bank of India",
+  //   logo: "IDBI-Bank.png",
+  //   website: "#",
+  // },
   {
     id: 2,
     companyName: "HDFC Bank",
     logo: "HDFC.png",
     website: "#",
   },
-  {
-    id: 3,
-    companyName: "ICICI Bank",
-    logo: "ICIC.webp",
-    website: "#",
-  },
+  // {
+  //   id: 3,
+  //   companyName: "ICICI Bank",
+  //   logo: "icici.webp",
+  //   website: "#",
+  // },
   {
     id: 4,
     companyName: "Axis Bank",
     logo: "axisb.webp",
     website: "#",
   },
-  {
-    id: 5,
-    companyName: "Kotak Mahindra Bank",
-    logo: "kotak.jfif",
-    website: "#",
-  },
+  // {
+  //   id: 5,
+  //   companyName: "Kotak Mahindra Bank",
+  //   logo: "Kotak_Mahindra_Bank_logo.png",
+  //   website: "#",
+  // },
 
-  {
-    id: 6,
-    companyName: "Punjab Natonal Bank",
-    logo: "pnb.webp",
-    website: "#",
-  },
-  {
-    id: 7,
-    companyName: "RBL Bank",
-    logo: "RBL.jpg",
-    website: "#",
-  },
-  {
-    id: 8,
-    companyName: "Punjab Natonal Bank",
-    logo: "central.png",
-    website: "#",
-  },
-  {
-    id: 9,
-    companyName: "BCB Bank",
-    logo: "BCB.webp",
-    website: "#",
-  },
+  // {
+  //   id: 6,
+  //   companyName: "Punjab Natonal Bank",
+  //   logo: "pnbHousing.webp",
+  //   website: "#",
+  // },
+  // {
+  //   id: 7,
+  //   companyName: "RBL Bank",
+  //   logo: "RBL.jpg",
+  //   website: "#",
+  // },
+  // {
+  //   id: 8,
+  //   companyName: "Cental Finance Limited",
+  //   logo: "centralfinanceLTD.png",
+  //   website: "#",
+  // },
+  // {
+  //   id: 9,
+  //   companyName: "DCB Bank",
+  //   logo: "dcb.jpg",
+  //   website: "#",
+  // },
   // {
   //   id: 10,
   //   companyName: "Bandhan Bank",
-  //   logo: "bandhan.png",
+  //   logo: "bandhan-bank-personal-loan-services.webp",
   //   website: "#",
   // },
+  {
+    id: 18,
+    companyName: "Bandhan Bank",
+    logo: "BND.png",
+    website: "#",
+  },
   // {
   //   id: 11,
   //   companyName: "Aditya Birla Group",
-  //   logo: "bandhan.png",
+  //   logo: "adityaB.jfif",
+  //   website: "#",
+  // },
+  // {
+  //   id: 12,
+  //   companyName: "cholamandalam Finance",
+  //   logo: "cholamandalam.webp",
+  //   website: "#",
+  // },
+  // {
+  //   id: 13,
+  //   companyName: "TATA Capital ",
+  //   logo: "Tata_Capital_Logo-01.jpg.webp",
+  //   website: "#",
+  // },
+  // {
+  //   id: 14,
+  //   companyName: "L&T Finance ",
+  //   logo: "L&T.png",
+  //   website: "#",
+  // },
+  // {
+  //   id: 15,
+  //   companyName: "Ujjivan finance ",
+  //   logo: "ujjivan-small-finance.png",
   //   website: "#",
   // },
   {
-    id: 12,
-    companyName: "cholamandalam Finance",
-    logo: "chola.png",
-    website: "#",
-  },
-  {
-    id: 13,
-    companyName: "TATA Capital ",
-    logo: "bandhan.png",
+    id: 16,
+    companyName: "IDFC",
+    logo: "IDFC.png",
     website: "#",
   },
 ];
@@ -136,11 +160,11 @@ const BankingPartners = () => {
             modules={[Autoplay]}
             spaceBetween={24}
             loop={true}
-            speed={5000}
+            speed={3000}
             autoplay={{
               delay: 0,
               disableOnInteraction: false,
-              pauseOnMouseEnter: true,
+              // pauseOnMouseEnter: true,
             }}
             breakpoints={{
               320: {
@@ -164,13 +188,12 @@ const BankingPartners = () => {
               <SwiperSlide key={partner.id}>
                 <div
                   className="
-        //   // // group
+           w-full
            flex
-          h-40
+          h-full
           items-center
           justify-center
-          p-4
-           rounded-3xl
+         bg-blue-400
      
         "
                 >
@@ -179,11 +202,11 @@ const BankingPartners = () => {
                     alt={partner.companyName}
                     className="
               h-full
-              w-auto
+              w-full
               object-contain
               transition-all
               duration-300
-             
+        
             "
                   />
                 </div>
@@ -206,18 +229,5 @@ const BankingPartners = () => {
 };
 
 export default BankingPartners;
-//  flex
-//       h-40
-//       items-center
-//       justify-center
-//       rounded-3xl
-//       border
-//       border-gray-200
-//       bg-white
-//       p-8
-//       shadow-sm
-//       transition-all
-//       duration-300
-//       hover:-translate-y-2
-//       hover:border-emerald-300
-//       hover:shadow-xl
+    //    rounded-2xl
+            //  bg-blue-700

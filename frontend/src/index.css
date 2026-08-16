@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 @keyframes fadeIn {
   from {
@@ -23,4 +24,320 @@
       transform:translateY(0);
   }
 
+}
+@keyframes fadeInUp {
+          from {
+             opacity: 0;
+             transform: translateY(24px);
+         }
+
+           to {
+           opacity: 1;
+             transform: translateY(0);
+           }
+       }
+
+         @keyframes float {
+            0%,
+         100% {
+           transform: translateY(0);
+          }
+
+          50% {
+             transform: translateY(-10px);
+           }
+         }
+       
+
+
+
+
+
+
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* -------------------------------- */
+/* Scroll reveal animations         */
+/* -------------------------------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  filter: blur(4px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease,
+    filter 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-45px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+/* .reveal-left {
+  opacity: 0;
+  transform: translateX(-45px);
+} */
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(45px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scale-reveal {
+  opacity: 0;
+  transform: scale(0.92);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.scale-reveal.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* -------------------------------- */
+/* Hero floating animation          */
+/* -------------------------------- */
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.float-card {
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+.float-card-delay {
+  animation: floatCard 4.5s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+
+/* -------------------------------- */
+/* Background glow                  */
+/* -------------------------------- */
+
+@keyframes softGlow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.55;
+    transform: scale(1.08);
+  }
+}
+
+.soft-glow {
+  animation: softGlow 6s ease-in-out infinite;
+}
+
+/* -------------------------------- */
+/* Timeline                         */
+/* -------------------------------- */
+
+@keyframes timelinePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.35);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.timeline-active {
+  animation: timelinePulse 2s infinite;
+}
+
+/* -------------------------------- */
+/* Number transition                */
+/* -------------------------------- */
+
+.number-transition {
+  transition: all 0.35s ease;
+}
+
+/* -------------------------------- */
+/* Reduced motion                   */
+/* -------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+/* lLAP */
+/* =========================================================
+   LAP HERO ANIMATIONS
+========================================================= */
+
+@keyframes lapHeroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes lapHeroFadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes lapHeroFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes lapHeroFloatDelay {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+.lap-hero-eyebrow {
+  animation: lapHeroFadeUp 0.7s ease-out 0.1s both;
+}
+
+.lap-hero-heading {
+  animation: lapHeroFadeUp 0.8s ease-out 0.2s both;
+}
+
+.lap-hero-description {
+  animation: lapHeroFadeUp 0.8s ease-out 0.3s both;
+}
+
+.lap-hero-buttons {
+  animation: lapHeroFadeUp 0.8s ease-out 0.4s both;
+}
+
+.lap-hero-trust {
+  animation: lapHeroFadeUp 0.8s ease-out 0.5s both;
+}
+
+.lap-hero-disclaimer {
+  animation: lapHeroFadeUp 0.8s ease-out 0.6s both;
+}
+
+.lap-hero-image {
+  animation: lapHeroFadeRight 1s ease-out 0.5s both;
+}
+
+.animate-lap-float {
+  animation:
+    lapHeroFadeRight 0.8s ease-out 0.7s both,
+    lapHeroFloat 4.5s ease-in-out 1.5s infinite;
+}
+
+.animate-lap-float-delay {
+  animation:
+    lapHeroFadeRight 0.8s ease-out 0.85s both,
+    lapHeroFloatDelay 5s ease-in-out 1.8s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lap-hero-eyebrow,
+  .lap-hero-heading,
+  .lap-hero-description,
+  .lap-hero-buttons,
+  .lap-hero-trust,
+  .lap-hero-disclaimer,
+  .lap-hero-image,
+  .animate-lap-float,
+  .animate-lap-float-delay {
+    animation: none;
+  }
+}
+
+.logo {
+  width: 120px;
+  height: 50px;
+  object-fit: contain;
 }

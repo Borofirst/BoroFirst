@@ -63,7 +63,7 @@ const LoanCalculator = () => {
             Loan Calculator
           </div>
 
-          <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+          <h2 className=" text-4xl font-bold text-gray-900 md:text-5xl">
             Calculate Your Loan EMI
           </h2>
 

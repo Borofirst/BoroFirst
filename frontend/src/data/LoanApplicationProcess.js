@@ -9,36 +9,36 @@ export const processSteps = [
   {
     id: "1",
     icon: FileText,
-    title: "Customer Lead",
+    title: "Share Your Requirements",
     description:
-      "Complete a simple online application by providing your personal and financial details.",
+      "Tell us about your loan requirement, income, employment or business profile, and the amount you need. Our team helps you identify a suitable loan.",
   },
   {
     id: "2",
     icon: FileCheck,
     title: " Document Collection & Check Eligibility ",
     description:
-      "Our experts verify your documents securelyand check Eligibility to ensure a smooth approval process.",
+      "We check your eligibility and collect the required KYC, income, banking, and supporting documents.",
   },
   {
     id: "3",
     icon: BadgeCheck,
-    title: "Submite Application To Bank and document  verification ",
+    title: "Submit Application To Bank and document  verification ",
     description:
-      "After successful verification, your application is reviewed and approved quickly.",
+      "After successful verification,BoroFirst submit your application to bank and The lender evaluates your profile, documents, credit history, income, and repayment capacity.",
   },
   {
     id: "4",
     icon: Wallet,
     title: "Approval & Loan Sanction",
     description:
-      "Once approved, the loan amount is transferred directly to your bank account.",
+      "The lender evaluates your profile and, if approved, issues the loan sanction with applicable terms.",
   },
   {
     id: "5",
     icon: Wallet,
     title: "Disbursement / Fund Received",
     description:
-      "Once approved, the loan amount is transferred directly to your bank account.",
+      "Complete the final formalities, after which the approved loan amount is disbursed as per the lender's process.",
   },
 ];

@@ -3,7 +3,9 @@ import "./App.css"
 import { createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router";
 import Home from "./page/Home/Home";
 import { Applayout } from "./component/layout/applayout";
-import HomeLoan from "./page/LoanCardPage/HomeLoan";
+import { HomeLoan } from "./page/LoanCardPage/HomeLoan";
+import LoanAgaintProperty from "./page/LoanCardPage/LoanAgaintProperty";
+
 
 
 
@@ -28,7 +30,7 @@ const App=()=>{
   },
     {
      path:"/loan-againt-property",
-     element:<HomeLoan/>
+     element:<LoanAgaintProperty/>
   },
     {
      path:"/personal-loan",
