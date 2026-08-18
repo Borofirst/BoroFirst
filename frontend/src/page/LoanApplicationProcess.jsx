@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import { ProcessCard } from "../component/layout/processCard";
 import { processSteps } from "../data/LoanApplicationProcess";
 
@@ -38,10 +39,10 @@ const LoanApplicationProcess = () => {
         {/* Timeline Container */}
         <div className="relative mt-24">
           {/* Desktop Timeline Line */}
-          <div className="absolute left-0 right-0 top-1/2 hidden h-1 -translate-y-1/2 rounded-full bg-linear-to-r from-emerald-500 via-emerald-400 to-blue-500 lg:block"></div>
+          <div className="absolute left-0 right-0 top-1/2 hidden h-1 -translate-y-1/2 rounded-full bg-linear-to-r from-[#186A07] to-[#0B2578] lg:block"></div>
 
           {/* Mobile Timeline Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-1 rounded-full bg-linear-to-b from-emerald-500 via-emerald-400 to-blue-500 lg:hidden"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-1 rounded-full bg-linear-to-r from-[#186A07] to-[#0B2578] to-blue-500 lg:hidden"></div>
 
           {/* Timeline Grid */}
           <div className="grid gap-5 lg:grid-cols-5">
@@ -87,20 +88,7 @@ const LoanApplicationProcess = () => {
               {/* CTA Button */}
               <button className="group inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-semibold text-emerald-700 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
                 Apply for Loan
-                <svg
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M5 12h14" />
-                  <path d="M13 5l7 7-7 7" />
-                </svg>
+                <ArrowRight className="transition-transform w-5 h-5 duration-300 group-hover:translate-x-1"/>
               </button>
             </div>
           </div>

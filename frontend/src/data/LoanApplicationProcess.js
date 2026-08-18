@@ -32,13 +32,13 @@ export const processSteps = [
     icon: Wallet,
     title: "Approval & Loan Sanction",
     description:
-      "The lender evaluates your profile and, if approved, issues the loan sanction with applicable terms.",
+      "The lender evaluates your profile and, if approved, issues the loan sanction with applicable terms .",
   },
   {
     id: "5",
     icon: Wallet,
     title: "Disbursement / Fund Received",
     description:
-      "Complete the final formalities, after which the approved loan amount is disbursed as per the lender's process.",
+      "Complete the final formalities, after which the approved loan amount is disbursed as per the lender's process                                                                                                                                     .",
   },
 ];

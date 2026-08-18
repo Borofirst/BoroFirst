@@ -4,7 +4,6 @@ import 'swiper/css';
 import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-// import {loanProduct} from "../../assets/productData"
 import { ArrowRight } from 'lucide-react';
 import LoanNeedSection from '../../component/layout/landneedSection';
 import WhyChooseUs from '../whyChooseuse';

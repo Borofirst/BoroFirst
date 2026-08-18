@@ -10,103 +10,98 @@ import "swiper/css";
 // ================================
 
 const partners = [
-  // {
-  //   id: 1,
-  //   companyName: "IDBI Bank of India",
-  //   logo: "IDBI-Bank.png",
-  //   website: "#",
-  // },
+  {
+    id: 1,
+    companyName: "IDBI Bank of India",
+    logo: "IDBI.NS_BIG.png",
+    website: "#",
+  },
   {
     id: 2,
     companyName: "HDFC Bank",
     logo: "HDFC.png",
     website: "#",
   },
-  // {
-  //   id: 3,
-  //   companyName: "ICICI Bank",
-  //   logo: "icici.webp",
-  //   website: "#",
-  // },
+  {
+    id: 3,
+    companyName: "ICICI Bank",
+    logo: "ICICI.png",
+    website: "#",
+  },
   {
     id: 4,
     companyName: "Axis Bank",
-    logo: "axisb.webp",
+    logo: "axis.png",
     website: "#",
   },
-  // {
-  //   id: 5,
-  //   companyName: "Kotak Mahindra Bank",
-  //   logo: "Kotak_Mahindra_Bank_logo.png",
-  //   website: "#",
-  // },
-
-  // {
-  //   id: 6,
-  //   companyName: "Punjab Natonal Bank",
-  //   logo: "pnbHousing.webp",
-  //   website: "#",
-  // },
-  // {
-  //   id: 7,
-  //   companyName: "RBL Bank",
-  //   logo: "RBL.jpg",
-  //   website: "#",
-  // },
-  // {
-  //   id: 8,
-  //   companyName: "Cental Finance Limited",
-  //   logo: "centralfinanceLTD.png",
-  //   website: "#",
-  // },
-  // {
-  //   id: 9,
-  //   companyName: "DCB Bank",
-  //   logo: "dcb.jpg",
-  //   website: "#",
-  // },
-  // {
-  //   id: 10,
-  //   companyName: "Bandhan Bank",
-  //   logo: "bandhan-bank-personal-loan-services.webp",
-  //   website: "#",
-  // },
   {
-    id: 18,
-    companyName: "Bandhan Bank",
-    logo: "BND.png",
+    id: 5,
+    companyName: "Kotak Mahindra Bank",
+    logo: "Kotak.png",
     website: "#",
   },
-  // {
-  //   id: 11,
-  //   companyName: "Aditya Birla Group",
-  //   logo: "adityaB.jfif",
-  //   website: "#",
-  // },
-  // {
-  //   id: 12,
-  //   companyName: "cholamandalam Finance",
-  //   logo: "cholamandalam.webp",
-  //   website: "#",
-  // },
-  // {
-  //   id: 13,
-  //   companyName: "TATA Capital ",
-  //   logo: "Tata_Capital_Logo-01.jpg.webp",
-  //   website: "#",
-  // },
-  // {
-  //   id: 14,
-  //   companyName: "L&T Finance ",
-  //   logo: "L&T.png",
-  //   website: "#",
-  // },
-  // {
-  //   id: 15,
-  //   companyName: "Ujjivan finance ",
-  //   logo: "ujjivan-small-finance.png",
-  //   website: "#",
-  // },
+
+  {
+    id: 6,
+    companyName: "Punjab Natonal Bank",
+    logo: "pnb.png",
+    website: "#",
+  },
+  {
+    id: 7,
+    companyName: "RBL Bank",
+    logo: "rbl.png",
+    website: "#",
+  },
+  {
+    id: 8,
+    companyName: "Cental Finance Limited",
+    logo: "central.png",
+    website: "#",
+  },
+  {
+    id: 9,
+    companyName: "DCB Bank",
+    logo: "DCB.png",
+    website: "#",
+  },
+  {
+    id: 10,
+    companyName: "Bandhan Bank",
+    logo: "bNDHAN.png",
+    website: "#",
+  },
+ 
+  {
+    id: 11,
+    companyName: "Aditya Birla Group",
+    logo: "capital.png",
+    website: "#",
+  },
+  {
+    id: 12,
+    companyName: "cholamandalam Finance",
+    logo: "CHOLA.png",
+    website: "#",
+  },
+  {
+    id: 13,
+    companyName: "TATA Capital ",
+    logo: "tata.png",
+    website: "#",
+  },
+  {
+    id: 14,
+    companyName: "L&T Finance ",
+    logo: "L&T.png",
+    website: "#",
+  },
+  {
+    id: 15,
+    companyName: "Ujjivan finance ",
+    logo: "ujjivan.png",
+    website: "#",
+  },
   {
     id: 16,
     companyName: "IDFC",
@@ -117,7 +112,7 @@ const partners = [
 
 const BankingPartners = () => {
   return (
-    <section className="relative overflow-hidden bg-gray-50 py-24">
+    <section className="relative overflow-hidden  bg-gray-50 py-24">
       {/* Background Decoration */}
 
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-emerald-100 blur-3xl opacity-40"></div>
@@ -155,16 +150,16 @@ const BankingPartners = () => {
           </p>
         </div>
 
-        <div className="mt-16">
+        <div className="mt-16 bg-white">
           <Swiper
             modules={[Autoplay]}
-            spaceBetween={24}
+            spaceBetween={60}
             loop={true}
-            speed={3000}
+            speed={600}
             autoplay={{
               delay: 0,
               disableOnInteraction: false,
-              // pauseOnMouseEnter: true,
+             
             }}
             breakpoints={{
               320: {
@@ -188,12 +183,11 @@ const BankingPartners = () => {
               <SwiperSlide key={partner.id}>
                 <div
                   className="
-           w-full
            flex
-          h-full
+          h-30
           items-center
           justify-center
-         bg-blue-400
+         bg-white
      
         "
                 >
@@ -201,12 +195,9 @@ const BankingPartners = () => {
                     src={partner.logo}
                     alt={partner.companyName}
                     className="
-              h-full
-              w-full
               object-contain
               transition-all
               duration-300
-        
             "
                   />
                 </div>
@@ -229,5 +220,3 @@ const BankingPartners = () => {
 };
 
 export default BankingPartners;
-    //    rounded-2xl
-            //  bg-blue-700

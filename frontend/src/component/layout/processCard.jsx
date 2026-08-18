@@ -4,7 +4,7 @@ export const ProcessCard = ({ step }) => {
   return (
     <div className="group relative">
       {/* Step Badge */}
-      <div className="absolute -top-5 left-1/2 z-20 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-full border-4 border-gray-50 bg-emerald-600 text-sm font-bold text-white shadow-lg lg:left-1/2">
+      <div className="absolute -top-5 left-1/2 z-20 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-full border-4 border-gray-50 bg-[#0B2578] text-sm font-bold text-white shadow-lg lg:left-1/2">
         {step.id}
       </div>
 
@@ -22,7 +22,7 @@ export const ProcessCard = ({ step }) => {
         <div className="mt-8 text-center">
           <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
 
-          <p className="mt-4 leading-7 text-gray-600">{step.description}</p>
+          <p className="mt-4 leading-7 text-gray-600  whitespace-pre-wrap">{step.description}</p>
         </div>
 
         {/* Bottom Accent */}

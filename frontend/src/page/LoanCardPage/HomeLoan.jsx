@@ -8,12 +8,13 @@ import EligibilitySection from "../../component/HomeLOan/EligibilitySection";
 import HowItWorks from "../../component/HomeLOan/HowItWorks";
 import WhyBoroFirst from "../../component/HomeLOan/WhyBoroFirst";
 import LoanCalculator from "../LoanCalculator";
-import HomeLoanEligibility from "../../component/HomeLOan/EligibilitySection";
+
 import FAQSection from "../../component/common/FAQSection";
 import {HOmeLoanfaqs} from "../../data/HomePageFAQDATA"
 import LoanDocuments from "../../component/common/DocumentsSection";
 import {HomesalariedDocuments} from "../../data/documnetLoan"
 import {HomeselfEmployedDocuments} from "../../data/documnetLoan"
+import LoanEligibilityChecker from "../../component/HomeLOan/EligibilitySection";
 
 
 export const HomeLoan = () => {
@@ -24,7 +25,7 @@ export const HomeLoan = () => {
       <WhatIsHomeLoan />
       <LoanUses />
       <HomeLoanBenefits />
-      <HomeLoanEligibility />
+      <LoanEligibilityChecker />
       <HowItWorks />
       <LoanDocuments salariedDocuments={HomesalariedDocuments} EmployedDocuments={HomeselfEmployedDocuments}  />
       <WhyBoroFirst />

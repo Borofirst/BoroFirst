@@ -114,7 +114,7 @@ const FAQSection = ({faqs}) => {
 
               return (
                 <div
-                  key={faq.id}
+                  key={index}
                   className={`
           group
           overflow-hidden
