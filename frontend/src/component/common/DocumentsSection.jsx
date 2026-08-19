@@ -11,17 +11,6 @@ import {
   ShieldCheck,
   WalletCards,
 } from "lucide-react";
-
-/* =========================================================
-   DOCUMENT DATA
-========================================================= */
-
-
-
-/* =========================================================
-   DOCUMENT CARD
-========================================================= */
-
 const DocumentCard = ({ document }) => {
   const Icon = document.icon;
 
@@ -213,7 +202,7 @@ const LoanDocuments = ({salariedDocuments,selfEmployedDocuments}) => {
                   "Address Proof",
                   "Income Proof",
                   "Bank Statements",
-                  "Property Documents",
+                  " Documents",
                 ].map((item) => (
                   <div
                     key={item}

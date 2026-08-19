@@ -8,11 +8,7 @@ import {
   WalletCards,
 } from "lucide-react";
 
-const trustPoints = [
-  "Multiple Lending Options",
-  "Guided Application Process",
-  "End-to-End Assistance",
-];
+
 
 const floatingCards = [
   {
@@ -114,7 +110,7 @@ const LAPHero = () => {
 
             {/* Heading */}
 
-            <h1 className="lap-hero-heading mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[60px]">
+            <h1 className="lap-hero-heading mt-6  font-extrabold leading-[1.08] tracking-tight text-slate-900 text-4xl sm:text-5xl lg:text-[60px]">
               Unlock the Value
               <br />
               of Your{" "}
@@ -162,21 +158,6 @@ const LAPHero = () => {
 
             {/* Trust points */}
 
-            <div className="lap-hero-trust mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
-              {trustPoints.map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-2 text-sm font-semibold text-[#64748B]"
-                >
-                  <CheckCircle2
-                    size={17}
-                    className="shrink-0 text-[#10B981]"
-                  />
-
-                  <span>{item}</span>
-                </div>
-              ))}
-            </div>
 
             {/* Disclaimer */}
 
@@ -189,16 +170,14 @@ const LAPHero = () => {
           {/* ======================================================
               RIGHT IMAGE
           ====================================================== */}
-
-          <div className="relative">
+            <div className="relative">
 
             {/* Emerald glow */}
 
             <div className="absolute -inset-5 rounded-[36px] bg-emerald-100/40 blur-2xl" />
 
             {/* Image wrapper */}
-
-            <div className="lap-hero-image relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[#F8FAFC] shadow-2xl shadow-slate-200/70">
+              <div className="lap-hero-image relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[#F8FAFC] shadow-2xl shadow-slate-200/70">
 
               <img
                 src="/home-loan-family-keys.png"
@@ -231,6 +210,7 @@ const LAPHero = () => {
                 </div>
               </div>
             </div>
+          
 
             {/* ==================================================
                 FLOATING CARDS
@@ -264,6 +244,7 @@ const LAPHero = () => {
               );
             })}
           </div>
+      
         </div>
       </div>
     </section>

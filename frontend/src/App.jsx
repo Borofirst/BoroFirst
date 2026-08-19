@@ -4,7 +4,9 @@ import { createBrowserRouter, createRoutesFromElements, RouterProvider } from "r
 import Home from "./page/Home/Home";
 import { Applayout } from "./component/layout/applayout";
 import { HomeLoan } from "./page/LoanCardPage/HomeLoan";
+
 import LoanAgaintProperty from "./page/LoanCardPage/LoanAgaintProperty";
+import PersonalLoan from "./page/LoanCardPage/personalLoan";
 
 
 
@@ -34,7 +36,7 @@ const App=()=>{
   },
     {
      path:"/personal-loan",
-     element:<HomeLoan/>
+     element:<PersonalLoan/>
   },
     {
      path:"/business-loan",

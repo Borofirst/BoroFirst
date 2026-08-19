@@ -283,7 +283,7 @@ const LoanEligibilityChecker = () => {
                     htmlFor="monthlyNetSalary"
                     className={labelClasses}
                   >
-                    Monthly Net Salary (₹)
+                    Monthly Net Income (₹)
                   </label>
 
                   <div className="relative">

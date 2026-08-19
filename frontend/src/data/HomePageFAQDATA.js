@@ -197,3 +197,94 @@ export const HomePagefaqData = [
       "BoroFirst helps you understand your LAP options, assess your requirements, compare suitable lending solutions, and guide you through the application and documentation process."
   }
 ];
+
+
+export const personalLoanFAQs = [
+  {
+    question: "What is a Personal Loan?",
+    answer:
+      "A personal loan is generally an unsecured loan that can help you meet various personal financial requirements without usually pledging an asset as collateral. The loan amount, interest rate, tenure and approval are determined based on your profile and the applicable lender's eligibility criteria."
+  },
+
+  {
+    question: "What can I use a Personal Loan for?",
+    answer:
+      "A personal loan can generally be used for a variety of eligible personal requirements such as wedding expenses, medical needs, education, home renovation, travel, emergency expenses, large purchases or other planned financial needs. The permitted end-use may vary depending on the lender and loan terms."
+  },
+
+  {
+    question: "Do I need to provide collateral for a Personal Loan?",
+    answer:
+      "Personal loans are generally unsecured, which means you typically do not need to pledge property, gold or another asset as security. However, approval is subject to the lender's eligibility criteria, assessment and applicable policies."
+  },
+
+  {
+    question: "Who can apply for a Personal Loan?",
+    answer:
+      "Salaried and self-employed individuals may be eligible to apply for a personal loan, subject to the applicable lender's requirements. Factors such as age, income, employment or business stability, credit history, existing financial obligations and repayment capacity may be considered during the assessment."
+  },
+
+  {
+    question: "What minimum income is required for a Personal Loan?",
+    answer:
+      "There is no single minimum income requirement applicable to every personal loan. The required income may vary depending on the lender, location, employment profile, loan amount, existing EMIs and other eligibility parameters. A higher and stable income may improve your repayment capacity assessment."
+  },
+
+  {
+    question: "What CIBIL score is required for a Personal Loan?",
+    answer:
+      "There is no universal CIBIL score that guarantees personal loan approval. Lenders consider your credit score along with income, repayment history, existing obligations and other factors. A healthy credit history can generally strengthen your loan application, while the minimum acceptable score may differ between lenders."
+  },
+
+  {
+    question: "How much Personal Loan can I get?",
+    answer:
+      "The loan amount you may qualify for depends on factors such as your income, existing EMIs, credit profile, repayment capacity, employment or business profile and the lender's policies. BoroFirst can help you explore suitable loan options based on the information you provide."
+  },
+
+  {
+    question: "What interest rate is charged on a Personal Loan?",
+    answer:
+      "The interest rate on a personal loan varies from one lender to another and may depend on factors such as your credit profile, income, loan amount, tenure and overall eligibility. The applicable rate and charges will be communicated by the respective lender before you proceed."
+  },
+
+
+  {
+    question: "How long does it take to get a Personal Loan?",
+    answer:
+      "The processing and disbursal time can vary depending on the lender, applicant profile, documentation, verification and other factors. Providing accurate information and the required documents can help avoid unnecessary delays. The final disbursal timeline is determined by the respective lender."
+  },
+
+  {
+    question: "Can I repay my Personal Loan before the end of the tenure?",
+    answer:
+      "Depending on the loan agreement and lender's policy, you may be able to make a part-prepayment or close the loan before the scheduled maturity date. Applicable prepayment or foreclosure charges, conditions and lock-in requirements may vary, so you should review the lender's terms before making an early repayment."
+  },
+
+
+  {
+    question: "Can I get a Personal Loan if I already have existing EMIs?",
+    answer:
+      "You may still be eligible for a personal loan if you have existing EMIs. However, lenders generally consider your existing financial obligations while assessing your repayment capacity. The amount you may qualify for can therefore depend on your income, existing EMIs, credit profile and the lender's eligibility criteria."
+  },
+
+  {
+    question: "Can self-employed individuals apply for a Personal Loan?",
+    answer:
+      "Yes, self-employed individuals may be eligible for personal loans, subject to the applicable lender's criteria. Lenders may evaluate business stability, income, banking transactions, income-tax returns, financial statements and credit history while assessing the application."
+  },
+
+  {
+    question: "Can I apply for a Personal Loan with a low CIBIL score?",
+    answer:
+      "A lower credit score may make it more difficult to qualify or may affect the loan amount and terms offered. However, eligibility is not determined by the credit score alone. Income, existing obligations, repayment history and other lender-specific criteria may also be considered."
+  },
+
+  {
+    question: "What happens after I submit my Personal Loan application?",
+    answer:
+      "After submitting your application, the relevant lender may review your information, verify the required documents and assess your eligibility and repayment capacity. If your application is approved, the lender will communicate the applicable loan amount, interest rate, tenure, charges and other terms before disbursal."
+  },
+
+
+];

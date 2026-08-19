@@ -129,9 +129,9 @@ const WhyBoroFirstLAP = () => {
             {/* Heading */}
 
             <h2 className="mt-6 max-w-xl text-3xl font-extrabold leading-[1.1] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              A Better Way to Explore
-              <span className="block text-[#186A07]">
-                Your LAP Options.
+              Why Choose BoroFirst 
+              <span className="block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+             for Your Personal Loan?
               </span>
             </h2>
 

@@ -85,85 +85,12 @@ const LAPBenefits = () => {
             FEATURED CARD
         ====================================================== */}
 
-        <div delay={100} className="mt-14">
-          <div className="relative overflow-hidden rounded-[28px] bg-[#0B2578]">
-
-            {/* Background glow */}
-            <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-emerald-400/10 blur-3xl" />
-
-            <div className="grid items-center lg:grid-cols-[1fr_0.75fr]">
-
-              {/* Content */}
-
-              <div className="relative z-10 p-7 sm:p-10 lg:p-14">
-
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-300">
-                  Use Your Property
-                </p>
-
-                <h3 className="mt-4 max-w-xl text-3xl font-extrabold leading-tight text-white sm:text-4xl">
-                  Turn Your Eligible Property Into a Financing Option.
-                </h3>
-
-                <p className="mt-5 max-w-xl text-sm leading-7 text-slate-300 sm:text-base">
-                  An eligible property can be used as security for a
-                  loan. The financing can then be explored for eligible
-                  personal or business needs.
-                </p>
-
-                <a
-                  href="#eligibility"
-                  className="group mt-7 inline-flex min-h-[50px] items-center gap-2 rounded-xl  bg-[#186A07]  px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-500/20 transition duration-300 hover:-translate-y-0.5 hover:bg-emerald-600"
-                >
-                  Check Eligibility
-
-                  <ArrowRight
-                    size={18}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </a>
-              </div>
-
-              {/* Visual */}
-
-              <div className="relative flex min-h-[320px] items-center justify-center overflow-hidden lg:min-h-[390px]">
-
-                <div className="absolute h-56 w-56 rounded-full bg-emerald-400/10 blur-3xl" />
-
-                <div className="relative flex h-40 w-40 items-center justify-center rounded-[32px] border border-emerald-300/20 bg-white/10 text-emerald-300 shadow-2xl backdrop-blur-sm transition duration-500 hover:scale-105 sm:h-48 sm:w-48">
-                  <House
-                    size={85}
-                    strokeWidth={1.3}
-                  />
-                </div>
-
-                {/* Simple bottom label */}
-
-                <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
-                  <div className="flex items-center gap-3">
-                    <CheckCircle2
-                      size={18}
-                      className="shrink-0 text-emerald-300"
-                    />
-
-                    <p className="text-xs leading-5 text-slate-300">
-                      Final loan terms depend on the lender and your profile.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* =====================================================
             BENEFITS HEADING
         ====================================================== */}
 
         <div className="mt-16 text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#2c8e18]">
-            Simple Benefits
-          </p>
 
           <h3 className="mt-3 text-2xl font-extrabold text-slate-800 sm:text-3xl">
             What You Can Expect

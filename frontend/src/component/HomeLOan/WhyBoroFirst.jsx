@@ -75,7 +75,7 @@ const WhyBoroFirst = () => {
           </p>
             <h2 className="mt-5 text-3xl font-extrabold leading-tight tracking-tight  sm:text-4xl lg:text-[48px]">
                 Why Thousands Trust
-            <span className="block text-[#186A07]">
+            <span className="block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
                 BoroFirst
             </span>
               </h2>

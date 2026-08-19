@@ -20,8 +20,8 @@ import {
 } from "react-icons/md";
 
 import { BsPatchQuestionFill } from "react-icons/bs";
-import { submitContactForm } from "../service/contectService";
-import WhatsAppButton from "./whatupbuttonn";
+import { submitContactForm } from "../../service/contectService";
+import WhatsAppButton from "../../page/whatupbuttonn";
 import { href } from "react-router-dom";
 
 // =========================================
@@ -43,23 +43,21 @@ const loanTypes = [
 // Contact Information
 // =========================================
 
-
 const contactInfo = [
   {
     icon: FaPhoneAlt,
     title: "Call Us",
     value: "+91 7060162526",
     description: "Mon - Sat (9:00 AM - 7:00 PM)",
-    href:"tel:+917060162526",
+    href: "tel:+917060162526",
   },
-
 
   {
     icon: MdLocationOn,
     title: "Visit Office",
     value: "323 SEC-12/A, AVAS VIKAS SIKANDRA, Avas Vikas Colony, Sadar, ",
     description: "Agra, Uttar Pradesh- 282007",
-     href:"https://www.google.com/maps/search/?api=1&query=323+SEC-12%2FA%2C+AVAS+VIKAS+SIKANDRA%2C+Avas+Vikas+Colony%2C+Sadar%2C+Agra%2C+Uttar+Pradesh+282007",
+    href: "https://www.google.com/maps/search/?api=1&query=323+SEC-12%2FA%2C+AVAS+VIKAS+SIKANDRA%2C+Avas+Vikas+Colony%2C+Sadar%2C+Agra%2C+Uttar+Pradesh+282007",
   },
 
   {
@@ -67,7 +65,7 @@ const contactInfo = [
     title: "Working Hours",
     value: "Monday - Saturday",
     description: "9:00 AM - 7:00 PM",
-     href: "/",
+    href: "/",
   },
 ];
 
@@ -140,7 +138,6 @@ const ContactSection = () => {
     }
   };
 
-
   // =========================================
   // Validation
   // =========================================
@@ -201,52 +198,52 @@ const ContactSection = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  console.log("vk")
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("vk");
 
-  const isValid = validateForm();
+    const isValid = validateForm();
 
-  if (!isValid) {
-    return;
-  }
-
-  try {
-    setLoading(true);
-    setSuccess("");
-
-    // const response = await axios.post(
-    //   "http://localhost:5000/api/contact",
-    //   formData
-    // );
-
-    const response =await submitContactForm(formData);
-    console.log(response);
-
-    if (response.success) {
-      setSuccess("success");
-
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        city: "",
-        loanType: "",
-        loanAmount: "",
-        purpose: "",
-        message: "",
-      });
-
-      setErrors({});
+    if (!isValid) {
+      return;
     }
-  } catch (error) {
-    console.error("Contact form error:", error);
 
-    setSubmitStatus("error");
-  } finally {
-    setLoading(false);
-  }
-};
+    try {
+      setLoading(true);
+      setSuccess("");
+
+      // const response = await axios.post(
+      //   "http://localhost:5000/api/contact",
+      //   formData
+      // );
+
+      const response = await submitContactForm(formData);
+      console.log(response);
+
+      if (response.success) {
+        setSuccess("success");
+
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          city: "",
+          loanType: "",
+          loanAmount: "",
+          purpose: "",
+          message: "",
+        });
+
+        setErrors({});
+      }
+    } catch (error) {
+      console.error("Contact form error:", error);
+
+      setSubmitStatus("error");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   // =========================================
   // Reset Form
@@ -264,8 +261,6 @@ const handleSubmit = async (e) => {
       message: "",
     });
   };
-
-
 
   return (
     <section className="relative overflow-hidden bg-gray-50 py-24">
@@ -312,19 +307,16 @@ const handleSubmit = async (e) => {
             </p>
 
             {/* Contact Cards */}
-        
 
-        <div className="mt-10 space-y-5">
-           <WhatsAppButton/>
+            <div className="mt-10 space-y-5">
+              <WhatsAppButton />
               {contactInfo.map((item, index) => {
                 const Icon = item.icon;
 
                 return (
-    
-                    <a
+                  <a
                     key={index}
-             href={item.href}
-            
+                    href={item.href}
                     className="
                       group
                       flex
@@ -343,8 +335,6 @@ const handleSubmit = async (e) => {
                       hover:shadow-xl
                     "
                   >
-          
-        
                     <div
                       className="
                         flex
@@ -362,9 +352,7 @@ const handleSubmit = async (e) => {
                         group-hover:scale-110
                       "
                     >
-          
                       <Icon size={24} />
-
                     </div>
 
                     <div>
@@ -380,12 +368,10 @@ const handleSubmit = async (e) => {
                         {item.description}
                       </p>
                     </div>
-                  </a> 
-            
+                  </a>
                 );
               })}
             </div>
-
 
             {/* Trust Highlights */}
 
@@ -486,10 +472,7 @@ const handleSubmit = async (e) => {
 
             {/* Form */}
 
-            <form
-              className="mt-10 space-y-6"
-              onSubmit={handleSubmit}
-            >
+            <form className="mt-10 space-y-6" onSubmit={handleSubmit}>
               {/* Row 1 */}
 
               <div className="grid gap-6 md:grid-cols-2">

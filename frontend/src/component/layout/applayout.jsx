@@ -3,7 +3,7 @@
 import { Outlet, useNavigation } from "react-router"
 
 
-import Navbar from "../navbar/navbar";
+import Navbar from "../loanAgainstProperty/navbar/navbar";
 import Footer from "../footer/footer";
 
 

@@ -1,4 +1,4 @@
-import { BadgeCheck, BriefcaseBusiness, House, IndianRupee, MapPin, WalletCards } from "lucide-react";
+import { BadgeCheck, BriefcaseBusiness, FileText, House, IndianRupee, MapPin, WalletCards } from "lucide-react";
 
 export const HomesalariedDocuments = [
   {
@@ -197,4 +197,109 @@ export const LAPselfEmployedDocuments = [
     important: true,
   },
 
+];
+
+export const personalLoanSalariedDocuments = [
+  {
+    icon: BadgeCheck,
+    title: "Identity Proof",
+    description:
+      "A valid government-issued document to verify your identity.",
+    examples:
+      "PAN Card, Aadhaar Card, Passport, Voter ID or Driving Licence",
+  },
+  {
+    icon: MapPin,
+    title: "Address Proof",
+    description:
+      "A valid document confirming your current residential address.",
+    examples:
+      "Aadhaar Card, Passport, Driving Licence, Voter ID or recent Utility Bill",
+  },
+  {
+    icon: IndianRupee,
+    title: "Income Proof",
+    description:
+      "Documents used to verify your regular monthly income.",
+    examples:
+      "Latest 3–6 months Salary Slips, Form 16 or other accepted income documents",
+  },
+  {
+    icon: WalletCards,
+    title: "Bank Statements",
+    description:
+      "Helps assess your salary credits, existing EMIs and banking history.",
+    examples:
+      "Latest 6 months salary account or bank statements",
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Employment Proof",
+    description:
+      "Documents that may confirm your current employment and employer details.",
+    examples:
+      "Employee ID Card, Appointment Letter, Employment Certificate or Employer Letter",
+  },
+  {
+    icon: FileText,
+    title: "Additional Documents",
+    description:
+      "Additional documents may be requested based on your profile and lender requirements.",
+    examples:
+      "Recent passport-size photograph, loan application form or other supporting documents",
+    important: true,
+  },
+];
+
+
+export const personalLoanSelfEmployedDocuments = [
+  {
+    icon: BadgeCheck,
+    title: "Identity Proof",
+    description:
+      "A valid government-issued document to verify your identity.",
+    examples:
+      "PAN Card, Aadhaar Card, Passport, Voter ID or Driving Licence",
+  },
+  {
+    icon: MapPin,
+    title: "Address Proof",
+    description:
+      "A valid document confirming your current residential address.",
+    examples:
+      "Aadhaar Card, Passport, Driving Licence, Voter ID or recent Utility Bill",
+  },
+  {
+    icon: IndianRupee,
+    title: "Income Documents",
+    description:
+      "Documents used to assess your business income and financial capacity.",
+    examples:
+      "Latest 2–3 years ITR, Profit & Loss Statement, Balance Sheet and computation of income",
+  },
+  {
+    icon: WalletCards,
+    title: "Bank Statements",
+    description:
+      "Helps assess your cash flow, business transactions and banking history.",
+    examples:
+      "Latest 6–12 months personal and/or business bank statements",
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Business Proof",
+    description:
+      "Documents that may establish the existence and continuity of your business.",
+    examples:
+      "GST Registration, Shop & Establishment Certificate, Business Registration Certificate, Partnership Deed or other applicable business documents",
+  },
+  {
+    icon: FileText,
+    title: "Additional Documents",
+    description:
+      "Additional documents may be requested depending on your business profile and lender requirements.",
+    examples:
+      "Recent passport-size photograph, loan application form or other supporting documents",
+    important: true,
+  },
 ];
