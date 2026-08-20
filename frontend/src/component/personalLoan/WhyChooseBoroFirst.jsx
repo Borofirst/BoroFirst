@@ -171,7 +171,7 @@ const WhyChooseBoroFirst = ({
           {/* Heading */}
           <h2 className="text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
             Why Choose{" "}
-            <span className="text-[#10B981]">
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
               BoroFirst
             </span>{" "}
             for Your Personal Loan?
@@ -304,7 +304,12 @@ const WhyChooseBoroFirst = ({
                   }}
                 >
                   {/* Icon */}
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 transition-all duration-300 group-hover:scale-105 group-hover:bg-emerald-500 group-hover:text-white">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl  bg-emerald-50   text-[#2c8e18]
+                        transition-all duration-300 ease-out
+                      group-hover:bg-[#118A09]
+                      group-hover:text-white
+                        group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+                        group-hover:scale-110">
                     <Icon size={20} />
                   </div>
 
@@ -337,7 +342,7 @@ const WhyChooseBoroFirst = ({
               </div>
 
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.15em] text-emerald-600">
+                <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#186A07]">
                   Our Approach
                 </p>
 
@@ -357,7 +362,7 @@ const WhyChooseBoroFirst = ({
                   key={point.title}
                   className="group p-6 transition-colors duration-300 hover:bg-emerald-50/40 sm:p-7"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-50 text-[#0B2578] transition-all duration-300 group-hover:bg-emerald-500 group-hover:text-white">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-50 text-[#0B2578] transition-all duration-300 group-hover:bg-[#263b7f] group-hover:text-white">
                     <Icon size={18} />
                   </div>
 
@@ -386,7 +391,7 @@ const WhyChooseBoroFirst = ({
           />
 
           <div className="relative mx-auto max-w-3xl text-center">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-emerald-600 shadow-sm">
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-[#186A07] shadow-sm">
               <UserCheck size={22} />
             </div>
 

@@ -1,7 +1,4 @@
-// bg-linear-to-r from-[#186A07] to-[#0B2578]
-// text-[#186A07]
-// text-[#2c8e18]
-// text-slate-900 
+
 import {
   ArrowDown,
   ArrowRight,

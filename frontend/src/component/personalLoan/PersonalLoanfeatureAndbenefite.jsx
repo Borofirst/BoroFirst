@@ -111,7 +111,7 @@ const PersonalLoanFeaturesBenefits = ({
           {/* Heading */}
           <h2 className="text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
             Features Designed Around
-            <span className="block text-emerald-600">
+            <span className="block text-[#186A07]">
               Your Financial Needs
             </span>
           </h2>
@@ -139,10 +139,16 @@ const PersonalLoanFeaturesBenefits = ({
               >
 
                 {/* Top Accent */}
-                <div className="absolute left-0 top-0 h-1 w-0 bg-emerald-500 transition-all duration-500 group-hover:w-full" />
+                <div className="absolute left-0 top-0 h-1 w-0 bg-[#118A09] transition-all duration-500 group-hover:w-full" />
 
                 {/* Icon */}
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600 transition-all duration-300 group-hover:bg-emerald-600 group-hover:text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 bg-emerald-50
+                    text-[#2c8e18]
+                        transition-all duration-300 ease-out
+                      group-hover:bg-[#118A09]
+                      group-hover:text-white
+                        group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+                        group-hover:scale-110">
                   <Icon size={22} strokeWidth={2} />
                 </div>
 

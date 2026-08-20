@@ -30,6 +30,16 @@ const floatingCards = [
 ];
 
 const LAPHero = () => {
+    const handleCalculationEmi = () => {
+    // Replace with your eligibility section ID or route.
+    document
+      .getElementById("loan-EMI")
+      ?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+  };
+
   return (
     <section
       id="lap-home"
@@ -144,7 +154,7 @@ const LAPHero = () => {
               {/* Secondary */}
 
               <a
-                href="#lap-calculator"
+                onClick={handleCalculationEmi}
                 className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl border border-[#E2E8F0] bg-white px-6 py-3.5 text-sm font-extrabold text-[#0B2578] shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-md"
               >
                 <Calculator

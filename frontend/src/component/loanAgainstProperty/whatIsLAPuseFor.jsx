@@ -1,3 +1,13 @@
+// bg-linear-to-r from-[#186A07] to-[#0B2578]
+// text-[#186A07]
+// text-[#2c8e18]
+// text-slate-900 
+  //             text-[#2c8e18]
+  //                       transition-all duration-300 ease-out
+  // group-hover:bg-[#118A09]
+  // group-hover:text-white
+  // group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+  // group-hover:scale-110
 import React from "react";
 import {
   ArrowRight,
@@ -215,14 +225,12 @@ const LoanAgainstPropertyUses = () => {
                     items-center justify-center
                     rounded-2xl
                     bg-emerald-50
-                    text-emerald-600
-                    ring-1 ring-emerald-100
-                    transition-all duration-300
-                    group-hover:bg-[#10B981]
-                    group-hover:text-white
-                    group-hover:ring-emerald-500
-                    group-hover:shadow-lg
-                    group-hover:shadow-emerald-500/20
+                                text-[#2c8e18]
+                        transition-all duration-300 ease-out
+  group-hover:bg-[#118A09]
+  group-hover:text-white
+  group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+  group-hover:scale-110
                   "
                 >
                   <Icon size={25} strokeWidth={1.8} />
@@ -271,7 +279,7 @@ const LoanAgainstPropertyUses = () => {
                   className="
                     absolute bottom-0 left-0
                     h-1 w-0
-                    bg-[#10B981]
+                    bg-[#118A09]
                     transition-all duration-500
                     group-hover:w-full
                   "

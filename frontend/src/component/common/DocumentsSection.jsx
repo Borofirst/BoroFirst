@@ -46,7 +46,7 @@ const DocumentCard = ({ document }) => {
             group-hover:scale-105
             ${
               document.important
-                ? "bg-[#10B981] text-white"
+                ? "bg-[#118A09] text-white"
                 : "bg-emerald-50 text-[#2c8e18]"
             }
           `}

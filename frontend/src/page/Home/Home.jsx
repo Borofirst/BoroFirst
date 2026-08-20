@@ -22,6 +22,7 @@ import Product from "../../component/product/product";
 import LoanCalculator from "../../component/common/LoanCalculator";
 import FAQSection from "../../component/common/FAQSection";
 import { HomePagefaqData } from "../../data/HomePageFAQDATA";
+import TestimonialsSection from "../TestimonialsSection";
 const Home = () => {
   return (
     <>
@@ -36,6 +37,7 @@ const Home = () => {
       <FeaturedFinancialProducts />
       <BankingPartners />
       <ContactSection />
+      <TestimonialsSection/>
       <FAQSection faqs={HomePagefaqData} />
     </>
   );

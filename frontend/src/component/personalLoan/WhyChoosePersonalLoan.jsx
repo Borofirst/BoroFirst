@@ -132,15 +132,13 @@ const BenefitCard = ({ benefit, index }) => {
           relative flex h-14 w-14
           items-center justify-center
           rounded-2xl
-          bg-emerald-50
-          text-emerald-600
-          ring-1 ring-emerald-100
-          transition-all duration-300
-          group-hover:bg-emerald-500
-          group-hover:text-white
-          group-hover:ring-emerald-500
-          group-hover:shadow-lg
-          group-hover:shadow-emerald-500/20
+           bg-emerald-50
+                    text-[#2c8e18]
+                        transition-all duration-300 ease-out
+                      group-hover:bg-[#118A09]
+                      group-hover:text-white
+                        group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+                        group-hover:scale-110
         "
       >
         <Icon size={25} strokeWidth={1.8} />
@@ -183,27 +181,7 @@ const BenefitCard = ({ benefit, index }) => {
           {benefit.description}
         </p>
 
-        {/* Bottom link */}
-        <div
-          className="
-            mt-6
-            flex items-center gap-2
-            text-sm font-bold
-            text-slate-400
-            transition-colors duration-300
-            group-hover:text-emerald-600
-          "
-        >
-          Learn more
-
-          <ArrowRight
-            size={16}
-            className="
-              transition-transform duration-300
-              group-hover:translate-x-1
-            "
-          />
-        </div>
+     
       </div>
 
       {/* Bottom accent */}
@@ -211,7 +189,7 @@ const BenefitCard = ({ benefit, index }) => {
         className="
           absolute bottom-0 left-0
           h-1 w-0
-          bg-emerald-500
+          bg-[#118A09]
           transition-all duration-500
           group-hover:w-full
         "
@@ -628,7 +606,7 @@ const WhyChoosePersonalLoan = () => {
             "
           >
             Why Choose a{" "}
-            <span className="text-[#10B981]">
+            <span className="text-[#186A07]">
               Personal Loan?
             </span>
           </h2>
@@ -909,12 +887,14 @@ const WhyChoosePersonalLoan = () => {
                       flex h-12 w-12
                       items-center justify-center
                       rounded-2xl
-                      bg-slate-50
-                      text-emerald-600
-                      transition-all
-                      duration-300
-                      group-hover:bg-emerald-500
+                       bg-emerald-50
+                    text-[#2c8e18]
+                        transition-all duration-300 ease-out
+                      group-hover:bg-[#118A09]
                       group-hover:text-white
+                        group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+                        group-hover:scale-110
+                
                     "
                   >
                     <Icon size={21} />

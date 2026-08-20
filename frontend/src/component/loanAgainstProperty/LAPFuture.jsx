@@ -116,7 +116,13 @@ const LAPBenefits = () => {
                   {/* Icon */}
 
                   <div className="flex items-center justify-between">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-[#2c8e18] transition duration-300">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl  text-[#2c8e18]       bg-emerald-50
+                          
+                        transition-all duration-300 ease-out
+  group-hover:bg-[#118A09]
+  group-hover:text-white
+  group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+  group-hover:scale-110">
                       <Icon size={23} />
                     </div>
 
@@ -141,7 +147,7 @@ const LAPBenefits = () => {
                   {/* Bottom accent */}
 
                   <div className="mt-auto pt-6">
-                    <div className="h-1 w-7 rounded-full bg-emerald-100 transition-all duration-300 group-hover:w-12 group-hover:bg-[#10B981]" />
+                    <div className="h-1 w-7 rounded-full bg-emerald-100 transition-all duration-300 group-hover:w-12 group-hover:bg-[#2c8e18]" />
                   </div>
                 </article>
               </div>

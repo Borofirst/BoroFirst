@@ -226,7 +226,7 @@ const LoanEligibilityChecker = () => {
     "mb-2 block text-sm font-semibold text-slate-700";
 
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-16 sm:py-20 lg:py-24">
+    <section id="loan-eligibility" className="relative overflow-hidden bg-slate-50 py-16 sm:py-20 lg:py-24">
       {/* Background decorations */}
       <div className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-emerald-200/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-blue-200/20 blur-3xl" />
@@ -242,7 +242,7 @@ const LoanEligibilityChecker = () => {
 
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
             Check Your{" "}
-            <span className="text-emerald-600">
+            <span className="text-[#186A07]">
               Loan Eligibility
             </span>
           </h2>

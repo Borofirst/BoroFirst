@@ -1,3 +1,4 @@
+
 import React from "react";
 import {
   BookOpen,
@@ -109,7 +110,7 @@ const WhatIsPersonalLoan = () => {
           "
           >
             What is a{" "}
-            <span className="text-[#10B981]">
+            <span className="text-[#186A07]">
               Personal Loan?
             </span>
           </h2>
@@ -123,7 +124,7 @@ const WhatIsPersonalLoan = () => {
             "
           >
             A simple way to manage your important{" "}
-            <span className="text-[#10B981]">
+            <span className="text-[#2c8e18]">
               financial needs.
             </span>
           </p>
@@ -145,7 +146,7 @@ const WhatIsPersonalLoan = () => {
           </p>
         </div>
 
-        {/* <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20"> */}
+   
 
 
 
@@ -179,10 +180,12 @@ const WhatIsPersonalLoan = () => {
                         items-center justify-center
                         rounded-xl
                         bg-emerald-50
-                        text-[#10B981]
-                        transition-all duration-300
-                        group-hover:bg-[#10B981]
-                        group-hover:text-white
+                        text-[#2c8e18]
+                        transition-all duration-300 ease-out
+                      group-hover:bg-[#118A09]
+                      group-hover:text-white
+                        group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+                        group-hover:scale-110
                       "
                     >
                       <Icon size={21} />
