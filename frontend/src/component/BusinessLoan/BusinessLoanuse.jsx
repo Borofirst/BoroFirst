@@ -1,64 +1,66 @@
 import React from "react";
 import {
-  ArrowRight,
-  CalendarDays,
-  CheckCircle2,
-  GraduationCap,
-  Heart,
-  HeartPulse,
-  House,
-  IndianRupee,
-  Plane,
-  Sparkles,
+  BriefcaseBusiness,
+  Building2,
+  Package,
+  Cog,
   WalletCards,
+  TrendingUp,
+    ArrowRight,
+  
+  CheckCircle2,
+
+  IndianRupee,
+
+  Sparkles,
 } from "lucide-react";
 
-const loanUses = [
+
+const businessLoanUses = [
   {
-    icon: Heart,
-    label: "FOR SPECIAL MOMENTS",
-    title: "Wedding & Celebrations",
+    icon: BriefcaseBusiness,
+    title: "Working Capital",
     description:
-      "Manage eligible wedding, family celebration or special occasion expenses with suitable personal funding.",
+      "Manage everyday business expenses, supplier payments, salaries, and cash-flow requirements.",
   },
   {
-    icon: House,
-    label: "IMPROVE YOUR SPACE",
-    title: "Home Renovation",
+    icon: Building2,
+    title: "Business Expansion",
     description:
-      "Upgrade your interiors, renovate your living space or manage eligible home improvement expenses.",
+      "Support plans to open a new branch, expand operations, or increase your business capacity.",
   },
   {
-    icon: HeartPulse,
-    label: "WHEN IT MATTERS",
-    title: "Medical & Emergency Needs",
+    icon: Package,
+    title: "Inventory & Stock",
     description:
-      "Help manage eligible unexpected personal expenses when an urgent financial requirement arises.",
+      "Purchase inventory, raw materials, or stock to meet customer demand and keep operations running smoothly.",
   },
   {
-    icon: GraduationCap,
-    label: "INVEST IN YOURSELF",
-    title: "Education & Skills",
+    icon: Cog,
+    title: "Equipment & Machinery",
     description:
-      "Support eligible education, professional courses or skill-development expenses.",
-  },
-  {
-    icon: Plane,
-    label: "MAKE NEW MEMORIES",
-    title: "Travel & Vacation",
-    description:
-      "Plan an eligible holiday or personal trip without using all your savings at once.",
+      "Invest in essential machinery, equipment, tools, or technology to improve business operations.",
   },
   {
     icon: WalletCards,
-    label: "FOR YOUR GOALS",
-    title: "Major Personal Expenses",
+    title: "Business Expenses",
     description:
-      "Manage other eligible personal financial requirements based on your profile and lender policies.",
+      "Meet eligible operational expenses and maintain the financial flexibility your business needs.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Growth Opportunities",
+    description:
+      "Put suitable financing toward new opportunities, market expansion, or other business growth initiatives.",
   },
 ];
 
-const PersonalLoanUses = () => {
+
+
+
+
+
+const BusinessLoanUses = () => {
   const handleEligibilityClick = () => {
     document
       .getElementById("loan-eligibility")
@@ -70,7 +72,7 @@ const PersonalLoanUses = () => {
 
   return (
     <section
-      id="personal-loan-uses"
+      id="Business-loan-use"
       className="relative overflow-hidden bg-[#F8FAFC] py-20 sm:py-24 lg:py-28"
     >
       {/* =====================================================
@@ -106,6 +108,7 @@ const PersonalLoanUses = () => {
               inline-flex items-center gap-2
               rounded-full
               border border-emerald-200
+              text-center
               bg-emerald-50
               px-4 py-2
               text-xs font-bold tracking-wider
@@ -113,13 +116,12 @@ const PersonalLoanUses = () => {
               sm:text-sm
             "
           >
-            <Sparkles size={15} />
+            <WalletCards size={15} />
 
             FLEXIBLE FOR YOUR NEEDS
           </div>
 
-          {/* Heading */}
-          <h2
+                <h2
             className="
               mt-5
               text-3xl font-extrabold
@@ -129,13 +131,12 @@ const PersonalLoanUses = () => {
               lg:text-5xl
           "
           >
-            What Can You Use a{" "}
+            What Can You Use a {" "}
             <span className="text-[#186A07]">
-              Personal Loan
+              Business Loan
             </span>{" "}
             For?
           </h2>
-
           {/* Description */}
           <p
             className="
@@ -146,10 +147,16 @@ const PersonalLoanUses = () => {
               sm:text-lg
             "
           >
-            From planned expenses to unexpected financial needs,
-            a personal loan can provide eligible borrowers with
-            flexible funding for a variety of personal requirements.
+            A business loan can provide eligible businesses with the
+              financial support they need to manage operations, invest in
+              important business requirements, and pursue growth opportunities.
           </p>
+           <p className="mt-3  text-sm leading-7 text-[#64748B] sm:text-base">
+              Whether you need funds for working capital, inventory,
+              equipment, expansion, or other eligible business purposes,
+              BOROFIRST helps you explore suitable financing options through
+              its lending partner network.
+            </p>
         </div>
 
         {/* =====================================================
@@ -166,7 +173,7 @@ const PersonalLoanUses = () => {
             lg:gap-6
           "
         >
-          {loanUses.map((item, index) => {
+          {businessLoanUses.map((item, index) => {
             const Icon = item.icon;
 
             return (
@@ -450,4 +457,4 @@ const PersonalLoanUses = () => {
   );
 };
 
-export default PersonalLoanUses;
+export default BusinessLoanUses;

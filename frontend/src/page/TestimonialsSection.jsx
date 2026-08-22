@@ -186,7 +186,7 @@ const TestimonialsSection = () => {
                 spaceBetween: 24,
               },
             }}
-            className="!overflow-visible !pb-14"
+            className="overflow-visible pb-14"
           >
             {testimonials.map((testimonial) => (
               <SwiperSlide

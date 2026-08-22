@@ -15,7 +15,28 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="sticky m-5 rounded-2xl top-5 z-50 bg-white/90 backdrop-blur-md  shadow-[0_2px_4px_0_rgba(14,30,37,0.12),0_2px_16px_0_rgba(14,30,37,0.32)] transition-transform duration-300 hover:scale-101">
+    <header
+  className="
+    fixed
+    top-5
+    left-1/2
+    -translate-x-1/2
+    z-50
+    w-[calc(100%-2rem)]
+    max-w-8xl
+    rounded-2xl
+    backdrop-blur-md
+    shadow-[0_2px_4px_0_rgba(14,30,37,0.12),0_2px_16px_0_rgba(14,30,37,0.32)]
+    transition-transform
+    duration-300
+    hover:scale-[1.01]
+    hover:border-2
+    // hover:border-blue-300
+    hover:shadow-[0_4px_6px_rgba(11,37,120,0.08),0_10px_25px_rgba(11,37,120,0.12),0_20px_45px_rgba(11,37,120,0.10)]
+    
+
+  "
+>
       <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">

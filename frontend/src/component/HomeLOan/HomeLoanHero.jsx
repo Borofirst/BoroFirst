@@ -14,7 +14,7 @@ const HomeLoanHero = () => {
     <section className="relative overflow-hidden bg-slate-50">
 
       {/* ================= DESKTOP HERO ================= */}
-      <div className="relative hidden min-h-95 lg:block">
+      <div className="relative hidden h-[760px] lg:block">
 
         {/* Background Image */}
         <div className="absolute inset-0">
@@ -29,7 +29,7 @@ const HomeLoanHero = () => {
         {/* Desktop Content */}
         <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-center px-12">
 
-          <div className="max-w-xl">
+          <div className="max-w-xl mt-28">
 
             <div className="mb-6 inline-flex items-center gap-2 animate-[fadeInUp_0.7s_ease-out] rounded-full border border-emerald-200 bg-white/80 px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm backdrop-blur">
               <Home size={17} />
@@ -84,7 +84,7 @@ const HomeLoanHero = () => {
       <div className="block lg:hidden">
 
         {/* Mobile Image */}
-        <div className="relative h-[360px] w-full overflow-hidden">
+        <div className="relative h-[560px] w-full overflow-hidden">
 
           <img
             src="/home.png"
@@ -99,7 +99,7 @@ const HomeLoanHero = () => {
 
 
         {/* Mobile Content */}
-        <div className="relative z-10 -mt-4 rounded-t-[32px] bg-slate-50 px-5 pb-10 pt-8">
+        <div className="relative z-10 -mt-4 text-center rounded-t-[32px] bg-slate-50 px-5 pb-10 pt-8">
 
           {/* Badge */}
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#EAF5E8] bg-white px-4 py-2 text-xs font-semibold text-emerald-700 shadow-sm">
@@ -136,7 +136,7 @@ const HomeLoanHero = () => {
 
 
           {/* Features */}
-          <div className="mt-5 grid grid-cols-1 gap-3">
+          <div className="mt-5 flex flex-wrap gap-4">
 
             <Feature text="Flexible Tenure" />
 

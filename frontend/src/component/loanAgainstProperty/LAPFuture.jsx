@@ -74,6 +74,7 @@ const LAPBenefits = () => {
             <span className="block  text-[#186A07]">
               Can Help You
             </span>
+           
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-500 sm:text-lg">

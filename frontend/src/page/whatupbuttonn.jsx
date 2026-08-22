@@ -41,18 +41,21 @@ const WhatsAppButton = () => {
                         items-center
                         justify-center
                         rounded-2xl
-                       bg-linear-to-r 
-                       from-[#186A07]
-                        to-[#0B2578]
-                        text-white
-                        transition-transform
-                        duration-300
+                       
+                        
+                        bg-emerald-50
+                    text-[#2c8e18]
+                        transition-all duration-300 ease-out
+                      group-hover:bg-[#118A09]
+                      group-hover:text-white
+                        group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
                         group-hover:scale-110
                       "
                     >
                        
                       <FaWhatsapp size={24} />
                     </div>
+     
   
  
                     <div>

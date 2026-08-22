@@ -63,9 +63,12 @@ const LoanCalculator = () => {
             Loan Calculator
           </div>
 
-          <h2 className=" text-4xl font-bold text-gray-900 md:text-5xl">
-            Calculate Your Loan EMI
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tightt">
+            Calculate Your {" "}
+            <span className="  bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] bg-clip-text text-transparent ">Loan EMI</span>
+            
           </h2>
+         
 
           <p className="mx-auto mt-3 max-w-2xl text-slate-600">
             Estimate your monthly EMI, total interest and repayment amount

@@ -1,16 +1,6 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import { ArrowRight } from "lucide-react";
+
+
 import LoanNeedSection from "../../component/layout/landneedSection";
 import WhyChooseUs from "../whyChooseuse";
 import LoanApplicationProcess from "../LoanApplicationProcess";
@@ -27,7 +17,7 @@ const Home = () => {
   return (
     <>
       {/* hero */}
-      <Header />
+      <Header/>
       {/* card */}
       <Product />
       <LoanNeedSection />

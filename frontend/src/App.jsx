@@ -7,6 +7,8 @@ import { HomeLoan } from "./page/LoanCardPage/HomeLoan";
 
 import LoanAgaintProperty from "./page/LoanCardPage/LoanAgaintProperty";
 import PersonalLoan from "./page/LoanCardPage/personalLoan";
+import BusinessLoanPage from "./page/LoanCardPage/BusinessLoanPage";
+import { EducationLoanPage } from "./page/LoanCardPage/EducationLoan";
 
 
 
@@ -40,11 +42,11 @@ const App=()=>{
   },
     {
      path:"/business-loan",
-     element:<HomeLoan/>
+     element:<BusinessLoanPage/>
   },
     {
      path:"/education-loan",
-     element:<HomeLoan/>
+     element:<EducationLoanPage/>
   },
     {
      path:"/car-loan",

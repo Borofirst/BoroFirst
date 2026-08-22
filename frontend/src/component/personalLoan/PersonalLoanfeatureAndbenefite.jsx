@@ -68,15 +68,8 @@ const benefits = [
   },
 ];
 
-const PersonalLoanFeaturesBenefits = ({
-  onEligibilityClick,
-}) => {
+const PersonalLoanFeaturesBenefits = () => {
   const handleEligibility = () => {
-    if (onEligibilityClick) {
-      onEligibilityClick();
-      return;
-    }
-
     document
       .getElementById("loan-eligibility")
       ?.scrollIntoView({
@@ -114,6 +107,7 @@ const PersonalLoanFeaturesBenefits = ({
             <span className="block text-[#186A07]">
               Your Financial Needs
             </span>
+             For The personal Laon
           </h2>
 
           {/* Description */}

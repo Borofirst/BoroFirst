@@ -9,4 +9,13 @@
 | Text             | `#172033` | */
 
 
-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+/* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+                                       {/* text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight */}
+{/* bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] bg-clip-text text-transparent  */}
+/* bg-emerald-50
+                    text-[#2c8e18]
+                        transition-all duration-300 ease-o  ut
+                      group-hover:bg-[#118A09]
+                      group-hover:text-white
+                        group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+                        group-hover:scale-110 */

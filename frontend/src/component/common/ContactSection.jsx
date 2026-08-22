@@ -289,13 +289,14 @@ const ContactSection = () => {
 
             {/* Heading */}
 
-            <h2 className="mt-8 text-4xl font-bold leading-tight text-gray-900">
+            <h2 className="mt-8 text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight  text-[#0F172A]">
               Connect with us now
-              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+              <span className=" bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] bg-clip-text text-transparent">
                 {" "}
                 Financial Goals
               </span>
             </h2>
+           
 
             {/* Description */}
 
@@ -343,17 +344,18 @@ const ContactSection = () => {
                         items-center
                         justify-center
                         rounded-2xl
-                       bg-linear-to-r 
-                       from-[#186A07]
-                        to-[#0B2578]
-                        text-white
-                        transition-transform
-                        duration-300
+                   bg-emerald-50
+                    text-[#2c8e18]
+                        transition-all duration-300 ease-out
+                      group-hover:bg-[#118A09]
+                      group-hover:text-white
+                        group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
                         group-hover:scale-110
                       "
                     >
                       <Icon size={24} />
                     </div>
+              
 
                     <div>
                       <h3 className="font-semibold text-gray-900">
@@ -437,6 +439,7 @@ const ContactSection = () => {
                     >
                       <Icon size={20} />
                     </a>
+                    
                   );
                 })}
               </div>

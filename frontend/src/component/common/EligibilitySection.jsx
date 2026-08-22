@@ -240,12 +240,13 @@ const LoanEligibilityChecker = () => {
             Smart Loan Eligibility Calculator
           </div>
 
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight">
             Check Your{" "}
-            <span className="text-[#186A07]">
+            <span className=" bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] text-transparent bg-clip-text ">
               Loan Eligibility
             </span>
           </h2>
+       
 
           <p className="mt-4 text-base leading-7 text-slate-500 sm:text-lg">
             Enter a few basic details to get an estimated loan
@@ -507,7 +508,7 @@ const LoanEligibilityChecker = () => {
                 {/* Rate */}
                 <div className="flex items-center justify-between rounded-xl border border-emerald-100 bg-emerald-50/60 px-4 py-3">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-100 text-[#2c8e18]">     
                       <TrendingUp size={18} />
                     </div>
 

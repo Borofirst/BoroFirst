@@ -20,7 +20,7 @@ import ContactSection from "../../component/common/ContactSection";
 export const HomeLoan = () => {
   return (
     <>
-      <HomeLoanHero />
+      <HomeLoanHero/>
       <TrustStrip />
       <WhatIsHomeLoan />
       <LoanUses />

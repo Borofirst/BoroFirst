@@ -288,3 +288,105 @@ export const personalLoanFAQs = [
 
 
 ];
+
+export const businessLoanFaqs = [
+  {
+    id: 1,
+    question: "Who can apply for a Business Loan?",
+    answer:
+      "Business owners, self-employed professionals, proprietorships, partnership firms, LLPs and eligible companies may be considered for business financing, subject to the lender's eligibility criteria. Business vintage, turnover, income, credit history and repayment capacity may be evaluated.",
+  },
+  {
+    id: 2,
+    question: "How much Business Loan can I get?",
+    answer:
+      "The eligible loan amount depends on factors such as business turnover, income, profitability, credit profile, existing obligations and repayment capacity. BOROFIRST can help you explore suitable financing options based on your requirement and business profile.",
+  },
+  {
+    id: 3,
+    question: "What documents are required for a Business Loan?",
+    answer:
+      "Documents may include PAN, identity and address proof, business registration documents, bank statements, financial or income documents, GST-related records and other information requested by the lender. Requirements vary by business type and loan product.",
+  },
+  {
+    id: 4,
+    question: "Does my credit score affect Business Loan eligibility?",
+    answer:
+      "Yes. Lenders may consider your credit history and credit score along with business financials, existing liabilities, repayment behaviour and overall creditworthiness while assessing your application.",
+  },
+  {
+    id: 5,
+    question: "Can I get a Business Loan if I already have existing loans?",
+    answer:
+      "Existing loans do not automatically make you ineligible. The lender may assess your current EMIs, outstanding obligations, income, business cash flow and repayment capacity before making a lending decision.",
+  },
+  {
+    id: 6,
+    question: "Can I get a Business Loan without collateral?",
+    answer:
+      "Some Business Loan products may be available without collateral, while others may require security. This depends on the lender, loan amount, business profile and specific loan product.",
+  },
+  {
+    id: 7,
+    question: "How long does the Business Loan process take?",
+    answer:
+      "Processing time varies depending on the lender, completeness of your documents, verification requirements and application profile. Providing accurate information and complete documentation can help make the process smoother.",
+  },
+  {
+    id: 8,
+    question: "Why choose BOROFIRST for Business Loan assistance?",
+    answer:
+      "BOROFIRST helps simplify the financing journey by helping you explore suitable lending options, understand eligibility factors, prepare documentation and navigate the application process with greater clarity. Loan approval and final terms remain subject to the respective lender's assessment.",
+  },
+];
+
+export const educationLoanFAQs = [
+  {
+    id: 1,
+    question: "What is an education loan?",
+    answer:
+      "An education loan is financing designed to help students cover eligible education-related expenses such as tuition fees, examination fees, books, accommodation and other approved costs, subject to the lender's terms and eligibility criteria.",
+  },
+  {
+    id: 2,
+    question: "Who can apply for an education loan?",
+    answer:
+      "Generally, students pursuing higher education in India or abroad can apply, with a parent, guardian or other eligible person often acting as a co-applicant. Eligibility depends on the lender, course, institution and applicant profile.",
+  },
+  {
+    id: 3,
+    question: "What expenses can an education loan cover?",
+    answer:
+      "Depending on the lender and loan terms, an education loan may cover tuition fees, examination fees, books and equipment, accommodation, travel for overseas education and other approved education-related expenses.",
+  },
+  {
+    id: 4,
+    question: "What documents are generally required for an education loan?",
+    answer:
+      "Commonly required documents may include identity and address proof, PAN, academic records, admission or offer letter, course fee details and income or financial documents of the co-applicant. Additional documents may be required depending on the applicant and lender.",
+  },
+  {
+    id: 5,
+    question: "Is a co-applicant required for an education loan?",
+    answer:
+      "A parent, guardian or eligible co-applicant is commonly required for many education loans, particularly when the student does not have an independent income. The exact requirement depends on the lender and applicant profile.",
+  },
+  {
+    id: 6,
+    question: "Can I get an education loan for studying abroad?",
+    answer:
+      "Yes, education loans may be available for eligible overseas education programs. The lender may consider factors such as the country, institution, course, admission status, funding requirement and applicant profile.",
+  },
+  {
+    id: 7,
+    question: "How is the interest rate and loan tenure decided?",
+    answer:
+      "The applicable interest rate and repayment tenure depend on factors such as the lender's policies, loan amount, course, institution, applicant profile, credit history and whether security or collateral is involved.",
+  },
+  {
+    id: 8,
+    question: "How can BOROFIRST help with my education loan?",
+    answer:
+      "BOROFIRST helps students and families understand their education loan requirements, eligibility factors, documentation and available financing possibilities. Final approval, interest rate, tenure and loan terms are subject to the respective lender's policies and eligibility criteria.",
+  },
+];
