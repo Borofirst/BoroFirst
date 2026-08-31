@@ -13,6 +13,7 @@ import express from "express";
 import cors from "cors";
 import connectDB from "./db/db.js";
 import router from "./Router/router.contact.rout.js";
+import routerPartner from "./Router/router.become.partner.js";
 
 
 const app = express();
@@ -32,6 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 
 app.use("/api/contact", router);
+app.use("/api/partner", routerPartner);
 
 
 // Health check

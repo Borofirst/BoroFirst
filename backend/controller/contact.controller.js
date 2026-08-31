@@ -1,5 +1,5 @@
 import Contact from "../models/Contact.js";
-import { sendContactNotification } from "../utils/sendEmail.js";
+import { sendNotification } from "../utils/sendEmail.js";
 
 export const createContact = async (req, res, next) => {
   try {
@@ -59,11 +59,9 @@ export const createContact = async (req, res, next) => {
       message,
     });
    
-    // contact.save(); 
-
-    // Send notification email
+  
     try {
-     const responce = await sendContactNotification(contact);
+      sendNotification("contact", contact)
     } catch (emailError) {
       console.error("Email notification failed:", emailError.message);
 

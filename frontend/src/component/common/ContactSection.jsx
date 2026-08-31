@@ -9,20 +9,20 @@ import {
   FaYoutube,
   FaArrowRight,
   FaCheckCircle,
-  FaWhatsapp,
+
 } from "react-icons/fa";
 
 import {
-  MdEmail,
+
   MdLocationOn,
   MdAccessTime,
-  MdOutlineSupportAgent,
+
 } from "react-icons/md";
 
 import { BsPatchQuestionFill } from "react-icons/bs";
 import { submitContactForm } from "../../service/contectService";
 import WhatsAppButton from "../../page/whatupbuttonn";
-import { href } from "react-router-dom";
+import { MessageCircleHeart } from "lucide-react";
 
 // =========================================
 // Loan Types
@@ -212,10 +212,7 @@ const ContactSection = () => {
       setLoading(true);
       setSuccess("");
 
-      // const response = await axios.post(
-      //   "http://localhost:5000/api/contact",
-      //   formData
-      // );
+     
 
       const response = await submitContactForm(formData);
       console.log(response);
@@ -263,7 +260,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gray-50 py-24">
+    <section id="contact" className="relative overflow-hidden bg-gray-50 py-24 " >
       {/* Background Decoration */}
 
       <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-emerald-100 blur-3xl opacity-40"></div>
@@ -279,11 +276,15 @@ const ContactSection = () => {
           <div className="lg:sticky lg:top-24 h-fit">
             {/* Badge */}
 
-            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2">
-              <BsPatchQuestionFill size={18} className="text-emerald-600" />
+               <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
+              <BsPatchQuestionFill
+                size={18}
+                className="text-[#186A07]"
+            
+              />
 
-              <span className="font-semibold text-emerald-700">
-                Need Financial Assistance?
+              <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
+               Need Financial Assistance?
               </span>
             </div>
 
@@ -458,9 +459,17 @@ const ContactSection = () => {
             {/* Form Heading */}
 
             <div>
-              <span className="inline-flex rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
-                Contact Form
+                <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
+              <MessageCircleHeart
+                size={18}
+                className="text-[#186A07]"
+            
+              />
+
+              <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
+               Contact Form
               </span>
+            </div>
 
               <h3 className="mt-5 text-3xl font-bold text-gray-900">
                 Send Us a Message
@@ -490,7 +499,16 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="John Doe"
-                    className="w-full rounded-2xl border-2 border-gray-300 px-5 py-4 outline-none transition-all duration-300 focus:border-[#186A07] "
+                    // className="w-full rounded-2xl border-2 border-gray-300 px-5 py-4 outline-none transition-all duration-300 focus:border-[#186A07] "
+                    className="
+  w-full rounded-xl border border-slate-200 bg-white
+  px-4 py-3 text-sm text-slate-900
+  outline-none
+  transition-all duration-200
+  placeholder:text-slate-400
+  focus:border-[#186A07]
+  focus:ring-2 focus:ring-[#186A07]/15
+"
                   />
 
                   {errors.name && (
@@ -509,7 +527,15 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="example@email.com"
-                    className="w-full rounded-2xl border-2 border-gray-300 px-5 py-4 outline-none transition-all duration-300 focus:border-[#186A07]"
+                   className="
+  w-full rounded-xl border border-slate-200 bg-white
+  px-4 py-3 text-sm text-slate-900
+  outline-none
+  transition-all duration-200
+  placeholder:text-slate-400
+  focus:border-[#186A07]
+  focus:ring-2 focus:ring-[#186A07]/15
+"
                   />
 
                   {errors.email && (
@@ -532,7 +558,15 @@ const ContactSection = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+91 9876543210"
-                    className="w-full rounded-2xl border-2 border-gray-300 px-5 py-4 outline-none transition-all duration-300 focus:border-[#186A07]"
+                   className="
+  w-full rounded-xl border border-slate-200 bg-white
+  px-4 py-3 text-sm text-slate-900
+  outline-none
+  transition-all duration-200
+  placeholder:text-slate-400
+  focus:border-[#186A07]
+  focus:ring-2 focus:ring-[#186A07]/15
+"
                   />
 
                   {errors.phone && (
@@ -551,7 +585,15 @@ const ContactSection = () => {
                     value={formData.city}
                     onChange={handleChange}
                     placeholder="New Delhi"
-                    className="w-full rounded-2xl border-2 border-gray-300 px-5 py-4 outline-none transition-all duration-300 focus:border-[#186A07]"
+                  className="
+  w-full rounded-xl border border-slate-200 bg-white
+  px-4 py-3 text-sm text-slate-900
+  outline-none
+  transition-all duration-200
+  placeholder:text-slate-400
+  focus:border-[#186A07]
+  focus:ring-2 focus:ring-[#186A07]/15
+"
                   />
 
                   {errors.city && (
@@ -572,7 +614,15 @@ const ContactSection = () => {
                     name="loanType"
                     value={formData.loanType}
                     onChange={handleChange}
-                    className="w-full rounded-2xl border-2 border-gray-300 bg-white px-5 py-4 outline-none transition-all duration-300 focus:border-[#186A07]"
+                    className="
+  w-full rounded-xl border border-slate-200 bg-white
+  px-4 py-3 text-sm text-slate-900
+  outline-none
+  transition-all duration-200
+  placeholder:text-slate-400
+  focus:border-[#186A07]
+  focus:ring-2 focus:ring-[#186A07]/15
+"
                   >
                     <option value="">Select Loan Type</option>
 
@@ -601,7 +651,15 @@ const ContactSection = () => {
                     value={formData.loanAmount}
                     onChange={handleChange}
                     placeholder="₹ 10,00,000"
-                    className="w-full rounded-2xl border-2 border-gray-300 px-5 py-4 outline-none transition-all duration-300 focus:border-[#186A07]"
+                   className="
+  w-full rounded-xl border border-slate-200 bg-white
+  px-4 py-3 text-sm text-slate-900
+  outline-none
+  transition-all duration-200
+  placeholder:text-slate-400
+  focus:border-[#186A07]
+  focus:ring-2 focus:ring-[#186A07]/15
+"
                   />
                 </div>
                 {errors.loanAmount && (
@@ -627,7 +685,15 @@ const ContactSection = () => {
                   value={formData.purpose}
                   onChange={handleChange}
                   placeholder="Tell us why you need financial assistance..."
-                  className="w-full resize-none rounded-2xl border-2 border-gray-300 px-5 py-4 outline-none transition-all duration-300 focus:border-[#186A07]"
+                 className="
+  w-full rounded-xl border border-slate-200 bg-white
+  px-4 py-3 text-sm text-slate-900
+  outline-none
+  transition-all duration-200
+  placeholder:text-slate-400
+  focus:border-[#186A07]
+  focus:ring-2 focus:ring-[#186A07]/15
+"
                 />
               </div>
 

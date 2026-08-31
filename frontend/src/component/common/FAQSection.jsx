@@ -6,6 +6,7 @@ import {
   ArrowRight,
   Plus,
   Minus,
+  ArrowUpRight,
 } from "lucide-react";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
@@ -35,10 +36,18 @@ const FAQSection = ({faqs}) => {
           <div className="lg:sticky lg:top-28 h-fit">
             {/* Badge */}
 
-            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2">
-              <HelpCircle size={18} className="text-emerald-600" />
+           
+                
+                <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
+              <HelpCircle
+                size={18}
+                className="text-[#186A07]"
+            
+              />
 
-              <span className="font-semibold text-emerald-700">Need Help?</span>
+              <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
+               Need Help?
+              </span>
             </div>
 
             {/* Heading */}
@@ -60,7 +69,15 @@ const FAQSection = ({faqs}) => {
             {/* Support Card */}
 
             <div className="mt-12 rounded-3xl border border-gray-200 bg-white p-8 shadow-lg">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-r from-[#186A07] to-[#0B2578] text-white">
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl text-white
+               bg-[#186A07]
+                    
+                        transition-all duration-300 ease-o  ut
+                      hover:bg-[#125405]
+                      hover:text-white
+                     hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+                        hover:scale-110
+              ">
                 <Headphones size={30} />
               </div>
 
@@ -160,8 +177,8 @@ const FAQSection = ({faqs}) => {
 
                 ${
                   isOpen
-                    ? "bg-linear-to-r from-[#186A07] to-[#0B2578] text-white"
-                    : "bg-gray-100 text-gray-500 group-hover:bg-[#EAF5E8] group-hover:text-[#186A07]"
+                    ? " text-white   transition-all duration-300 ease-out bg-[#118A09]  shadow-[0_6px_15px_rgba(16,185,129,0.25)]"
+                    : "bg-gray-100 text-gray-500 group-hover:bg-[#EAF5E8]  group-hover:text-[#186A07]"
                 }
               `}
                       >
@@ -195,8 +212,8 @@ const FAQSection = ({faqs}) => {
 
               ${
                 isOpen
-                  ? "bg-linear-to-r from-[#186A07] to-[#0B2578] rotate-180 text-white"
-                  : "bg-gray-100"
+                  ? " rotate-180 text-white   transition-all duration-300 ease-out bg-[#118A09]  shadow-[0_6px_15px_rgba(16,185,129,0.25)]"
+                  : "bg-gray-100 text-gray-500 group-hover:bg-[#EAF5E8]  group-hover:text-[#186A07]"
               }
             `}
                     >
@@ -232,6 +249,9 @@ const FAQSection = ({faqs}) => {
             })}
           </div>
         </div>
+       
+
+    
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import { BadgeCheck, BadgeCheckIcon, ClipboardList, Files, FilesIcon, GraduationCap, SearchCheck, SearchCheckIcon } from "lucide-react";
+import {  BadgeCheckIcon,   FileText,Scale,BadgeCheck,WalletCards,ClipboardList, Files, FilesIcon, GraduationCap, SearchCheck, SearchCheckIcon, ShieldCheck, ClipboardCheck, CarFront } from "lucide-react";
 
 export const lapSteps = [
   {
@@ -109,6 +109,37 @@ export const personalLoanSteps = [
     text: "After successful lender assessment and sanction, complete the final formalities and receive the approved loan amount.",
   },
 ]
+
+
+export const goldLoanProcess = [
+  {
+    id: "01",
+    title: "Apply",
+    description: "Tell us your basic details",
+    icon: FileText,
+  },
+  {
+    id: "02",
+    title: "Gold Valuation",
+    description: "Bring eligible gold for assessment",
+    icon: Scale,
+  },
+  {
+    id: "03",
+    title: "Approval",
+    description: "Receive your applicable loan offer",
+    icon: BadgeCheck,
+  },
+  {
+    id: "04",
+    title: "Disbursement",
+    description:
+      "Funds are disbursed after completion of formalities",
+    icon: WalletCards,
+  },
+];
+
+
 export const educationLoanSteps = [
   {
     number: "01",
@@ -133,5 +164,73 @@ export const educationLoanSteps = [
     icon: BadgeCheckIcon,
     title: "Sanction & Education Funding",
     text: "Once the lender completes verification and approves the loan, complete the required formalities and receive funds as per the sanctioned terms and applicable disbursement process.",
+  },
+];
+
+
+
+
+export const carLoanProcess = [
+  {
+    number: "01",
+    icon: FileText,
+    title: "Submit Your Application",
+    description:
+      "Share your basic details, car requirement and preferred loan amount through our simple application process.",
+  },
+  {
+    number: "02",
+    icon: ClipboardCheck,
+    title: "Check Your Eligibility",
+    description:
+      "Our team reviews your income, credit profile and other details to understand your indicative loan eligibility.",
+  },
+  {
+    number: "03",
+    icon: CarFront,
+    title: "Choose Your Car & Loan",
+    description:
+      "Select your new or used car and finalize the suitable loan amount, tenure and repayment option.",
+  },
+  {
+    number: "04",
+    icon: WalletCards,
+    title: "Get Loan Approval",
+    description:
+      "Once your application and documents are verified, the lender processes the loan and proceeds towards disbursal.",
+  },
+];
+
+
+export const insuranceSteps = [
+  {
+    id: "01",
+    title: "Choose Your Protection",
+    shortTitle: "Choose Protection",
+    text: "Select the type of insurance you need.",
+    icon: ShieldCheck,
+  },
+  {
+    id: "02",
+    title: "Share Your Details",
+    shortTitle: "Share Details",
+    text: "Provide the required information.",
+    icon: FileText,
+  },
+  {
+    id: "03",
+    title: "Review Your Options",
+    shortTitle: "Review Options",
+    text:
+      "Understand available coverage, premiums and terms.",
+    icon: ClipboardCheck,
+  },
+  {
+    id: "04",
+    title: "Get Covered",
+    shortTitle: "Get Covered",
+    text:
+      "Complete the process and receive your policy from the relevant insurer.",
+    icon: BadgeCheck,
   },
 ];

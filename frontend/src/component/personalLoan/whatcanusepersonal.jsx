@@ -197,10 +197,10 @@ const PersonalLoanUses = () => {
                     absolute -right-10 -top-10
                     h-28 w-28
                     rounded-full
-                    bg-emerald-400/10
+                    bg-[#EAF6E7]
                     blur-2xl
                     transition-all duration-500
-                    group-hover:bg-emerald-400/20
+                    group-hover:border-[#186A07]/30
                   "
                 />
 

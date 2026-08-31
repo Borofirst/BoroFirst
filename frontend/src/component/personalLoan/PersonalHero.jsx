@@ -255,9 +255,9 @@ const PersonalLoanHero = () => {
                  <div className="lap-hero-image relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[#F8FAFC] shadow-2xl shadow-slate-200/70">
 
               <img
-                src="/home-loan-family-keys.png"
+                src="/personalLoan.png"
                 alt="Indian property owners standing outside a modern property"
-                className="h-[480px] w-full object-cover transition duration-1000 ease-out hover:scale-[1.02] sm:h-[560px] lg:h-[620px]"
+                className="h-[480px] w-full object-contain transition duration-1000 ease-out hover:scale-[1.02] sm:h-[560px] lg:h-[620px]"
               />
 
               {/* Subtle image gradient */}

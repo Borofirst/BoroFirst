@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { ProcessCard } from "../component/layout/processCard";
 import { processSteps } from "../data/LoanApplicationProcess";
+import { Link } from "react-router-dom";
 
 const LoanApplicationProcess = () => {
   return (
@@ -86,10 +87,13 @@ const LoanApplicationProcess = () => {
               </div>
 
               {/* CTA Button */}
-              <button className="group inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-semibold text-emerald-700 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+              <Link to="contact">
+                            <button className="group inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-semibold text-emerald-700 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
                 Apply for Loan
                 <ArrowRight className="transition-transform w-5 h-5 duration-300 group-hover:translate-x-1"/>
               </button>
+              </Link>
+
             </div>
           </div>
         </div>

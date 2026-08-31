@@ -46,6 +46,11 @@ const loanConfig = {
     foir: 0.50,
    
   },
+  "Car Loan": {
+    interestRate: 10,
+    foir: 0.50,
+   
+  },
 };
 
 
@@ -392,6 +397,7 @@ const LoanEligibilityChecker = () => {
                       <option>Loan Against Property</option>
                       <option>Business Loan</option>
                       <option>Education Loan</option>
+                      <option>Car Loan</option>
                     </select>
                   </div>
                 </div>

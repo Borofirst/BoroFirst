@@ -2,11 +2,21 @@ import { useState } from "react";
 import { ChevronRight } from "lucide-react";
 
 import { loanNeeds, loanNeedData } from "../../data/loanNeedData";
+import { Link } from "react-router-dom";
 
 const LoanNeedSection = () => {
   const [activeTab, setActiveTab] = useState("home");
 
   const activeLoans = loanNeedData[activeTab];
+          const handleSeviecs = () => {
+    // Replace with your eligibility section ID or route.
+    document
+      .getElementById("services")
+      ?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+  };
 
   return (
     <section className="relative overflow-hidden bg-slate-50 py-20 lg:py-28">
@@ -73,13 +83,7 @@ const LoanNeedSection = () => {
           </div>
         </div>
 
-        {/* Loan Cards Start Here */}
-        {/* PART 2 WILL START FROM HERE */}
-        {/* Loan Cards */}
-        {/* Loan Cards */}
-
-        {/* Loan Cards */}
-
+     
         <div
           key={activeTab}
           className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
@@ -127,15 +131,14 @@ const LoanNeedSection = () => {
 
                 {/* Buttons */}
 
+                    <Link to="/contact">
                 <div className="mt-7 flex gap-3">
                   <button className="flex-1 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] py-3 text-sm font-semibold text-white transition-all duration-300 hover:shadow-lg">
                     {loan.primaryBtn}
-                  </button>
+                    </button>
 
-                  <button className="rounded-xl border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-700 transition-all duration-300 hover:border-emerald-500 hover:text-emerald-600">
-                    Details
-                  </button>
                 </div>
+                    </Link>
               </div>
             );
           })}
@@ -166,11 +169,19 @@ const LoanNeedSection = () => {
             {/* Right */}
 
             <div className="flex flex-wrap gap-4">
+                  <a
+                    
+                    href="tel:+917060162526"
+                
+                  
+                  >
               <button className="rounded-xl bg-white px-8 py-4 font-semibold text-[#0B2578] transition-all duration-300 hover:scale-105 hover:bg-slate-100">
                 Talk to an Expert
               </button>
+              </a>
+            
 
-              <button className="rounded-xl border border-white/40 px-8 py-4 font-semibold backdrop-blur transition-all duration-300 hover:bg-white/10">
+              <button onClick={handleSeviecs} className="rounded-xl border border-white/40 px-8 py-4 font-semibold backdrop-blur transition-all duration-300 hover:bg-white/10">
                 View All Loans
               </button>
             </div>

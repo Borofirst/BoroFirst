@@ -92,34 +92,7 @@ const ProductCard = ({ product }) => {
 
       {/* Spacer */}
 
-      <div className="flex-grow"></div>
-
-      {/* Learn More */}
-
-      {/* <button
-        className="
-        mt-8
-        flex
-        items-center
-        gap-2
-        font-semibold
-        text-emerald-600
-        transition-all
-        duration-300
-        group-hover:gap-4
-      "
-      >
-        Learn More
-
-        <ArrowRight
-          size={18}
-          className="transition-transform duration-300 group-hover:translate-x-1"
-        />
-      </button> */}
-      <button className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl border border-gray-200 py-3 font-semibold text-gray-700 transition-all duration-300 hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-600">
-        Learn More
-        <ArrowRight size={18} />
-      </button>
+    
 
       {/* Hover Glow */}
 

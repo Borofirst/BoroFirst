@@ -31,7 +31,7 @@ const WhatIsHomeLoan = () => {
   const [contentRef, contentVisible] = useReveal();
 
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section className="bg-[#F8FAFC] py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 
         <div className="grid gap-12  lg:grid-cols-[0.9fr_1.1fr]">

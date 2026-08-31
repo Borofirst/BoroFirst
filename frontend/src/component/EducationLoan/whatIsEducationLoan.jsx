@@ -412,15 +412,6 @@ const EducationLoanWhatIs = () => {
       <div className="pointer-events-none absolute inset-0">
         {/* Grid */}
 
-        <div
-          className="
-            absolute
-            inset-0
-            opacity-[0.025]
-            [background-image:linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
-            [background-size:55px_55px]
-          "
-        />
 
         {/* Emerald glow */}
 

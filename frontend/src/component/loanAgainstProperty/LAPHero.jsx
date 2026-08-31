@@ -48,7 +48,8 @@ const LAPHero = () => {
       {/* ==========================================================
           BACKGROUND DECORATION
       ========================================================== */}
-
+     
+     
       <div className="pointer-events-none absolute -left-32 top-20 h-72 w-72 rounded-full bg-emerald-100/60 blur-3xl" />
 
       <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-blue-50 blur-3xl" /> 
@@ -96,6 +97,7 @@ const LAPHero = () => {
           />
         </svg>
       </div>
+      
 
       {/* ==========================================================
           MAIN CONTAINER
@@ -190,9 +192,9 @@ const LAPHero = () => {
               <div className="lap-hero-image relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[#F8FAFC] shadow-2xl shadow-slate-200/70">
 
               <img
-                src="/home-loan-family-keys.png"
+                src="/lap.png"
                 alt="Indian property owners standing outside a modern property"
-                className="h-[480px] w-full object-cover transition duration-1000 ease-out hover:scale-[1.02] sm:h-[560px] lg:h-[620px]"
+                className="h-[480px] w-full object-contain transition duration-1000 ease-out hover:scale-[1.02] sm:h-[560px] lg:h-[620px]"
               />
 
               {/* Subtle image gradient */}

@@ -10,7 +10,7 @@ const HowItWorks = ({
   id = "how-it-works",
 }) => {
   return (
-    <section id={id} className="py-20 lg:py-28 ">
+    <section id={id} className="py-20 lg:py-28 bg-[#F8FAFC]">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 
         {/* Header */}

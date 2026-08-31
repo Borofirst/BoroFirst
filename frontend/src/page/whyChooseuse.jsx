@@ -92,7 +92,15 @@ const FeatureCard = ({ item }) => {
   return (
     <div className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
       <div className="flex items-start gap-5">
-        <div className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-600 text-white transition-transform duration-300 group-hover:rotate-6">
+        <div className="flex h-14 w-14 items-center justify-center rounded-full text-white/90 group-hover:rotate-6
+                
+                hover:text-white/90
+                        transition-all duration-300 ease-out
+                      bg-[#118A09]
+                      group-hover:text-white
+                        group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
+                        group-hover:scale-110 
+        ">
           <Icon size={28} />
         </div>
 

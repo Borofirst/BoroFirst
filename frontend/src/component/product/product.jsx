@@ -1,17 +1,25 @@
 import React from "react";
 import { loanProduct } from "../../assets/productData";
 import { Link } from "react-router-dom";
-
-
+import { MdDesignServices } from "react-icons/md";
 const Product = () => {
 
   return (
-    <section className="py-24 bg-slate-50">
+    <section id="services" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 font-semibold">
-            Our Financial Solutions
-          </span>
+      
+            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
+              <MdDesignServices
+                size={15}
+                className="text-[#186A07]"
+                strokeWidth={2}
+              />
+
+              <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
+                  Our Financial Solutions
+              </span>
+            </div>
           <h2 className="mt-5 text-4xl lg:text-5xl font-bold text-slate-900">
             Loans & Financial Services
           </h2>
@@ -21,14 +29,14 @@ const Product = () => {
           </p>
         </div>
         {/* Cards Here */}
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {loanProduct.map((item, index) => {
-            console.log(loanProduct);
+          
             const Icon = item.icon;
             return (
               <div
                 key={index}
-                className="group  rounded-3xl border border-slate-200 bg-white p-8 transition-all duration-500 hover:-translate-y-3 hover:border-[#1A5E04] hover:shadow-2xl"
+                className="group  rounded-3xl border border-slate-200 bg-white p-6 transition-all duration-500 hover:-translate-y-3 hover:border-[#1A5E04] hover:shadow-2xl"
               >
                 <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-linear-to-r from-emerald-200/40 to-blue-200/40 blur-3xl transition-all duration-500 group-hover:scale-150"></div>
 
@@ -38,11 +46,11 @@ const Product = () => {
                   <Icon size={38} />
                 </div>
 
-                <h3 className="mt-8 text-2xl font-bold text-slate-900">
+                <h3 className="mt-6 text-2xl font-bold text-slate-900">
                   {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-slate-600">
+                <p className="mt-3 leading-7 text-slate-600">
                   {item.description}
                 </p>
 
@@ -55,9 +63,12 @@ const Product = () => {
                 </div>
                 <div>
                   <div className="flex justify-between ">
-                    <button className="mt-8 flex items-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">
+                    <Link to="contact">
+                                        <button className="mt-8 flex items-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">
                       Apply Now
                     </button>
+                    </Link>
+
                     <Link to={`${item.service}`} className="mt-8 flex items-center gap-2 rounded-xl bg-[#0B2578] px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">
                       Know More
                     </Link>

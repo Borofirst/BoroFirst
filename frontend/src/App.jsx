@@ -1,6 +1,6 @@
 
 import "./App.css"
-import { createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import Home from "./page/Home/Home";
 import { Applayout } from "./component/layout/applayout";
 import { HomeLoan } from "./page/LoanCardPage/HomeLoan";
@@ -9,6 +9,13 @@ import LoanAgaintProperty from "./page/LoanCardPage/LoanAgaintProperty";
 import PersonalLoan from "./page/LoanCardPage/personalLoan";
 import BusinessLoanPage from "./page/LoanCardPage/BusinessLoanPage";
 import { EducationLoanPage } from "./page/LoanCardPage/EducationLoan";
+import CarLoanPage from "./page/LoanCardPage/CarLoanPage";
+import GeneralInsurance from "./page/LoanCardPage/GeneralInsurance";
+import GoldLoanPage from "./page/LoanCardPage/GoldLoanPage";
+import ContactUs from "./page/ContactPage/ContactPage";
+import BecomePartner from "./page/BecomePartner/BecomePartner";
+import CareersPage from "./page/LoanCardPage/Carrer";
+import AboutBorofirst from "./page/About/about";
 
 
 
@@ -50,11 +57,33 @@ const App=()=>{
   },
     {
      path:"/car-loan",
-     element:<HomeLoan/>
+     element:<CarLoanPage/>
   },
     {
      path:"/general-insurance",
-     element:<HomeLoan/>
+     element:<GeneralInsurance/>
+  },
+    {
+     path:"/gold-loan",
+     element:<GoldLoanPage/>
+  },
+  
+    {
+     path:"/contact",
+     element:<ContactUs/>
+  },
+    {
+     path:"/partner",
+     element:<BecomePartner/>
+  },
+    {
+     path:"/career",
+     element:<CareersPage/>
+  },
+  
+    {
+     path:"/about",
+     element:<AboutBorofirst/>
   },
   
         ]

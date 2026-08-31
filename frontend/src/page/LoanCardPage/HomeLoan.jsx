@@ -4,7 +4,7 @@ import TrustStrip from "../../component/common/TrustStrip";
 import WhatIsHomeLoan from "../../component/HomeLOan/WhatIsHomeLoan";
 import LoanUses from "../../component/HomeLOan/LoanUses";
 import HomeLoanBenefits from "../../component/HomeLOan/HomeLoanBenefite";
-import EligibilitySection from "../../component/common/EligibilitySection";
+
 import WhyBoroFirst from "../../component/HomeLOan/WhyBoroFirst";
 import LoanCalculator from "../../component/common/LoanCalculator";
 import FAQSection from "../../component/common/FAQSection";

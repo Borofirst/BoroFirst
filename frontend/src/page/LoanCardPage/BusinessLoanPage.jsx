@@ -3,7 +3,7 @@ import BusinessLoanHero from '../../component/BusinessLoan/BusinessLoanHero'
 import WhatIsBusinessLoan from '../../component/BusinessLoan/whatIsBusinessLoan'
 import TrustStrip from '../../component/common/TrustStrip'
 import BusinessLoanUses from '../../component/BusinessLoan/BusinessLoanuse'
-import WhyChooseBusinessLoan from '../../component/BusinessLoan/WhyChooseBusinessLoan'
+
 import LoanEligibilityChecker from '../../component/common/EligibilitySection'
 import BusinessLoanDocuments from '../../component/BusinessLoan/BusinessDocument'
 import LoanCalculator from '../../component/common/LoanCalculator'
@@ -13,6 +13,8 @@ import WhyChooseBorofirst from '../../component/BusinessLoan/WhyBoroFirst'
 import ContactSection from '../../component/common/ContactSection'
 import { businessLoanFaqs } from '../../data/HomePageFAQDATA'
 import FAQSection from '../../component/common/FAQSection'
+import { businessLoanContent } from '../../data/WhyCooseData'
+import WhyChooseLoanBlue from '../../component/common/whyChooseLoan2'
 
 
 const BusinessLoanPage = () => {
@@ -22,10 +24,16 @@ const BusinessLoanPage = () => {
         <TrustStrip/>
         <WhatIsBusinessLoan/>
         <BusinessLoanUses/>
-        <WhyChooseBusinessLoan/>
+        <WhyChooseLoanBlue content={businessLoanContent} />
         <LoanEligibilityChecker/>
         <BusinessLoanDocuments/>
         <LoanCalculator/>
+           <HowItWorks   id="Business-loan-process"
+        eyebrow="Simple Process"
+        title="How Business Loan Works"
+        description="A simple journey from checking your eligibility to receiving your Business loan."
+        steps={businessLoanSteps}
+        />
 
 <WhyChooseBorofirst/>
 <ContactSection/>

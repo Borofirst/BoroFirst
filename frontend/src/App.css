@@ -19,3 +19,35 @@
                       group-hover:text-white
                         group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
                         group-hover:scale-110 */
+
+
+/* git push origin main - for pushing data on personal github
+/* git push company main  - for pushing data on company github                      */ 
+
+
+/* 
+
+Even better: You can change origin
+
+Once the company repository is ready, if you no longer need to push to your personal repository, you can make the company repository your main remote:
+
+git remote set-url origin https://github.com/COMPANY/borofirst-website.git
+
+Then:
+
+git remote -v
+
+will show:
+
+origin  https://github.com/COMPANY/borofirst-website.git (fetch)
+origin  https://github.com/COMPANY/borofirst-website.git (push)
+
+GitHub documents git remote set-url specifically for changing an existing remote's URL.
+
+Then your normal workflow becomes simply:
+
+git add .
+git commit -m "Update website"
+git push
+
+That's much easier. */

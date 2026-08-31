@@ -51,6 +51,7 @@ const DocumentCard = ({ document }) => {
             }
           `}
         >
+          
           <Icon size={21} />
         </div>
 

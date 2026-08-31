@@ -41,73 +41,76 @@ const Footer = () => {
     },
     {
       name: "Why Choose Us",
-      path: "/why-choose-us",
+      path: "/about",
+    },
+        {
+      name: "Loan Against Property",
+      path: "/loan-against-property",
     },
     {
       name: "Our Partners",
-      path: "/partners",
+      path: "/partner",
     },
     {
       name: "Careers",
-      path: "/careers",
+      path: "/career",
     },
     {
       name: "Contact Us",
       path: "/contact",
     },
   ];
+  
+
 
   const loanProducts = [
     {
       name: "Personal Loan",
-      path: "/loans/personal-loan",
+      path: "/personal-loan",
     },
     {
       name: "Home Loan",
-      path: "/loans/home-loan",
+      path: "home-loan",
     },
     {
       name: "Business Loan",
-      path: "/loans/business-loan",
+      path: "/business-loan",
     },
     {
       name: "Vehicle Loan",
-      path: "/loans/vehicle-loan",
+      path: "#",
     },
     {
       name: "Education Loan",
-      path: "/loans/education-loan",
+      path: "/education-loan",
     },
     {
       name: "Gold Loan",
-      path: "/loans/gold-loan",
+      path: "/gold-loan",
     },
   ];
 
   const financialServices = [
     {
       name: "Health Insurance",
-      path: "/services/health-insurance",
+   
     },
     {
       name: "Home Insurance",
-      path: "/services/home-insurance",
+      
     },
     {
       name: "SIP Investment",
-      path: "/services/sip-investment",
+     
     },
     {
       name: "Credit Card",
-      path: "/services/credit-card",
+  
     },
-    {
-      name: "Loan Against Property",
-      path: "/services/loan-against-property",
-    },
+
     {
       name: "Financial Consultation",
-      path: "/services/financial-consultation",
+   
     },
   ];
 
@@ -186,12 +189,23 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative overflow-hidden bg-linear-to-br from-slate-300 via-slate-800 to-slate-950 text-white">
+ <footer className="relative overflow-hidden text-black w-[98%] m-auto mb-4 rounded-2xl border-4 border-transparent">
+   <div
+  className="pointer-events-none absolute inset-0 rounded-2xl"
+  style={{
+    padding: "3px",
+    background: "linear-gradient(to right, #186A07, #0B2578)",
+    WebkitMask:
+      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+    WebkitMaskComposite: "xor",
+    maskComposite: "exclude",
+  }}
+/>
       {/* =========================================
           Main Footer Content
       ========================================= */}
 
-      <section className="relative px-2 pb-5 pt-5 sm:px-6 lg:px-6">
+      <section className="relative px-2 pb-8 pt-8 sm:px-6 lg:px-6">
         <div className="mx-auto max-w-7xl">
           {/* =========================================
     Main Footer Navigation
@@ -215,7 +229,7 @@ const Footer = () => {
 
               {/* Description */}
 
-              <p className="mt-6 max-w-sm text-sm leading-7 text-white">
+              <p className="mt-6 max-w-sm text-sm leading-7 ">
                 Helping individuals and businesses access smarter financial
                 solutions with transparency, simplicity, and confidence.
               </p>
@@ -223,7 +237,7 @@ const Footer = () => {
               {/* Trust Badge */}
 
               <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-gray-800 bg-gray-900/70 px-4 py-2.5">
-                <FaShieldAlt size={17} className="text-emerald-400" />
+                <FaShieldAlt size={17} className="text-[#2c8e18]" />
 
                 <span className="text-xs font-medium text-gray-300">
                   Secure & Confidential
@@ -233,7 +247,7 @@ const Footer = () => {
               {/* Social Media */}
 
               <div className="mt-7">
-                <p className="mb-4 text-sm font-semibold text-white">
+                <p className="mb-4 text-sm font-semibold text-[#186A07] ">
                   Follow Us
                 </p>
 
@@ -242,19 +256,56 @@ const Footer = () => {
                     const Icon = social.icon;
 
                     return (
+                  
                       <a
-                        key={social.name}
-                        href={social.url}
-                        aria-label={`Follow BoroFirst on ${social.name}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group flex h-10 w-10 items-center justify-center rounded-xl border border-gray-800 bg-gray-900 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:bg-linear-to-br hover:from-emerald-500 hover:to-blue-600 hover:text-white hover:shadow-lg hover:shadow-emerald-500/10"
-                      >
-                        <Icon
-                          size={16}
-                          className="transition-transform duration-300 group-hover:scale-110"
-                        />
-                      </a>
+  key={social.name}
+  href={social.url}
+  aria-label={`Follow BoroFirst on ${social.name}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    group relative flex h-11 w-11 items-center justify-center
+    overflow-hidden rounded-xl
+    border border-[#186A07]/40
+    bg-[#186A07]
+    text-white
+    shadow-sm
+    transition-all duration-300 ease-out
+    hover:-translate-y-1
+    hover:border-[#0B2578]
+    hover:bg-gradient-to-br
+    hover:from-[#186A07]
+    hover:to-[#0B2578]
+    hover:shadow-lg
+    hover:shadow-[#186A07]/20
+    active:translate-y-0
+  "
+>
+  {/* Hover Shine */}
+  <span
+    className="
+      absolute inset-0
+      -translate-x-full
+      bg-linear -to-r
+      from-transparent
+      via-white/20
+      to-transparent
+      transition-transform duration-700
+      group-hover:translate-x-full
+    "
+  />
+
+  {/* Icon */}
+  <Icon
+    size={17}
+    className="
+      relative z-10
+      transition-all duration-300
+      group-hover:scale-110
+      group-hover:rotate-3
+    "
+  />
+</a>
                     );
                   })}
                 </div>
@@ -266,7 +317,7 @@ const Footer = () => {
   ========================================= */}
 
             <div className="lg:col-span-2">
-              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider ">
                 Company
               </h3>
 
@@ -276,7 +327,7 @@ const Footer = () => {
                     <li key={link.name}>
                       <Link
                         to={link.path}
-                        className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+                        className="group inline-flex items-center gap-2 text-sm  transition-all duration-300 hover:translate-x-1 hover:text-[#2c8e18]"
                       >
                         <span>{link.name}</span>
 
@@ -296,7 +347,7 @@ const Footer = () => {
   ========================================= */}
 
             <div className="lg:col-span-2">
-              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider">
                 Loan Products
               </h3>
 
@@ -306,7 +357,7 @@ const Footer = () => {
                     <li key={loan.name}>
                       <Link
                         to={loan.path}
-                        className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+                        className="group inline-flex items-center gap-2 text-sm  transition-all duration-300 hover:translate-x-1 hover:text-[#2c8e18]"
                       >
                         <span>{loan.name}</span>
 
@@ -326,7 +377,7 @@ const Footer = () => {
   ========================================= */}
 
             <div className="lg:col-span-2">
-              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider">
                 Financial Services
               </h3>
 
@@ -336,14 +387,10 @@ const Footer = () => {
                     <li key={service.name}>
                       <Link
                         to={service.path}
-                        className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+                        className="group inline-flex items-center gap-2 text-sm transition-all duration-300 hover:translate-x-1 hover:text-[#2c8e18]"
                       >
                         <span>{service.name}</span>
 
-                        <MdOpenInNew
-                          size={14}
-                          className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
-                        />
                       </Link>
                     </li>
                   ))}
@@ -356,7 +403,7 @@ const Footer = () => {
   ========================================= */}
 
             <div className="lg:col-span-2">
-              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider">
                 Resources
               </h3>
 
@@ -366,7 +413,7 @@ const Footer = () => {
                     <li key={resource.name}>
                       <Link
                         to={resource.path}
-                        className="group inline-flex items-center gap-2 text-sm text-white transition-all duration-300 hover:translate-x-1 hover:text-emerald-400"
+                        className="group inline-flex items-center gap-2 text-sm  transition-all duration-300 hover:translate-x-1 hover:text-[#2c8e18]"
                       >
                         <span>{resource.name}</span>
 
@@ -385,25 +432,80 @@ const Footer = () => {
           {/* =========================================
       Trust & Security
   ========================================= */}
-          <div className="mt-5 border-gray-800 ">
-            <div className=" grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {trustPoints.map((point) => (
-                <div
-                  key={point}
-                  className="flex items-center gap-2 rounded-xl border border-gray-800 bg-gray-900/40 px-3 py-3"
-                >
-                  <FaCheckCircle
-                    size={14}
-                    className="shrink-0 text-emerald-400"
-                  />
+         <div className="mt-7">
+  <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {trustPoints.map((point) => (
+      <div
+        key={point}
+        className="
+          group relative flex items-center gap-3
+          overflow-hidden
+          rounded-2xl
+          border border-[#DFF2D8]
+          bg-white/70
+          px-4 py-3.5
+          shadow-[0_4px_15px_rgba(24,106,7,0.06)]
+          backdrop-blur-sm
+          transition-all duration-300 ease-out
 
-                  <span className="text-xs font-medium text-gray-400">
-                    {point}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
+          hover:-translate-y-1
+          hover:border-[#BFE3B5]
+          hover:bg-[#F8FCF7]
+          hover:shadow-[0_10px_25px_rgba(24,106,7,0.12)]
+        "
+      >
+        {/* Subtle gradient accent */}
+        <span
+          className="
+            absolute left-0 top-0 h-full w-[3px]
+            bg-gradient-to-b
+            from-[#186A07]
+            to-[#0B2578]
+            opacity-70
+            transition-all duration-300
+            group-hover:w-1
+            group-hover:opacity-100
+          "
+        />
+
+        {/* Check Icon */}
+        <div
+          className="
+            relative flex h-8 w-8 shrink-0
+            items-center justify-center
+            rounded-full
+            bg-[#EAF5E8]
+            text-[#186A07]
+            ring-1 ring-[#186A07]/10
+            transition-all duration-300
+            group-hover:bg-gradient-to-br
+            group-hover:from-[#186A07]
+            group-hover:to-[#0B2578]
+            group-hover:text-white
+            group-hover:ring-transparent
+            group-hover:scale-105
+          "
+        >
+          <FaCheckCircle size={16} />
+        </div>
+
+        {/* Text */}
+        <span
+          className="
+            text-xs
+            font-semibold
+            leading-5
+            text-gray-700
+            transition-colors duration-300
+            group-hover:text-[#186A07]
+          "
+        >
+          {point}
+        </span>
+      </div>
+    ))}
+  </div>
+</div>
 
           {/* =========================================
     Bottom Footer
@@ -473,7 +575,9 @@ const Footer = () => {
           </div>
         </div>
       </section>
-    </footer>
+
+
+     </footer>
   );
 };
 

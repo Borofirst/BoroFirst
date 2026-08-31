@@ -73,7 +73,7 @@ export const loanProduct = [
       "Own your preferred owned car with flexible financing, quick processing, and repayment options that fit your budget",
     amount: "Up to 90% Financing",
     button: "Apply Now",
-    color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
+    color: "bg-linear-to-br from-[#186A07]  to-[#0B2578]",
     service:"/car-loan"
   },
 
@@ -95,7 +95,7 @@ export const loanProduct = [
       "Get instant funds by pledging your gold jewellery with minimal documentation and fast disbursal.",
     amount: "Up to 75% Gold Value",
     button: "Get Loan",
-    color: "bg-linear-to-br from-[#186A07] via-[#13509A] to-[#0B2578",
+    color: "bg-linear-to-br from-[#186A07]  to-[#0B2578]",
     service:"/gold-loan"
   },
 

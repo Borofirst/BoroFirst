@@ -87,10 +87,7 @@ body {
     opacity 0.8s ease,
     transform 0.8s ease;
 }
-/* .reveal-left {
-  opacity: 0;
-  transform: translateX(-45px);
-} */
+
 
 .reveal-left.visible {
   opacity: 1;
@@ -122,98 +119,6 @@ body {
   opacity: 1;
   transform: scale(1);
 }
-
-/* -------------------------------- */
-/* Hero floating animation          */
-/* -------------------------------- */
-
-@keyframes floatCard {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.float-card {
-  animation: floatCard 4s ease-in-out infinite;
-}
-
-.float-card-delay {
-  animation: floatCard 4.5s ease-in-out infinite;
-  animation-delay: 0.8s;
-}
-
-/* -------------------------------- */
-/* Background glow                  */
-/* -------------------------------- */
-
-@keyframes softGlow {
-  0%,
-  100% {
-    opacity: 0.35;
-    transform: scale(1);
-  }
-
-  50% {
-    opacity: 0.55;
-    transform: scale(1.08);
-  }
-}
-
-.soft-glow {
-  animation: softGlow 6s ease-in-out infinite;
-}
-
-/* -------------------------------- */
-/* Timeline                         */
-/* -------------------------------- */
-
-@keyframes timelinePulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.35);
-  }
-
-  70% {
-    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
-  }
-}
-
-.timeline-active {
-  animation: timelinePulse 2s infinite;
-}
-
-/* -------------------------------- */
-/* Number transition                */
-/* -------------------------------- */
-
-.number-transition {
-  transition: all 0.35s ease;
-}
-
-/* -------------------------------- */
-/* Reduced motion                   */
-/* -------------------------------- */
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-
 
 
 /* lLAP */
@@ -328,146 +233,441 @@ body {
 
 
 
+ /* why choose loan */
+  /* =========================================================
+     FADE UP
+  ========================================================= */
 
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(24px);
+    }
 
-
-
-
-
-
-
-
-
-  /* why use education loan */
-  @keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes benefit-in {
-  from {
-    opacity: 0;
-    transform: translateY(25px) scale(0.97);
+  .animate-fade-up {
+    animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 
-@keyframes float {
+  /* =========================================================
+     FLOAT
+  ========================================================= */
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+
+  /* =========================================================
+     PULSE GLOW
+  ========================================================= */
+
+  @keyframes pulseGlow {
+    0%,
+    100% {
+      opacity: 0.35;
+      transform: scale(0.95);
+    }
+
+    50% {
+      opacity: 0.7;
+      transform: scale(1.08);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 4s ease-in-out infinite;
+  }
+
+
+  /* =========================================================
+     SLOW ORBIT / ROTATION
+  ========================================================= */
+
+  @keyframes slowSpin {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  .animate-slow-spin {
+    animation: slowSpin 24s linear infinite;
+  }
+
+
+  /* =========================================================
+     ORBITING DOTS
+  ========================================================= */
+
+  @keyframes orbit {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-orbit {
+    animation: orbit 14s linear infinite;
+  }
+
+
+  /* =========================================================
+     BENEFIT CARD 01
+  ========================================================= */
+
+  @keyframes cardOne {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-card-one {
+    animation: cardOne 5s ease-in-out infinite;
+  }
+
+
+  /* =========================================================
+     BENEFIT CARD 02
+  ========================================================= */
+
+  @keyframes cardTwo {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+  .animate-card-two {
+    animation: cardTwo 5.5s ease-in-out infinite;
+  }
+
+
+  /* =========================================================
+     BENEFIT CARD 03
+  ========================================================= */
+
+  @keyframes cardThree {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(8px);
+    }
+  }
+
+  .animate-card-three {
+    animation: cardThree 6s ease-in-out infinite;
+  }
+
+
+  /* =========================================================
+     BENEFIT CARD 04
+  ========================================================= */
+
+  @keyframes cardFour {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(-8px);
+    }
+  }
+
+  .animate-card-four {
+    animation: cardFour 5.8s ease-in-out infinite;
+  }
+
+
+  /* =========================================================
+     BENEFIT CARD 05
+  ========================================================= */
+
+  @keyframes cardFive {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-card-five {
+    animation: cardFive 5.2s ease-in-out infinite;
+  }
+
+
+  /* =========================================================
+     JOURNEY LINE
+  ========================================================= */
+
+  @keyframes lineGrow {
+    0% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-line-grow {
+    animation: lineGrow 1.8s
+      cubic-bezier(0.22, 1, 0.36, 1)
+      both;
+  }
+
+
+  /* =========================================================
+     REDUCED MOTION
+     Accessibility support
+  ========================================================= */
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-up,
+    .animate-float,
+    .animate-pulse-glow,
+    .animate-slow-spin,
+    .animate-orbit,
+    .animate-card-one,
+    .animate-card-two,
+    .animate-card-three,
+    .animate-card-four,
+    .animate-card-five,
+    .animate-line-grow {
+      animation: none !important;
+      transform: none !important;
+      opacity: 1 !important;
+    }
+  }
+
+
+
+
+
+
+
+
+/* car laon */
+
+@keyframes carFloat {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, -42%);
   }
 
   50% {
-    transform: translateY(-9px);
+    transform: translate(-50%, -46%);
   }
 }
 
-@keyframes pulse-glow {
+@keyframes floatLeft {
   0%,
   100% {
-    opacity: 0.3;
-    transform: scale(1);
+    transform: translateY(0) rotate(-1deg);
   }
 
   50% {
-    opacity: 0.55;
-    transform: scale(1.06);
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes floatRight {
+  0%,
+  100% {
+    transform: translateY(-3px) rotate(1deg);
+  }
+
+  50% {
+    transform: translateY(9px) rotate(-1deg);
+  }
+}
+
+@keyframes heroGlow {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 
 @keyframes orbit {
   from {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
-@keyframes slow-spin {
+@keyframes orbitReverse {
   from {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 }
 
-@keyframes line-grow {
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: translateY(-10px) rotate(15deg);
+  }
+}
+
+@keyframes heroEnter {
   from {
-    transform: scaleX(0);
+    opacity: 0;
+    transform: translateY(25px);
   }
 
   to {
-    transform: scaleX(1);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes line-grow-vertical {
-  from {
-    transform: scaleY(0);
-  }
-
-  to {
-    transform: scaleY(1);
-  }
-}
-
-.animate-fade-up {
-  animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.animate-benefit-in {
-  animation: benefit-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.animate-float {
-  animation: float 5s ease-in-out infinite;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 4s ease-in-out infinite;
-}
-
-.animate-orbit {
-  animation: orbit 35s linear infinite;
-}
-
-.animate-slow-spin {
-  animation: slow-spin 35s linear infinite;
-}
-
-.animate-line-grow {
-  animation: line-grow 1.5s ease-out both;
-}
-
-.animate-line-grow-vertical {
-  animation: line-grow-vertical 1.5s ease-out both;
+.hero-enter {
+  opacity: 0;
+  animation: heroEnter 0.8s ease-out forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-fade-up,
-  .animate-benefit-in,
-  .animate-float,
-  .animate-pulse-glow,
-  .animate-orbit,
-  .animate-slow-spin,
-  .animate-line-grow,
-  .animate-line-grow-vertical {
-    animation: none;
+  .hero-enter,
+  .animate-pulse {
+    animation: none !important;
+    opacity: 1;
+  }
+}
+
+
+
+/* why choose loan */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes centerFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes softGlow {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(25px, -15px) scale(1.08);
+  }
+}
+
+@keyframes softGlowReverse {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-20px, 15px) scale(1.08);
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
   }
 }

@@ -1,13 +1,4 @@
-// bg-linear-to-r from-[#186A07] to-[#0B2578]
-// text-[#186A07]
-// text-[#2c8e18]
-// text-slate-900 
-  //             text-[#2c8e18]
-  //                       transition-all duration-300 ease-out
-  // group-hover:bg-[#118A09]
-  // group-hover:text-white
-  // group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
-  // group-hover:scale-110
+
 import React from "react";
 import {
   ArrowRight,

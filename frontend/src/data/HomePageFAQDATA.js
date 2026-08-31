@@ -390,3 +390,194 @@ export const educationLoanFAQs = [
       "BOROFIRST helps students and families understand their education loan requirements, eligibility factors, documentation and available financing possibilities. Final approval, interest rate, tenure and loan terms are subject to the respective lender's policies and eligibility criteria.",
   },
 ];
+
+
+export const carLoanFAQs = [
+  {
+    id: "01",
+    question: "What is a car loan?",
+    answer:
+      "A car loan is a financing facility that helps you purchase a new or used car by borrowing the required amount and repaying it through monthly EMIs over an agreed tenure. The loan amount, interest rate and repayment terms depend on your eligibility and the lender's policy.",
+  },
+  {
+    id: "02",
+    question: "Can I get a car loan for both new and used cars?",
+    answer:
+      "Yes. Car financing may be available for both new and pre-owned cars. For a used car, the lender may consider factors such as the vehicle's age, condition, valuation and remaining usable life while determining eligibility and loan terms.",
+  },
+  {
+    id: "03",
+    question: "How much car loan can I get?",
+    answer:
+      "The eligible loan amount depends on factors such as your income, existing financial obligations, credit profile, vehicle value, down payment and the lender's credit policy. BOROFIRST can help you understand your indicative eligibility before you proceed.",
+  },
+  {
+    id: "04",
+    question: "What documents are required for a car loan?",
+    answer:
+      "Commonly required documents include PAN, identity and address proof, recent bank statements, income proof such as salary slips or ITRs, photographs and the vehicle quotation or related vehicle documents. Additional documents may be required depending on your profile and whether you are purchasing a new or used car.",
+  },
+  {
+    id: "05",
+    question: "What factors affect my car loan eligibility?",
+    answer:
+      "Eligibility is generally assessed based on factors such as age, income, employment or business stability, existing EMIs, credit history, credit score, down payment and the vehicle being financed. Each lender may apply its own eligibility and credit assessment criteria.",
+  },
+  {
+    id: "06",
+    question: "What is the interest rate on a car loan?",
+    answer:
+      "The applicable interest rate depends on factors such as your credit profile, income, loan amount, tenure, vehicle type and the lender's prevailing policy. BOROFIRST can help you explore suitable loan options based on your profile.",
+  },
+  {
+    id: "07",
+    question: "Can I repay my car loan before the end of the tenure?",
+    answer:
+      "Yes, depending on the lender's terms, you may be able to make a part-prepayment or close the loan before the scheduled tenure. Any applicable foreclosure or prepayment charges, conditions and minimum lock-in requirements depend on the lender and loan agreement.",
+  },
+  {
+    id: "08",
+    question: "How can I apply for a car loan through BOROFIRST?",
+    answer:
+      "You can start by submitting your basic details and car-loan requirement through BOROFIRST. Our team can help you understand your indicative eligibility, required documents and available financing options before you proceed with the lender's application and verification process.",
+  },
+];
+
+
+export const generalInsuranceFAQs = [
+  {
+    id: "01",
+    question: "What is general insurance?",
+    answer:
+      "General insurance provides financial protection against eligible risks such as vehicle damage, health-related expenses, travel-related events, property risks and certain business risks, depending on the policy.",
+  },
+  {
+    id: "02",
+    question: "What types of general insurance can I explore through BOROFIRST?",
+    answer:
+      "Depending on availability, you can explore categories such as motor, health, home, travel and business insurance. The products, coverage and insurers available may vary.",
+  },
+  {
+    id: "03",
+    question: "How do I choose the right insurance for my needs?",
+    answer:
+      "Start by identifying what you want to protect and the risks you want to prepare for. You can then review relevant insurance categories, coverage, premiums, exclusions and policy terms before making a decision.",
+  },
+  {
+    id: "04",
+    question: "Can BOROFIRST help me understand my insurance options?",
+    answer:
+      "BOROFIRST is designed to make the insurance journey easier to understand by helping you explore relevant options and providing guidance where available. Final coverage and policy decisions are subject to the selected insurer and policy terms.",
+  },
+  {
+    id: "05",
+    question: "What factors affect an insurance premium?",
+    answer:
+      "Premiums can depend on factors such as the type of insurance, coverage selected, insured value, policy duration, personal or asset-related details, risk factors and the insurer's pricing terms.",
+  },
+  {
+    id: "06",
+    question: "What documents are generally required for insurance?",
+    answer:
+      "Documentation varies by insurance type and insurer. Depending on the policy, you may need identity, address, vehicle, health, travel, property or business-related information and documents.",
+  },
+  {
+    id: "07",
+    question: "Does insurance cover every type of loss or risk?",
+    answer:
+      "No. Insurance coverage is subject to the specific policy, exclusions, conditions and applicable terms. It is important to review what is covered and what is excluded before purchasing a policy.",
+  },
+  {
+    id: "08",
+    question: "How does the insurance claims process work?",
+    answer:
+      "A claim generally involves notifying the relevant insurer, submitting the required information and documents, and following the insurer's assessment process. Claim approval and settlement depend on the policy terms and insurer's decision.",
+  },
+  {
+    id: "09",
+    question: "Can I compare different insurance options?",
+    answer:
+      "Where multiple options are available, you can review factors such as coverage, premium, exclusions, benefits and policy terms to make a more informed decision. Availability depends on the relevant products and insurers.",
+  },
+  {
+    id: "10",
+    question: "Is insurance mandatory in India?",
+    answer:
+      "Some forms of insurance have legal requirements in specific situations. For example, third-party motor insurance is required for vehicles on Indian public roads. Other types of insurance are generally optional, depending on your circumstances and requirements.",
+  },
+  {
+    id: "11",
+    question: "Who provides the insurance policy?",
+    answer:
+      "The insurance policy is issued by the relevant insurance company. BOROFIRST may help you explore or navigate available insurance options, while coverage, premiums, policy terms and claims remain subject to the insurer.",
+  },
+  {
+    id: "12",
+    question: "What should I check before buying an insurance policy?",
+    answer:
+      "Review the coverage, exclusions, premium, deductibles where applicable, policy duration, eligibility requirements, claim process, terms and conditions, and the reputation and applicable terms of the insurer before making your decision.",
+  },
+];
+
+export const goldLoanFAQs = [
+  {
+    id: 1,
+    question: "What is a Gold Loan?",
+    answer:
+      "A Gold Loan is a secured loan where eligible gold jewellery is pledged as collateral to obtain funds. The loan amount depends on factors such as the purity and net weight of the gold, applicable gold value, LTV and the lender's eligibility criteria.",
+  },
+  {
+    id: 2,
+    question: "How much loan can I get against my gold?",
+    answer:
+      "The eligible loan amount depends on the purity and net weight of your gold, the applicable gold valuation, permitted LTV and the lender's terms. You can use the Gold Loan Calculator on our website for an indicative estimate.",
+  },
+  {
+    id: 3,
+    question: "What types of gold can I pledge for a Gold Loan?",
+    answer:
+      "Eligible gold jewellery and other permitted gold items may be accepted as collateral, subject to the lender's product policy, purity requirements, ownership verification and applicable guidelines.",
+  },
+  {
+    id: 4,
+    question: "How is the value of my gold calculated?",
+    answer:
+      "The value of your gold is determined through an applicable valuation process that considers factors such as purity, net gold weight and the applicable gold rate. The final eligible loan amount is subject to the lender's valuation and LTV norms.",
+  },
+  {
+    id: 5,
+    question: "What documents are required for a Gold Loan?",
+    answer:
+      "Generally, KYC documents such as identity and address proof, PAN or applicable Form 60, and a recent photograph may be required. Additional documents may be requested depending on the applicant and product.",
+  },
+  {
+    id: 6,
+    question: "Do I need a high credit score to get a Gold Loan?",
+    answer:
+      "A Gold Loan is primarily secured by pledged gold, so eligibility may differ from an unsecured loan. However, approval is still subject to the lender's applicable eligibility, KYC, credit and product policies.",
+  },
+  {
+    id: 7,
+    question: "How is my gold kept safe after I pledge it?",
+    answer:
+      "Pledged gold is handled and stored according to the lender's applicable security, custody and operational procedures. The applicable terms and conditions explain the process for safeguarding and releasing the pledged gold.",
+  },
+  {
+    id: 8,
+    question: "How can I repay my Gold Loan?",
+    answer:
+      "Repayment options depend on the selected Gold Loan product and lender terms. Depending on the applicable product, repayment may include scheduled instalments, interest servicing or other permitted repayment structures.",
+  },
+  {
+    id: 9,
+    question: "Can I repay my Gold Loan before the end of the tenure?",
+    answer:
+      "Early repayment may be available depending on the applicable loan terms. Any applicable foreclosure, prepayment or other charges will be communicated as part of the loan agreement.",
+  },
+  {
+    id: 10,
+    question: "When will my gold be returned after repaying the loan?",
+    answer:
+      "After the outstanding loan amount, applicable interest and other dues are fully settled, the pledged gold can be released according to the lender's applicable release and verification process.",
+  },
+];

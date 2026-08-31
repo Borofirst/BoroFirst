@@ -7,69 +7,30 @@ import {
 } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
+
 
 export const Header = () => {
+        const handleCalculationEmi = () => {
+    // Replace with your eligibility section ID or route.
+    document
+      .getElementById("loan-EMI")
+      ?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+  };
   return (
     <>
       <section className="hero">
         <Swiper
-          modules={[Pagination]}
+          modules={[Pagination,Autoplay]}
           spaceBetween={0}
           slidesPerView={1}
           autoplay
           pagination={{ clickable: true }}
         >
-          <SwiperSlide>
-            <div className="relative 
- h-[550px]
-  sm:h-[600px]
-  md:h-[680px]
-  lg:h-[750px]
-  2xl:h-[760px]
-   overflow-hidden
-    rounded-b-2xl">
-              {/* Background Image */}
-              <img
-                src="/homeLoan.png"
-                alt="Loan Against Property"
-                className="w-full h-full object-cover  "
-              />
-
-              {/* Overlay Content */}
-
-              <div className="mt-8 absolute inset-0 flex items-center">
-                <div className="max-w-7xl  px-8 md:px-16">
-                  <span className="inline-block rounded-full  bg-emerald-100 px-4 py-1 text-sm font-semibold text-[#1A5E04]">
-                    Trusted Financial Solutions
-                  </span>
-
-                  <h1 className="mt-5 text-4xl font-extrabold leading-tight text-slate-900 md:text-6xl">
-                    Loan Against
-                    <span className="block text-[#1A5E04]">Property</span>
-                  </h1>
-      <p className="hidden md:block mt-6 max-w-sm lg:max-w-2xl   leading-6 text-slate-700 sm:mt-5 sm:leading-7 text-lg md:leading-8">
-                    Unlock the value of your residential or commercial property
-                    with quick approvals, competitive interest rates, flexible
-                    repayment options, and minimal documentation.
-                  </p>
-                  <p class="block mt-3 md:hidden text-slate-700 max-w-sm text-base pr-3">
-                    Unlock your property’s value with flexible financing,quick approvals,competitive rates, and easy repayment options.
-                  </p>
-
-                  <div className="mt-6 flex flex-wrap gap-4">
-                    <button className="rounded-lg bg-linear-to-r from-[#186A07] to-[#0B2578] font-semibold px-3 py-2 sm:px-8 sm:py-2 text-white transition hover:bg-emerald-700">
-                      Apply Now
-                    </button>
- {/* px-8 py-3  */}
-                    <button className="rounded-lg border border-emerald-600 bg-white px-3 py-2 sm:px-8 sm:py-3 font-semibold text-emerald-600 transition hover:bg-emerald-50">
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
+           <SwiperSlide>
             <div className="relative 
              h-[550px]
   sm:h-[600px]
@@ -111,11 +72,13 @@ export const Header = () => {
 
 
                     <div className="mt-6 flex flex-wrap gap-4">
+                      <Link to="contact">
                       <button className="rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-3 py-2 sm:px-8 sm:py-4 font-semibold text-white shadow-lg transition duration-300 hover:bg-emerald-700 hover:scale-105">
                         Apply Now
                       </button>
+                      </Link>
 
-                      <button className="rounded-xl border-2 border-emerald-600 bg-white px-3 py-2 sm:px-8 sm:py-2 font-semibold text-emerald-600 transition duration-300 hover:bg-emerald-50">
+                      <button onClick={handleCalculationEmi} className="rounded-xl border-2 border-emerald-600 bg-white px-3 py-2 sm:px-8 sm:py-2 font-semibold text-emerald-600 transition duration-300 hover:bg-emerald-50">
                         Calculate EMI
                       </button>
                     </div>
@@ -124,6 +87,60 @@ export const Header = () => {
               </div>
             
           </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative 
+ h-[550px]
+  sm:h-[600px]
+  md:h-[680px]
+  lg:h-[750px]
+  2xl:h-[760px]
+   overflow-hidden
+    rounded-b-2xl">
+              {/* Background Image */}
+              <img
+                src="/homeLoan.png"
+                alt="Loan Against Property"
+                className="w-full h-full object-cover  "
+              />
+
+              {/* Overlay Content */}
+
+              <div className="mt-8 absolute inset-0 flex items-center">
+                <div className="max-w-7xl  px-8 md:px-16">
+                  <span className="inline-block rounded-full  bg-emerald-100 px-4 py-1 text-sm font-semibold text-[#1A5E04]">
+                    Trusted Financial Solutions
+                  </span>
+
+                  <h1 className="mt-5 text-4xl font-extrabold leading-tight text-slate-900 md:text-6xl">
+                    Loan Against
+                    <span className="block text-[#1A5E04]">Property</span>
+                  </h1>
+      <p className="hidden md:block mt-6 max-w-sm lg:max-w-2xl   leading-6 text-slate-700 sm:mt-5 sm:leading-7 text-lg md:leading-8">
+                    Unlock the value of your residential or commercial property
+                    with quick approvals, competitive interest rates, flexible
+                    repayment options, and minimal documentation.
+                  </p>
+                  <p class="block mt-3 md:hidden text-slate-700 max-w-sm text-base pr-3">
+                    Unlock your property’s value with flexible financing,quick approvals,competitive rates, and easy repayment options.
+                  </p>
+
+                  <div className="mt-6 flex flex-wrap gap-4">
+                                        <Link to="contact">
+                      <button className="rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-3 py-2 sm:px-8 sm:py-4 font-semibold text-white shadow-lg transition duration-300 hover:bg-emerald-700 hover:scale-105">
+                        Apply Now
+                      </button>
+                      </Link>
+                     <Link to="/loan-againt-property">
+                    <button className="rounded-lg border border-emerald-600 bg-white px-3 py-2 sm:px-8 sm:py-3 font-semibold text-emerald-600 transition hover:bg-emerald-50">
+                      Learn More
+                    </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+         
           <SwiperSlide>
             <div className="relative   
                h-[550px]
@@ -168,13 +185,17 @@ export const Header = () => {
 
                     {/* Buttons */}
                     <div className="mt-8 flex flex-wrap gap-4">
-                      <button className="rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-3 py-2 sm:px-8 sm:py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-emerald-700">
+                                         <Link to="contact">
+                      <button className="rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-3 py-2 sm:px-8 sm:py-4 font-semibold text-white shadow-lg transition duration-300 hover:bg-emerald-700 hover:scale-105">
                         Apply Now
                       </button>
-
-                      <button className="rounded-xl border-2 border-emerald-600 bg-white px-3 py-2 sm:px-8 sm:py-4 font-semibold text-emerald-600 transition-all duration-300 hover:bg-emerald-50">
+                      </Link>
+                        <Link to="/business-loan">
+                           <button className="rounded-xl border-2 border-emerald-600 bg-white px-3 py-2 sm:px-8 sm:py-4 font-semibold text-emerald-600 transition-all duration-300 hover:bg-emerald-50">
                         Learn More
                       </button>
+                        </Link>
+                   
                     </div>
 
                     {/* Features */}
@@ -252,45 +273,20 @@ export const Header = () => {
 
                     {/* Buttons */}
                     <div className="mt-6 flex flex-wrap gap-5">
-                      <button className="rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-3 py-2 sm:px-8 sm:py-4 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-emerald-700">
+                      <Link to="contact">
+                      <button className="rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-3 py-2 sm:px-8 sm:py-4 font-semibold text-white shadow-lg transition duration-300 hover:bg-emerald-700 hover:scale-105">
                         Apply Now
                       </button>
-
-                      <button className="rounded-xl border-2 border-slate-300 bg-white px-3 py-2 sm:px-8 sm:py-4 text-base font-semibold text-slate-700 transition-all duration-300 hover:border-emerald-600 hover:text-emerald-600">
+                      </Link>
+                    <Link to="/personal-loan#loan-eligibility">
+                     <button className="rounded-xl border-2 border-slate-300 bg-white px-3 py-2 sm:px-8 sm:py-4 text-base font-semibold text-slate-700 transition-all duration-300 hover:border-emerald-600 hover:text-emerald-600">
                         Check Eligibility
                       </button>
+                    </Link>
+                     
                     </div>
 
-                    {/* Features */}
-                    {/* <div className="mt-12 grid grid-cols-2 gap-6 text-sm md:grid-cols-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-slate-900">
-                          ₹25L
-                        </h3>
-                        <p className="mt-1 text-slate-600">Loan Amount</p>
-                      </div>
-
-                      <div>
-                        <h3 className="text-2xl font-bold text-slate-900">
-                          10 Min
-                        </h3>
-                        <p className="mt-1 text-slate-600">Approval</p>
-                      </div>
-
-                      <div>
-                        <h3 className="text-2xl font-bold text-slate-900">
-                          9.99%
-                        </h3>
-                        <p className="mt-1 text-slate-600">Interest</p>
-                      </div>
-
-                      <div>
-                        <h3 className="text-2xl font-bold text-slate-900">
-                          84 Months
-                        </h3>
-                        <p className="mt-1 text-slate-600">Repayment</p>
-                      </div>
-                    </div> */}
+                 
                   </div>
                 </div>
               </div>

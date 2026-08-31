@@ -68,7 +68,7 @@ const WhyBoroFirstLAP = () => {
           <div className="relative min-h-[560px] overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-white shadow-xl lg:min-h-[680px]">
 
             <img
-              src="/lap-why-borofirst.jpg"
+              src="/LAPWhyChoose.png"
               alt="Indian couple standing near their property"
               className="absolute inset-0 h-full w-full object-cover transition duration-700 ease-out hover:scale-[1.01]"
             />
@@ -79,11 +79,11 @@ const WhyBoroFirstLAP = () => {
 
             {/* Emerald glow */}
 
-            <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-emerald-400/20 blur-3xl" />
+            <div className="absolute -bottom-24 -left-20 h-72 w-72 rounded-full bg-emerald-400/20 blur-3xl" />
 
             {/* Brand card */}
 
-            <div className="absolute bottom-6 left-6 right-6 sm:left-8 sm:right-auto sm:max-w-sm">
+            <div className="absolute bottom-20 left-6 right-6 sm:left-8 sm:right-auto sm:max-w-sm">
 
               <div className="rounded-[20px] border border-white/20 bg-white/95 p-5 shadow-2xl backdrop-blur-md">
 
@@ -94,13 +94,11 @@ const WhyBoroFirstLAP = () => {
                   </div>
 
                   <div>
-                    <p className="text-[11px] font-extrabold uppercase tracking-[0.15em] text-[#10B981]">
-                      BOROFIRST
-                    </p>
-
-                    <p className="mt-1 text-lg font-extrabold leading-tight text-[#0B2578]">
-                      Financial Freedom Starts Here.
-                    </p>
+                     <img
+              src="/Borofirst-Logos-1-1.webp"
+              alt="Borofirst Logo"
+              className="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105"
+            />
 
                     <p className="mt-2 text-xs leading-5 text-slate-500">
                       Clear information, suitable options and support
