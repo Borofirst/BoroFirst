@@ -12,7 +12,7 @@ export const createPartnerRequest = async (req, res, next) => {
       partnershipType,
       message,
     } = req.body;
-   console.log(req.body);
+  
     if (
       !fullName ||
       !company ||

@@ -1,14 +1,6 @@
 import "dotenv/config";
 // dotenv.config();
-console.log("EMAIL_USER:", process.env.EMAIL_USER);
-console.log(
-  "EMAIL_PASSWORD:",
-  process.env.EMAIL_PASSWORD ? "LOADED" : "MISSING"
-);
-console.log(
-  "CONTACT_RECEIVER_EMAIL:",
-  process.env.CONTACT_RECEIVER_EMAIL
-);
+
 import express from "express";
 import cors from "cors";
 import connectDB from "./db/db.js";

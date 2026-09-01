@@ -119,21 +119,36 @@ const WhyBoroFirstLAP = () => {
 
             {/* Eyebrow */}
 
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#10B981]">
-              <ShieldCheck size={15} />
-              Why BoroFirst
+            <div className="inline-flex w-fit items-center    ">
+                          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                           Why BoroFirst
+                        </span>
+                      </div>
             </div>
 
             {/* Heading */}
+           
+    
+           <h2 className="text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-4xl lg:text-[3.45rem]">
+             Why Thousands Choose{" "}
+              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+             BOROFIRST{" "}
+            </span>
+             
+               for {" "}
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+             Loan Against Property{" "}
+            </span>
+            
+          </h2>
+          
 
-            <h2 className="mt-6 max-w-xl text-3xl font-extrabold leading-[1.1] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              Why Choose BoroFirst 
-              <span className="block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
-             for Your Personal Loan?
-              </span>
-            </h2>
-
-            {/* Description */}
 
             <p className="mt-5 max-w-xl text-base leading-8 text-[#64748B] sm:text-lg">
               We help simplify the Loan Against Property journey with

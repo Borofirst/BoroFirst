@@ -157,25 +157,30 @@ const WhyChooseBoroFirst = ({
 
         <div className="mx-auto max-w-3xl text-center">
           {/* Badge */}
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 shadow-sm">
-            <ShieldCheck
-              size={16}
-              className="text-emerald-600"
-            />
 
-            <span className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-700">
-              Why BoroFirst
-            </span>
-          </div>
+                                            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                               
+           Why BoroFirst
+                        </span>
+                      </div>
 
-          {/* Heading */}
-          <h2 className="text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
-            Why Choose{" "}
-            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
-              BoroFirst
+            {/* Heading */}
+
+
+                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                             Why Choose a{" "}
+                        <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                           BoroFirst
             </span>{" "}
             for Your Personal Loan?
-          </h2>
+                        
+                      </h2>
 
           {/* Description */}
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#64748B] sm:text-base">

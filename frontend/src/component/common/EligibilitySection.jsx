@@ -240,24 +240,32 @@ const LoanEligibilityChecker = () => {
 
         {/* Header */}
         <div className="mx-auto mb-12 max-w-3xl text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700">
-            <Calculator size={16} />
-            Smart Loan Eligibility Calculator
-          </div>
-
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight">
-            Check Your{" "}
-            <span className=" bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] text-transparent bg-clip-text ">
-              Loan Eligibility
+   
+                                               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                            Smart Loan Eligibility Calculator
+                        </span>
+                      </div>
+      
+                   <h2 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+             Check Your{" "}
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+              Loan Eligibility{" "}
             </span>
+            
           </h2>
-       
 
           <p className="mt-4 text-base leading-7 text-slate-500 sm:text-lg">
             Enter a few basic details to get an estimated loan
             amount and monthly EMI you may qualify for.
           </p>
         </div>
+
 
         {/* Main Card */}
         <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/50">

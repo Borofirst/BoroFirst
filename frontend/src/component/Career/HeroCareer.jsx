@@ -71,7 +71,7 @@ const CareerHero = () => {
 
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 opacity-[0.18] [background-image:linear-gradient(rgba(24,106,7,0.13)_1px,transparent_1px),linear-gradient(90deg,rgba(24,106,7,0.13)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:linear-gradient(to_bottom,black,transparent_75%)]"
+        className="absolute inset-0 -z-10 opacity-[0.18] bg-[linear-gradient(rgba(24,106,7,0.13)_1px,transparent_1px),linear-gradient(90deg,rgba(24,106,7,0.13)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:linear-gradient(to_bottom,black,transparent_75%)]"
       />
 
       <div
@@ -177,38 +177,13 @@ const CareerHero = () => {
           {/* Visual */}
           <div className="relative mx-auto w-full max-w-[650px] lg:max-w-none">
             {/* Decorative glow */}
-            <div
-              aria-hidden="true"
-              className="absolute inset-10 rounded-[3rem] bg-gradient-to-br from-emerald-100/70 via-white to-blue-100/70 blur-3xl"
-            />
-
-            <div className="relative min-h-[430px] sm:min-h-[530px] lg:min-h-[590px]">
-              {/* Decorative rings */}
-              <div
-                aria-hidden="true"
-                className="absolute right-[4%] top-[5%] h-56 w-56 rounded-full border border-emerald-200/50 sm:h-72 sm:w-72"
-              />
-
-              <div
-                aria-hidden="true"
-                className="absolute right-[10%] top-[11%] h-44 w-44 rounded-full border border-blue-200/50 sm:h-56 sm:w-56"
-              />
-
-              {/* Main visual frame */}
-              <div className="absolute bottom-[6%] left-[7%] right-[7%] top-[8%] overflow-hidden rounded-[2.5rem] border border-white/90 bg-slate-100 shadow-[0_30px_80px_rgba(15,23,42,0.13)] sm:rounded-[3rem]">
-                {/* Office scene */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-100 via-white to-[#EAF5E8]" />
-
-       
-            
-
-                {/* Floor */}
-         
-
            
-
-               
-              </div>
+                 <img
+              src="/opportunity.png"
+              alt="Happy couple outside their home"
+              className="h-[500px] scale-x-[-1] w-full rounded-[26px] object-cover"
+            />
+         
 
               {/* Floating cards */}
               {floatingCards.map(({ title, text, icon: Icon, position }) => (
@@ -239,11 +214,11 @@ const CareerHero = () => {
             </div>
           </div>
         </div>
-      </div>
+   
 
       {/* Bottom transition */}
       <div className="mx-auto max-w-7xl px-5 pb-10 sm:px-8 lg:px-10">
-        <div className="h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+        <div className="h-px bg-linear-to-r from-transparent via-slate-200 to-transparent" />
       </div>
     </section>
   );

@@ -52,11 +52,14 @@ const FAQSection = ({faqs}) => {
 
             {/* Heading */}
 
-            <h2 className="mt-8  leading-tight text-4xl font-bold text-gray-900 md:text-5xl">
-              Frequently Asked
-              <span className=" text-[#186A07]  bg-clip-text ">
-                {" "}
-                Questions
+
+      
+            
+
+                        <h2 className="max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                 Frequently Asked{" "}
+              <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+                  Questions{" "}
               </span>
             </h2>
 

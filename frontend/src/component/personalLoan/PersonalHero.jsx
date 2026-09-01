@@ -103,12 +103,11 @@ const PersonalLoanHero = () => {
 
           <div className="max-w-2xl">
             {/* Badge */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-bold tracking-wide text-emerald-700 shadow-sm">
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500 text-white">
-                <Wallet size={13} />
-              </span>
-
-              PERSONAL LOAN
+     
+            
+            <div className="lap-hero-eyebrow  inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
+              <Wallet size={15} />
+                PERSONAL LOAN
             </div>
 
             {/* Heading */}
@@ -169,7 +168,7 @@ const PersonalLoanHero = () => {
                     key={item.title}
                     className="flex items-start gap-3"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-[#186A07]">
                       <Icon size={17} />
                     </div>
 
@@ -191,7 +190,8 @@ const PersonalLoanHero = () => {
             <div className="mt-6 flex items-center gap-2 text-xs text-slate-500">
               <ShieldCheck
                 size={15}
-                className="text-emerald-600"
+                className="text-[#186A07]
+"
               />
 
               <span>
@@ -231,7 +231,7 @@ const PersonalLoanHero = () => {
                   }`}
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-[#186A07]">
                       <Icon size={19} />
                     </div>
 
@@ -248,7 +248,6 @@ const PersonalLoanHero = () => {
                 </div>
               );
             })}
-
             {/* =================================================
                 MAIN LOAN CARD
             ================================================== */}
@@ -288,7 +287,8 @@ const PersonalLoanHero = () => {
          
             {/* Bottom mini card */}
             <div className="absolute -bottom-6 left-1/2 z-20 hidden -translate-x-1/2 items-center gap-3 rounded-2xl border border-white/80 bg-white/95 px-4 py-3 shadow-xl shadow-slate-900/10 backdrop-blur-md sm:flex">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-50 text-[#186A07]
+">
                 <CheckCircle2 size={18} />
               </div>
 

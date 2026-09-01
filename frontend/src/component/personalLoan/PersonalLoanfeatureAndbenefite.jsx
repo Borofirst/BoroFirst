@@ -69,14 +69,7 @@ const benefits = [
 ];
 
 const PersonalLoanFeaturesBenefits = () => {
-  const handleEligibility = () => {
-    document
-      .getElementById("loan-eligibility")
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-  };
+
 
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] py-20 sm:py-24 lg:py-28">
@@ -95,23 +88,32 @@ const PersonalLoanFeaturesBenefits = () => {
         ====================================================== */}
         <div className="mx-auto max-w-3xl text-center">
 
-          {/* Eyebrow */}
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-emerald-700">
-            <BadgeCheck size={15} />
-            Personal Loan Benefits
-          </div>
 
-          {/* Heading */}
-          <h2 className="text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
-            Features Designed Around
-            <span className="block text-[#186A07]">
-              Your Financial Needs
-            </span>
-             For The personal Laon
-          </h2>
+                        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                               
+            Personal Loan Benefits
+                        </span>
+                      </div>
+
+            {/* Heading */}
+
+
+                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                             Features Designed Around{""}
+                        <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                             Your Financial Needs{" "}
+                        </span>
+                        For?
+                      </h2>
 
           {/* Description */}
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#64748B] sm:text-base">
+          <p className="mx-auto mt-5  text-sm leading-7 text-[#64748B] sm:text-base">
             Explore the features and benefits that can make a personal
             loan a convenient option for managing eligible planned or
             unexpected financial requirements.

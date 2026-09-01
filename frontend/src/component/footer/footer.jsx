@@ -15,24 +15,12 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 import {
-  MdEmail,
-  MdLocationOn,
-  MdAccessTime,
+
   MdOpenInNew,
 } from "react-icons/md";
 
 const Footer = () => {
-  // =========================================
-  // Newsletter State
-  // =========================================
 
-  const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState("");
-  const [subscribeStatus, setSubscribeStatus] = useState("");
-
-  // =========================================
-  // Navigation Data
-  // =========================================
 
   const companyLinks = [
     {
@@ -45,7 +33,7 @@ const Footer = () => {
     },
         {
       name: "Loan Against Property",
-      path: "/loan-against-property",
+      path: "/loan-againt-property",
     },
     {
       name: "Our Partners",
@@ -127,10 +115,7 @@ const Footer = () => {
       name: "Interest Rates",
       path: "/interest-rates",
     },
-    {
-      name: "FAQs",
-      path: "/faq",
-    },
+
     {
       name: "Financial Guides",
       path: "/financial-guides",
@@ -153,17 +138,18 @@ const Footer = () => {
     {
       name: "Facebook",
       icon: FaFacebookF,
-      url: "#",
+      url:"https://www.facebook.com/profile.php?id=61593126121262",
     },
     {
       name: "Instagram",
       icon: FaInstagram,
-      url: "#",
+      url: "https://www.instagram.com/borofirst_official/",
     },
+
     {
       name: "LinkedIn",
       icon: FaLinkedinIn,
-      url: "#",
+      url: "https://www.linkedin.com/in/borofirst-finance-8a4b11428/",
     },
     {
       name: "YouTube",
@@ -189,18 +175,14 @@ const Footer = () => {
   ];
 
   return (
- <footer className="relative overflow-hidden text-black w-[98%] m-auto mb-4 rounded-2xl border-4 border-transparent">
-   <div
-  className="pointer-events-none absolute inset-0 rounded-2xl"
-  style={{
-    padding: "3px",
-    background: "linear-gradient(to right, #186A07, #0B2578)",
-    WebkitMask:
-      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-    WebkitMaskComposite: "xor",
-    maskComposite: "exclude",
-  }}
-/>
+ <footer className="relative overflow-hidden  bg-[#F8FAFC] ">
+<div className="bg-linear-to-br
+from-[#D8EBD1]
+via-[#F1F5F0]
+to-[#D9E2F5] text-black w-[98%] m-auto mb-4 rounded-2xl  shadow-[inset_0_4px_12px_rgba(24,106,7,0.14),inset_0_-4px_12px_rgba(11,37,120,0.12),inset_2px_0_8px_rgba(24,106,7,0.05),inset_-2px_0_8px_rgba(11,37,120,0.05)]">
+
+ 
+
       {/* =========================================
           Main Footer Content
       ========================================= */}
@@ -211,12 +193,15 @@ const Footer = () => {
     Main Footer Navigation
 ========================================= */}
 
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-10">
-            {/* =========================================
+          
+
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-10">
+
+  {/* =========================================
       Brand Column
   ========================================= */}
 
-            <div className="lg:col-span-4">
+  <div className="lg:col-span-4">
               {/* Logo */}
 
               <Link to="/" className="group inline-flex items-center">
@@ -254,10 +239,9 @@ const Footer = () => {
                 <div className="flex items-center gap-3">
                   {socialLinks.map((social) => {
                     const Icon = social.icon;
-
                     return (
                   
-                      <a
+<a
   key={social.name}
   href={social.url}
   aria-label={`Follow BoroFirst on ${social.name}`}
@@ -273,7 +257,7 @@ const Footer = () => {
     transition-all duration-300 ease-out
     hover:-translate-y-1
     hover:border-[#0B2578]
-    hover:bg-gradient-to-br
+    hover:bg-linear-to-br
     hover:from-[#186A07]
     hover:to-[#0B2578]
     hover:shadow-lg
@@ -312,127 +296,633 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* =========================================
-      Company
+  {/* =========================================
+      Navigation Columns Background
   ========================================= */}
 
-            <div className="lg:col-span-2">
-              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider ">
-                Company
-              </h3>
+<div
+  className="
+    group/footer
+    relative
+    lg:col-span-8
+    grid
+    grid-cols-2
+    gap-5
+    overflow-hidden
+    rounded-3xl
+    border
+    border-[#DCEBD8]
+    bg-linear-to-br
+    from-[#DCEFD5]
+    via-[#F4F7F2]
+    to-[#DDE5F7]
+    p-5
+    shadow-[0_8px_15px_rgba(24,106,7,0.08),0_20px_35px_rgba(11,37,120,0.10),0_2px_4px_rgba(0,0,0,0.08)]
+    transition-all
+    duration-700
+    hover:-translate-y-3
+    hover:scale-103
+    hover:shadow-[0_15px_30px_rgba(24,106,7,0.12),0_30px_55px_rgba(11,37,120,0.14)]
+       hover:bg-linear-to-br
+hover:from-[#C9DFC2]
+hover:via-[#E8ECE6]
+hover:to-[#CBD5E8]
+    sm:p-6
+    lg:grid-cols-4
+    lg:p-7
+    motion-reduce:transition-none
 
-              <nav aria-label="Company navigation">
-                <ul className="space-y-3.5">
-                  {companyLinks.map((link) => (
-                    <li key={link.name}>
-                      <Link
-                        to={link.path}
-                        className="group inline-flex items-center gap-2 text-sm  transition-all duration-300 hover:translate-x-1 hover:text-[#2c8e18]"
-                      >
-                        <span>{link.name}</span>
+  "
+>
+  {/* =========================================================
+      BACKGROUND DECORATIVE GLOW
+  ========================================================= */}
 
-                        <MdOpenInNew
-                          size={14}
-                          className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
-                        />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </div>
+  <div
+    className="
+      pointer-events-none
+      absolute
+      -right-24
+      -top-24
+      h-64
+      w-64
+      rounded-full
+      bg-[#186A07]/10
+      blur-3xl
+      transition-all
+      duration-1000
+      group-hover/footer:scale-150
+      group-hover/footer:bg-[#186A07]/15
+      motion-reduce:transition-none
+    "
+  />
 
-            {/* =========================================
-      Loan Products
-  ========================================= */}
+  <div
+    className="
+      pointer-events-none
+      absolute
+      -bottom-28
+      -left-24
+      h-64
+      w-64
+      rounded-full
+      bg-[#0B2578]/10
+      blur-3xl
+      transition-all
+      duration-1000
+      group-hover/footer:scale-125
+      group-hover/footer:bg-[#0B2578]/15
+      motion-reduce:transition-none
+    "
+  />
 
-            <div className="lg:col-span-2">
-              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider">
-                Loan Products
-              </h3>
+  {/* =========================================================
+      COMPANY
+  ========================================================= */}
 
-              <nav aria-label="Loan products navigation">
-                <ul className="space-y-3.5">
-                  {loanProducts.map((loan) => (
-                    <li key={loan.name}>
-                      <Link
-                        to={loan.path}
-                        className="group inline-flex items-center gap-2 text-sm  transition-all duration-300 hover:translate-x-1 hover:text-[#2c8e18]"
-                      >
-                        <span>{loan.name}</span>
+  <div
+    className="
+      relative
+      animate-[footerFadeUp_0.7s_ease-out_0.05s_both]
+      motion-reduce:animate-none
+    "
+  >
+    <h3
+      className="
+        group/title
+        relative
+        mb-6
+        inline-flex
+        flex-col
+        text-sm
+        font-bold
+        uppercase
+        tracking-[0.14em]
+        text-[#0B2578]
+      "
+    >
+      <span
+        className="
+          transition-all
+          duration-300
+          group-hover/title:translate-x-0.5
+        "
+      >
+        Company
+      </span>
 
-                        <MdOpenInNew
-                          size={14}
-                          className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
-                        />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </div>
+      {/* Animated heading line */}
+      <span
+        className="
+          mt-2
+          h-0.5
+          w-0
+          origin-left
+          rounded-full
+          bg-linear-to-r
+          from-[#186A07]
+          to-[#0B2578]
+          transition-all
+          duration-500
+          group-hover/title:w-full
+        "
+      />
+    </h3>
 
-            {/* =========================================
-      Financial Services
-  ========================================= */}
+    <nav aria-label="Company navigation">
+      <ul className="space-y-3">
+        {companyLinks.map((link, index) => (
+          <li
+            key={link.name}
+            className="
+              animate-[footerFadeUp_0.6s_ease-out_both]
+              motion-reduce:animate-none
+            "
+            style={{
+              animationDelay: `${150 + index * 70}ms`,
+            }}
+          >
+            <Link
+              to={link.path}
+              className="
+                group/link
+                relative
+                inline-flex
+                items-center
+                gap-2.5
+                overflow-hidden
+                rounded-lg
+                px-1
+                py-1
+                text-sm
+                text-gray-600
+                transition-all
+                duration-300
+                hover:translate-x-1.5
+                hover:text-[#186A07]
+                focus:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-[#186A07]/30
+                motion-reduce:transition-none
+              "
+            >
+              {/* Animated left indicator */}
+              <span
+                className="
+                  absolute
+                  left-0
+                  h-4
+                  w-0.5
+                  -translate-x-2
+                  rounded-full
+                  bg-[#186A07]
+                  opacity-0
+                  transition-all
+                  duration-300
+                  group-hover/link:translate-x-0
+                  group-hover/link:opacity-100
+                "
+              />
 
-            <div className="lg:col-span-2">
-              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider">
-                Financial Services
-              </h3>
+              <span
+                className="
+                  transition-transform
+                  duration-300
+                  group-hover/link:translate-x-1
+                "
+              >
+                {link.name}
+              </span>
 
-              <nav aria-label="Financial services navigation">
-                <ul className="space-y-3.5">
-                  {financialServices.map((service) => (
-                    <li key={service.name}>
-                      <Link
-                        to={service.path}
-                        className="group inline-flex items-center gap-2 text-sm transition-all duration-300 hover:translate-x-1 hover:text-[#2c8e18]"
-                      >
-                        <span>{service.name}</span>
+              <MdOpenInNew
+                size={14}
+                className="
+                  -translate-x-2
+                  opacity-0
+                  transition-all
+                  duration-300
+                  group-hover/link:translate-x-0
+                  group-hover/link:rotate-6
+                  group-hover/link:opacity-100
+                "
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
 
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </div>
+  {/* =========================================================
+      LOAN PRODUCTS
+  ========================================================= */}
 
-            {/* =========================================
-      Resources
-  ========================================= */}
+  <div
+    className="
+      relative
+      animate-[footerFadeUp_0.7s_ease-out_0.15s_both]
+      motion-reduce:animate-none
+    "
+  >
+    <h3
+      className="
+        group/title
+        relative
+        mb-6
+        inline-flex
+        flex-col
+        text-sm
+        font-bold
+        uppercase
+        tracking-[0.14em]
+        text-[#0B2578]
+      "
+    >
+      <span
+        className="
+          transition-all
+          duration-300
+          group-hover/title:translate-x-0.5
+        "
+      >
+        Loan Products
+      </span>
 
-            <div className="lg:col-span-2">
-              <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider">
-                Resources
-              </h3>
+      <span
+        className="
+          mt-2
+          h-0.5
+          w-0
+          origin-left
+          rounded-full
+          bg-linear-to-r
+          from-[#186A07]
+          to-[#0B2578]
+          transition-all
+          duration-500
+          group-hover/title:w-full
+        "
+      />
+    </h3>
 
-              <nav aria-label="Resources navigation">
-                <ul className="space-y-3.5">
-                  {resourceLinks.map((resource) => (
-                    <li key={resource.name}>
-                      <Link
-                        to={resource.path}
-                        className="group inline-flex items-center gap-2 text-sm  transition-all duration-300 hover:translate-x-1 hover:text-[#2c8e18]"
-                      >
-                        <span>{resource.name}</span>
+    <nav aria-label="Loan products navigation">
+      <ul className="space-y-3">
+        {loanProducts.map((loan, index) => (
+          <li
+            key={loan.name}
+            className="
+              animate-[footerFadeUp_0.6s_ease-out_both]
+              motion-reduce:animate-none
+            "
+            style={{
+              animationDelay: `${250 + index * 70}ms`,
+            }}
+          >
+            <Link
+              to={loan.path}
+              className="
+                group/link
+                relative
+                inline-flex
+                items-center
+                gap-2.5
+                overflow-hidden
+                rounded-lg
+                px-1
+                py-1
+                text-sm
+                text-gray-600
+                transition-all
+                duration-300
+                hover:translate-x-1.5
+                hover:text-[#186A07]
+                focus:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-[#186A07]/30
+              "
+            >
+              <span
+                className="
+                  absolute
+                  left-0
+                  h-4
+                  w-0.5
+                  -translate-x-2
+                  rounded-full
+                  bg-[#186A07]
+                  opacity-0
+                  transition-all
+                  duration-300
+                  group-hover/link:translate-x-0
+                  group-hover/link:opacity-100
+                "
+              />
 
-                        <MdOpenInNew
-                          size={14}
-                          className="opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
-                        />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </div>
-          </div>
+              <span
+                className="
+                  transition-transform
+                  duration-300
+                  group-hover/link:translate-x-1
+                "
+              >
+                {loan.name}
+              </span>
+
+              <MdOpenInNew
+                size={14}
+                className="
+                  -translate-x-2
+                  opacity-0
+                  transition-all
+                  duration-300
+                  group-hover/link:translate-x-0
+                  group-hover/link:rotate-6
+                  group-hover/link:opacity-100
+                "
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+
+  {/* =========================================================
+      FINANCIAL SERVICES
+  ========================================================= */}
+
+  <div
+    className="
+      relative
+      animate-[footerFadeUp_0.7s_ease-out_0.25s_both]
+      motion-reduce:animate-none
+    "
+  >
+    <h3
+      className="
+        group/title
+        relative
+        mb-6
+        inline-flex
+        flex-col
+        text-sm
+        font-bold
+        uppercase
+        tracking-[0.14em]
+        text-[#0B2578]
+      "
+    >
+
+    <span
+        className="
+          transition-all
+          duration-300
+          group-hover/title:translate-x-0.5
+        "
+      > 
+        Financial Services
+       </span> 
+      <span
+        className="
+          mt-2
+          h-0.5
+          w-0
+          origin-left
+          rounded-full
+          bg-linear-to-r
+          from-[#186A07]
+          to-[#0B2578]
+          transition-all
+          duration-500
+          group-hover/title:w-full
+        "
+      />
+    </h3>
+
+    <nav aria-label="Financial services navigation">
+      <ul className="space-y-3">
+        {financialServices.map((service, index) => (
+          <li
+            key={service.name}
+            className="
+              animate-[footerFadeUp_0.6s_ease-out_both]
+              motion-reduce:animate-none
+            "
+            style={{
+              animationDelay: `${350 + index * 70}ms`,
+            }}
+          >
+            <Link
+              to={service.path}
+              className="
+                group/link
+                relative
+                inline-flex
+                items-center
+                gap-2.5
+                overflow-hidden
+                rounded-lg
+                px-1
+                py-1
+                text-sm
+                text-gray-600
+                transition-all
+                duration-300
+                hover:translate-x-1.5
+                hover:text-[#186A07]
+                focus:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-[#186A07]/30
+              "
+            >
+              <span
+                className="
+                  absolute
+                  left-0
+                  h-4
+                  w-0.5
+                  -translate-x-2
+                  rounded-full
+                  bg-[#186A07]
+                  opacity-0
+                  transition-all
+                  duration-300
+                  group-hover/link:translate-x-0
+                  group-hover/link:opacity-100
+                "
+              />
+
+              <span
+                className="
+                  transition-transform
+                  duration-300
+                  group-hover/link:translate-x-1
+                "
+              >
+                {service.name}
+              </span>
+
+              <MdOpenInNew
+                size={14}
+                className="
+                  -translate-x-2
+                  opacity-0
+                  transition-all
+                  duration-300
+                  group-hover/link:translate-x-0
+                  group-hover/link:rotate-6
+                  group-hover/link:opacity-100
+                "
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+
+  {/* =========================================================
+      RESOURCES
+  ========================================================= */}
+
+  <div
+    className="
+      relative
+      animate-[footerFadeUp_0.7s_ease-out_0.35s_both]
+      motion-reduce:animate-none
+    "
+  >
+    <h3
+      className="
+        group/title
+        relative
+        mb-6
+        inline-flex
+        flex-col
+        text-sm
+        font-bold
+        uppercase
+        tracking-[0.14em]
+        text-[#0B2578]
+      "
+    >
+      <span
+        className="
+          transition-all
+          duration-300
+          group-hover/title:translate-x-0.5
+        "
+      >
+        Resources
+      </span>
+
+      <span
+        className="
+          mt-2
+          h-0.5
+          w-0
+          origin-left
+          rounded-full
+          bg-linear-to-r
+          from-[#186A07]
+          to-[#0B2578]
+          transition-all
+          duration-500
+          group-hover/title:w-full
+        "
+      />
+    </h3>
+
+    <nav aria-label="Resources navigation">
+      <ul className="space-y-3">
+        {resourceLinks.map((resource, index) => (
+          <li
+            key={resource.name}
+            className="
+              animate-[footerFadeUp_0.6s_ease-out_both]
+              motion-reduce:animate-none
+            "
+            style={{
+              animationDelay: `${450 + index * 70}ms`,
+            }}
+          >
+            <Link
+              to={resource.path}
+              className="
+                group/link
+                relative
+                inline-flex
+                items-center
+                gap-2.5
+                overflow-hidden
+                rounded-lg
+                px-1
+                py-1
+                text-sm
+                text-gray-600
+                transition-all
+                duration-300
+                hover:translate-x-1.5
+                hover:text-[#186A07]
+                focus:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-[#186A07]/30
+              "
+            >
+              <span
+                className="
+                  absolute
+                  left-0
+                  h-4
+                  w-0.5
+                  -translate-x-2
+                  rounded-full
+                  bg-[#186A07]
+                  opacity-0
+                  transition-all
+                  duration-300
+                  group-hover/link:translate-x-0
+                  group-hover/link:opacity-100
+                "
+              />
+
+              <span
+                className="
+                  transition-transform
+                  duration-300
+                  group-hover/link:translate-x-1
+                "
+              >
+                {resource.name}
+              </span>
+
+              <MdOpenInNew
+                size={14}
+                className="
+                  -translate-x-2
+                  opacity-0
+                  transition-all
+                  duration-300
+                  group-hover/link:translate-x-0
+                  group-hover/link:rotate-6
+                  group-hover/link:opacity-100
+                "
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</div>
+
+</div>
+          
 
           {/* =========================================
       Trust & Security
   ========================================= */}
-         <div className="mt-7">
+      <div className="mt-7">
   <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
     {trustPoints.map((point) => (
       <div
@@ -576,7 +1066,7 @@ const Footer = () => {
         </div>
       </section>
 
-
+ </div>
      </footer>
   );
 };

@@ -85,27 +85,28 @@ const GoldLoanBenefits = () => {
             HEADER
         ================================= */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#10B981]/15 bg-[#10B981]/5 px-4 py-2">
-            <Sparkles
-              size={14}
-              strokeWidth={2}
-              className="text-[#10B981]"
-            />
+                       <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                               
+           GOLD LOAN BENEFITS
+                        </span>
+                      </div>
 
-            <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#0B2578]">
-              GOLD LOAN BENEFITS
-            </span>
-          </div>
+            {/* Heading */}
 
-          <h2
-            id="gold-loan-benefits-title"
-            className="text-3xl font-extrabold leading-[1.1] tracking-[-0.035em] text-[#0F172A] sm:text-4xl lg:text-5xl"
-          >
-            Designed Around Your
-            <span className="block text-[#186A07]">
-              Financial Needs
+
+                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                               Designed Around Your{" "}
+                        <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                       Financial Needs
             </span>
-          </h2>
+                        
+                      </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#64748B] sm:text-base">
             A gold loan can offer a secured way to explore funding against

@@ -70,15 +70,26 @@ const WhyBoroFirst = () => {
               contentVisible ? "visible" : ""
             }`}
           >
-          <p className="mb-4 text-sm font-bold text-slate-900 uppercase tracking-[0.18em] text-[#10B981]">
-            Why BoroFirst
-          </p>
-            <h2 className="mt-5 text-3xl font-extrabold leading-tight tracking-tight  sm:text-4xl lg:text-[48px]">
-                Why Thousands Trust
-            <span className="block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
-                BoroFirst
-            </span>
-              </h2>
+  
+                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                            Why BoroFirst
+                        </span>
+                      </div>
+     
+                    
+                                  <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                              Why Thousands  Of Peaple {" "}
+                        <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent block">
+                              Trust  BoroFirst?{" "}
+                        </span>
+                      </h2>
+
 
           <p className="mt-5 leading-8 text-slate-500">
             Our goal is to simplify your financing journey with clear

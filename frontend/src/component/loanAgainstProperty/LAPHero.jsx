@@ -43,59 +43,51 @@ const LAPHero = () => {
   return (
     <section
       id="lap-home"
-      className="relative overflow-hidden bg-white pt-12 sm:pt-15 lg:pt-18"
+      className="relative overflow-hidden  pt-12 sm:pt-15 lg:pt-30 "
     >
       {/* ==========================================================
           BACKGROUND DECORATION
       ========================================================== */}
-     
-     
-      <div className="pointer-events-none absolute -left-32 top-20 h-72 w-72 rounded-full bg-emerald-100/60 blur-3xl" />
+      
+           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        {/* Soft Green Glow */}
+        <div
+          className="
+            absolute
+            -left-32
+            top-20
+            h-96
+            w-96
+            rounded-full
+            bg-[#186A07]/5
+            blur-3xl
+          "
+        />
 
-      <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-blue-50 blur-3xl" /> 
+        {/* Soft Blue Glow */}
+        <div
+          className="
+            absolute
+            right-0
+            top-0
+            h-[500px]
+            w-[500px]
+            rounded-full
+            bg-[#0B2578]/5
+            blur-3xl
+          "
+        />
 
-      {/* Minimal architectural lines */}
-      <div className="pointer-events-none absolute right-0 top-28 hidden opacity-[0.04] lg:block">
-        <svg
-          width="420"
-          height="420"
-          viewBox="0 0 420 420"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M20 320L210 120L400 320"
-            stroke="#0B2578"
-            strokeWidth="2"
-          />
-
-          <path
-            d="M75 300V220H345V300"
-            stroke="#0B2578"
-            strokeWidth="2"
-          />
-
-          <rect
-            x="145"
-            y="220"
-            width="130"
-            height="100"
-            stroke="#0B2578"
-            strokeWidth="2"
-          />
-
-          <path
-            d="M210 220V320"
-            stroke="#0B2578"
-            strokeWidth="2"
-          />
-
-          <path
-            d="M75 180H345"
-            stroke="#10B981"
-            strokeWidth="2"
-          />
-        </svg>
+        {/* Subtle Grid */}
+        <div
+          className="
+            absolute
+            inset-0
+            opacity-[0.025]
+            bg-[linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+            bg-size-[60px_60px]
+          "
+        />
       </div>
       
 
@@ -125,8 +117,14 @@ const LAPHero = () => {
             <h1 className="lap-hero-heading mt-6  font-extrabold leading-[1.08] tracking-tight text-slate-900 text-4xl sm:text-5xl lg:text-[60px]">
               Unlock the Value
               <br />
-              of Your{" "}
-              <span className="text-[#186A07]">
+              of{" "}
+              <span className=" bg-linear-to-r
+                  from-[#186A07]
+                  via-[#16830B]
+                  to-[#0B2578]
+                  bg-clip-text
+                  text-transparent">
+                     Your 
                 Property.
               </span>
             </h1>
@@ -182,7 +180,7 @@ const LAPHero = () => {
           {/* ======================================================
               RIGHT IMAGE
           ====================================================== */}
-            <div className="relative">
+            <div className="relative ">
 
             {/* Emerald glow */}
 

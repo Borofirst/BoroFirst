@@ -31,7 +31,7 @@ const WhatIsHomeLoan = () => {
   const [contentRef, contentVisible] = useReveal();
 
   return (
-    <section className="bg-[#F8FAFC] py-20 lg:py-28">
+    <section className="bg-[#F8FAFC] pt-20 pb-10 lg:pt-28 lg:pb-14 ">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 
         <div className="grid gap-12  lg:grid-cols-[0.9fr_1.1fr]">
@@ -43,18 +43,30 @@ const WhatIsHomeLoan = () => {
               headingVisible ? "visible" : ""
             }`}
           >
-                <p className="mb-4 text-sm font-bold rounded-full text-start   uppercase tracking-[0.18em] text-[#186A07]">
-              Understand Your Loan
-            </p>
+
+                     <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+              </span>
+
+              <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                Understand Your Loan
+              </span>
+            </div>
 
          
             
-              <h2 className="mt-5 text-3xl font-extrabold text-slate-900 leading-tight tracking-tight  sm:text-4xl lg:text-[48px]">
-              What Is 
-            <span className="block text-[#186A07]">
-               Home Loans
-            </span>
-          </h2>
+       
+          
+                        <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                   What Is {" "}
+              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent block">
+                  Home Loans{" "}
+              </span>
+            </h2>
+      
+
           </div>
 
           {/* Right */}

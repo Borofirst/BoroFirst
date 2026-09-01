@@ -290,11 +290,13 @@ const ContactSection = () => {
 
             {/* Heading */}
 
-            <h2 className="mt-8 text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight  text-[#0F172A]">
-              Connect with us now
-              <span className=" bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] bg-clip-text text-transparent">
-                {" "}
-                Financial Goals
+       
+
+
+                        <h2 className="max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                    Connect with us now{" "}
+              <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+                  Financial Goals{" "}
               </span>
             </h2>
            

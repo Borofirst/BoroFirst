@@ -13,7 +13,7 @@ export const createContact = async (req, res, next) => {
       purpose,
       message,
     } = req.body;
-    console.log(req.body);
+    
 
     // Basic validation
     if (

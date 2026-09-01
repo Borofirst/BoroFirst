@@ -82,53 +82,30 @@ const WhyChooseLoanBlue = ({content}) => {
           "
         >
           {/* Eyebrow */}
-          <div
-            className="
-              mb-5
-              inline-flex
-              items-center
-              gap-2
-              rounded-full
-              border
-              border-emerald-100
-              bg-emerald-50
-              px-4
-              py-2
-            "
-          >
-            <span
-              className="
-                h-1.5
-                w-1.5
-                rounded-full
-                bg-[#10B981]
-                animate-pulse
-              "
-            />
+    
+               <div className="mx-auto max-w-3xl text-center">
+                       <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                               
+          {content.eyebrow}
+                        </span>
+                      </div>
 
-            <span className="text-xs font-bold uppercase tracking-[0.15em] text-[#0B2578]">
-              {content.eyebrow}
+            {/* Heading */}
+
+
+                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                             {content.title}
+                        <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                       {content.highlight}
             </span>
-          </div>
-
-          {/* Heading */}
-          <h2
-            className="
-              text-3xl
-              font-extrabold
-              leading-tight
-              tracking-tight
-              text-[#0F172A]
-              sm:text-4xl
-              lg:text-5xl
-            "
-          >
-            {content.title}
-
-            <span className="block text-[#186A07]">
-              {content.highlight}
-            </span>
-          </h2>
+                        
+                      </h2>
 
           {/* Description */}
           <p
@@ -145,6 +122,9 @@ const WhyChooseLoanBlue = ({content}) => {
             {content.description}
           </p>
         </div>
+        </div>
+
+        
 
         {/* =====================================================
             MAIN CONTENT

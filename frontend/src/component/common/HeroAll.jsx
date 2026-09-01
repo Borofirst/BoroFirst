@@ -413,8 +413,8 @@ const LoanHero = ({
             absolute
             inset-0
             opacity-[0.025]
-            [background-image:linear-gradient(#2563EB_1px,transparent_1px),linear-gradient(90deg,#2563EB_1px,transparent_1px)]
-            [background-size:55px_55px]
+            bg-[linear-gradient(#2563EB_1px,transparent_1px),linear-gradient(90deg,#2563EB_1px,transparent_1px)]
+            bg-size-[55px_55px]
           "
         />
 

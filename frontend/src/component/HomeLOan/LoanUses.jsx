@@ -32,20 +32,33 @@ const LoanUses = () => {
   ];
 
   return (
-    <section id="loan-uses" className="bg-[#F8FAFC] py-20 lg:py-28">
+    <section id="loan-uses" className="bg-[#F8FAFC] pb-20 lg:pb-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="max-w-2xl reveal visible">
-          <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-[#2c8e18]">
-            Built Around Your Goals
-          </p>
+        <div className=" reveal visible">
+      
+                  
+
+                     <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+              </span>
+
+              <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                 Built Around Your Goals
+              </span>
+            </div>
 
          
-            <h2 className="mt-5 text-3xl font-extrabold text-slate-900 leading-tight tracking-tight  sm:text-4xl lg:text-[48px]">
-            What Can You Use a
-            <span className="block text-[#186A07]">
+            <h2 className=" text-3xl font-semibold text-slate-900 leading-tight tracking-tight   lg:text-4xl">
+            What Can You Use a {" "}
+            <span className=" ">
                Home Loan For?
             </span>
           </h2>
+
+         
+
 
           <p className="mt-5 leading-7 text-slate-600">
             Different homeownership goals may require different financing

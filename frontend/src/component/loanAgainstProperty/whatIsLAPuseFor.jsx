@@ -104,40 +104,28 @@ const LoanAgainstPropertyUses = () => {
         <div className="mx-auto max-w-3xl text-center">
 
           {/* Badge */}
-          <div
-            className="
-              inline-flex items-center gap-2
-              rounded-full
-              border border-emerald-200
-              bg-emerald-50
-              px-4 py-2
-              text-xs font-bold tracking-wider
-              text-emerald-700
-              sm:text-sm
-            "
-          >
-            <Sparkles size={15} />
 
-            FLEXIBLE FOR YOUR FINANCIAL NEEDS
-          </div>
+                                   <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                           FLEXIBLE FOR YOUR FINANCIAL NEEDS
+                        </span>
+                      </div>
 
           {/* Heading */}
-          <h2
-            className="
-              mt-5
-              text-3xl font-extrabold
-              leading-tight tracking-tight
-              text-[#0F172A]
-              sm:text-4xl
-              lg:text-5xl
-            "
-          >
-            What Can You Use a{" "}
-            <span className="text-[#186A07]">
-              Loan Against Property
-            </span>{" "}
-            For?
+       
+            <h2 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+             What Can You Use a{" "}
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+              Loan Against Property{" "}
+            </span>
+             For?
           </h2>
+
 
           {/* Description */}
           <p

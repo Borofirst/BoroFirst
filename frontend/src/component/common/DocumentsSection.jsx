@@ -119,17 +119,26 @@ const LoanDocuments = ({salariedDocuments,selfEmployedDocuments}) => {
 
         <div className="mx-auto max-w-3xl text-center">
 
-          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#2c8e18]">
-            <FileText size={15} />
-            Documents Required
-          </div>
+      
+                                       <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                           Documents Required
+                        </span>
+                      </div>
 
-             <h2 className="mt-5 text-3xl text-slate-900 font-extrabold leading-tight tracking-tight  sm:text-4xl lg:text-[48px]">
-                Keep Your Documents
-            <span className="block text-[#186A07]">
-                Ready.
+           <h2 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+             Keep Your{" "}
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+              Documents Ready.{" "}
             </span>
-              </h2>
+            
+          </h2>    
+
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-[#64748B] sm:text-lg">
             Having commonly requested documents ready can help make

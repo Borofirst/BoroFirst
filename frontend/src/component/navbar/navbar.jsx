@@ -23,11 +23,12 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    // { name: "Blogs", path: "/blogs" },
+    { name: "Tech Services", path: "techServices" },
     { name: "Career", path: "/career" },
     { name: "Become Partner", path: "/partner" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
+   
   ];
 
   const services = [
@@ -40,7 +41,7 @@ const Navbar = () => {
       iconColor: "text-emerald-700",
     },
     {
-      name: "LAP",
+      name: "Loan Against Property",
       description: "Unlock funds against your property",
       path: "/loan-againt-property",
       icon: Building2,
@@ -193,7 +194,7 @@ const Navbar = () => {
                 duration-200
               "
             >
-             Loan-Services
+             Loan Services
 
               <ChevronDown
                 size={15}
@@ -517,7 +518,7 @@ const Navbar = () => {
               hover:shadow-xl
             "
           >
-            Get Started
+            Apply Now
           </Link>
 
         </div>

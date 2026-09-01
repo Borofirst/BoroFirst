@@ -58,16 +58,26 @@ const LoanCalculator = () => {
 
         {/* Header */}
         <div className="mb-10 text-center">
-          <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700">
-            <Calculator size={18} />
-            Loan Calculator
-          </div>
+                                                                            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                            Loan Calculator
+                        </span>
+                      </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tightt">
-            Calculate Your {" "}
-            <span className="  bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] bg-clip-text text-transparent ">Loan EMI</span>
+                     <h2 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl  lg:text-[3.45rem]">
+             Calculate Your {" "}
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+             Loan EMI
+            </span>
             
           </h2>
+   
+                     
          
 
           <p className="mx-auto mt-3 max-w-2xl text-slate-600">
