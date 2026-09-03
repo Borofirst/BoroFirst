@@ -9,14 +9,23 @@ import EducationLoanHero from "../../component/EducationLoan/EducationHero"
 import WhyChooseEducationLoan from "../../component/EducationLoan/EducationLoanUseFor"
 import EducationLoanWhatIs from "../../component/EducationLoan/whatIsEducationLoan"
 import WhyChooseBorofirstEducationLoan from "../../component/EducationLoan/whyChooseBorofirst"
+import SEO from "../../component/Seo"
 import { educationLoanFAQs } from "../../data/HomePageFAQDATA"
 import { educationLoanSteps } from "../../data/stepProcess"
 
 
 export const EducationLoanPage=()=>{
     return(
-        <div>
-            <EducationLoanHero/>
+<>
+          <SEO
+      title="Education Loan | Borofirst"
+    description=
+      "Explore loan against property solutions from BOROFIRST and unlock the financial value of your property."
+    canonical= "https://borofirst.com/education-loan"
+      />
+
+      <main>
+          <EducationLoanHero/>
             <TrustStrip/>
             <EducationLoanWhatIs/>
             <WhyChooseEducationLoan/>
@@ -33,7 +42,8 @@ export const EducationLoanPage=()=>{
 <WhyChooseBorofirstEducationLoan/>
 <ContactSection/>
 <FAQSection faqs={educationLoanFAQs}/>
+   </main>
+   </>
 
-        </div>
     )
 }

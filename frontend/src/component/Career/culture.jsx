@@ -137,7 +137,7 @@ const cultureValues = [
 //             text-[#186A07]
 //             shadow-sm
 //             transition-all duration-300
-//             group-hover:bg-gradient-to-br
+//             group-hover:bg-linear-to-br
 //             group-hover:from-[#186A07]
 //             group-hover:to-[#0B2578]
 //             group-hover:text-white
@@ -169,7 +169,7 @@ const cultureValues = [
 //           className="
 //             h-px w-full bg-slate-100
 //             transition-all duration-300
-//             group-hover:bg-gradient-to-r
+//             group-hover:bg-linear-to-r
 //             group-hover:from-[#186A07]
 //             group-hover:to-[#0B2578]
 //           "
@@ -204,7 +204,7 @@ const CultureValues = () => {
       aria-labelledby="culture-values-heading"
       className="
         relative isolate overflow-hidden
-        bg-gradient-to-b from-[#F9FCF8] via-white to-[#F8FBFF]
+        bg-linear-to-b from-[#F9FCF8] via-white to-[#F8FBFF]
         py-20 sm:py-24 lg:py-28
       "
     >
@@ -238,9 +238,9 @@ const CultureValues = () => {
         className="
           pointer-events-none absolute inset-0 -z-10
           opacity-[0.18]
-          [background-image:linear-gradient(rgba(24,106,7,0.10)_1px,transparent_1px),linear-gradient(90deg,rgba(24,106,7,0.10)_1px,transparent_1px)]
+          [background-image:linear-linear(rgba(24,106,7,0.10)_1px,transparent_1px),linear-linear(90deg,rgba(24,106,7,0.10)_1px,transparent_1px)]
           [background-size:52px_52px]
-          [mask-image:linear-gradient(to_bottom,black,transparent_80%)]
+          [mask-image:linear-linear(to_bottom,black,transparent_80%)]
         "
       />
 
@@ -255,11 +255,7 @@ const CultureValues = () => {
               shadow-sm backdrop-blur-md
             "
           >
-            <Sparkles
-              size={14}
-              className="text-[#186A07]"
-              aria-hidden="true"
-            />
+            <Sparkles size={14} className="text-[#186A07]" aria-hidden="true" />
 
             <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#186A07]">
               Our Culture &amp; Values
@@ -278,7 +274,7 @@ const CultureValues = () => {
             A Culture Built Around{" "}
             <span
               className="
-                bg-gradient-to-r from-[#186A07] to-[#0B2578]
+                bg-linear-to-r from-[#186A07] to-[#0B2578]
                 bg-clip-text text-transparent
               "
             >
@@ -287,10 +283,10 @@ const CultureValues = () => {
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base sm:leading-8">
-            At Borofirst, we believe great financial solutions begin with
-            great people. We are building a culture where people can
-            collaborate, take ownership, keep learning, and create meaningful
-            value for customers and the organization.
+            At Borofirst, we believe great financial solutions begin with great
+            people. We are building a culture where people can collaborate, take
+            ownership, keep learning, and create meaningful value for customers
+            and the organization.
           </p>
         </header>
 
@@ -330,7 +326,7 @@ const CultureValues = () => {
                 className="
                   flex h-14 w-14 shrink-0 items-center justify-center
                   rounded-2xl
-                  bg-gradient-to-br from-[#186A07] to-[#0B2578]
+                  bg-linear-to-br from-[#186A07] to-[#0B2578]
                   text-white
                   shadow-lg shadow-blue-900/10
                 "
@@ -384,14 +380,12 @@ const CultureValues = () => {
         <div className="mt-12">
           <div className="grid grid-cols-1< gap-4 sm:grid-cols-2 lg:gap-5 xl:grid-cols-5">
             {cultureValues.map((value) => {
-                return(
-                    <>
-                 <CommenCar2 reason={value} key={value.number}/>
-                    </>
-                )
-            }
-            )}
-
+              return (
+                <>
+                  <CommenCar2 reason={value} key={value.number} />
+                </>
+              );
+            })}
           </div>
         </div>
 
@@ -426,11 +420,7 @@ const CultureValues = () => {
                   text-[#186A07]
                 "
               >
-                <Quote
-                  size={19}
-                  strokeWidth={1.8}
-                  aria-hidden="true"
-                />
+                <Quote size={19} strokeWidth={1.8} aria-hidden="true" />
               </div>
 
               <div className="flex-1">
@@ -440,7 +430,7 @@ const CultureValues = () => {
                 </p>
               </div>
 
-              <div className="hidden h-px w-12 bg-gradient-to-r from-[#186A07] to-[#0B2578] sm:block" />
+              <div className="hidden h-px w-12 bg-linear-to-r from-[#186A07] to-[#0B2578] sm:block" />
 
               <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
                 People • Purpose • Progress

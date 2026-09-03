@@ -31,13 +31,11 @@ const financeHighlights = [
 const CarLoanHeroSpotlight = () => {
   return (
     <section className="relative min-h-[760px] w-full overflow-hidden bg-[#F8FAFC] text-[#0F172A] sm:min-h-[820px] lg:min-h-[850px]">
-
       {/* =====================================================
           BACKGROUND
       ====================================================== */}
 
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-
         {/* Top navy atmosphere */}
         <div
           className="
@@ -91,7 +89,7 @@ const CarLoanHeroSpotlight = () => {
             absolute
             inset-0
             opacity-[0.025]
-            bg-[linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+            bg-[linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
             bg-size-[55px_55px]
           "
         />
@@ -141,13 +139,11 @@ const CarLoanHeroSpotlight = () => {
       ====================================================== */}
 
       <div className="relative z-10 mx-auto max-w-[1500px] px-4 pt-28 sm:px-6 lg:px-10 lg:pt-32">
-
         {/* =================================================
             TOP CONTENT
         ================================================== */}
 
         <div className="mx-auto max-w-4xl text-center">
-
           {/* Eyebrow */}
           <div
             className="
@@ -171,10 +167,7 @@ const CarLoanHeroSpotlight = () => {
               <span className="relative h-2 w-2 rounded-full bg-[#10B981]" />
             </span>
 
-            <CarFront
-              size={15}
-              className="text-[#10B981]"
-            />
+            <CarFront size={15} className="text-[#10B981]" />
 
             <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#0B2578] sm:text-xs">
               New & Used Car Loans
@@ -198,7 +191,6 @@ const CarLoanHeroSpotlight = () => {
           >
             The Car You Want.
             <br />
-
             <span className="relative text-[#186A07]">
               The Finance You Need.
             </span>
@@ -219,9 +211,8 @@ const CarLoanHeroSpotlight = () => {
             "
             style={{ animationDelay: "220ms" }}
           >
-            Get financing for your new or used car with flexible
-            options, convenient EMIs and a simple application
-            journey with BOROFIRST.
+            Get financing for your new or used car with flexible options,
+            convenient EMIs and a simple application journey with BOROFIRST.
           </p>
 
           {/* CTA */}
@@ -238,7 +229,6 @@ const CarLoanHeroSpotlight = () => {
             "
             style={{ animationDelay: "320ms" }}
           >
-
             <button
               className="
                 group
@@ -281,9 +271,7 @@ const CarLoanHeroSpotlight = () => {
                 "
               />
 
-              <span className="relative">
-                Apply for Car Loan
-              </span>
+              <span className="relative">Apply for Car Loan</span>
 
               <ArrowRight
                 size={18}
@@ -318,7 +306,6 @@ const CarLoanHeroSpotlight = () => {
               "
             >
               <CheckCircle2 size={18} />
-
               Check Eligibility
             </button>
           </div>
@@ -329,7 +316,6 @@ const CarLoanHeroSpotlight = () => {
         ================================================== */}
 
         <div className="relative mx-auto mt-8 h-[360px] max-w-[1500px] sm:h-[420px] lg:mt-2 lg:h-[460px]">
-
           {/* Road shadow */}
           <div
             className="
@@ -382,12 +368,8 @@ const CarLoanHeroSpotlight = () => {
             "
           >
             <div className="flex items-center gap-3">
-
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#10B981]/10">
-                <WalletCards
-                  size={20}
-                  className="text-[#10B981]"
-                />
+                <WalletCards size={20} className="text-[#10B981]" />
               </div>
 
               <div>
@@ -400,10 +382,7 @@ const CarLoanHeroSpotlight = () => {
                 </p>
 
                 <div className="mt-1 flex items-center gap-1">
-                  <CheckCircle2
-                    size={12}
-                    className="text-[#2c8e18]"
-                  />
+                  <CheckCircle2 size={12} className="text-[#2c8e18]" />
 
                   <span className="text-[9px] text-[#64748B]">
                     Convenient repayment
@@ -434,12 +413,8 @@ const CarLoanHeroSpotlight = () => {
             "
           >
             <div className="flex items-center gap-3">
-
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#0B2578]/5">
-                <ShieldCheck
-                  size={20}
-                  className="text-[#0B2578]"
-                />
+                <ShieldCheck size={20} className="text-[#0B2578]" />
               </div>
 
               <div>
@@ -452,10 +427,7 @@ const CarLoanHeroSpotlight = () => {
                 </p>
 
                 <div className="mt-1 flex items-center gap-1">
-                  <BadgeCheck
-                    size={12}
-                    className="text-[#2c8e18]"
-                  />
+                  <BadgeCheck size={12} className="text-[#2c8e18]" />
 
                   <span className="text-[9px] text-[#64748B]">
                     Easy application
@@ -465,10 +437,8 @@ const CarLoanHeroSpotlight = () => {
             </div>
           </div>
 
-
-
-<div
-  className="
+          <div
+            className="
     absolute
     inset-0
     z-20
@@ -484,12 +454,11 @@ top-1/2
 translate-y-[-36%]
     animate-[carFloat_6s_ease-in-out_infinite]
   "
-
->
-  <img
-    src="carImage.png"
-    alt="Premium car available with BOROFIRST car financing"
-    className="
+          >
+            <img
+              src="carImage.png"
+              alt="Premium car available with BOROFIRST car financing"
+              className="
       block
       w-[150%]
       max-w-[1500px]
@@ -499,8 +468,8 @@ translate-y-[-36%]
       sm:w-[105%]
       lg:w-[95%]
     "
-  />
-</div>
+            />
+          </div>
 
           {/* =================================================
               NEW / USED FLOATING LABEL
@@ -525,7 +494,6 @@ translate-y-[-36%]
             "
           >
             <div className="flex items-center gap-3">
-
               <span className="text-[10px] font-bold text-[#0F172A] sm:text-xs">
                 NEW CARS
               </span>
@@ -605,10 +573,7 @@ translate-y-[-36%]
                   ${index !== 0 ? "border-l border-[#E2E8F0]" : ""}
                 `}
               >
-                <Icon
-                  size={18}
-                  className="shrink-0 text-[#2c8e18]"
-                />
+                <Icon size={18} className="shrink-0 text-[#2c8e18]" />
 
                 <div>
                   <p className="text-[9px] font-extrabold text-[#0F172A] sm:text-xs">
@@ -625,13 +590,8 @@ translate-y-[-36%]
         </div>
       </div>
 
-
-
-
-
-
       {/* Bottom fade */}
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#F8FAFC] to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-[#F8FAFC] to-transparent" />
     </section>
   );
 };

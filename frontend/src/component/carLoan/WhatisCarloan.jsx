@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import {
   ArrowRight,
@@ -110,7 +108,7 @@ const CarLoanWhatIsSection = () => {
             absolute
             inset-0
             opacity-[0.022]
-            [background-image:linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+            [background-image:linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
             [background-size:60px_60px]
           "
         />
@@ -144,55 +142,43 @@ const CarLoanWhatIsSection = () => {
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-10">
-
         {/* =====================================================
             INTRO / WHAT IS A CAR LOAN
         ====================================================== */}
 
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_0.9fr] lg:gap-20">
-
           {/* LEFT CONTENT */}
           <div className="hero-content">
-
             {/* Eyebrow */}
-      
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700">
-                        <CarFront
-                size={15}
-                className="text-[#186A07]"
-              />
-                         Understanding Car Financing
-                      </div>
+
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+              </span>
+
+              <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                Understanding Car Financing
+              </span>
+            </div>
+
             {/* Heading */}
+
             <h2
-              className="
-                mt-6
+              className="                 mt-6
                 max-w-2xl
                 text-[42px]
     
                 animate-[fadeUp_700ms_100ms_ease-out_both]
-                 text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight
-              "
+                 text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight"
             >
-              What Is a
-              <br />
-
-              <span className=" bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] bg-clip-text text-transparent">
+              What Is an{" "}
+              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
                 Car Loan?
               </span>
-
-              <br />
-
-              {/* <h3 className="max-w-xl text-3xl font-black leading-[1.08] tracking-[-0.045em] sm:text-4xl"> */}
-              
-              <span className="text-[#10B981] text-2xl">
-           
-              </span>
-                <p className="text-xl font-bold leading-8 tracking-tight text-[#0F172A] sm:text-2xl sm:leading-9">
-                    Get the car you need,
-                {" "}without putting everything upfront.
+              <p className="text-xl font-bold leading-8 tracking-tight text-[#0F172A] sm:text-2xl sm:leading-9">
+                Get the car you need, without putting everything upfront.
               </p>
-            {/* </h3> */}
             </h2>
 
             {/* Main description */}
@@ -208,10 +194,10 @@ const CarLoanWhatIsSection = () => {
                 animate-[fadeUp_700ms_200ms_ease-out_both]
               "
             >
-              A car loan is a financing facility that helps you purchase a
-              new or used car without paying the entire cost upfront. An
-              eligible portion of the vehicle cost is financed and repaid
-              through monthly EMIs over an agreed tenure.
+              A car loan is a financing facility that helps you purchase a new
+              or used car without paying the entire cost upfront. An eligible
+              portion of the vehicle cost is financed and repaid through monthly
+              EMIs over an agreed tenure.
             </p>
 
             <p
@@ -226,10 +212,9 @@ const CarLoanWhatIsSection = () => {
                 animate-[fadeUp_700ms_300ms_ease-out_both]
               "
             >
-              Whether you're buying your first car, upgrading to a newer
-              model or choosing a pre-owned vehicle, financing can help you
-              spread the cost of your purchase into planned monthly
-              repayments.
+              Whether you're buying your first car, upgrading to a newer model
+              or choosing a pre-owned vehicle, financing can help you spread the
+              cost of your purchase into planned monthly repayments.
             </p>
 
             {/* Small trust statement */}
@@ -242,10 +227,7 @@ const CarLoanWhatIsSection = () => {
                 animate-[fadeUp_700ms_400ms_ease-out_both]
               "
             >
-              <CheckCircle2
-                size={17}
-                className="text-[#10B981]"
-              />
+              <CheckCircle2 size={17} className="text-[#10B981]" />
 
               <span className="text-xs font-semibold text-[#475569] sm:text-sm">
                 Simple financing. Planned repayments. Smarter car ownership.
@@ -290,7 +272,6 @@ const CarLoanWhatIsSection = () => {
               />
 
               <div className="relative">
-
                 {/* Panel heading */}
                 <div className="flex items-start justify-between gap-5">
                   <div>
@@ -327,7 +308,6 @@ const CarLoanWhatIsSection = () => {
 
                 {/* Financing visual */}
                 <div className="relative mt-10">
-
                   {/* Connecting line */}
                   <div
                     className="
@@ -336,7 +316,7 @@ const CarLoanWhatIsSection = () => {
                       top-6
                       h-[calc(100%-48px)]
                       w-px
-                      bg-gradient-to-b
+                      bg-linear-to-b
                       from-[#10B981]
                       via-[#10B981]/40
                       to-[#0B2578]/20
@@ -442,14 +422,13 @@ const CarLoanWhatIsSection = () => {
         ====================================================== */}
 
         <div className="mt-24 lg:mt-32">
-
           {/* Section heading */}
           <div className="max-w-2xl">
             <p className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#2c8e18]">
               Why consider financing?
             </p>
 
-            <h3 className="mt-4 text-3xl font-black tracking-[-0.045em] sm:text-4xl lg:text-5xl">
+            <h3 className="mt-2 text-2xl font-extrabold tracking-tight text-[#0F172A] sm:text-3xl lg:text-4xl">
               How Can a Car Loan
               <span className="text-[#186A07]"> Help You?</span>
             </h3>
@@ -461,20 +440,13 @@ const CarLoanWhatIsSection = () => {
             </p>
           </div>
 
-       
-
-                   {/* Benefits */}
-                     <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Benefits */}
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {benefits.map((expense) => (
-              <BenefitsItem
-                key={expense.title}
-                {...expense}
-              />
+              <BenefitsItem key={expense.title} {...expense} />
             ))}
           </div>
-
-          </div>
-
+        </div>
 
         {/* =====================================================
             SMALL CTA
@@ -510,7 +482,6 @@ const CarLoanWhatIsSection = () => {
           </div>
 
           <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row">
-
             <button
               type="button"
               className="
@@ -535,7 +506,6 @@ const CarLoanWhatIsSection = () => {
               "
             >
               Apply for Car Loan
-
               <ArrowRight
                 size={15}
                 className="transition-transform duration-300 group-hover:translate-x-1"
@@ -570,7 +540,6 @@ const CarLoanWhatIsSection = () => {
               "
             >
               <CheckCircle2 size={15} />
-
               Check Eligibility
             </button>
           </div>
@@ -632,13 +601,9 @@ const BenefitsItem = ({ icon: Icon, title, text }) => {
         />
       </div>
 
-      <h3 className="mt-4 text-sm font-extrabold text-[#0F172A]">
-        {title}
-      </h3>
+      <h3 className="mt-4 text-sm font-extrabold text-[#0F172A]">{title}</h3>
 
-      <p className="mt-1.5 text-xs leading-5 text-[#64748B]">
-        {text}
-      </p>
+      <p className="mt-1.5 text-xs leading-5 text-[#64748B]">{text}</p>
     </div>
   );
 };

@@ -14,9 +14,7 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 // FAQ DATA
 // ======================================
 
-
-
-const FAQSection = ({faqs}) => {
+const FAQSection = ({ faqs }) => {
   const [activeFAQ, setActiveFAQ] = useState(0);
 
   return (
@@ -36,30 +34,20 @@ const FAQSection = ({faqs}) => {
           <div className="lg:sticky lg:top-28 h-fit">
             {/* Badge */}
 
-           
-                
-                <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
-              <HelpCircle
-                size={18}
-                className="text-[#186A07]"
-            
-              />
+            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
+              <HelpCircle size={18} className="text-[#186A07]" />
 
               <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
-               Need Help?
+                Need Help?
               </span>
             </div>
 
             {/* Heading */}
 
-
-      
-            
-
-                        <h2 className="max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
-                 Frequently Asked{" "}
-              <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
-                  Questions{" "}
+            <h2 className="max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+              Frequently Asked{" "}
+              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+                Questions{" "}
               </span>
             </h2>
 
@@ -72,7 +60,8 @@ const FAQSection = ({faqs}) => {
             {/* Support Card */}
 
             <div className="mt-12 rounded-3xl border border-gray-200 bg-white p-8 shadow-lg">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl text-white
+              <div
+                className="flex h-16 w-16 items-center justify-center rounded-2xl text-white
                bg-[#186A07]
                     
                         transition-all duration-300 ease-o  ut
@@ -80,7 +69,8 @@ const FAQSection = ({faqs}) => {
                       hover:text-white
                      hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
                         hover:scale-110
-              ">
+              "
+              >
                 <Headphones size={30} />
               </div>
 
@@ -93,8 +83,8 @@ const FAQSection = ({faqs}) => {
                 every step of your loan or investment journey.
               </p>
 
-          
-                <a className="
+              <a
+                className="
                 mt-8
                 flex
                 w-full
@@ -113,13 +103,13 @@ const FAQSection = ({faqs}) => {
                 duration-300
                 hover:scale-[1.02]
                 hover:shadow-xl
-              " href="tel:+917060162526">
+              "
+                href="tel:+917060162526"
+              >
                 <PhoneCall size={20} />
-
                 Contact Support
                 <ArrowRight size={18} />
-                </a>
-            
+              </a>
             </div>
           </div>
 
@@ -252,9 +242,6 @@ const FAQSection = ({faqs}) => {
             })}
           </div>
         </div>
-       
-
-    
       </div>
     </section>
   );

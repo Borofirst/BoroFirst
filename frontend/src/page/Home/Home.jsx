@@ -13,12 +13,21 @@ import LoanCalculator from "../../component/common/LoanCalculator";
 import FAQSection from "../../component/common/FAQSection";
 import { HomePagefaqData } from "../../data/HomePageFAQDATA";
 import TestimonialsSection from "../TestimonialsSection";
+import SEO from "../../component/Seo";
 const Home = () => {
   return (
     <>
       {/* hero */}
+         <SEO
+        title="BOROFIRST | Smart Financial Solutions & Loans"
+        description="BOROFIRST connects customers with smart, transparent and customer-focused financial solutions including personal loans, home loans and business loans."
+        canonical="https://borofirst.com/"
+      />
+
+      <main>
+       
       <Header/>
-      {/* card */}
+     
       <Product />
       <LoanNeedSection />
       <LoanCalculator />
@@ -29,6 +38,8 @@ const Home = () => {
       <ContactSection />
       <TestimonialsSection/>
       <FAQSection faqs={HomePagefaqData} />
+      </main>
+
     </>
   );
 };

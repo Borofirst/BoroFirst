@@ -1,5 +1,3 @@
-
-
 import {
   BookOpen,
   BriefcaseBusiness,
@@ -9,7 +7,7 @@ import {
   Laptop,
   TrendingUp,
   WalletCards,
-    GraduationCap,
+  GraduationCap,
   Award,
 } from "lucide-react";
 
@@ -69,34 +67,31 @@ const educationExpenses = [
     title: "Education Abroad",
     description: "May support eligible international education expenses.",
   },
-    {
-
+  {
     icon: GraduationCap,
     title: "Higher Education",
     description:
       "Finance tuition and other eligible expenses for undergraduate, postgraduate, professional, and specialized degree programs in India or abroad.",
   },
-    {
+  {
     icon: Laptop,
     title: "Laptop & Learning Equipment",
     description:
       "Finance eligible educational equipment such as laptops, computers, and other technology required for your academic program.",
   },
-    {
+  {
     icon: BriefcaseBusiness,
     title: "Professional Courses",
     description:
       "Fund career-focused programs such as management, engineering, medicine, technology, and other recognized professional courses.",
   },
-    {
+  {
     icon: Award,
     title: "Skill & Career Development",
     description:
       "Invest in recognized certification and skill-development programs that can help build stronger career opportunities and professional growth.",
-  }
+  },
 ];
-
-
 
 /* =========================================================
    JOURNEY ITEM
@@ -151,7 +146,7 @@ const JourneyItem = ({
         </div>
 
         {!isLast && (
-          <div className="mt-2 h-full min-h-[58px] w-px bg-gradient-to-b from-[#C7D2FE] to-[#D1FAE5]" />
+          <div className="mt-2 h-full min-h-[58px] w-px bg-linear-to-b from-[#C7D2FE] to-[#D1FAE5]" />
         )}
       </div>
 
@@ -235,28 +230,18 @@ const ExpenseItem = ({ icon: Icon, title, description }) => {
         />
       </div>
 
-      <h3 className="mt-4 text-sm font-extrabold text-[#0F172A]">
-        {title}
-      </h3>
+      <h3 className="mt-4 text-sm font-extrabold text-[#0F172A]">{title}</h3>
 
-      <p className="mt-1.5 text-xs leading-5 text-[#64748B]">
-        {description}
-      </p>
+      <p className="mt-1.5 text-xs leading-5 text-[#64748B]">{description}</p>
     </div>
   );
 };
-
 
 /* =========================================================
    WHY IT MATTERS CARD
 ========================================================= */
 
-const WhyItMattersCard = ({
-  number,
-  icon: Icon,
-  title,
-  description,
-}) => {
+const WhyItMattersCard = ({ number, icon: Icon, title, description }) => {
   return (
     <div
       className="
@@ -296,10 +281,7 @@ const WhyItMattersCard = ({
 
       <div className="relative flex items-center justify-between">
         <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#EEF2FF]">
-          <Icon
-            size={19}
-            className="text-[#0B2578]"
-          />
+          <Icon size={19} className="text-[#0B2578]" />
         </div>
 
         <span className="text-[10px] font-extrabold tracking-[0.16em] text-[#CBD5E1]">
@@ -339,7 +321,7 @@ const EducationJourney = () => {
           absolute
           inset-0
           opacity-[0.035]
-          [background-image:linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+          [background-image:linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
           [background-size:35px_35px]
         "
       />
@@ -359,10 +341,7 @@ const EducationJourney = () => {
           </div>
 
           <div className="hidden h-10 w-10 items-center justify-center rounded-xl bg-[#0B2578] sm:flex">
-            <GraduationCap
-              size={19}
-              className="text-white"
-            />
+            <GraduationCap size={19} className="text-white" />
           </div>
         </div>
 
@@ -380,7 +359,7 @@ const EducationJourney = () => {
 
         {/* Bottom statement */}
 
-        <div className="mt-1 rounded-2xl bg-gradient-to-r from-[#ECFDF5] via-white to-[#EEF2FF] p-4">
+        <div className="mt-1 rounded-2xl bg-linear-to-r from-[#ECFDF5] via-white to-[#EEF2FF] p-4">
           <div className="flex items-start gap-3">
             <CheckCircle2
               size={17}
@@ -388,8 +367,8 @@ const EducationJourney = () => {
             />
 
             <p className="text-xs font-semibold leading-5 text-[#475569]">
-              The right education can become the foundation for the career
-              you want to build.
+              The right education can become the foundation for the career you
+              want to build.
             </p>
           </div>
         </div>
@@ -411,7 +390,6 @@ const EducationLoanWhatIs = () => {
 
       <div className="pointer-events-none absolute inset-0">
         {/* Grid */}
-
 
         {/* Emerald glow */}
 
@@ -441,28 +419,22 @@ const EducationLoanWhatIs = () => {
 
         <div className="mx-auto max-w-4xl text-center">
           {/* Eyebrow */}
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+            </span>
 
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#10B981]/20 bg-white px-3.5 py-2 shadow-sm">
-            <GraduationCap
-              size={15}
-              className="text-[#10B981]"
-            />
-
-            <span className="text-[9px] font-extrabold uppercase tracking-[0.18em] text-[#0B2578] sm:text-[10px]">
+            <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
               Understand Your Education Loan
             </span>
           </div>
 
           {/* Heading */}
 
-          <h2
-            className="
-              mt-5
-             text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight
-            "
-          >
+          <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
             What Is an{" "}
-            <span className="bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
               Education Loan?
             </span>
           </h2>
@@ -491,18 +463,18 @@ const EducationLoanWhatIs = () => {
 
             <div className="max-w-xl">
               <p className="text-xl font-bold leading-8 tracking-tight text-[#0F172A] sm:text-2xl sm:leading-9">
-                An education loan is financial support designed to help
-                students pursue higher education without letting the immediate
-                cost stand between them and their ambitions.
+                An education loan is financial support designed to help students
+                pursue higher education without letting the immediate cost stand
+                between them and their ambitions.
               </p>
 
               <div className="mt-6 space-y-5 text-sm leading-7 text-[#64748B] sm:text-base">
                 <p>
-                  Whether you're planning a professional degree, higher
-                  studies in India, or an international education, the right
-                  education loan can help you manage major education-related
-                  expenses while you focus on learning, growing and preparing
-                  for your future career.
+                  Whether you're planning a professional degree, higher studies
+                  in India, or an international education, the right education
+                  loan can help you manage major education-related expenses
+                  while you focus on learning, growing and preparing for your
+                  future career.
                 </p>
 
                 <p>
@@ -515,15 +487,12 @@ const EducationLoanWhatIs = () => {
 
             {/* Philosophy panel */}
 
-            <div className="relative mt-9 overflow-hidden rounded-[26px] bg-gradient-to-br from-[#ECFDF5] via-white to-[#F0F4FF] p-6 sm:p-7">
+            <div className="relative mt-9 overflow-hidden rounded-[26px] bg-linear-to-br from-[#ECFDF5] via-white to-[#F0F4FF] p-6 sm:p-7">
               <div className="absolute right-0 top-0 h-28 w-28 rounded-full bg-[#10B981]/10 blur-3xl" />
 
               <div className="relative">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white shadow-sm">
-                  <WalletCards
-                    size={18}
-                    className="text-[#0B2578]"
-                  />
+                  <WalletCards size={18} className="text-[#0B2578]" />
                 </div>
 
                 <blockquote className="mt-5 text-lg font-extrabold leading-7 tracking-tight text-[#0F172A] sm:text-xl">
@@ -544,14 +513,11 @@ const EducationLoanWhatIs = () => {
             {/* Quick reassurance */}
 
             <div className="mt-6 flex items-center gap-2.5">
-              <CheckCircle2
-                size={17}
-                className="shrink-0 text-[#2c8e18]"
-              />
+              <CheckCircle2 size={17} className="shrink-0 text-[#2c8e18]" />
 
               <p className="text-xs font-semibold text-[#64748B]">
-                Designed to help students pursue meaningful education goals
-                with structured financial support.
+                Designed to help students pursue meaningful education goals with
+                structured financial support.
               </p>
             </div>
           </div>
@@ -579,17 +545,14 @@ const EducationLoanWhatIs = () => {
               </h3>
 
               <p className="mt-3 max-w-xl text-sm leading-6 text-[#64748B]">
-                Depending on the loan and lender terms, education financing
-                may help manage several eligible costs associated with your
-                academic journey.
+                Depending on the loan and lender terms, education financing may
+                help manage several eligible costs associated with your academic
+                journey.
               </p>
             </div>
 
             <div className="hidden items-center gap-2 rounded-full border border-[#E2E8F0] bg-white px-4 py-2 shadow-sm md:flex">
-              <Laptop
-                size={14}
-                className="text-[#0B2578]"
-              />
+              <Laptop size={14} className="text-[#0B2578]" />
 
               <span className="text-[9px] font-bold text-[#64748B]">
                 Built around your education journey
@@ -601,17 +564,10 @@ const EducationLoanWhatIs = () => {
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {educationExpenses.map((expense) => (
-              <ExpenseItem
-                key={expense.title}
-                {...expense}
-              />
+              <ExpenseItem key={expense.title} {...expense} />
             ))}
           </div>
         </div>
-
-  
-
-      
       </div>
     </section>
   );

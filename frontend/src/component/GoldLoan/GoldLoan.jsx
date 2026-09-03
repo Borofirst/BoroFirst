@@ -39,9 +39,7 @@ const GoldLoanHero = () => {
   };
 
   const handleApply = () => {
-    document
-      .getElementById("contact")
-      ?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -71,7 +69,7 @@ const GoldLoanHero = () => {
         className="pointer-events-none absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage:
-            "linear-gradient(#0B2578 1px, transparent 1px), linear-gradient(90deg, #0B2578 1px, transparent 1px)",
+            "linear-linear(#0B2578 1px, transparent 1px), linear-linear(90deg, #0B2578 1px, transparent 1px)",
           backgroundSize: "48px 48px",
         }}
       />
@@ -257,7 +255,7 @@ const GoldLoanHero = () => {
               </div>
 
               {/* Pendant */}
-              <div className="absolute bottom-[0px] left-1/2 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-full border-[5px] border-[#D4AF37] bg-gradient-to-br from-[#FFF4B8] via-[#D4AF37] to-[#9B7613] shadow-[0_8px_20px_rgba(201,162,39,0.35)] sm:h-14 sm:w-14">
+              <div className="absolute bottom-[0px] left-1/2 flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-full border-[5px] border-[#D4AF37] bg-linear-to-br from-[#FFF4B8] via-[#D4AF37] to-[#9B7613] shadow-[0_8px_20px_rgba(201,162,39,0.35)] sm:h-14 sm:w-14">
                 <div className="h-4 w-4 rotate-45 rounded-sm border-2 border-[#FFF5C2] bg-[#D4AF37]" />
               </div>
             </div>
@@ -281,7 +279,7 @@ const GoldLoanHero = () => {
             >
               <div className="absolute h-[70px] w-[70px] rounded-full border-[10px] border-[#D4AF37] bg-transparent shadow-[0_10px_25px_rgba(201,162,39,0.25)] sm:h-[80px] sm:w-[80px]" />
 
-              <div className="absolute -top-1 h-8 w-8 rotate-45 rounded-[7px] border-4 border-[#F7E7A7] bg-gradient-to-br from-[#FFF1A6] to-[#C9A227] shadow-[0_6px_18px_rgba(201,162,39,0.35)] sm:h-9 sm:w-9" />
+              <div className="absolute -top-1 h-8 w-8 rotate-45 rounded-[7px] border-4 border-[#F7E7A7] bg-linear-to-br from-[#FFF1A6] to-[#C9A227] shadow-[0_6px_18px_rgba(201,162,39,0.35)] sm:h-9 sm:w-9" />
             </div>
 
             {/* =====================================================
@@ -290,7 +288,7 @@ const GoldLoanHero = () => {
             <div className="relative z-30 w-[88%] max-w-[390px]">
               <div className="relative overflow-hidden rounded-[30px] border border-white/80 bg-white/95 p-6 shadow-[0_30px_80px_rgba(11,37,120,0.14),0_10px_30px_rgba(15,23,42,0.06)] backdrop-blur-xl sm:p-7">
                 {/* Card accent */}
-                <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-[#0B2578] via-[#10B981] to-[#D4AF37]" />
+                <div className="absolute left-0 top-0 h-1 w-full bg-linear-to-r from-[#0B2578] via-[#10B981] to-[#D4AF37]" />
 
                 {/* Inner glow */}
                 <div
@@ -352,9 +350,7 @@ const GoldLoanHero = () => {
                         <p className="text-[9px] font-semibold uppercase tracking-wide text-[#94A3B8]">
                           Asset
                         </p>
-                        <p className="text-xs font-bold text-[#0F172A]">
-                          Gold
-                        </p>
+                        <p className="text-xs font-bold text-[#0F172A]">Gold</p>
                       </div>
                     </div>
                   </div>
@@ -404,7 +400,7 @@ const GoldLoanHero = () => {
             </div>
 
             {/* Decorative Gold Dots */}
-              <span
+            <span
               aria-hidden="true"
               className="absolute right-[8%] bottom-[24%] h-2 w-2 rounded-full bg-[#D4AF37] shadow-[0_0_0_6px_rgba(212,175,55,0.10)]"
             />
@@ -418,15 +414,11 @@ const GoldLoanHero = () => {
               aria-hidden="true"
               className="absolute right-[9%] top-[33%] h-1 w-1 rounded-full bg-[#0B2578]"
             />
-          
           </div>
         </div>
       </div>
 
- 
-
       {/* Component-only animations */}
-
     </section>
   );
 };

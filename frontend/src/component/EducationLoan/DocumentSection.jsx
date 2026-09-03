@@ -148,18 +148,34 @@ function AdditionalDocument({ document }) {
 export default function EducationLoanDocuments() {
   return (
     <section className="bg-[#F8FAFC] py-20 sm:py-24">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
         {/* ================= HEADER ================= */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center rounded-full border border-emerald-100 bg-white px-4 py-2 text-[11px] font-bold uppercase tracking-[0.12em] text-[#0B2578] shadow-sm">
-            Loan Documentation
-          </span>
+    
+                                                              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                               
+             Loan Documentation
+                        </span>
+                      </div>
 
-          <h2 className="mt-5 text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight">
-            Documents Required for an{" "}
-            <span className=" bg-clip-text text-transparent  bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578]">Education Loan</span>
-          </h2>
+            {/* Heading */}
+
+
+                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                             Documents Required for an{" "}
+                        <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                            Education Loan
+                            
+                        </span>
+                        
+                      </h2>
         
 
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#64748B] sm:text-base sm:leading-7">

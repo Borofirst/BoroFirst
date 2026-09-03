@@ -75,7 +75,7 @@ const GoldLoanAmountEstimator = () => {
   const [ltv, setLtv] = useState(DEFAULT_LTV);
 
   const selectedPurity = purityOptions.find(
-    (item) => item.value === Number(purity)
+    (item) => item.value === Number(purity),
   );
 
   /* =======================================================
@@ -90,22 +90,16 @@ const GoldLoanAmountEstimator = () => {
     const goldValue = calculateGoldValue(
       safeWeight,
       safeGoldRate,
-      selectedPurity?.factor || 1
+      selectedPurity?.factor || 1,
     );
 
-    const eligibleLoanAmount = calculateEligibleLoanAmount(
-      goldValue,
-      safeLtv
-    );
+    const eligibleLoanAmount = calculateEligibleLoanAmount(goldValue, safeLtv);
 
     return {
       goldValue,
       eligibleLoanAmount,
       isValid:
-        safeWeight > 0 &&
-        safeGoldRate > 0 &&
-        safeLtv > 0 &&
-        safeLtv <= 100,
+        safeWeight > 0 && safeGoldRate > 0 && safeLtv > 0 && safeLtv <= 100,
     };
   }, [weight, goldRate, ltv, selectedPurity]);
 
@@ -119,8 +113,7 @@ const GoldLoanAmountEstimator = () => {
       : "";
 
   const goldRateError =
-    goldRate !== "" &&
-    (Number(goldRate) <= 0 || Number(goldRate) > 1000000)
+    goldRate !== "" && (Number(goldRate) <= 0 || Number(goldRate) > 1000000)
       ? "Enter a valid gold valuation."
       : "";
 
@@ -192,34 +185,34 @@ const GoldLoanAmountEstimator = () => {
       />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
         {/* ===================================================
             HEADER
         ==================================================== */}
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+            </span>
 
-        <div className="max-w-3xl">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#10B981]/15 bg-[#10B981]/5 px-4 py-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#10B981]" />
-
-            <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#0B2578]">
+            <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
               GOLD LOAN ESTIMATOR
             </span>
           </div>
 
-          <h2
-            id="gold-loan-estimator-title"
-            className="max-w-2xl text-3xl font-extrabold leading-[1.08] tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl"
-          >
-            How Much Gold Loan
-            <span className="block text-[#186A07]">
+          {/* Heading */}
+
+          <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+            How Much Gold Loan{" "}
+            <span className="bg-linear-to-r block from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
               Can I Get?
             </span>
           </h2>
 
           <p className="mt-5 max-w-2xl text-sm leading-7 text-[#64748B] sm:text-base">
-            Your estimated gold loan amount depends on the purity and weight
-            of eligible gold, its applicable valuation and the lender's
-            applicable LTV or policy.
+            Your estimated gold loan amount depends on the purity and weight of
+            eligible gold, its applicable valuation and the lender's applicable
+            LTV or policy.
           </p>
         </div>
 
@@ -228,17 +221,14 @@ const GoldLoanAmountEstimator = () => {
         ==================================================== */}
 
         <div className="mt-12 grid items-start gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
-
           {/* =================================================
               LEFT CONTENT
           ================================================== */}
 
           <div className="lg:sticky lg:top-24">
-
             {/* Formula Card */}
 
             <div className="rounded-[28px] border border-[#E2E8F0] bg-white p-6 shadow-[0_15px_50px_rgba(15,23,42,0.05)] sm:p-7">
-
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#0B2578]/5 text-[#0B2578]">
                   <Calculator size={19} />
@@ -258,7 +248,6 @@ const GoldLoanAmountEstimator = () => {
               {/* Formula */}
 
               <div className="mt-7 space-y-3">
-
                 <FormulaItem
                   icon={Gem}
                   title="Gold Purity"
@@ -291,7 +280,7 @@ const GoldLoanAmountEstimator = () => {
 
                 <div className="my-5 h-px bg-[#E2E8F0]" />
 
-                <div className="flex items-center gap-3 rounded-2xl bg-gradient-to-r from-[#0B2578] to-[#186A07] p-4 text-white">
+                <div className="flex items-center gap-3 rounded-2xl bg-linear-to-r from-[#0B2578] to-[#186A07] p-4 text-white">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10">
                     <Calculator size={19} />
                   </div>
@@ -335,12 +324,10 @@ const GoldLoanAmountEstimator = () => {
           ================================================== */}
 
           <div className="overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-white shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
-
             {/* Calculator Header */}
 
-            <div className="border-b border-[#E2E8F0] bg-gradient-to-r from-[#F8FAFC] to-white p-6 sm:p-7">
+            <div className="border-b border-[#E2E8F0] bg-linear-to-r from-[#F8FAFC] to-white p-6 sm:p-7">
               <div className="flex items-start justify-between gap-4">
-
                 <div>
                   <p className="text-lg font-extrabold tracking-tight text-[#0F172A]">
                     Gold Loan Amount Estimator
@@ -358,13 +345,11 @@ const GoldLoanAmountEstimator = () => {
             </div>
 
             <div className="p-6 sm:p-7">
-
               {/* =================================================
                   INPUTS
               ================================================== */}
 
               <div className="grid gap-5 sm:grid-cols-2">
-
                 {/* Gold Purity */}
 
                 <div>
@@ -383,10 +368,7 @@ const GoldLoanAmountEstimator = () => {
                       className="h-12 w-full appearance-none rounded-xl border border-[#E2E8F0] bg-white px-4 pr-10 text-sm font-semibold text-[#0F172A] outline-none transition-all duration-200 focus:border-[#10B981] focus:ring-4 focus:ring-[#10B981]/10"
                     >
                       {purityOptions.map((option) => (
-                        <option
-                          key={option.value}
-                          value={option.value}
-                        >
+                        <option key={option.value} value={option.value}>
                           {option.label}
                         </option>
                       ))}
@@ -545,15 +527,11 @@ const GoldLoanAmountEstimator = () => {
               <div className="my-7 h-px bg-[#E2E8F0]" />
 
               <div className="grid gap-3 sm:grid-cols-2">
-
                 {/* Gold Value */}
 
                 <div className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] p-4">
                   <div className="flex items-center gap-2">
-                    <IndianRupee
-                      size={15}
-                      className="text-[#10B981]"
-                    />
+                    <IndianRupee size={15} className="text-[#10B981]" />
 
                     <span className="text-xs font-semibold text-[#64748B]">
                       Estimated Gold Value
@@ -569,10 +547,7 @@ const GoldLoanAmountEstimator = () => {
 
                 <div className="rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] p-4">
                   <div className="flex items-center gap-2">
-                    <Percent
-                      size={15}
-                      className="text-[#10B981]"
-                    />
+                    <Percent size={15} className="text-[#10B981]" />
 
                     <span className="text-xs font-semibold text-[#64748B]">
                       Applicable LTV
@@ -589,8 +564,7 @@ const GoldLoanAmountEstimator = () => {
                   MAIN RESULT
               ================================================== */}
 
-              <div className="relative mt-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#0B2578] via-[#10347F] to-[#186A07] p-6 text-white sm:p-7">
-
+              <div className="relative mt-4 overflow-hidden rounded-[24px] bg-linear-to-br from-[#0B2578] via-[#10347F] to-[#186A07] p-6 text-white sm:p-7">
                 <div
                   aria-hidden="true"
                   className="absolute -right-12 -top-12 h-32 w-32 rounded-full border border-white/10"
@@ -602,7 +576,6 @@ const GoldLoanAmountEstimator = () => {
                 />
 
                 <div className="relative">
-
                   <div className="flex items-center gap-2">
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10">
                       <Calculator size={15} />
@@ -631,8 +604,8 @@ const GoldLoanAmountEstimator = () => {
 
                     <p className="text-[11px] leading-5 text-white/60">
                       Final loan amount depends on the lender's valuation,
-                      eligibility assessment, applicable LTV/policy and
-                      other terms.
+                      eligibility assessment, applicable LTV/policy and other
+                      terms.
                     </p>
                   </div>
                 </div>
@@ -643,26 +616,27 @@ const GoldLoanAmountEstimator = () => {
               ================================================== */}
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                <a href="/contact">
+                  <button
+                    type="button"
+                    disabled={!calculation.isValid}
+                    className="group inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07]  to-[#0B2578] px-5 text-sm font-bold text-white shadow-[0_10px_25px_rgba(16,185,129,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0ea371] focus:outline-none focus:ring-2 focus:ring-[#10B981] focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0"
+                  >
+                    Apply Now
+                    <ArrowRight
+                      size={17}
+                      className="transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                  </button>
+                </a>
 
-                <button
-                  type="button"
-                  disabled={!calculation.isValid}
-                  className="group inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-[#10B981] px-5 text-sm font-bold text-white shadow-[0_10px_25px_rgba(16,185,129,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0ea371] focus:outline-none focus:ring-2 focus:ring-[#10B981] focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0"
-                >
-                  Check Your Options
-
-                  <ArrowRight
-                    size={17}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </button>
-
-                <button
+                <a
+                  href="tel:+917060162526"
                   type="button"
                   className="inline-flex min-h-12 flex-1 items-center justify-center rounded-xl border border-[#E2E8F0] bg-white px-5 text-sm font-bold text-[#0B2578] transition-all duration-300 hover:border-[#0B2578]/20 hover:bg-[#F8FAFC] focus:outline-none focus:ring-2 focus:ring-[#0B2578] focus:ring-offset-2"
                 >
                   Talk to an Expert
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -675,9 +649,9 @@ const GoldLoanAmountEstimator = () => {
         <div className="mx-auto mt-8 max-w-5xl text-center">
           <p className="text-[11px] leading-5 text-[#94A3B8]">
             Gold loan amount is indicative. Final eligibility and sanctioned
-            amount depend on the lender's gold valuation, applicable
-            LTV/policy, eligibility criteria, repayment capacity where
-            applicable, and other applicable terms.
+            amount depend on the lender's gold valuation, applicable LTV/policy,
+            eligibility criteria, repayment capacity where applicable, and other
+            applicable terms.
           </p>
 
           <p className="mt-1 text-[11px] leading-5 text-[#94A3B8]">
@@ -701,13 +675,9 @@ const FormulaItem = ({ icon: Icon, title, text }) => {
       </div>
 
       <div className="min-w-0">
-        <p className="text-sm font-bold text-[#0F172A]">
-          {title}
-        </p>
+        <p className="text-sm font-bold text-[#0F172A]">{title}</p>
 
-        <p className="mt-0.5 text-[11px] leading-5 text-[#64748B]">
-          {text}
-        </p>
+        <p className="mt-0.5 text-[11px] leading-5 text-[#64748B]">{text}</p>
       </div>
     </div>
   );
@@ -720,9 +690,7 @@ const FormulaItem = ({ icon: Icon, title, text }) => {
 const FormulaOperator = ({ children }) => {
   return (
     <div className="flex h-4 items-center justify-center">
-      <span className="text-sm font-extrabold text-[#D4AF37]">
-        {children}
-      </span>
+      <span className="text-sm font-extrabold text-[#D4AF37]">{children}</span>
     </div>
   );
 };

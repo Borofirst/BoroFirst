@@ -16,8 +16,7 @@ const insuranceItems = [
     title: "Home",
     subtitle: "Protect your space",
     icon: House,
-    position:
-      "left-0 top-4 lg:-left-2 xl:-left-8 lg:top-10",
+    position: "left-0 top-4 lg:-left-2 xl:-left-8 lg:top-10",
     animation: "animate-[float_5s_ease-in-out_infinite]",
   },
   {
@@ -25,8 +24,7 @@ const insuranceItems = [
     title: "Motor",
     subtitle: "Protect your journey",
     icon: CarFront,
-    position:
-      "right-0 top-8 lg:-right-4 xl:-right-10 lg:top-16",
+    position: "right-0 top-8 lg:-right-4 xl:-right-10 lg:top-16",
     animation: "animate-[float_5s_ease-in-out_infinite]",
   },
   {
@@ -34,8 +32,7 @@ const insuranceItems = [
     title: "Health",
     subtitle: "Protect your wellbeing",
     icon: HeartPulse,
-    position:
-      "right-0 bottom-16 lg:-right-2 xl:-right-8 lg:bottom-20",
+    position: "right-0 bottom-16 lg:-right-2 xl:-right-8 lg:bottom-20",
     animation: "animate-[float_6s_ease-in-out_infinite]",
   },
   {
@@ -43,8 +40,7 @@ const insuranceItems = [
     title: "Travel",
     subtitle: "Travel with confidence",
     icon: Plane,
-    position:
-      "left-0 bottom-4 lg:-left-2 xl:-left-8 lg:bottom-8",
+    position: "left-0 bottom-4 lg:-left-2 xl:-left-8 lg:bottom-8",
     animation: "animate-[float_6s_ease-in-out_infinite]",
   },
 ];
@@ -79,12 +75,12 @@ const GeneralInsuranceHero = () => {
           className="absolute inset-0 opacity-[0.035]"
           style={{
             backgroundImage:
-              "linear-gradient(#0B2578 1px, transparent 1px), linear-gradient(90deg, #0B2578 1px, transparent 1px)",
+              "linear-linear(#0B2578 1px, transparent 1px), linear-linear(90deg, #0B2578 1px, transparent 1px)",
             backgroundSize: "55px 55px",
             maskImage:
-              "linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)",
+              "linear-linear(to bottom, transparent, black 20%, black 80%, transparent)",
             WebkitMaskImage:
-              "linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)",
+              "linear-linear(to bottom, transparent, black 20%, black 80%, transparent)",
           }}
         />
       </div>
@@ -113,7 +109,7 @@ const GeneralInsuranceHero = () => {
             {/* Heading */}
             <h1 className="max-w-2xl text-4xl font-extrabold leading-[1.05] tracking-[-0.045em] text-[#0F172A] sm:text-5xl md:text-6xl lg:text-[3.75rem] xl:text-[4.35rem]">
               Protect What Matters.
-              <span className="mt-2 block bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+              <span className="mt-2 block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
                 Prepare for What’s Next.
               </span>
             </h1>
@@ -128,7 +124,7 @@ const GeneralInsuranceHero = () => {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <button
                 type="button"
-                className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-bold text-white shadow-[0_14px_30px_rgba(11,37,120,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_38px_rgba(11,37,120,0.25)] focus:outline-none focus:ring-4 focus:ring-[#10B981]/20"
+                className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-bold text-white shadow-[0_14px_30px_rgba(11,37,120,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_38px_rgba(11,37,120,0.25)] focus:outline-none focus:ring-4 focus:ring-[#10B981]/20"
               >
                 Explore Insurance
                 <ArrowRight
@@ -193,16 +189,16 @@ const GeneralInsuranceHero = () => {
               className="absolute left-1/2 top-1/2 h-[340px] w-[340px] -translate-x-1/2 -translate-y-1/2 sm:h-[420px] sm:w-[420px]"
             >
               {/* Vertical */}
-              <div className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-[#10B981]/20 to-transparent" />
+              <div className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-linear-to-b from-transparent via-[#10B981]/20 to-transparent" />
 
               {/* Horizontal */}
-              <div className="absolute left-0 top-1/2 h-px w-full -translate-y-1/2 bg-gradient-to-r from-transparent via-[#0B2578]/15 to-transparent" />
+              <div className="absolute left-0 top-1/2 h-px w-full -translate-y-1/2 bg-linear-to-r from-transparent via-[#0B2578]/15 to-transparent" />
 
               {/* Diagonal 1 */}
-              <div className="absolute left-1/2 top-1/2 h-px w-[90%] -translate-x-1/2 -translate-y-1/2 rotate-[32deg] bg-gradient-to-r from-transparent via-[#10B981]/10 to-transparent" />
+              <div className="absolute left-1/2 top-1/2 h-px w-[90%] -translate-x-1/2 -translate-y-1/2 rotate-[32deg] bg-linear-to-r from-transparent via-[#10B981]/10 to-transparent" />
 
               {/* Diagonal 2 */}
-              <div className="absolute left-1/2 top-1/2 h-px w-[90%] -translate-x-1/2 -translate-y-1/2 -rotate-[32deg] bg-gradient-to-r from-transparent via-[#0B2578]/10 to-transparent" />
+              <div className="absolute left-1/2 top-1/2 h-px w-[90%] -translate-x-1/2 -translate-y-1/2 -rotate-[32deg] bg-linear-to-r from-transparent via-[#0B2578]/10 to-transparent" />
             </div>
 
             {/* =================================================
@@ -212,11 +208,11 @@ const GeneralInsuranceHero = () => {
               {/* Inner glow */}
               <div
                 aria-hidden="true"
-                className="absolute inset-5 rounded-[38px] bg-gradient-to-br from-[#10B981]/10 via-white to-[#0B2578]/10"
+                className="absolute inset-5 rounded-[38px] bg-linear-to-br from-[#10B981]/10 via-white to-[#0B2578]/10"
               />
 
               {/* Shield */}
-              <div className="relative flex h-[105px] w-[105px] items-center justify-center rounded-[34px] bg-gradient-to-br from-[#186A07] to-[#0B2578] shadow-[0_18px_35px_rgba(11,37,120,0.25)] sm:h-[120px] sm:w-[120px]">
+              <div className="relative flex h-[105px] w-[105px] items-center justify-center rounded-[34px] bg-linear-to-br from-[#186A07] to-[#0B2578] shadow-[0_18px_35px_rgba(11,37,120,0.25)] sm:h-[120px] sm:w-[120px]">
                 <ShieldCheck
                   size={58}
                   strokeWidth={1.7}
@@ -296,7 +292,6 @@ const GeneralInsuranceHero = () => {
       {/* =========================================================
           COMPONENT-LOCAL ANIMATIONS
       ========================================================== */}
-     
     </section>
   );
 };

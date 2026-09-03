@@ -15,10 +15,18 @@ import {lapSteps} from "../../data/stepProcess"
 import LoanAgainstPropertyUses from "../../component/loanAgainstProperty/whatIsLAPuseFor";
 import LoanEligibilityChecker from "../../component/common/EligibilitySection";
 import ContactSection from "../../component/common/ContactSection";
+import SEO from "../../component/Seo";
 
 const LoanAgaintProperty = () => {
   return (
-    <div>
+     <>
+          <SEO
+      title="Loan Against Property | BOROFIRST"
+    description=
+      "Explore loan against property solutions from BOROFIRST and unlock the financial value of your property."
+    canonical= "https://borofirst.com/loan-againt-property"
+      />
+      <main>
       <LAPHero />
       <TrustStrip />
       <WhatIsLAP />
@@ -38,7 +46,8 @@ const LoanAgaintProperty = () => {
       <WhyBoroFirstLAP />
       <ContactSection/>
       <FAQSection faqs={lapFAQs} />
-    </div>
+   </main>
+   </>
   );
 };
 

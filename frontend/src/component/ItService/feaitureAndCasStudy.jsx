@@ -165,8 +165,7 @@ const CaseStudies = () => {
 
   const previousCase = () => {
     setActiveCase(
-      (current) =>
-        (current - 1 + caseStudies.length) % caseStudies.length
+      (current) => (current - 1 + caseStudies.length) % caseStudies.length,
     );
   };
 
@@ -198,23 +197,21 @@ const CaseStudies = () => {
         className="pointer-events-none absolute inset-0 opacity-[0.018]"
         style={{
           backgroundImage:
-            "linear-gradient(#0B2578 1px, transparent 1px), linear-gradient(90deg, #186A07 1px, transparent 1px)",
+            "linear-linear(#0B2578 1px, transparent 1px), linear-linear(90deg, #186A07 1px, transparent 1px)",
           backgroundSize: "55px 55px",
           maskImage:
-            "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+            "linear-linear(to bottom, transparent, black 15%, black 85%, transparent)",
           WebkitMaskImage:
-            "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+            "linear-linear(to bottom, transparent, black 15%, black 85%, transparent)",
         }}
       />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-
         {/* =========================================
             Section Header
         ========================================= */}
 
         <div className="mx-auto max-w-3xl text-center">
-
           {/* Badge */}
 
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2">
@@ -232,7 +229,7 @@ const CaseStudies = () => {
 
           <h2 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
             Technology Applied to{" "}
-            <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
               Real Business Problems
             </span>
           </h2>
@@ -240,9 +237,9 @@ const CaseStudies = () => {
           {/* Description */}
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-500 sm:text-lg sm:leading-8">
-            Explore how BOROFIRST combines software, AI, automation, cloud,
-            data and integrations to create practical digital solutions for
-            modern businesses.
+            Explore how BOROFIRST combines software, AI, automation, cloud, data
+            and integrations to create practical digital solutions for modern
+            businesses.
           </p>
         </div>
 
@@ -251,7 +248,6 @@ const CaseStudies = () => {
         ========================================= */}
 
         <div className="mt-12 flex flex-wrap justify-center gap-2.5">
-
           {caseStudies.map((item, index) => (
             <button
               key={item.title}
@@ -275,7 +271,6 @@ const CaseStudies = () => {
               {item.category}
             </button>
           ))}
-
         </div>
 
         {/* =========================================
@@ -283,7 +278,6 @@ const CaseStudies = () => {
         ========================================= */}
 
         <div className="mt-10">
-
           <div
             className="
               relative overflow-hidden
@@ -293,19 +287,16 @@ const CaseStudies = () => {
               shadow-[0_25px_80px_rgba(11,37,120,0.09)]
             "
           >
+            {/* Top linear Line */}
 
-            {/* Top Gradient Line */}
-
-            <div className="absolute left-0 right-0 top-0 h-[3px] bg-gradient-to-r from-[#186A07] to-[#0B2578]" />
+            <div className="absolute left-0 right-0 top-0 h-[3px] bg-linear-to-r from-[#186A07] to-[#0B2578]" />
 
             <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
-
               {/* =========================================
                   LEFT — Case Study Information
               ========================================= */}
 
               <div className="relative p-7 sm:p-10 lg:p-12">
-
                 {/* Number */}
 
                 <span
@@ -322,11 +313,9 @@ const CaseStudies = () => {
                 </span>
 
                 <div className="relative">
-
                   {/* Category */}
 
                   <div className="flex items-center gap-3">
-
                     <div
                       className={`
                         flex h-12 w-12 items-center justify-center
@@ -342,18 +331,13 @@ const CaseStudies = () => {
                     </div>
 
                     <div>
-
                       <p
                         className={`
                           text-[10px]
                           font-bold
                           uppercase
                           tracking-[0.18em]
-                          ${
-                            isGreen
-                              ? "text-[#186A07]"
-                              : "text-[#0B2578]"
-                          }
+                          ${isGreen ? "text-[#186A07]" : "text-[#0B2578]"}
                         `}
                       >
                         {active.category}
@@ -362,7 +346,6 @@ const CaseStudies = () => {
                       <p className="mt-1 text-xs font-medium text-slate-400">
                         Featured Solution
                       </p>
-
                     </div>
                   </div>
 
@@ -381,7 +364,6 @@ const CaseStudies = () => {
                   {/* Challenge */}
 
                   <div className="mt-8">
-
                     <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
                       THE CHALLENGE
                     </p>
@@ -389,13 +371,11 @@ const CaseStudies = () => {
                     <p className="mt-2 text-sm leading-6 text-slate-600">
                       {active.challenge}
                     </p>
-
                   </div>
 
                   {/* Solution */}
 
                   <div className="mt-6">
-
                     <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
                       BOROFIRST SOLUTION
                     </p>
@@ -403,19 +383,17 @@ const CaseStudies = () => {
                     <p className="mt-2 text-sm leading-6 text-slate-600">
                       {active.solution}
                     </p>
-
                   </div>
 
                   {/* CTA */}
 
                   <div className="mt-8 flex flex-wrap items-center gap-4">
-
                     <a
                       href="/contact"
                       className="
                         group inline-flex items-center gap-3
                         rounded-xl
-                        bg-gradient-to-r
+                        bg-linear-to-r
                         from-[#186A07]
                         to-[#0B2578]
                         px-5 py-3.5
@@ -428,7 +406,6 @@ const CaseStudies = () => {
                       "
                     >
                       Discuss Your Project
-
                       <FaArrowRight
                         size={11}
                         className="transition-transform duration-300 group-hover:translate-x-1"
@@ -438,9 +415,7 @@ const CaseStudies = () => {
                     <span className="text-xs font-semibold text-slate-400">
                       Solution-focused technology
                     </span>
-
                   </div>
-
                 </div>
               </div>
 
@@ -448,8 +423,7 @@ const CaseStudies = () => {
                   RIGHT — Solution Visualization
               ========================================= */}
 
-              <div className="relative min-h-[520px] overflow-hidden bg-gradient-to-br from-[#F4FAF1] via-white to-[#F2F5FC] p-6 sm:p-10">
-
+              <div className="relative min-h-[520px] overflow-hidden bg-linear-to-br from-[#F4FAF1] via-white to-[#F2F5FC] p-6 sm:p-10">
                 {/* Decorative Rings */}
 
                 <div
@@ -477,7 +451,6 @@ const CaseStudies = () => {
                 ========================================= */}
 
                 <div className="relative flex h-full min-h-[470px] items-center justify-center">
-
                   {/* Central System */}
 
                   <div
@@ -492,7 +465,6 @@ const CaseStudies = () => {
                       backdrop-blur-xl
                     "
                   >
-
                     {/* Glow */}
 
                     <div
@@ -501,14 +473,14 @@ const CaseStudies = () => {
                         absolute -inset-3
                         -z-10
                         rounded-[32px]
-                        bg-gradient-to-br
+                        bg-linear-to-br
                         from-[#186A07]/15
                         to-[#0B2578]/15
                         blur-xl
                       "
                     />
 
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#186A07] to-[#0B2578] text-white shadow-lg">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-linear-to-br from-[#186A07] to-[#0B2578] text-white shadow-lg">
                       <ActiveIcon size={21} />
                     </div>
 
@@ -519,7 +491,6 @@ const CaseStudies = () => {
                     <span className="mt-1 text-[9px] font-medium uppercase tracking-wider text-slate-400">
                       Digital Solution
                     </span>
-
                   </div>
 
                   {/* =========================================
@@ -528,12 +499,12 @@ const CaseStudies = () => {
 
                   <div
                     aria-hidden="true"
-                    className="absolute left-[17%] right-[17%] top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-transparent via-[#186A07]/25 to-transparent"
+                    className="absolute left-[17%] right-[17%] top-1/2 h-px -translate-y-1/2 bg-linear-to-r from-transparent via-[#186A07]/25 to-transparent"
                   />
 
                   <div
                     aria-hidden="true"
-                    className="absolute left-1/2 top-[17%] bottom-[17%] w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-[#0B2578]/25 to-transparent"
+                    className="absolute left-1/2 top-[17%] bottom-[17%] w-px -translate-x-1/2 bg-linear-to-b from-transparent via-[#0B2578]/25 to-transparent"
                   />
 
                   {/* Moving Data Dots */}
@@ -551,9 +522,7 @@ const CaseStudies = () => {
                   ========================================= */}
 
                   <div className="group absolute left-2 top-1/2 -translate-y-1/2 rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_12px_30px_rgba(11,37,120,0.08)] transition-all duration-300 hover:-translate-y-[calc(50%+4px)] hover:shadow-lg sm:left-8">
-
                     <div className="flex items-center gap-3">
-
                       <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F2F5FC] text-[#0B2578]">
                         <FaDatabase size={15} />
                       </div>
@@ -567,9 +536,7 @@ const CaseStudies = () => {
                           Connected Sources
                         </p>
                       </div>
-
                     </div>
-
                   </div>
 
                   {/* =========================================
@@ -577,9 +544,7 @@ const CaseStudies = () => {
                   ========================================= */}
 
                   <div className="group absolute left-1/2 top-2 -translate-x-1/2 rounded-2xl border border-[#186A07]/15 bg-white p-4 shadow-[0_12px_35px_rgba(24,106,7,0.10)] transition-all duration-300 hover:-translate-x-1/2 hover:-translate-y-1 hover:shadow-lg">
-
                     <div className="flex items-center gap-3">
-
                       <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-[#F4FAF1] text-[#186A07]">
                         <FaRobot size={17} />
 
@@ -595,9 +560,7 @@ const CaseStudies = () => {
                           Intelligent Processing
                         </p>
                       </div>
-
                     </div>
-
                   </div>
 
                   {/* =========================================
@@ -605,9 +568,7 @@ const CaseStudies = () => {
                   ========================================= */}
 
                   <div className="group absolute right-2 top-1/2 -translate-y-1/2 rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_12px_30px_rgba(11,37,120,0.08)] transition-all duration-300 hover:-translate-y-[calc(50%+4px)] hover:shadow-lg sm:right-8">
-
                     <div className="flex items-center gap-3">
-
                       <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F2F5FC] text-[#0B2578]">
                         <FaPlug size={15} />
                       </div>
@@ -621,9 +582,7 @@ const CaseStudies = () => {
                           Connected Systems
                         </p>
                       </div>
-
                     </div>
-
                   </div>
 
                   {/* =========================================
@@ -631,9 +590,7 @@ const CaseStudies = () => {
                   ========================================= */}
 
                   <div className="group absolute bottom-2 left-1/2 -translate-x-1/2 rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_12px_30px_rgba(11,37,120,0.08)] transition-all duration-300 hover:-translate-x-1/2 hover:-translate-y-1 hover:shadow-lg">
-
                     <div className="flex items-center gap-3">
-
                       <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F4FAF1] text-[#186A07]">
                         <FaCloud size={16} />
                       </div>
@@ -647,9 +604,7 @@ const CaseStudies = () => {
                           Scalable & Connected
                         </p>
                       </div>
-
                     </div>
-
                   </div>
 
                   {/* =========================================
@@ -657,18 +612,12 @@ const CaseStudies = () => {
                   ========================================= */}
 
                   <div className="absolute right-5 top-5 flex items-center gap-2 rounded-full border border-[#186A07]/10 bg-white/90 px-3 py-2 shadow-sm backdrop-blur-md">
-
-                    <FaShieldAlt
-                      size={11}
-                      className="text-[#186A07]"
-                    />
+                    <FaShieldAlt size={11} className="text-[#186A07]" />
 
                     <span className="text-[9px] font-bold text-slate-500">
                       Security First
                     </span>
-
                   </div>
-
                 </div>
 
                 {/* =========================================
@@ -676,7 +625,6 @@ const CaseStudies = () => {
                 ========================================= */}
 
                 <div className="absolute bottom-5 left-1/2 flex w-[90%] -translate-x-1/2 flex-wrap justify-center gap-2">
-
                   {active.technologies.map((technology) => (
                     <span
                       key={technology}
@@ -695,9 +643,7 @@ const CaseStudies = () => {
                       {technology}
                     </span>
                   ))}
-
                 </div>
-
               </div>
             </div>
 
@@ -706,11 +652,8 @@ const CaseStudies = () => {
             ========================================= */}
 
             <div className="border-t border-slate-100 bg-slate-50/50 px-7 py-6 sm:px-10">
-
               <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
-
                 <div>
-
                   <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#186A07]">
                     SOLUTION OUTCOMES
                   </p>
@@ -718,16 +661,11 @@ const CaseStudies = () => {
                   <p className="mt-1 text-xs text-slate-400">
                     Designed around practical business improvement
                   </p>
-
                 </div>
 
                 <div className="grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-4">
-
                   {active.outcomes.map((outcome) => (
-                    <div
-                      key={outcome}
-                      className="flex items-center gap-2"
-                    >
+                    <div key={outcome} className="flex items-center gap-2">
                       <FaCheckCircle
                         size={12}
                         className="shrink-0 text-[#186A07]"
@@ -738,12 +676,9 @@ const CaseStudies = () => {
                       </span>
                     </div>
                   ))}
-
                 </div>
-
               </div>
             </div>
-
           </div>
         </div>
 
@@ -752,7 +687,6 @@ const CaseStudies = () => {
         ========================================= */}
 
         <div className="mt-7 flex items-center justify-center gap-3">
-
           <button
             type="button"
             onClick={previousCase}
@@ -778,7 +712,6 @@ const CaseStudies = () => {
           {/* Indicators */}
 
           <div className="flex items-center gap-2">
-
             {caseStudies.map((item, index) => (
               <button
                 key={item.title}
@@ -789,13 +722,12 @@ const CaseStudies = () => {
                   h-1.5 rounded-full transition-all duration-300
                   ${
                     activeCase === index
-                      ? "w-8 bg-gradient-to-r from-[#186A07] to-[#0B2578]"
+                      ? "w-8 bg-linear-to-r from-[#186A07] to-[#0B2578]"
                       : "w-1.5 bg-slate-200 hover:bg-slate-300"
                   }
                 `}
               />
             ))}
-
           </div>
 
           <button
@@ -819,7 +751,6 @@ const CaseStudies = () => {
           >
             <FaChevronRight size={12} />
           </button>
-
         </div>
 
         {/* =========================================
@@ -827,8 +758,7 @@ const CaseStudies = () => {
         ========================================= */}
 
         <div className="mt-14 flex items-center justify-center gap-3">
-
-          <span className="h-px w-10 bg-gradient-to-r from-transparent to-[#186A07]/30 sm:w-20" />
+          <span className="h-px w-10 bg-linear-to-r from-transparent to-[#186A07]/30 sm:w-20" />
 
           <p className="text-center text-xs font-medium text-slate-400">
             Business Challenge
@@ -838,10 +768,8 @@ const CaseStudies = () => {
             Business Outcome
           </p>
 
-          <span className="h-px w-10 bg-gradient-to-l from-transparent to-[#0B2578]/30 sm:w-20" />
-
+          <span className="h-px w-10 bg-linear-to-l from-transparent to-[#0B2578]/30 sm:w-20" />
         </div>
-
       </div>
     </section>
   );

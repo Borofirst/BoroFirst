@@ -191,10 +191,14 @@ const BankingPartners = () => {
      
         "
                 >
+ 
                   <img
+                       width="180"
+                   height="80"
                     src={partner.logo}
                     alt={partner.companyName}
                     className="
+                
               object-contain
               transition-all
               duration-300

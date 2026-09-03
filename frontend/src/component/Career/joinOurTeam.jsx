@@ -111,13 +111,15 @@ const applicationSteps = [
   {
     number: "02",
     title: "Connect",
-    description: "Our team reviews your profile and connects when there is a suitable opportunity.",
+    description:
+      "Our team reviews your profile and connects when there is a suitable opportunity.",
     icon: MessageCircle,
   },
   {
     number: "03",
     title: "Grow",
-    description: "Explore the right opportunity for your skills and aspirations.",
+    description:
+      "Explore the right opportunity for your skills and aspirations.",
     icon: Award,
   },
 ];
@@ -318,13 +320,13 @@ const JoinOurTeam = () => {
   return (
     <section
       id="join-our-team"
-      className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F9FCF8] to-white py-20 sm:py-24 lg:py-28"
+      className="relative isolate overflow-hidden bg-linear-to-b from-white via-[#F9FCF8] to-white py-20 sm:py-24 lg:py-28"
     >
       {/* Background decoration */}
       <div className="pointer-events-none absolute -left-40 top-20 -z-10 h-96 w-96 rounded-full bg-emerald-100/40 blur-3xl" />
       <div className="pointer-events-none absolute -right-40 top-40 -z-10 h-[30rem] w-[30rem] rounded-full bg-blue-100/40 blur-3xl" />
 
-      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-80 opacity-[0.22] [background-image:linear-gradient(rgba(24,106,7,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(24,106,7,0.1)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:linear-gradient(to_bottom,black,transparent)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-80 opacity-[0.22] [background-image:linear-linear(rgba(24,106,7,0.1)_1px,transparent_1px),linear-linear(90deg,rgba(24,106,7,0.1)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:linear-linear(to_bottom,black,transparent)]" />
 
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
@@ -364,28 +366,22 @@ const JoinOurTeam = () => {
               lg:text-5xl
             "
           >
-             Ready to Build Your Future With{" "}
-            <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+            Ready to Build Your Future With{" "}
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
               Borofirst?
             </span>
           </h2>
 
           {/* Description */}
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
-           Explore our current opportunities or share your resume with us.
-                We would be happy to learn more about your skills, experience,
-                and aspirations.
+            Explore our current opportunities or share your resume with us. We
+            would be happy to learn more about your skills, experience, and
+            aspirations.
           </p>
         </div>
 
-
-    
-
         {/* Application Area */}
-        <div
-          id="career-application"
-          className="scroll-mt-24 pt-20 sm:pt-24"
-        >
+        <div id="career-application" className="scroll-mt-24 pt-20 sm:pt-24">
           <div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-start lg:gap-12">
             {/* Left Content */}
             <div>
@@ -396,7 +392,7 @@ const JoinOurTeam = () => {
 
               <h2 className="text-3xl font-extrabold tracking-[-0.035em] text-slate-950 sm:text-4xl">
                 Why Start Your Journey With{" "}
-                <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
                   Borofirst?
                 </span>
               </h2>
@@ -409,10 +405,7 @@ const JoinOurTeam = () => {
 
               <div className="mt-8 space-y-3">
                 {benefits.map((benefit) => (
-                  <CareerBenefit
-                    key={benefit.title}
-                    {...benefit}
-                  />
+                  <CareerBenefit key={benefit.title} {...benefit} />
                 ))}
               </div>
 
@@ -439,7 +432,7 @@ const JoinOurTeam = () => {
 
             {/* Application Form */}
             <div className="relative">
-              <div className="pointer-events-none absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-emerald-100/40 to-blue-100/40 blur-2xl" />
+              <div className="pointer-events-none absolute -inset-3 rounded-[2rem] bg-linear-to-br from-emerald-100/40 to-blue-100/40 blur-2xl" />
 
               <div className="relative rounded-[2rem] border border-slate-200/80 bg-white/95 p-5 shadow-[0_25px_80px_rgba(15,23,42,0.10)] backdrop-blur-xl sm:p-7 lg:p-8">
                 {!submitted ? (
@@ -536,9 +529,7 @@ const JoinOurTeam = () => {
                               autoComplete="email"
                               aria-invalid={Boolean(errors.email)}
                               aria-describedby={
-                                errors.email
-                                  ? "career-email-error"
-                                  : undefined
+                                errors.email ? "career-email-error" : undefined
                               }
                               className={`w-full rounded-xl border bg-slate-50/50 py-3 pl-10 pr-4 text-sm text-slate-800 outline-none transition-all placeholder:text-slate-400 focus:bg-white focus:ring-4 ${
                                 errors.email
@@ -585,9 +576,7 @@ const JoinOurTeam = () => {
                               inputMode="tel"
                               aria-invalid={Boolean(errors.phone)}
                               aria-describedby={
-                                errors.phone
-                                  ? "career-phone-error"
-                                  : undefined
+                                errors.phone ? "career-phone-error" : undefined
                               }
                               className={`w-full rounded-xl border bg-slate-50/50 py-3 pl-10 pr-4 text-sm text-slate-800 outline-none transition-all placeholder:text-slate-400 focus:bg-white focus:ring-4 ${
                                 errors.phone
@@ -678,8 +667,8 @@ const JoinOurTeam = () => {
                             !form.department
                               ? "cursor-not-allowed border-slate-200 bg-slate-100 text-slate-400"
                               : errors.position
-                              ? "border-red-300 bg-slate-50/50 text-slate-700 focus:border-red-400 focus:ring-red-100"
-                              : "border-slate-200 bg-slate-50/50 text-slate-700 focus:border-[#186A07] focus:ring-emerald-100/60"
+                                ? "border-red-300 bg-slate-50/50 text-slate-700 focus:border-red-400 focus:ring-red-100"
+                                : "border-slate-200 bg-slate-50/50 text-slate-700 focus:border-[#186A07] focus:ring-emerald-100/60"
                           }`}
                         >
                           <option value="">
@@ -810,7 +799,7 @@ const JoinOurTeam = () => {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#186A07] to-[#0B2578] px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-900/10 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
+                        className="group flex w-full items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-900/10 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
                       >
                         {isSubmitting ? (
                           <>
@@ -907,13 +896,10 @@ const JoinOurTeam = () => {
           </div>
 
           <div className="relative mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3 md:gap-8">
-            <div className="pointer-events-none absolute left-[16%] right-[16%] top-5 hidden h-px bg-gradient-to-r from-transparent via-emerald-200 to-transparent md:block" />
+            <div className="pointer-events-none absolute left-[16%] right-[16%] top-5 hidden h-px bg-linear-to-r from-transparent via-emerald-200 to-transparent md:block" />
 
             {applicationSteps.map((step) => (
-              <ApplicationStep
-                key={step.number}
-                {...step}
-              />
+              <ApplicationStep key={step.number} {...step} />
             ))}
           </div>
         </div>
@@ -944,7 +930,7 @@ const JoinOurTeam = () => {
               <button
                 type="button"
                 onClick={scrollToApplication}
-                className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#186A07] to-[#0B2578] px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-900/10 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
+                className="group inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-5 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-900/10 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
               >
                 Start Your Application
                 <ArrowRight

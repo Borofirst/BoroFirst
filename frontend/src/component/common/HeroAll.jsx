@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   BookOpen,
@@ -25,16 +24,10 @@ const TrustPoint = ({ icon: Icon, text, theme }) => {
         className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg"
         style={{ backgroundColor: theme.soft }}
       >
-        <Icon
-          size={14}
-          style={{ color: theme.primary }}
-          strokeWidth={2.2}
-        />
+        <Icon size={14} style={{ color: theme.primary }} strokeWidth={2.2} />
       </span>
 
-      <span className="text-xs font-semibold text-[#475569]">
-        {text}
-      </span>
+      <span className="text-xs font-semibold text-[#475569]">{text}</span>
     </div>
   );
 };
@@ -72,7 +65,7 @@ const LoanCard = ({ config, theme }) => {
         <div
           className="flex h-10 w-10 items-center justify-center rounded-xl shadow-lg"
           style={{
-            background: `linear-gradient(135deg, ${theme.secondary}, ${theme.primary})`,
+            background: `linear-linear(135deg, ${theme.secondary}, ${theme.primary})`,
             boxShadow: `0 8px 20px ${theme.primary}25`,
           }}
         >
@@ -105,10 +98,7 @@ const LoanCard = ({ config, theme }) => {
           className="flex h-5 w-5 items-center justify-center rounded-full"
           style={{ backgroundColor: theme.softGreen }}
         >
-          <Check
-            size={11}
-            style={{ color: theme.green }}
-          />
+          <Check size={11} style={{ color: theme.green }} />
         </span>
 
         <span className="text-[10px] font-bold text-[#475569]">
@@ -152,10 +142,7 @@ const MiniLoanCard = ({ config, theme }) => {
         className="flex h-9 w-9 items-center justify-center rounded-xl"
         style={{ backgroundColor: theme.soft }}
       >
-        <Icon
-          size={17}
-          style={{ color: theme.primary }}
-        />
+        <Icon size={17} style={{ color: theme.primary }} />
       </div>
 
       <div>
@@ -178,10 +165,8 @@ const MiniLoanCard = ({ config, theme }) => {
 const LoanVisual = ({ config, theme }) => {
   const LoanIcon = config.loanIcon;
 
-
   return (
     <div className="relative mx-auto h-[470px] w-full max-w-[600px] sm:h-[540px] lg:h-[620px]">
-
       {/* Main visual background */}
 
       <div
@@ -195,10 +180,9 @@ const LoanVisual = ({ config, theme }) => {
           rounded-[3rem]
         "
         style={{
-          background: `linear-gradient(135deg, ${theme.backgroundFrom}, ${theme.backgroundVia}, ${theme.backgroundTo})`,
+          background: `linear-linear(135deg, ${theme.backgroundFrom}, ${theme.backgroundVia}, ${theme.backgroundTo})`,
         }}
       >
-
         {/* Decorative grid */}
 
         <div
@@ -206,15 +190,15 @@ const LoanVisual = ({ config, theme }) => {
             absolute
             inset-0
             opacity-[0.28]
-            bg-[linear-gradient(#6366F1_1px,transparent_1px),linear-gradient(90deg,#6366F1_1px,transparent_1px)]
+            bg-[linear-linear(#6366F1_1px,transparent_1px),linear-linear(90deg,#6366F1_1px,transparent_1px)]
             bg-size-[45px_45px]
-            mask-[linear-gradient(to_bottom,black,transparent)]
+            mask-[linear-linear(to_bottom,black,transparent)]
           "
         />
 
         {/* Soft circles */}
 
-         <div
+        <div
           className="absolute -right-20 top-10 h-64 w-64 rounded-full blur-3xl"
           style={{ backgroundColor: `${theme.primary}18` }}
         />
@@ -222,7 +206,7 @@ const LoanVisual = ({ config, theme }) => {
         <div
           className="absolute -bottom-20 left-0 h-64 w-64 rounded-full blur-3xl"
           style={{ backgroundColor: `${theme.green}18` }}
-        /> 
+        />
 
         {/* Decorative rings */}
 
@@ -241,7 +225,7 @@ const LoanVisual = ({ config, theme }) => {
         <div
           className="absolute bottom-0 left-0 h-[34%] w-full bg-linear-to-t to-transparent"
           style={{
-            backgroundImage: `linear-gradient(to top, ${theme.primary}10, transparent)`,
+            backgroundImage: `linear-linear(to top, ${theme.primary}10, transparent)`,
           }}
         />
 
@@ -262,29 +246,21 @@ const LoanVisual = ({ config, theme }) => {
 
       {/* Main image */}
 
- 
       <div className="absolute inset-0 z-20 flex items-center justify-center  h-full w-full">
-  <img
-    src={config.image}
-    alt={config.imageAlt}
-
-    className={`${confirm.image=="/homeloan (2).png"? "h-ful w-[115%] max-w-[650px] object-contain drop-shadow-[0_25px_35px_rgba(15,23,42,0.15)] -translate-x-15":"h-ful w-[115%] max-w-[550px] object-contain drop-shadow-[0_25px_35px_rgba(15,23,42,0.15)] translate-x-2"}`}
-  />
-</div>
+        <img
+          src={config.image}
+          alt={config.imageAlt}
+          className={`${confirm.image == "/homeloan (2).png" ? "h-ful w-[115%] max-w-[650px] object-contain drop-shadow-[0_25px_35px_rgba(15,23,42,0.15)] -translate-x-15" : "h-ful w-[115%] max-w-[550px] object-contain drop-shadow-[0_25px_35px_rgba(15,23,42,0.15)] translate-x-2"}`}
+        />
+      </div>
 
       {/* Top card */}
 
-      <LoanCard
-        config={config}
-        theme={theme}
-      />
+      <LoanCard config={config} theme={theme} />
 
       {/* Bottom card */}
 
-      <MiniLoanCard
-        config={config}
-        theme={theme}
-      />
+      <MiniLoanCard config={config} theme={theme} />
 
       {/* Bottom badge */}
 
@@ -311,10 +287,7 @@ const LoanVisual = ({ config, theme }) => {
           className="flex h-6 w-6 items-center justify-center rounded-full"
           style={{ backgroundColor: "#FFF7ED" }}
         >
-          <Sparkles
-            size={12}
-            className="text-[#F59E0B]"
-          />
+          <Sparkles size={12} className="text-[#F59E0B]" />
         </span>
 
         <span className="text-[9px] font-bold text-[#475569]">
@@ -332,7 +305,6 @@ const LoanVisual = ({ config, theme }) => {
 const TrustedCustomers = ({ config }) => {
   return (
     <div className="mt-7 flex flex-wrap items-center gap-4">
-
       <div className="flex -space-x-2">
         {config.avatars.map((initials) => (
           <div
@@ -346,7 +318,7 @@ const TrustedCustomers = ({ config }) => {
               rounded-full
               border-2
               border-white
-              bg-gradient-to-br
+              bg-linear-to-br
               from-[#DBEAFE]
               to-[#E0E7FF]
               text-[8px]
@@ -386,11 +358,7 @@ const TrustedCustomers = ({ config }) => {
    MAIN REUSABLE COMPONENT
 ========================================================= */
 
-const LoanHero = ({
-  config,
-  onEligibilityClick,
-  onEmiClick,
-}) => {
+const LoanHero = ({ config, onEligibilityClick, onEmiClick }) => {
   const theme = config.theme;
   const LoanIcon = config.loanIcon;
 
@@ -401,19 +369,17 @@ const LoanHero = ({
         backgroundColor: config.sectionBackground || "#F8FAFF",
       }}
     >
-
       {/* =====================================================
           GLOBAL DECORATION
       ===================================================== */}
 
       <div className="pointer-events-none absolute inset-0">
-
         <div
           className="
             absolute
             inset-0
             opacity-[0.025]
-            bg-[linear-gradient(#2563EB_1px,transparent_1px),linear-gradient(90deg,#2563EB_1px,transparent_1px)]
+            bg-[linear-linear(#2563EB_1px,transparent_1px),linear-linear(90deg,#2563EB_1px,transparent_1px)]
             bg-size-[55px_55px]
           "
         />
@@ -438,36 +404,29 @@ const LoanHero = ({
       ===================================================== */}
 
       <div className="relative mx-auto max-w-[1440px] px-5 pb-8 pt-28 sm:px-8 sm:pb-10 sm:pt-32 lg:px-12 lg:pt-36 xl:px-16">
-
         <div className="grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-4 xl:gap-10">
-
           {/* =================================================
               LEFT CONTENT
           ================================================= */}
 
           <div className="relative z-30 max-w-[650px]">
-
             {/* Brand */}
 
             <div className="mb-6 animate-[fadeInUp_0.6s_ease-out] flex items-center gap-3">
-
               <div
                 className="flex h-9 w-9 items-center justify-center rounded-lg"
                 style={{
                   backgroundColor: theme.navy,
                 }}
               >
-                <LoanIcon
-                  size={18}
-                  className="text-white"
-                />
+                <LoanIcon size={18} className="text-white" />
               </div>
 
               <div>
                 <p
                   className="bg-clip-text text-sm font-extrabold tracking-tight text-transparent"
                   style={{
-                    backgroundImage: `linear-gradient(to right, ${theme.green}, ${theme.navy})`,
+                    backgroundImage: `linear-linear(to right, ${theme.green}, ${theme.navy})`,
                   }}
                 >
                   BOROFIRST
@@ -477,7 +436,6 @@ const LoanHero = ({
                   Financial Freedom Starts Here
                 </p>
               </div>
-
             </div>
 
             {/* Eyebrow */}
@@ -529,7 +487,7 @@ const LoanHero = ({
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  backgroundImage: `linear-gradient(to right, ${theme.green}, ${theme.mid}, ${theme.navy})`,
+                  backgroundImage: `linear-linear(to right, ${theme.green}, ${theme.mid}, ${theme.navy})`,
                 }}
               >
                 {config.highlight}
@@ -545,7 +503,6 @@ const LoanHero = ({
             {/* CTA */}
 
             <div className="mt-7 flex flex-col gap-3 animate-[fadeInUp_0.8s_ease-out_0.4s_both] sm:mt-8 sm:flex-row">
-
               <button
                 onClick={onEligibilityClick}
                 className="
@@ -564,7 +521,7 @@ const LoanHero = ({
                   hover:shadow-lg
                 "
                 style={{
-                  backgroundImage: `linear-gradient(to right, ${theme.green}, ${theme.navy})`,
+                  backgroundImage: `linear-linear(to right, ${theme.green}, ${theme.navy})`,
                 }}
               >
                 {config.primaryCTA}
@@ -595,13 +552,11 @@ const LoanHero = ({
               >
                 {config.secondaryCTA}
               </button>
-
             </div>
 
             {/* Reassurance */}
 
             <div className="mt-4 flex animate-[fadeInUp_0.8s_ease-out_0.4s_both] items-center gap-2">
-
               <ShieldCheck
                 size={15}
                 style={{
@@ -612,13 +567,11 @@ const LoanHero = ({
               <p className="text-[10px] font-medium text-[#64748B]">
                 {config.reassurance}
               </p>
-
             </div>
 
             {/* Trust Points */}
 
             <div className="mt-8 grid max-w-[590px] animate-[fadeInUp_0.8s_ease-out_0.3s_both] grid-cols-1 gap-y-3 border-t border-[#E2E8F0] pt-6 sm:grid-cols-2">
-
               {config.trustPoints.map((point) => (
                 <TrustPoint
                   key={point.text}
@@ -627,13 +580,11 @@ const LoanHero = ({
                   theme={theme}
                 />
               ))}
-
             </div>
 
             {/* Trusted Customers */}
 
             <TrustedCustomers config={config} />
-
           </div>
 
           {/* =================================================
@@ -641,16 +592,11 @@ const LoanHero = ({
           ================================================= */}
 
           <div className="relative z-20 lg:-ml-4 xl:-ml-8">
-
-            <LoanVisual
-              config={config}
-              theme={theme}
-            />
+            <LoanVisual config={config} theme={theme} />
 
             {/* Stats */}
 
             <div className="relative z-40 mx-auto -mt-3 grid max-w-[510px] grid-cols-3 overflow-hidden rounded-2xl border border-white/80 bg-white/90 shadow-[0_15px_40px_rgba(15,23,42,0.08)] backdrop-blur-xl">
-
               {config.stats.map((stat, index) => (
                 <div
                   key={stat.label}
@@ -681,11 +627,8 @@ const LoanHero = ({
                   </p>
                 </div>
               ))}
-
             </div>
-
           </div>
-
         </div>
 
         {/* Disclosure */}
@@ -695,11 +638,9 @@ const LoanHero = ({
             {config.disclosure}
           </p>
         </div>
-
       </div>
     </section>
   );
 };
 
 export default LoanHero;
-

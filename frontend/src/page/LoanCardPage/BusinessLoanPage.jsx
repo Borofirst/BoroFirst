@@ -15,12 +15,20 @@ import { businessLoanFaqs } from '../../data/HomePageFAQDATA'
 import FAQSection from '../../component/common/FAQSection'
 import { businessLoanContent } from '../../data/WhyCooseData'
 import WhyChooseLoanBlue from '../../component/common/whyChooseLoan2'
+import SEO from '../../component/Seo'
 
 
 const BusinessLoanPage = () => {
   return (
-    <div>
-        <BusinessLoanHero/>
+    <>
+        <SEO
+        title="Business Loan | Grow Your Business | Borofirst"
+        description="Explore business financing solutions from Borofirst designed to support business expansion, working capital and growth."
+        canonical="https://borofirst.com/business-loan"
+      />
+
+      <main>
+          <BusinessLoanHero/>
         <TrustStrip/>
         <WhatIsBusinessLoan/>
         <BusinessLoanUses/>
@@ -38,7 +46,9 @@ const BusinessLoanPage = () => {
 <WhyChooseBorofirst/>
 <ContactSection/>
 <FAQSection faqs={businessLoanFaqs}/>
-    </div>
+      </main>
+    
+  </>
   )
 }
 

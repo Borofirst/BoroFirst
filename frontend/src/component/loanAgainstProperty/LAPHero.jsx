@@ -1,4 +1,3 @@
-
 import {
   ArrowRight,
   Building2,
@@ -8,36 +7,30 @@ import {
   WalletCards,
 } from "lucide-react";
 
-
-
 const floatingCards = [
   {
     icon: ShieldCheck,
     title: "Guided Process",
     text: "Support from application to disbursal",
-    position:
-      "left-0 top-12 sm:-left-6 sm:top-16",
+    position: "left-0 top-12 sm:-left-6 sm:top-16",
     animation: "animate-lap-float",
   },
   {
     icon: Building2,
     title: "Property-Backed Financing",
     text: "Subject to lender assessment",
-    position:
-      "right-0 bottom-10 sm:-right-6 sm:bottom-14",
+    position: "right-0 bottom-10 sm:-right-6 sm:bottom-14",
     animation: "animate-lap-float-delay",
   },
 ];
 
 const LAPHero = () => {
-    const handleCalculationEmi = () => {
+  const handleCalculationEmi = () => {
     // Replace with your eligibility section ID or route.
-    document
-      .getElementById("loan-EMI")
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    document.getElementById("loan-EMI")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   return (
@@ -48,8 +41,8 @@ const LAPHero = () => {
       {/* ==========================================================
           BACKGROUND DECORATION
       ========================================================== */}
-      
-           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         {/* Soft Green Glow */}
         <div
           className="
@@ -84,27 +77,23 @@ const LAPHero = () => {
             absolute
             inset-0
             opacity-[0.025]
-            bg-[linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+            bg-[linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
             bg-size-[60px_60px]
           "
         />
       </div>
-      
 
       {/* ==========================================================
           MAIN CONTAINER
       ========================================================== */}
 
       <div className="relative mx-auto max-w-7xl px-5 pb-6 sm:px-6 lg:px-8 lg:pb-10">
-
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14">
-
           {/* ======================================================
               LEFT CONTENT
           ====================================================== */}
 
           <div className="max-w-2xl">
-
             {/* Eyebrow */}
 
             <div className="lap-hero-eyebrow  inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
@@ -118,37 +107,35 @@ const LAPHero = () => {
               Unlock the Value
               <br />
               of{" "}
-              <span className=" bg-linear-to-r
+              <span
+                className=" bg-linear-to-r
                   from-[#186A07]
                   via-[#16830B]
                   to-[#0B2578]
                   bg-clip-text
-                  text-transparent">
-                     Your 
-                Property.
+                  text-transparent"
+              >
+                Your Property.
               </span>
             </h1>
 
             {/* Description */}
 
             <p className="lap-hero-description mt-6 max-w-xl text-base leading-8 text-[#64748B] sm:text-lg">
-              Explore financing against an eligible property for
-              your personal or business needs, with guidance from
-              application to disbursal.
+              Explore financing against an eligible property for your personal
+              or business needs, with guidance from application to disbursal.
             </p>
 
             {/* CTA */}
 
             <div className="lap-hero-buttons mt-8 flex flex-col gap-3 sm:flex-row">
-
               {/* Primary */}
 
               <a
                 href="#eligibility"
                 className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-extrabold text-white shadow-lg shadow-emerald-500/20 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-emerald-500/25"
               >
-               Apply Now
-
+                Apply Now
               </a>
 
               {/* Secondary */}
@@ -157,52 +144,44 @@ const LAPHero = () => {
                 onClick={handleCalculationEmi}
                 className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl border border-[#E2E8F0] bg-white px-6 py-3.5 text-sm font-extrabold text-[#0B2578] shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-emerald-200 hover:shadow-md"
               >
-                <Calculator
-                  size={18}
-                  className="text-[#10B981]"
-                />
-
+                <Calculator size={18} className="text-[#10B981]" />
                 Calculate EMI
               </a>
             </div>
 
             {/* Trust points */}
 
-
             {/* Disclaimer */}
 
             <p className="lap-hero-disclaimer mt-5 max-w-xl text-[11px] leading-5 text-slate-400">
-              Loan amount, interest rate, tenure and eligibility depend
-              on the lender, property and applicant profile.
+              Loan amount, interest rate, tenure and eligibility depend on the
+              lender, property and applicant profile.
             </p>
           </div>
 
           {/* ======================================================
               RIGHT IMAGE
           ====================================================== */}
-            <div className="relative ">
-
+          <div className="relative ">
             {/* Emerald glow */}
 
             <div className="absolute -inset-5 rounded-[36px] bg-emerald-100/40 blur-2xl" />
 
             {/* Image wrapper */}
-              <div className="lap-hero-image relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[#F8FAFC] shadow-2xl shadow-slate-200/70">
-
+            <div className="lap-hero-image relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[#F8FAFC] shadow-2xl shadow-slate-200/70">
               <img
                 src="/lap.png"
                 alt="Indian property owners standing outside a modern property"
                 className="h-[480px] w-full object-contain transition duration-1000 ease-out hover:scale-[1.02] sm:h-[560px] lg:h-[620px]"
               />
 
-              {/* Subtle image gradient */}
+              {/* Subtle image linear */}
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B2578]/25 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#0B2578]/25 via-transparent to-transparent" />
 
               {/* Small property label */}
 
               <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/30 bg-white/90 p-4 shadow-lg backdrop-blur-md sm:bottom-6 sm:left-6 sm:right-auto sm:min-w-[250px]">
-
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-[#2c8e18]">
                     <WalletCards size={20} />
@@ -220,7 +199,6 @@ const LAPHero = () => {
                 </div>
               </div>
             </div>
-          
 
             {/* ==================================================
                 FLOATING CARDS
@@ -235,7 +213,6 @@ const LAPHero = () => {
                   className={`absolute z-20 hidden rounded-2xl border border-white bg-white/95 p-4 shadow-xl backdrop-blur-md sm:block ${card.position} ${card.animation}`}
                 >
                   <div className="flex items-start gap-3">
-
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-[#2c8e18]">
                       <Icon size={19} />
                     </div>
@@ -254,7 +231,6 @@ const LAPHero = () => {
               );
             })}
           </div>
-      
         </div>
       </div>
     </section>

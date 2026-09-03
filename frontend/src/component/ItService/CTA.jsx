@@ -81,7 +81,7 @@ const FinalITCTA = () => {
             absolute
             inset-0
             opacity-[0.025]
-            [background-image:linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+            [background-image:linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
             [background-size:42px_42px]
           "
         />
@@ -100,7 +100,7 @@ const FinalITCTA = () => {
           rounded-[32px]
           border
           border-[#DDEAD9]
-          bg-gradient-to-br
+          bg-linear-to-br
           from-[#F4FAF1]
           via-white
           to-[#F2F5FC]
@@ -108,7 +108,7 @@ const FinalITCTA = () => {
         "
       >
         {/* =====================================================
-            PREMIUM GRADIENT BORDER ACCENT
+            PREMIUM linear BORDER ACCENT
         ====================================================== */}
 
         <div
@@ -118,7 +118,7 @@ const FinalITCTA = () => {
             right-0
             top-0
             h-[3px]
-            bg-gradient-to-r
+            bg-linear-to-r
             from-[#186A07]
             via-[#186A07]
             to-[#0B2578]
@@ -256,7 +256,7 @@ const FinalITCTA = () => {
               Let’s Build Something{" "}
               <span
                 className="
-                  bg-gradient-to-r
+                  bg-linear-to-r
                   from-[#186A07]
                   to-[#0B2578]
                   bg-clip-text
@@ -281,8 +281,8 @@ const FinalITCTA = () => {
               "
             >
               Have an idea, a process that needs automation, or a business
-              challenge that technology can solve? Let’s turn it into a
-              secure, scalable and intelligent digital solution.
+              challenge that technology can solve? Let’s turn it into a secure,
+              scalable and intelligent digital solution.
             </p>
 
             {/* Supporting Message */}
@@ -297,8 +297,8 @@ const FinalITCTA = () => {
               "
             >
               From custom software and AI automation to cloud integration and
-              enterprise technology, BOROFIRST helps businesses move from
-              manual processes to smarter digital operations.
+              enterprise technology, BOROFIRST helps businesses move from manual
+              processes to smarter digital operations.
             </p>
 
             {/* =================================================
@@ -317,7 +317,7 @@ const FinalITCTA = () => {
                   justify-center
                   gap-3
                   rounded-xl
-                  bg-gradient-to-r
+                  bg-linear-to-r
                   from-[#186A07]
                   to-[#0B2578]
                   px-6
@@ -337,7 +337,6 @@ const FinalITCTA = () => {
                 "
               >
                 Talk to Our Experts
-
                 <FaArrowRight
                   size={14}
                   className="
@@ -390,7 +389,6 @@ const FinalITCTA = () => {
                     group-hover:scale-110
                   "
                 />
-
                 Discuss Your Project
               </a>
             </div>
@@ -400,10 +398,7 @@ const FinalITCTA = () => {
             ================================================== */}
 
             <div className="mt-7 flex items-center gap-2">
-              <FaCheckCircle
-                size={15}
-                className="shrink-0 text-[#186A07]"
-              />
+              <FaCheckCircle size={15} className="shrink-0 text-[#186A07]" />
 
               <span className="text-xs font-medium text-slate-500 sm:text-sm">
                 Let's explore the right technology approach for your business.
@@ -498,7 +493,7 @@ const FinalITCTA = () => {
                         rounded-2xl
                         border
                         border-slate-200/80
-                        bg-gradient-to-br
+                        bg-linear-to-br
                         from-white
                         to-slate-50
                         p-4
@@ -521,7 +516,7 @@ const FinalITCTA = () => {
                           text-[#186A07]
                           transition-all
                           duration-300
-                          group-hover:bg-gradient-to-br
+                          group-hover:bg-linear-to-br
                           group-hover:from-[#186A07]
                           group-hover:to-[#0B2578]
                           group-hover:text-white
@@ -552,7 +547,7 @@ const FinalITCTA = () => {
                   rounded-2xl
                   border
                   border-[#0B2578]/10
-                  bg-gradient-to-r
+                  bg-linear-to-r
                   from-[#F4FAF1]
                   to-[#F2F5FC]
                   p-4
@@ -568,7 +563,7 @@ const FinalITCTA = () => {
                       items-center
                       justify-center
                       rounded-xl
-                      bg-gradient-to-br
+                      bg-linear-to-br
                       from-[#186A07]
                       to-[#0B2578]
                       text-white
@@ -691,8 +686,8 @@ const FinalITCTA = () => {
             "
           >
             <p className="text-xs font-medium text-slate-500 sm:text-sm">
-              From idea to implementation — build technology that works for
-              your business.
+              From idea to implementation — build technology that works for your
+              business.
             </p>
 
             <div className="flex items-center gap-2">

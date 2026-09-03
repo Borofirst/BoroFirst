@@ -105,7 +105,7 @@ const PersonalLoanFeaturesBenefits = () => {
 
 
                    <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
-                             Features Designed Around{""}
+                             Features Designed Around{" "}
                         <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
                              Your Financial Needs{" "}
                         </span>

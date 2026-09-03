@@ -65,12 +65,10 @@ const WhyChooseBorofirst = () => {
       <div className="pointer-events-none absolute bottom-[-180px] left-[-180px] h-[400px] w-[400px] rounded-full bg-slate-100 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
         {/* =========================
             SECTION HEADER
         ========================== */}
-        <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-end lg:gap-16">
-
+        <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-center lg:gap-16">
           {/* Left */}
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
@@ -85,19 +83,19 @@ const WhyChooseBorofirst = () => {
               </span>
             </div>
 
-            <h2 className="mt-5 max-w-3xl text-3xl font-extrabold leading-[1.12] tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">
-             Why BOROFIRST Is the Smarter Way
-              <span className="block bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
-                 to Finance Your Car
+            <h2 className="mt-5 max-w-3xl text-3xl font-bold leading-[1.12] tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">
+              Why BOROFIRST Is the Smarter Way
+              <span className="block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+                to Finance Your Car
               </span>
             </h2>
           </div>
 
           {/* Right */}
-          <div>
+          <div className="flex items-center">
             <p className="text-sm leading-7 text-slate-500 sm:text-base">
-              Buying a car is a major financial decision. BOROFIRST is built
-              to make the financing journey easier to understand — helping you
+              Buying a car is a major financial decision. BOROFIRST is built to
+              make the financing journey easier to understand — helping you
               explore your options, understand the process and move ahead with
               greater confidence.
             </p>
@@ -114,9 +112,7 @@ const WhyChooseBorofirst = () => {
             </div>
 
             <div>
-              <p className="text-sm font-bold text-slate-900">
-                Clear Process
-              </p>
+              <p className="text-sm font-bold text-slate-900">Clear Process</p>
               <p className="mt-0.5 text-xs text-slate-500">
                 Know what comes next
               </p>
@@ -194,19 +190,13 @@ const WhyChooseBorofirst = () => {
         {/* =========================
             BOTTOM CTA
         ========================== */}
-        <div className="relative mt-10 overflow-hidden rounded-[26px] bg-gradient-to-r from-[#186A07] to-[#0B2578] p-6 sm:p-8 lg:p-10">
-
+        <div className="relative mt-10 overflow-hidden rounded-[26px] bg-linear-to-r from-[#186A07] to-[#0B2578] p-6 sm:p-8 lg:p-10">
           <div className="pointer-events-none absolute right-[-80px] top-[-100px] h-64 w-64 rounded-full bg-white/10 blur-3xl" />
 
           <div className="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-
             <div className="max-w-2xl">
               <div className="flex items-center gap-2">
-                <CarFront
-                  size={19}
-                  className="text-white"
-                  strokeWidth={2}
-                />
+                <CarFront size={19} className="text-white" strokeWidth={2} />
 
                 <span className="text-xs font-bold uppercase tracking-[0.16em] text-white/70">
                   Your Car. Your Journey.
@@ -218,8 +208,8 @@ const WhyChooseBorofirst = () => {
               </h3>
 
               <p className="mt-2 max-w-xl text-sm leading-6 text-white/75 sm:text-base">
-                Check your eligibility and take the next step towards your
-                new or used car with BOROFIRST.
+                Check your eligibility and take the next step towards your new
+                or used car with BOROFIRST.
               </p>
             </div>
 
@@ -228,7 +218,6 @@ const WhyChooseBorofirst = () => {
               className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-slate-900 shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
             >
               Check Your Eligibility
-
               <TrendingDown
                 size={17}
                 className="transition-transform duration-300 group-hover:translate-x-1"

@@ -16,11 +16,19 @@ import WhyChooseBoroFirst from "../../component/personalLoan/WhyChooseBoroFirst"
 import ContactSection from "../../component/common/ContactSection";
 import FAQSection from "../../component/common/FAQSection";
 import { personalLoanFAQs } from "../../data/HomePageFAQDATA";
+import SEO from "../../component/Seo";
 
 const PersonalLoan = () => {
   return (
-    <div>
-      <PersonalLoanHero />
+      <>
+      <SEO
+        title="Personal Loan | Flexible Financing Solutions | Borofirst"
+        description="Explore flexible personal loan solutions from Borofirst designed to support your financial goals with transparent and customer-focused financial services."
+        canonical="https://borofirst.com/personal-loan"
+      />
+
+      <main>
+             <PersonalLoanHero />
       <TrustStrip />
       <WhatIsPersonalLoan />
       <PersonalLoanUses />
@@ -29,7 +37,7 @@ const PersonalLoan = () => {
       <LoanEligibilityChecker />
       <LoanDocuments
         salariedDocuments={personalLoanSalariedDocuments}
-        selfEmployedDocuments={personalLoanSalariedDocuments}
+        selfEmployedDocuments={personalLoanSelfEmployedDocuments}
       />
       <LoanCalculator />
       <HowItWorks
@@ -42,7 +50,10 @@ const PersonalLoan = () => {
       <WhyChooseBoroFirst />
       <ContactSection />
       <FAQSection faqs={personalLoanFAQs} />
-    </div>
+      </main>
+    </>
+
+  
   );
 };
 

@@ -88,23 +88,30 @@ const DocumentsRequired = () => {
 
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-white px-3.5 py-2">
-            <ShieldCheck
-              size={15}
-              className="text-[#186A07]"
-            />
+   
+                             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                               
+            Simple Documentation
+                        </span>
+                      </div>
 
-            <span className="text-xs font-semibold uppercase tracking-wider text-[#186A07]">
-              Simple Documentation
-            </span>
-          </div>
+            {/* Heading */}
 
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[42px]">
-            Documents Required for
-            <span className="block text-[#186A07]">
-              Your Car Loan
-            </span>
-          </h2>
+
+                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                              Documents Required for{" "}
+                        <span className="block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                            Your Car Loan
+                            
+                        </span>
+                        
+                      </h2>
 
           <p className="mt-4 text-sm leading-6 text-slate-500 sm:text-base">
             Keep your essential documents ready for a smooth and efficient
@@ -119,7 +126,7 @@ const DocumentsRequired = () => {
             onClick={() => setLoanType("new")}
             className={`flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition-all ${
               loanType === "new"
-                ? "bg-[#186A07] text-white shadow-sm"
+                ? "bg-linear-to-r from-[#186A07] to-[#0B2578] text-white shadow-sm"
                 : "text-slate-600 hover:bg-slate-50"
             }`}
           >
@@ -267,7 +274,7 @@ const DocumentsRequired = () => {
 
           <button
             type="button"
-            className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#186A07] px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#125405] sm:w-auto"
+            className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-5 py-3 text-sm font-semibold text-white transition-all duration-300  sm:w-auto"
           >
             Apply for Car Loan
 

@@ -16,8 +16,7 @@ const insuranceCategories = [
   {
     id: "motor",
     title: "Motor Insurance",
-    description:
-      "Protect your car or two-wheeler against unexpected costs.",
+    description: "Protect your car or two-wheeler against unexpected costs.",
     icon: CarFront,
     href: "/insurance/motor",
     featured: false,
@@ -25,8 +24,7 @@ const insuranceCategories = [
   {
     id: "health",
     title: "Health Insurance",
-    description:
-      "Get financial support for medical and healthcare expenses.",
+    description: "Get financial support for medical and healthcare expenses.",
     icon: HeartPulse,
     href: "/insurance/health",
     featured: false,
@@ -43,8 +41,7 @@ const insuranceCategories = [
   {
     id: "home",
     title: "Home Insurance",
-    description:
-      "Protect your home and valuable belongings.",
+    description: "Protect your home and valuable belongings.",
     icon: House,
     href: "/insurance/home",
     featured: false,
@@ -52,8 +49,7 @@ const insuranceCategories = [
   {
     id: "personal-accident",
     title: "Personal Accident",
-    description:
-      "Financial protection against accidental events.",
+    description: "Financial protection against accidental events.",
     icon: ShieldCheck,
     href: "/insurance/personal-accident",
     featured: false,
@@ -61,8 +57,7 @@ const insuranceCategories = [
   {
     id: "business",
     title: "Business Insurance",
-    description:
-      "Help protect your business from unexpected risks.",
+    description: "Help protect your business from unexpected risks.",
     icon: Building2,
     href: "/insurance/business",
     featured: false,
@@ -73,7 +68,7 @@ const InsuranceCategorySelector = () => {
   return (
     <section
       aria-labelledby="insurance-category-heading"
-      className="relative overflow-hidden bg-gradient-to-b from-white to-[#F8FAFC] py-16 sm:py-20 lg:py-28"
+      className="relative overflow-hidden bg-linear-to-b from-white to-[#F8FAFC] py-16 sm:py-20 lg:py-28"
     >
       {/* =========================================================
           BACKGROUND DECORATION
@@ -93,12 +88,12 @@ const InsuranceCategorySelector = () => {
           className="absolute inset-0 opacity-[0.025]"
           style={{
             backgroundImage:
-              "linear-gradient(#0B2578 1px, transparent 1px), linear-gradient(90deg, #0B2578 1px, transparent 1px)",
+              "linear-linear(#0B2578 1px, transparent 1px), linear-linear(90deg, #0B2578 1px, transparent 1px)",
             backgroundSize: "60px 60px",
             maskImage:
-              "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+              "linear-linear(to bottom, transparent, black 15%, black 85%, transparent)",
             WebkitMaskImage:
-              "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+              "linear-linear(to bottom, transparent, black 15%, black 85%, transparent)",
           }}
         />
 
@@ -114,27 +109,23 @@ const InsuranceCategorySelector = () => {
         ======================================================== */}
         <div className="mx-auto max-w-3xl text-center">
           {/* Eyebrow */}
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#10B981]/15 bg-white px-3.5 py-2 shadow-[0_8px_25px_rgba(15,23,42,0.04)]">
-            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#10B981]/10">
-              <ShieldCheck
-                size={12}
-                strokeWidth={2.5}
-                className="text-[#10B981]"
-              />
+
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
             </span>
 
-            <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#186A07] sm:text-[11px]">
+            <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
               Insurance Solutions
             </span>
           </div>
 
           {/* Heading */}
-          <h2
-            id="insurance-category-heading"
-            className="text-3xl font-extrabold tracking-[-0.035em] text-[#0F172A] sm:text-4xl lg:text-5xl"
-          >
+
+          <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
             What Do You Want to{" "}
-            <span className="bg-[#186A07]  bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
               Protect?
             </span>
           </h2>
@@ -156,7 +147,6 @@ const InsuranceCategorySelector = () => {
             return (
               <a
                 key={category.id}
-         
                 aria-label={`Explore ${category.title}`}
                 className="transform  group relative overflow-hidden rounded-3xl border border-[#E2E8F0] bg-white p-5 shadow-[0_8px_30px_rgba(15,23,42,0.035)] outline-none transition-all duration-300 hover:-translate-y-1 hover:border-[#10B981]/30 hover:shadow-[0_20px_45px_rgba(15,23,42,0.09)] focus-visible:ring-4 focus-visible:ring-[#10B981]/20 sm:p-6"
               >
@@ -166,18 +156,18 @@ const InsuranceCategorySelector = () => {
                   className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[#10B981]/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
                 />
 
-                {/* Subtle bottom gradient */}
+                {/* Subtle bottom linear */}
                 <div
                   aria-hidden="true"
-                  className="pointer-events-none absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-[#186A07] to-[#0B2578] transition-all duration-500 group-hover:w-full"
+                  className="pointer-events-none absolute bottom-0 left-0 h-1 w-0 bg-linear-to-r from-[#186A07] to-[#0B2578] transition-all duration-500 group-hover:w-full"
                 />
 
                 {/* =================================================
                     TOP ROW
                 ================================================== */}
                 <div className="relative flex items-start justify-between">
-                        <div
-                  className="
+                  <div
+                    className="
                     pointer-events-none
                     absolute -right-10 -top-10
                     h-28 w-28
@@ -187,11 +177,11 @@ const InsuranceCategorySelector = () => {
                     transition-all duration-500
                     group-hover:border-[#186A07]/30
                   "
-                />
+                  />
 
-                {/* Icon */}
-                <div
-                  className="
+                  {/* Icon */}
+                  <div
+                    className="
                     relative
                     flex h-14 w-14
                     items-center justify-center
@@ -204,13 +194,8 @@ const InsuranceCategorySelector = () => {
                         group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
                         group-hover:scale-110
                   "
-                >
-                
-                    <Icon
-                      size={22}
-                      strokeWidth={1.9}
-                      aria-hidden="true"
-                    />
+                  >
+                    <Icon size={22} strokeWidth={1.9} aria-hidden="true" />
                   </div>
 
                   {/* Arrow */}
@@ -273,7 +258,7 @@ const InsuranceCategorySelector = () => {
           <div className="relative flex flex-col gap-6 p-6 sm:p-7 md:flex-row md:items-center md:justify-between lg:px-8">
             {/* Message */}
             <div className="flex items-start gap-4">
-              <div className="hidden h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#186A07] to-[#0B2578] text-white shadow-[0_8px_20px_rgba(11,37,120,0.15)] sm:flex">
+              <div className="hidden h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-[#186A07] to-[#0B2578] text-white shadow-[0_8px_20px_rgba(11,37,120,0.15)] sm:flex">
                 <Sparkles size={19} strokeWidth={1.8} />
               </div>
 
@@ -300,7 +285,7 @@ const InsuranceCategorySelector = () => {
             {/* CTA */}
             <a
               href=""
-              className="group inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-[#186A07] to-[#0B2578] px-5 py-3 text-sm font-bold text-white shadow-[0_10px_25px_rgba(11,37,120,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_15px_30px_rgba(11,37,120,0.22)] focus:outline-none focus:ring-4 focus:ring-[#10B981]/20"
+              className="group inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-5 py-3 text-sm font-bold text-white shadow-[0_10px_25px_rgba(11,37,120,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_15px_30px_rgba(11,37,120,0.22)] focus:outline-none focus:ring-4 focus:ring-[#10B981]/20"
             >
               Find My Insurance
               <ArrowRight
@@ -315,7 +300,6 @@ const InsuranceCategorySelector = () => {
       {/* =========================================================
           COMPONENT-LOCAL ANIMATIONS
       ========================================================== */}
-  
     </section>
   );
 };

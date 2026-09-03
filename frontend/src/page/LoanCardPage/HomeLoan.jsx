@@ -16,11 +16,20 @@ import LoanEligibilityChecker from "../../component/common/EligibilitySection";
 import {homeLoanSteps} from "../../data/stepProcess"
 import HowItWorks from "../../component/common/HowitWork";
 import ContactSection from "../../component/common/ContactSection";
+import SEO from "../../component/Seo";
 
 export const HomeLoan = () => {
   return (
-    <>
-      <HomeLoanHero/>
+
+        <>
+      <SEO
+        title="Home Loan | Finance Your Dream Home | Borofirst"
+        description="Explore home loan solutions with Borofirst and take the next step toward financing your dream home."
+        canonical="https://borofirst.com/home-loan"
+      />
+
+      <main>
+             <HomeLoanHero/>
       <TrustStrip />
       <WhatIsHomeLoan />
       <LoanUses />
@@ -44,6 +53,7 @@ export const HomeLoan = () => {
       <section id="faq">
         <FAQSection faqs={HOmeLoanfaqs} />
       </section>
+      </main>
     </>
   );
 };

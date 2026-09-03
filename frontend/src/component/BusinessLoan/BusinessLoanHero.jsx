@@ -76,11 +76,10 @@ const BusinessLoanHero = () => {
           className="
             absolute inset-0
             opacity-[0.035]
-            [background-image:linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+            [background-image:linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
             [background-size:44px_44px]
           "
         />
-
       </div>
 
       <div className="mx-auto max-w-7xl px-5 pb-10 pt-24 sm:px-6 lg:px-8 lg:pb-14 lg:pt-32">
@@ -110,7 +109,6 @@ const BusinessLoanHero = () => {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#10B981]/60" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-[#10B981]" />
               </span>
-
               BUSINESS FINANCING
             </div>
 
@@ -163,7 +161,6 @@ const BusinessLoanHero = () => {
                 "
               >
                 Apply Now
-
                 <ArrowRight
                   size={18}
                   className="
@@ -194,7 +191,6 @@ const BusinessLoanHero = () => {
                 "
               >
                 Check Eligibility
-
                 <MoveUpRight
                   size={17}
                   className="
@@ -217,10 +213,7 @@ const BusinessLoanHero = () => {
                   key={item}
                   className="flex items-center gap-2 text-xs font-medium text-[#64748B]"
                 >
-                  <CheckCircle2
-                    size={14}
-                    className="shrink-0 text-[#10B981]"
-                  />
+                  <CheckCircle2 size={14} className="shrink-0 text-[#10B981]" />
 
                   {item}
                 </div>
@@ -275,10 +268,7 @@ const BusinessLoanHero = () => {
                 <div>
                   <div className="flex items-center gap-2">
                     <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#ECFDF5]">
-                      <TrendingUp
-                        size={18}
-                        className="text-[#10B981]"
-                      />
+                      <TrendingUp size={18} className="text-[#10B981]" />
                     </div>
 
                     <div>
@@ -339,7 +329,7 @@ const BusinessLoanHero = () => {
                   className="
                     absolute inset-0
                     opacity-60
-                    [background-image:linear-gradient(#E2E8F0_1px,transparent_1px),linear-gradient(90deg,#E2E8F0_1px,transparent_1px)]
+                    [background-image:linear-linear(#E2E8F0_1px,transparent_1px),linear-linear(90deg,#E2E8F0_1px,transparent_1px)]
                     [background-size:100%_35px,55px_100%]
                   "
                 />
@@ -351,24 +341,14 @@ const BusinessLoanHero = () => {
                   fill="none"
                 >
                   <defs>
-                    <linearGradient
-                      id="growthFill"
-                      x1="0"
-                      y1="0"
-                      x2="0"
-                      y2="1"
-                    >
+                    <linearlinear id="growthFill" x1="0" y1="0" x2="0" y2="1">
                       <stop
                         offset="0%"
                         stopColor="#10B981"
                         stopOpacity="0.18"
                       />
-                      <stop
-                        offset="100%"
-                        stopColor="#10B981"
-                        stopOpacity="0"
-                      />
-                    </linearGradient>
+                      <stop offset="100%" stopColor="#10B981" stopOpacity="0" />
+                    </linearlinear>
                   </defs>
 
                   <path
@@ -383,12 +363,7 @@ const BusinessLoanHero = () => {
                     strokeLinecap="round"
                   />
 
-                  <circle
-                    cx="500"
-                    cy="5"
-                    r="6"
-                    fill="#10B981"
-                  />
+                  <circle cx="500" cy="5" r="6" fill="#10B981" />
 
                   <circle
                     cx="500"
@@ -448,16 +423,10 @@ const BusinessLoanHero = () => {
             >
               <div className="flex items-center justify-between">
                 <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#ECFDF5]">
-                  <WalletCards
-                    size={18}
-                    className="text-[#10B981]"
-                  />
+                  <WalletCards size={18} className="text-[#10B981]" />
                 </div>
 
-                <MoveUpRight
-                  size={15}
-                  className="text-[#94A3B8]"
-                />
+                <MoveUpRight size={15} className="text-[#94A3B8]" />
               </div>
 
               <p className="mt-4 text-[11px] font-semibold text-[#64748B]">
@@ -491,10 +460,7 @@ const BusinessLoanHero = () => {
             >
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#EEF2FF]">
-                  <BriefcaseBusiness
-                    size={18}
-                    className="text-[#0B2578]"
-                  />
+                  <BriefcaseBusiness size={18} className="text-[#0B2578]" />
                 </div>
 
                 <div>
@@ -531,10 +497,7 @@ const BusinessLoanHero = () => {
             >
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#ECFDF5]">
-                  <TrendingUp
-                    size={18}
-                    className="text-[#10B981]"
-                  />
+                  <TrendingUp size={18} className="text-[#10B981]" />
                 </div>
 
                 <div>
@@ -571,10 +534,7 @@ const BusinessLoanHero = () => {
             >
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10">
-                  <FileCheck2
-                    size={18}
-                    className="text-[#6EE7B7]"
-                  />
+                  <FileCheck2 size={18} className="text-[#6EE7B7]" />
                 </div>
 
                 <div>
@@ -616,11 +576,7 @@ const BusinessLoanHero = () => {
                 sm:flex
               "
             >
-              <CheckCircle2
-                size={14}
-                className="text-[#10B981]"
-              />
-
+              <CheckCircle2 size={14} className="text-[#10B981]" />
               Built for Business Growth
             </div>
 
@@ -643,11 +599,7 @@ const BusinessLoanHero = () => {
                 md:flex
               "
             >
-              <WalletCards
-                size={14}
-                className="text-[#10B981]"
-              />
-
+              <WalletCards size={14} className="text-[#10B981]" />
               Flexible Funding Solutions
             </div>
           </div>
@@ -682,10 +634,7 @@ const BusinessLoanHero = () => {
 
             {/* Stats */}
             {trustStats.map((stat) => (
-              <div
-                key={stat.label}
-                className="px-6 py-5 sm:px-8"
-              >
+              <div key={stat.label} className="px-6 py-5 sm:px-8">
                 <p className="text-2xl font-extrabold tracking-tight text-[#0B2578]">
                   {stat.value}
                 </p>
@@ -701,8 +650,8 @@ const BusinessLoanHero = () => {
         {/* Disclaimer */}
         <p className="mt-4 text-center text-[10px] leading-5 text-[#94A3B8]">
           *Displayed figures are illustrative placeholders and should be
-          replaced with BOROFIRST-approved business statistics before
-          production use.
+          replaced with BOROFIRST-approved business statistics before production
+          use.
         </p>
       </div>
     </section>

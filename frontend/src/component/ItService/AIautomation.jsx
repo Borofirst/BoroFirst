@@ -73,12 +73,12 @@ const AIBusinessAutomation = () => {
         className="pointer-events-none absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage:
-            "linear-gradient(#0B2578 1px, transparent 1px), linear-gradient(90deg, #0B2578 1px, transparent 1px)",
+            "linear-linear(#0B2578 1px, transparent 1px), linear-linear(90deg, #0B2578 1px, transparent 1px)",
           backgroundSize: "48px 48px",
           maskImage:
-            "linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)",
+            "linear-linear(to bottom, transparent, black 20%, black 80%, transparent)",
           WebkitMaskImage:
-            "linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)",
+            "linear-linear(to bottom, transparent, black 20%, black 80%, transparent)",
         }}
       />
 
@@ -106,7 +106,7 @@ const AIBusinessAutomation = () => {
 
             <h2 className="max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
               Turn Manual Processes Into{" "}
-              <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
                 Intelligent Automation
               </span>
             </h2>
@@ -155,10 +155,9 @@ const AIBusinessAutomation = () => {
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <a
                 href="/ai-solutions"
-                className="group inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(24,106,7,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_38px_rgba(11,37,120,0.22)]"
+                className="group inline-flex items-center gap-3 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(24,106,7,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_38px_rgba(11,37,120,0.22)]"
               >
                 Explore AI Solutions
-
                 <FaArrowRight
                   size={13}
                   className="transition-transform duration-300 group-hover:translate-x-1"
@@ -170,7 +169,6 @@ const AIBusinessAutomation = () => {
                 className="group inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3.5 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#186A07]/30 hover:text-[#186A07] hover:shadow-md"
               >
                 Talk to Our Experts
-
                 <FaArrowRight
                   size={12}
                   className="transition-transform duration-300 group-hover:translate-x-1"
@@ -188,7 +186,7 @@ const AIBusinessAutomation = () => {
 
             <div
               aria-hidden="true"
-              className="absolute -inset-5 rounded-[36px] bg-gradient-to-br from-[#186A07]/10 via-transparent to-[#0B2578]/10 blur-2xl"
+              className="absolute -inset-5 rounded-[36px] bg-linear-to-br from-[#186A07]/10 via-transparent to-[#0B2578]/10 blur-2xl"
             />
 
             {/* Main Automation Container */}
@@ -198,7 +196,7 @@ const AIBusinessAutomation = () => {
 
               <div className="mb-5 flex items-center justify-between border-b border-slate-100 pb-4">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#186A07] to-[#0B2578] text-white shadow-md">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-[#186A07] to-[#0B2578] text-white shadow-md">
                     <FaRobot size={16} />
                   </div>
 
@@ -228,7 +226,7 @@ const AIBusinessAutomation = () => {
                   Workflow Area
               ========================================= */}
 
-              <div className="relative min-h-[570px] overflow-hidden rounded-2xl bg-gradient-to-br from-[#F4FAF1] via-white to-[#F2F5FC] p-4 sm:p-6">
+              <div className="relative min-h-[570px] overflow-hidden rounded-2xl bg-linear-to-br from-[#F4FAF1] via-white to-[#F2F5FC] p-4 sm:p-6">
                 {/* Decorative Grid */}
 
                 <div
@@ -236,7 +234,7 @@ const AIBusinessAutomation = () => {
                   className="pointer-events-none absolute inset-0 opacity-[0.035]"
                   style={{
                     backgroundImage:
-                      "linear-gradient(#186A07 1px, transparent 1px), linear-gradient(90deg, #0B2578 1px, transparent 1px)",
+                      "linear-linear(#186A07 1px, transparent 1px), linear-linear(90deg, #0B2578 1px, transparent 1px)",
                     backgroundSize: "32px 32px",
                   }}
                 />
@@ -278,11 +276,11 @@ const AIBusinessAutomation = () => {
                   <div className="group relative">
                     {/* AI Glow */}
 
-                    <div className="absolute -inset-3 rounded-[25px] bg-gradient-to-r from-[#186A07]/10 to-[#0B2578]/10 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
+                    <div className="absolute -inset-3 rounded-[25px] bg-linear-to-r from-[#186A07]/10 to-[#0B2578]/10 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
 
                     {/* Rotating Ring */}
 
-                    <div className="absolute -inset-1 rounded-[23px] bg-gradient-to-r from-[#186A07] via-[#0B2578] to-[#186A07] opacity-20 blur-[1px] transition-opacity duration-500 group-hover:opacity-50" />
+                    <div className="absolute -inset-1 rounded-[23px] bg-linear-to-r from-[#186A07] via-[#0B2578] to-[#186A07] opacity-20 blur-[1px] transition-opacity duration-500 group-hover:opacity-50" />
 
                     <div className="relative overflow-hidden rounded-[22px] border border-[#186A07]/20 bg-white p-5 shadow-[0_18px_45px_rgba(24,106,7,0.12)] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_24px_55px_rgba(11,37,120,0.16)]">
                       {/* AI Decorative Ring */}
@@ -291,7 +289,7 @@ const AIBusinessAutomation = () => {
                       <div className="absolute -right-6 -top-6 h-20 w-20 rounded-full border border-[#0B2578]/10" />
 
                       <div className="relative flex items-center gap-4">
-                        <div className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#186A07] to-[#0B2578] text-white shadow-lg">
+                        <div className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-[#186A07] to-[#0B2578] text-white shadow-lg">
                           <FaRobot size={21} />
 
                           <span className="absolute -right-1 -top-1 h-3 w-3 animate-pulse rounded-full border-2 border-white bg-[#186A07]" />
@@ -326,7 +324,7 @@ const AIBusinessAutomation = () => {
                       {/* AI Progress */}
 
                       <div className="relative mt-5 h-1.5 overflow-hidden rounded-full bg-slate-100">
-                        <div className="h-full w-[76%] rounded-full bg-gradient-to-r from-[#186A07] to-[#0B2578]" />
+                        <div className="h-full w-[76%] rounded-full bg-linear-to-r from-[#186A07] to-[#0B2578]" />
                       </div>
                     </div>
                   </div>
@@ -354,11 +352,11 @@ const AIBusinessAutomation = () => {
                 <div className="relative z-10 mx-auto h-12 max-w-[500px]">
                   {/* Vertical stem */}
 
-                  <div className="absolute left-1/2 top-0 h-7 w-px -translate-x-1/2 bg-gradient-to-b from-[#186A07] to-[#0B2578]" />
+                  <div className="absolute left-1/2 top-0 h-7 w-px -translate-x-1/2 bg-linear-to-b from-[#186A07] to-[#0B2578]" />
 
                   {/* Horizontal branch */}
 
-                  <div className="absolute left-[16%] right-[16%] top-7 h-px bg-gradient-to-r from-[#186A07]/30 via-[#0B2578]/50 to-[#186A07]/30" />
+                  <div className="absolute left-[16%] right-[16%] top-7 h-px bg-linear-to-r from-[#186A07]/30 via-[#0B2578]/50 to-[#186A07]/30" />
 
                   {/* Branch drops */}
 
@@ -386,7 +384,7 @@ const AIBusinessAutomation = () => {
                         key={item.name}
                         className="group relative rounded-2xl border border-white/80 bg-white/90 p-3 text-center shadow-[0_10px_30px_rgba(11,37,120,0.07)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#186A07]/20 hover:shadow-[0_15px_35px_rgba(24,106,7,0.11)] sm:p-4"
                       >
-                        <div className="mx-auto flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#F4FAF1] to-[#F2F5FC] text-[#186A07] transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-[#186A07] group-hover:to-[#0B2578] group-hover:text-white">
+                        <div className="mx-auto flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-[#F4FAF1] to-[#F2F5FC] text-[#186A07] transition-all duration-300 group-hover:bg-linear-to-br group-hover:from-[#186A07] group-hover:to-[#0B2578] group-hover:text-white">
                           <Icon size={15} />
                         </div>
 
@@ -407,9 +405,9 @@ const AIBusinessAutomation = () => {
                 ========================================= */}
 
                 <div className="relative z-10 mx-auto h-12 max-w-[500px]">
-                  <div className="absolute left-1/2 top-0 h-7 w-px -translate-x-1/2 bg-gradient-to-b from-[#0B2578] to-[#186A07]" />
+                  <div className="absolute left-1/2 top-0 h-7 w-px -translate-x-1/2 bg-linear-to-b from-[#0B2578] to-[#186A07]" />
 
-                  <div className="absolute left-[16%] right-[16%] top-7 h-px bg-gradient-to-r from-[#186A07]/20 via-[#0B2578]/40 to-[#186A07]/20" />
+                  <div className="absolute left-[16%] right-[16%] top-7 h-px bg-linear-to-r from-[#186A07]/20 via-[#0B2578]/40 to-[#186A07]/20" />
 
                   <div className="absolute left-1/2 top-7 h-5 w-px -translate-x-1/2 bg-[#186A07]/50" />
 
@@ -423,7 +421,7 @@ const AIBusinessAutomation = () => {
                 <div className="relative z-20 mx-auto w-full max-w-[250px]">
                   <div className="group rounded-2xl border border-[#186A07]/15 bg-white p-4 shadow-[0_14px_35px_rgba(24,106,7,0.09)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(24,106,7,0.14)]">
                     <div className="flex items-center gap-3">
-                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F4FAF1] text-[#186A07] transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-[#186A07] group-hover:to-[#0B2578] group-hover:text-white">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F4FAF1] text-[#186A07] transition-all duration-300 group-hover:bg-linear-to-br group-hover:from-[#186A07] group-hover:to-[#0B2578] group-hover:text-white">
                         <FaCheckCircle size={17} />
                       </div>
 
@@ -467,7 +465,7 @@ const AIBusinessAutomation = () => {
                   </div>
 
                   <div className="mt-2 h-1 overflow-hidden rounded-full bg-slate-100">
-                    <div className="h-full w-[78%] rounded-full bg-gradient-to-r from-[#186A07] to-[#0B2578]" />
+                    <div className="h-full w-[78%] rounded-full bg-linear-to-r from-[#186A07] to-[#0B2578]" />
                   </div>
                 </div>
 
@@ -535,7 +533,7 @@ const AIBusinessAutomation = () => {
         ========================================= */}
 
         <div className="mt-16 flex items-center justify-center gap-3 border-t border-slate-100 pt-7 text-center">
-          <span className="h-px w-8 bg-gradient-to-r from-transparent to-[#186A07]/40 sm:w-16" />
+          <span className="h-px w-8 bg-linear-to-r from-transparent to-[#186A07]/40 sm:w-16" />
 
           <p className="text-xs font-medium text-slate-500 sm:text-sm">
             Designed to connect{" "}
@@ -545,7 +543,7 @@ const AIBusinessAutomation = () => {
             <span className="font-semibold text-[#0B2578]">intelligence.</span>
           </p>
 
-          <span className="h-px w-8 bg-gradient-to-l from-transparent to-[#0B2578]/40 sm:w-16" />
+          <span className="h-px w-8 bg-linear-to-l from-transparent to-[#0B2578]/40 sm:w-16" />
         </div>
       </div>
     </section>
@@ -570,17 +568,15 @@ const WorkflowCard = ({
         <div
           className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl transition-all duration-300 ${
             isBlue
-              ? "bg-[#F2F5FC] text-[#0B2578] group-hover:bg-gradient-to-br group-hover:from-[#186A07] group-hover:to-[#0B2578] group-hover:text-white"
-              : "bg-[#F4FAF1] text-[#186A07] group-hover:bg-gradient-to-br group-hover:from-[#186A07] group-hover:to-[#0B2578] group-hover:text-white"
+              ? "bg-[#F2F5FC] text-[#0B2578] group-hover:bg-linear-to-br group-hover:from-[#186A07] group-hover:to-[#0B2578] group-hover:text-white"
+              : "bg-[#F4FAF1] text-[#186A07] group-hover:bg-linear-to-br group-hover:from-[#186A07] group-hover:to-[#0B2578] group-hover:text-white"
           }`}
         >
           <Icon size={16} />
         </div>
 
         <div>
-          <p className="text-xs font-bold text-slate-800 sm:text-sm">
-            {title}
-          </p>
+          <p className="text-xs font-bold text-slate-800 sm:text-sm">{title}</p>
 
           <p className="mt-1 text-[10px] text-slate-400">{description}</p>
         </div>
@@ -595,7 +591,7 @@ const WorkflowCard = ({
 
 const ConnectionLine = () => {
   return (
-    <div className="relative mx-auto h-6 w-px bg-gradient-to-b from-[#186A07]/30 to-[#0B2578]/40">
+    <div className="relative mx-auto h-6 w-px bg-linear-to-b from-[#186A07]/30 to-[#0B2578]/40">
       <span className="absolute left-1/2 top-1/2 h-1.5 w-1.5 -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-full bg-[#186A07]" />
     </div>
   );

@@ -1,5 +1,3 @@
-
-
 // import React from "react";
 // import {
 //   ArrowRight,
@@ -95,7 +93,7 @@ import WhyChooseLoan from "../common/WhyChooseLoan";
 //           className="absolute inset-0 opacity-[0.025]"
 //           style={{
 //             backgroundImage:
-//               "linear-gradient(#0B2578 1px, transparent 1px), linear-gradient(90deg, #0B2578 1px, transparent 1px)",
+//               "linear-linear(#0B2578 1px, transparent 1px), linear-linear(90deg, #0B2578 1px, transparent 1px)",
 //             backgroundSize: "60px 60px",
 //           }}
 //         />
@@ -291,7 +289,7 @@ import WhyChooseLoan from "../common/WhyChooseLoan";
 
 //             <div className="absolute left-[12%] right-[12%] top-10 hidden h-px bg-[#E2E8F0] lg:block">
 
-//               <div className="h-full origin-left bg-gradient-to-r from-[#10B981] via-[#10B981] to-[#0B2578] animate-line-grow" />
+//               <div className="h-full origin-left bg-linear-to-r from-[#10B981] via-[#10B981] to-[#0B2578] animate-line-grow" />
 
 //             </div>
 
@@ -311,9 +309,8 @@ import WhyChooseLoan from "../common/WhyChooseLoan";
 
 //                     <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border-8 border-[#F8FAFC] bg-white shadow-[0_10px_30px_rgba(15,23,42,0.08)] transition-all duration-500 group-hover:-translate-y-2">
 
-//                       <div className="flex h-12 w-12 items-center justify-center rounded-full 
-                      
-                      
+//                       <div className="flex h-12 w-12 items-center justify-center rounded-full
+
 //                     bg-emerald-50
 //                     text-[#2c8e18]
 //                         transition-all duration-300 ease-out
@@ -360,10 +357,10 @@ import WhyChooseLoan from "../common/WhyChooseLoan";
 //               to-[#186A07] px-6 py-12 sm:px-10 lg:mt-28 lg:px-16 lg:py-14">
 
 //           {/* Glow */}
- 
+
 //           <div className="absolute -right-20 -top-32 h-80 w-80 rounded-full bg-[#10B981]/20 blur-3xl" />
 
-//          <div className="absolute -bottom-32 left-1/3 h-72 w-72 rounded-full bg-[#10B981]/10 blur-3xl" /> 
+//          <div className="absolute -bottom-32 left-1/3 h-72 w-72 rounded-full bg-[#10B981]/10 blur-3xl" />
 
 //           <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
 
@@ -493,9 +490,9 @@ import WhyChooseLoan from "../common/WhyChooseLoan";
 
 //       {/* Central white orb */}
 
-//       <div className="relative z-10 flex h-56 w-56 flex-col items-center justify-center rounded-full border border-white bg-gradient-to-br from-white via-white to-[#ECFDF5] shadow-[0_30px_80px_rgba(15,23,42,0.13)] sm:h-64 sm:w-64 animate-float">
+//       <div className="relative z-10 flex h-56 w-56 flex-col items-center justify-center rounded-full border border-white bg-linear-to-br from-white via-white to-[#ECFDF5] shadow-[0_30px_80px_rgba(15,23,42,0.13)] sm:h-64 sm:w-64 animate-float">
 
-//         <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#10B981] to-[#186A07] text-white shadow-[0_12px_30px_rgba(16,185,129,0.3)]">
+//         <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-linear-to-br from-[#10B981] to-[#186A07] text-white shadow-[0_12px_30px_rgba(16,185,129,0.3)]">
 
 //           <GraduationCap
 //             size={29}
@@ -609,8 +606,6 @@ import WhyChooseLoan from "../common/WhyChooseLoan";
 //           {benefit.description}
 //         </p>
 
- 
-
 //       </div>
 //     </div>
 //   );
@@ -618,25 +613,19 @@ import WhyChooseLoan from "../common/WhyChooseLoan";
 
 // export default WhyChooseEducationLoan;
 
-
-
 const EducationLoanWhyChoose = () => {
   const handlePrimaryCTA = () => {
-    document
-      .getElementById("loan-eligibility")
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    document.getElementById("loan-eligibility")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   const handleSecondaryCTA = () => {
-    document
-      .getElementById("contact")
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   return (
@@ -648,4 +637,4 @@ const EducationLoanWhyChoose = () => {
   );
 };
 
-export default EducationLoanWhyChoose;  
+export default EducationLoanWhyChoose;

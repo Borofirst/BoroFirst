@@ -8,6 +8,7 @@ import {
   Info,
   Landmark,
   ShieldCheck,
+  Sparkles,
   UsersRound,
 } from "lucide-react";
 
@@ -69,22 +70,38 @@ const WhyChooseBorofirst = () => {
       aria-labelledby="why-borofirst-heading"
       className="bg-[#F8FAFC] py-16 sm:py-20 lg:py-24"
     >
-      <div className="mx-auto  max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto  max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ================= HEADER ================= */}
         <div className="mb-10 max-w-7xl text-center sm:mb-12 lg:mb-14">
-          <span className="mb-3 inline-block  text-xs font-bold uppercase tracking-[0.2em] text-[#10B981]">
-            Why BOROFIRST
-          </span>
+    
+                                                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                               
+             Why BOROFIRST
+                        </span>
+                      </div>
 
-          <h2
-            id="why-borofirst-heading"
-            className="text-3xl sm:text-4xl text-center lg:text-[44px] font-bold leading-[1.15] tracking-tight"
-          >
-              Why Choose Borofirst for Your{" "}
-            <span className="bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] bg-clip-text text-transparent ">
-             Education Loan?
-            </span>
-          </h2>                 
+            {/* Heading */}
+
+
+                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                             Why Choose {" "}
+                        <span className=" bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                           Borofirst{" "}
+                            
+                        </span>
+                         for Your{" "}
+                        <span className="block  bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                           Education Loan?
+                            
+                        </span>
+                        
+                      </h2>            
         
 
           <p className="mt-5  text-base leading-7 text-[#64748B] sm:text-lg">
@@ -267,37 +284,254 @@ const WhyChooseBorofirst = () => {
         </p>
 
         {/* ================= CTA ================= */}
-        <div className="mt-12 text-center sm:mt-14">
-          <h3 className="text-2xl font-bold tracking-tight text-[#0B2578] sm:text-3xl">
-            Ready to Explore Your Education Loan Options?
-          </h3>
+        <div
+  className="
+    relative
+    mt-16
+    overflow-hidden
+    rounded-[28px]
+    border
+    border-white/20
+    bg-linear-to-br
+    from-[#186A07]
+    via-[#155F16]
+    to-[#0B2578]
+    px-6
+    py-7
+    shadow-[0_20px_60px_rgba(11,37,120,0.16)]
+    sm:px-8
+    sm:py-8
+    lg:mt-20
+    lg:px-10
+    lg:py-9
+  "
+>
+  {/* Background Glow */}
 
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-[#64748B] sm:text-base">
-            Check your eligibility and understand the next steps with
-            BOROFIRST.
-          </p>
+  <div
+    className="
+      pointer-events-none
+      absolute
+      -right-24
+      -top-32
+      h-72
+      w-72
+      rounded-full
+      bg-[#10B981]/15
+      blur-3xl
+    "
+  />
 
-          <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
-            <button
-              type="button"
-              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-xl  px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 bg-linear-to-r from-[#186A07]  to-[#0B2578] hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#10B981] focus:ring-offset-2"
-            >
-              Check Loan Eligibility
-              <ArrowUpRight
-                size={17}
-                className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-              />
-            </button>
+  <div
+    className="
+      pointer-events-none
+      absolute
+      -bottom-32
+      left-1/3
+      h-64
+      w-64
+      rounded-full
+      bg-white/5
+      blur-3xl
+    "
+  />
 
-            <button
-              type="button"
-              className="inline-flex min-h-12 items-center justify-center rounded-xl border border-[#0B2578] bg-white px-6 py-3 text-sm font-semibold text-[#0B2578] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0B2578] hover:text-white hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#0B2578] focus:ring-offset-2"
-            >
-              Talk to an Expert
-            </button>
-          </div>
-        </div>
+  {/* Content */}
+
+  <div
+    className="
+      relative
+      z-10
+      flex
+      flex-col
+      gap-6
+      lg:flex-row
+      lg:items-center
+      lg:justify-between
+    "
+  >
+
+    {/* Left Content */}
+
+    <div className="max-w-3xl">
+
+      {/* Badge */}
+
+      <div
+        className="
+          mb-3
+          inline-flex
+          items-center
+          gap-2
+          rounded-full
+          border
+          border-white/15
+          bg-white/10
+          px-3
+          py-1.5
+          backdrop-blur-md
+        "
+      >
+        <Sparkles
+          size={14}
+          className="text-[#A7F3D0]"
+        />
+
+        <span
+          className="
+            text-[9px]
+            font-bold
+            uppercase
+            tracking-[0.2em]
+            text-[#D1FAE5]
+            sm:text-[10px]
+          "
+        >
+          Start Your Journey
+        </span>
       </div>
+
+      {/* Heading */}
+
+      <h3
+        className="
+          max-w-2xl
+          text-2xl
+          font-bold
+          leading-tight
+          tracking-tight
+          text-white
+          sm:text-3xl
+          lg:text-[34px]
+        "
+      >
+        Ready to Explore Your
+        <span className="ml-1.5 text-[#A7F3D0]">
+          Education Loan Options?
+        </span>
+      </h3>
+
+      {/* Description */}
+
+      <p
+        className="
+          mt-2
+          max-w-2xl
+          text-sm
+          leading-6
+          text-white/70
+        "
+      >
+        Check your eligibility and understand the next steps
+        with BOROFIRST.
+      </p>
+
+    </div>
+
+    {/* Buttons */}
+
+    <div
+      className="
+        relative
+        flex
+        shrink-0
+        flex-col
+        gap-2.5
+        sm:flex-row
+        lg:flex-col
+        xl:flex-row
+      "
+    >
+
+      {/* Primary */}
+
+      <button
+        type="button"
+        className="
+          group
+          inline-flex
+          min-h-11
+          items-center
+          justify-center
+          gap-2
+          whitespace-nowrap
+          rounded-xl
+          bg-white
+          px-5
+          py-2.5
+          text-sm
+          font-semibold
+          text-[#0B2578]
+          shadow-[0_8px_25px_rgba(0,0,0,0.12)]
+          transition-all
+          duration-300
+          hover:-translate-y-0.5
+          hover:shadow-[0_12px_30px_rgba(0,0,0,0.18)]
+          focus:outline-none
+          focus:ring-2
+          focus:ring-white
+          focus:ring-offset-2
+          focus:ring-offset-[#0B2578]
+        "
+      >
+        Check Loan Eligibility
+
+        <ArrowUpRight
+          size={16}
+          className="
+            transition-transform
+            duration-300
+            group-hover:-translate-y-0.5
+            group-hover:translate-x-0.5
+          "
+        />
+      </button>
+
+      {/* Secondary */}
+
+      <button
+        type="button"
+        className="
+          inline-flex
+          min-h-11
+          items-center
+          justify-center
+          whitespace-nowrap
+          rounded-xl
+          border
+          border-white/25
+          bg-white/10
+          px-5
+          py-2.5
+          text-sm
+          font-semibold
+          text-white
+          backdrop-blur-md
+          transition-all
+          duration-300
+          hover:-translate-y-0.5
+          hover:border-white/40
+          hover:bg-white/15
+          focus:outline-none
+          focus:ring-2
+          focus:ring-white
+          focus:ring-offset-2
+          focus:ring-offset-[#0B2578]
+        "
+      >
+        Talk to an Expert
+      </button>
+
+    </div>
+
+  </div>
+</div>
+ 
+</div>
+
+
+
+
     </section>
   );
 };

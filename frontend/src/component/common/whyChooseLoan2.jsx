@@ -1,8 +1,7 @@
 import React from "react";
 
-
-const WhyChooseLoanBlue = ({content}) => {
-    console.log(content)
+const WhyChooseLoanBlue = ({ content }) => {
+  console.log(content);
 
   const CenterIcon = content.centerIcon;
 
@@ -24,7 +23,6 @@ const WhyChooseLoanBlue = ({content}) => {
       ====================================================== */}
 
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-
         {/* Emerald glow */}
         <div
           className="
@@ -61,14 +59,13 @@ const WhyChooseLoanBlue = ({content}) => {
             absolute
             inset-0
             opacity-[0.018]
-            bg-[linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+            bg-[linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
             bg-size-[60px_60px]
           "
         />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
         {/* =====================================================
             HEADER
         ====================================================== */}
@@ -82,34 +79,31 @@ const WhyChooseLoanBlue = ({content}) => {
           "
         >
           {/* Eyebrow */}
-    
-               <div className="mx-auto max-w-3xl text-center">
-                       <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
-                        <span className="relative flex h-2.5 w-2.5">
-                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
-                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
-                        </span>
-          
-                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
-                               
-          {content.eyebrow}
-                        </span>
-                      </div>
+
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+              </span>
+
+              <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                {content.eyebrow}
+              </span>
+            </div>
 
             {/* Heading */}
 
+            <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+              {content.title}{" "}
+              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                {content.highlight}
+              </span>
+            </h2>
 
-                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
-                             {content.title}
-                        <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
-                       {content.highlight}
-            </span>
-                        
-                      </h2>
-
-          {/* Description */}
-          <p
-            className="
+            {/* Description */}
+            <p
+              className="
               mx-auto
               mt-5
               max-w-2xl
@@ -118,13 +112,11 @@ const WhyChooseLoanBlue = ({content}) => {
               text-[#64748B]
               sm:text-base
             "
-          >
-            {content.description}
-          </p>
+            >
+              {content.description}
+            </p>
+          </div>
         </div>
-        </div>
-
-        
 
         {/* =====================================================
             MAIN CONTENT
@@ -140,26 +132,16 @@ const WhyChooseLoanBlue = ({content}) => {
             lg:gap-8
           "
         >
-
           {/* =================================================
               LEFT BENEFITS
           ================================================= */}
 
           <div className="space-y-5">
+            {content.advantages.slice(0, 3).map((item, index) => {
+              const Icon = item.icon;
 
-            {content.advantages
-              .slice(0, 3)
-              .map((item, index) => {
-                const Icon = item.icon;
-
-                return (
-                  <BenefitItem
-                    key={item.title}
-                    item={item}
-                    index={index}
-                  />
-                );
-              })}
+              return <BenefitItem key={item.title} item={item} index={index} />;
+            })}
           </div>
 
           {/* =================================================
@@ -180,7 +162,6 @@ const WhyChooseLoanBlue = ({content}) => {
               sm:w-[320px]
             "
           >
-
             {/* Outer circle */}
             <div
               className="
@@ -227,7 +208,7 @@ const WhyChooseLoanBlue = ({content}) => {
                 w-3
                 -translate-y-1/2
                 rounded-full
-                bg-[#10B981]
+                bg-[#186A07]
                 shadow-[0_0_0_6px_rgba(16,185,129,0.08)]
               "
             />
@@ -241,7 +222,7 @@ const WhyChooseLoanBlue = ({content}) => {
                 w-3
                 -translate-y-1/2
                 rounded-full
-                bg-[#10B981]
+                bg-[#186A07]
                 shadow-[0_0_0_6px_rgba(16,185,129,0.08)]
               "
             />
@@ -255,7 +236,7 @@ const WhyChooseLoanBlue = ({content}) => {
                 w-3
                 -translate-x-1/2
                 rounded-full
-                bg-[#10B981]
+                bg-[#186A07]
                 shadow-[0_0_0_6px_rgba(16,185,129,0.08)]
               "
             />
@@ -269,7 +250,7 @@ const WhyChooseLoanBlue = ({content}) => {
                 w-3
                 -translate-x-1/2
                 rounded-full
-                bg-[#10B981]
+                bg-[#186A07]
                 shadow-[0_0_0_6px_rgba(16,185,129,0.08)]
               "
             />
@@ -285,7 +266,7 @@ const WhyChooseLoanBlue = ({content}) => {
                 flex-col
                 items-center
                 justify-center
-                rounded-[32px]
+                rounded-4xl
                 bg-linear-to-r
                 from-[#186A07]
                 to-[#0B2578]
@@ -296,16 +277,13 @@ const WhyChooseLoanBlue = ({content}) => {
                 hover:scale-105
               "
             >
-              <CenterIcon
-                size={30}
-                className="text-[#6EE7B7]"
-              />
+              <CenterIcon size={30} className="text-[#2c8e18]" />
 
               <p className="mt-3 text-sm font-bold uppercase tracking-wider text-white">
                 {content.centerLabel}
               </p>
 
-              <p className="text-lg font-extrabold text-[#6EE7B7]">
+              <p className="text-lg font-extrabold text-[#2c8e18]">
                 {content.centerHighlight}
               </p>
             </div>
@@ -316,18 +294,11 @@ const WhyChooseLoanBlue = ({content}) => {
           ================================================= */}
 
           <div className="space-y-5">
-
-            {content.advantages
-              .slice(3)
-              .map((item, index) => {
-                return (
-                  <BenefitItem
-                    key={item.title}
-                    item={item}
-                    index={index + 3}
-                  />
-                );
-              })}
+            {content.advantages.slice(3).map((item, index) => {
+              return (
+                <BenefitItem key={item.title} item={item} index={index + 3} />
+              );
+            })}
           </div>
         </div>
 
@@ -347,9 +318,9 @@ const WhyChooseLoanBlue = ({content}) => {
             animate-[fadeUp_800ms_500ms_ease-out_both]
           "
         >
-          Loan approval, amount, interest rate, tenure, and other terms
-          are subject to the respective lender's eligibility criteria,
-          policies, and terms.
+          Loan approval, amount, interest rate, tenure, and other terms are
+          subject to the respective lender's eligibility criteria, policies, and
+          terms.
         </p>
       </div>
     </section>
@@ -385,7 +356,6 @@ const BenefitItem = ({ item, index }) => {
       }}
     >
       <div className="flex gap-4">
-
         {/* Icon */}
         <div
           className="

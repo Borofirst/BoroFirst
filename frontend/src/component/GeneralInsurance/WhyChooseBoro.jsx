@@ -67,9 +67,7 @@ const AdvantageCard = ({ advantage }) => {
   const Icon = advantage.icon;
 
   return (
-    <article
-      className="group relative h-full rounded-3xl border border-[#E2E8F0] bg-white p-6 sm:p-7 shadow-[0_12px_40px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:border-[#10B981]/30 hover:shadow-[0_18px_45px_rgba(15,23,42,0.08)] motion-reduce:transition-none motion-reduce:hover:transform-none"
-    >
+    <article className="group relative h-full rounded-3xl border border-[#E2E8F0] bg-white p-6 sm:p-7 shadow-[0_12px_40px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:border-[#10B981]/30 hover:shadow-[0_18px_45px_rgba(15,23,42,0.08)] motion-reduce:transition-none motion-reduce:hover:transform-none">
       <div className="flex items-start justify-between gap-4">
         <span className="text-[10px] font-bold tracking-[0.16em] text-[#94A3B8] transition-colors duration-300 group-hover:text-[#10B981]">
           {advantage.id}
@@ -142,17 +140,18 @@ const BrandCenter = () => {
       <div className="relative z-10 flex h-full flex-col justify-between">
         <div className="flex items-start justify-between gap-5">
           <div>
-      
-             <img
+            <img
               src="/Borofirst-Logos-1-1.webp"
               alt="Borofirst Logo"
+              width="150"
+              height="50"
               className="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105"
             />
           </div>
 
           <div
             aria-hidden="true"
-            className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#186A07] to-[#0B2578] shadow-[0_12px_30px_rgba(11,37,120,0.16)]"
+            className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-[#186A07] to-[#0B2578] shadow-[0_12px_30px_rgba(11,37,120,0.16)]"
           >
             <ShieldCheck size={30} strokeWidth={1.8} className="text-white" />
           </div>
@@ -209,21 +208,22 @@ const WhyChooseBOROFIRST = () => {
         {/* Section introduction */}
         <div className="grid items-end gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#10B981]/20 bg-white px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[#186A07] shadow-sm">
-              <ShieldCheck
-                aria-hidden="true"
-                size={14}
-                strokeWidth={2}
-              />
-              WHY CHOOSE BOROFIRST
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+              </span>
+
+              <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                WHY CHOOSE BOROFIRST
+              </span>
             </div>
 
-            <h2
-              id="why-choose-borofirst-heading"
-              className="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight text-[#0F172A] sm:text-5xl lg:text-[52px]"
-            >
+            {/* Heading */}
+
+            <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
               Insurance Guidance{" "}
-              <span className="text-[#186A07]">
+              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
                 Built Around Your Needs
               </span>
             </h2>
@@ -243,7 +243,7 @@ const WhyChooseBOROFIRST = () => {
         {/* Brand ecosystem connector */}
         <div
           aria-hidden="true"
-          className="relative mx-auto my-10 hidden h-px max-w-5xl bg-gradient-to-r from-transparent via-[#10B981]/15 to-transparent lg:block"
+          className="relative mx-auto my-10 hidden h-px max-w-5xl bg-linear-to-r from-transparent via-[#10B981]/15 to-transparent lg:block"
         >
           <span className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[#F8FAFC] bg-[#10B981]/40" />
         </div>
@@ -271,9 +271,9 @@ const WhyChooseBOROFIRST = () => {
               </p>
 
               <p className="mt-3 max-w-3xl text-sm leading-6 text-[#64748B] sm:text-base">
-                From insurance to loans and other financial solutions,
-                BOROFIRST is designed to help you navigate your financial needs
-                with greater clarity.
+                From insurance to loans and other financial solutions, BOROFIRST
+                is designed to help you navigate your financial needs with
+                greater clarity.
               </p>
             </div>
 
@@ -299,9 +299,8 @@ const WhyChooseBOROFIRST = () => {
             />
 
             <p className="max-w-4xl text-xs leading-5 text-[#64748B]/80">
-              Insurance coverage, premiums, eligibility, policy terms and
-              claims are subject to the selected insurer and policy
-              conditions.
+              Insurance coverage, premiums, eligibility, policy terms and claims
+              are subject to the selected insurer and policy conditions.
             </p>
           </div>
         </div>

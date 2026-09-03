@@ -15,7 +15,6 @@ import {
   FaBrain,
 } from "react-icons/fa";
 
-
 const ITServicesHero = () => {
   return (
     <section className="relative isolate overflow-hidden bg-white">
@@ -58,7 +57,7 @@ const ITServicesHero = () => {
             absolute
             inset-0
             opacity-[0.025]
-            bg-[linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+            bg-[linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
             bg-size-[60px_60px]
           "
         />
@@ -134,7 +133,6 @@ const ITServicesHero = () => {
                   "
                 />
               </span>
-
               IT Services & Digital Solutions
             </div>
 
@@ -155,7 +153,6 @@ const ITServicesHero = () => {
             >
               Build Smarter.
               <br />
-
               <span
                 className="
                   bg-linear-to-r
@@ -168,9 +165,7 @@ const ITServicesHero = () => {
               >
                 Automate Faster.
               </span>
-
               <br />
-
               Grow Better.
             </h1>
 
@@ -208,7 +203,7 @@ const ITServicesHero = () => {
                   justify-center
                   gap-2
                   rounded-xl
-                  bg-gradient-to-r
+                  bg-linear-to-r
                   from-[#186A07]
                   to-[#0B2578]
                   px-6
@@ -224,7 +219,6 @@ const ITServicesHero = () => {
                 "
               >
                 Explore IT Services
-
                 <FaArrowRight
                   size={14}
                   className="
@@ -264,7 +258,6 @@ const ITServicesHero = () => {
                 "
               >
                 Talk to Our Experts
-
                 <span
                   className="
                     h-1.5
@@ -330,7 +323,7 @@ const ITServicesHero = () => {
                 -translate-x-1/2
                 -translate-y-1/2
                 rounded-full
-                bg-gradient-to-br
+                bg-linear-to-br
                 from-[#186A07]/10
                 to-[#0B2578]/10
                 blur-3xl
@@ -373,7 +366,7 @@ const ITServicesHero = () => {
                     pointer-events-none
                     absolute
                     inset-0
-                    bg-gradient-to-tr
+                    bg-linear-to-tr
                     from-[#186A07]/5
                     via-transparent
                     to-[#0B2578]/10
@@ -413,7 +406,7 @@ const ITServicesHero = () => {
                     items-center
                     justify-center
                     rounded-xl
-                    bg-gradient-to-br
+                    bg-linear-to-br
                     from-[#186A07]
                     to-[#0B2578]
                     text-white
@@ -567,13 +560,10 @@ const ITServicesHero = () => {
         </div>
       </div>
 
-<TechnologyTrustStrip/>
-
+      <TechnologyTrustStrip />
     </section>
   );
 };
-
-
 
 const TechnologyTrustStrip = () => {
   const technologies = [
@@ -657,13 +647,12 @@ const TechnologyTrustStrip = () => {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-8">
-
         {/* =====================================================
             TOP LABEL
         ====================================================== */}
 
         <div className="mb-6 flex items-center justify-center gap-3">
-          <span className="h-px w-8 bg-gradient-to-r from-transparent to-[#186A07]" />
+          <span className="h-px w-8 bg-linear-to-r from-transparent to-[#186A07]" />
 
           <p
             className="
@@ -678,7 +667,7 @@ const TechnologyTrustStrip = () => {
             Technology & Expertise
           </p>
 
-          <span className="h-px w-8 bg-gradient-to-l from-transparent to-[#0B2578]" />
+          <span className="h-px w-8 bg-linear-to-l from-transparent to-[#0B2578]" />
         </div>
 
         {/* =====================================================
@@ -719,7 +708,7 @@ const TechnologyTrustStrip = () => {
                   hover:shadow-[0_10px_25px_rgba(24,106,7,0.08)]
                 "
               >
-                {/* Gradient Accent */}
+                {/* linear Accent */}
 
                 <span
                   className="
@@ -730,7 +719,7 @@ const TechnologyTrustStrip = () => {
                     w-0
                     -translate-x-1/2
                     rounded-full
-                    bg-gradient-to-r
+                    bg-linear-to-r
                     from-[#186A07]
                     to-[#0B2578]
                     transition-all
@@ -754,7 +743,7 @@ const TechnologyTrustStrip = () => {
                     text-[#186A07]
                     transition-all
                     duration-300
-                    group-hover:bg-gradient-to-br
+                    group-hover:bg-linear-to-br
                     group-hover:from-[#186A07]
                     group-hover:to-[#0B2578]
                     group-hover:text-white
@@ -796,7 +785,7 @@ const TechnologyTrustStrip = () => {
               h-1.5
               w-1.5
               rounded-full
-              bg-gradient-to-br
+              bg-linear-to-br
               from-[#186A07]
               to-[#0B2578]
             "
@@ -853,7 +842,7 @@ const TechnologyTrustStrip = () => {
                     transition-all
                     duration-300
                     group-hover:border-transparent
-                    group-hover:bg-gradient-to-br
+                    group-hover:bg-linear-to-br
                     group-hover:from-[#186A07]
                     group-hover:to-[#0B2578]
                     group-hover:text-white

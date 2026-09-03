@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   BookOpen,
@@ -9,8 +8,6 @@ import {
   CheckCircle2,
   Gauge,
   ArrowRight,
-
-
 } from "lucide-react";
 
 const featureCards = [
@@ -23,27 +20,21 @@ const featureCards = [
   {
     icon: Wallet,
     title: "Flexible Usage",
-    description:
-      "Use the funds for a variety of eligible personal needs.",
+    description: "Use the funds for a variety of eligible personal needs.",
   },
   {
     icon: CalendarDays,
     title: "Monthly EMIs",
-    description:
-      "Repay the loan through structured monthly instalments.",
+    description: "Repay the loan through structured monthly instalments.",
   },
   {
     icon: Gauge,
     title: "Profile Based",
-    description:
-      "Loan amount and terms depend on your financial profile.",
+    description: "Loan amount and terms depend on your financial profile.",
   },
 ];
 
-
 const WhatIsPersonalLoan = () => {
-
-
   return (
     <section
       id="what-is-personal-loan"
@@ -53,60 +44,47 @@ const WhatIsPersonalLoan = () => {
           BACKGROUND DECORATIONS
       ====================================================== */}
 
-      <div
-      
-        className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-emerald-300/20 blur-3xl"
-      />
+      <div className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-emerald-300/20 blur-3xl" />
 
-      <div
-       
-        className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-blue-300/10 blur-3xl"
-      />
+      <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-blue-300/10 blur-3xl" />
 
       {/* Subtle grid */}
       <div
-      
         className="pointer-events-none absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage:
-            "linear-gradient(#0F172A 1px, transparent 1px), linear-gradient(90deg, #0F172A 1px, transparent 1px)",
+            "linear-linear(#0F172A 1px, transparent 1px), linear-linear(90deg, #0F172A 1px, transparent 1px)",
           backgroundSize: "40px 40px",
         }}
       />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
         {/* =====================================================
             HEADER
         ====================================================== */}
 
         <div className="mx-auto mb-14 max-w-3xl text-center lg:mb-20">
-
           {/* Badge */}
 
-  
-                                          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
-                        <span className="relative flex h-2.5 w-2.5">
-                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
-                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
-                        </span>
-          
-                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
-                               
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+            </span>
 
-            Understanding Personal Loans
-                        </span>
-                      </div>
+            <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+              Understanding Personal Loans
+            </span>
+          </div>
 
-            {/* Heading */}
+          {/* Heading */}
 
-
-                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
-                             What is a{" "}
-                        <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
-                             Personal Loan?{" "}
-                        </span>
-                      </h2>
+          <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+            What is a{" "}
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+              Personal Loan?{" "}
+            </span>
+          </h2>
 
           <p
             className="
@@ -117,9 +95,7 @@ const WhatIsPersonalLoan = () => {
             "
           >
             A simple way to manage your important{" "}
-            <span className="text-[#2c8e18]">
-              financial needs.
-            </span>
+            <span className="text-[#2c8e18]">financial needs.</span>
           </p>
 
           <p
@@ -130,31 +106,25 @@ const WhatIsPersonalLoan = () => {
               sm:text-base
             "
           >
-            A personal loan is an unsecured loan that can help you
-            meet a wide range of personal financial requirements
-            without generally pledging an asset as collateral.
-            Depending on your profile and the lender's eligibility
-            criteria, you may be able to borrow a suitable amount
+            A personal loan is an unsecured loan that can help you meet a wide
+            range of personal financial requirements without generally pledging
+            an asset as collateral. Depending on your profile and the lender's
+            eligibility criteria, you may be able to borrow a suitable amount
             and repay it through convenient monthly EMIs.
           </p>
         </div>
 
-   
+        <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          {featureCards.map((feature, index) => {
+            const Icon = feature.icon;
 
-
-
-            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-4">
-
-              {featureCards.map((feature, index) => {
-                const Icon = feature.icon;
-
-                return (
-                  <div
-                    key={feature.title}
-                    style={{
-                      animationDelay: `${index * 100}ms`,
-                    }}
-                    className="
+            return (
+              <div
+                key={feature.title}
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                }}
+                className="
                       animate-fade-up
                       group rounded-2xl
                       border border-[#E2E8F0]
@@ -166,9 +136,9 @@ const WhatIsPersonalLoan = () => {
                       hover:shadow-xl
                       hover:shadow-slate-200/50
                     "
-                  >
-                    <div
-                      className="
+              >
+                <div
+                  className="
                         mb-4 flex h-11 w-11
                         items-center justify-center
                         rounded-xl
@@ -180,28 +150,24 @@ const WhatIsPersonalLoan = () => {
                         group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
                         group-hover:scale-110
                       "
-                    >
-                      <Icon size={21} />
-                    </div>
+                >
+                  <Icon size={21} />
+                </div>
 
-                    <h3 className="text-base font-bold text-[#0F172A]">
-                      {feature.title}
-                    </h3>
+                <h3 className="text-base font-bold text-[#0F172A]">
+                  {feature.title}
+                </h3>
 
-                    <p className="mt-2 text-sm leading-6 text-[#64748B]">
-                      {feature.description}
-                    </p>
-                  </div>
-                );
-              })}
+                <p className="mt-2 text-sm leading-6 text-[#64748B]">
+                  {feature.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
 
-            </div>
-
-       
-          {/* </div> */}
+        {/* </div> */}
       </div>
-
-    
     </section>
   );
 };

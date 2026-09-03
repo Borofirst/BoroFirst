@@ -16,13 +16,13 @@ import BecomePartner from "./page/BecomePartner/BecomePartner";
 import CareersPage from "./page/LoanCardPage/Carrer";
 import AboutBorofirst from "./page/About/about";
 import ItService from "./page/Itservice/ItService ";
+import NotFound from "./page/NotFound";
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Applayout />,
-      // errorElement:<Errorpage/>,
       children: [
         {
           path: "/",
@@ -84,6 +84,10 @@ const App = () => {
           path: "/techServices",
           element: <ItService />,
         },
+        {
+          path: "*",
+          element: <NotFound />,
+        }
       ],
     },
   ]);

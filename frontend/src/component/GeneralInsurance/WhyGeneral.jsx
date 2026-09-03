@@ -14,16 +14,14 @@ const insuranceReasons = [
   {
     id: "01",
     title: "Protect Your Savings",
-    description:
-      "Unexpected expenses can put pressure on your finances.",
+    description: "Unexpected expenses can put pressure on your finances.",
     icon: PiggyBank,
     label: "FINANCIAL READINESS",
   },
   {
     id: "02",
     title: "Handle Life's Uncertainties",
-    description:
-      "Accidents and emergencies can happen without warning.",
+    description: "Accidents and emergencies can happen without warning.",
     icon: TriangleAlert,
     label: "BE PREPARED",
   },
@@ -38,19 +36,18 @@ const insuranceReasons = [
   {
     id: "04",
     title: "Plan With Confidence",
-    description:
-      "Insurance can help you manage certain financial risks.",
+    description: "Insurance can help you manage certain financial risks.",
     icon: ShieldCheck,
     label: "SMARTER PREPAREDNESS",
   },
   {
-  id: "05",
-  title: "Stay Financially Prepared",
-  description:
-    "Planning ahead can help you handle eligible unexpected expenses with greater confidence.",
-  icon: WalletCards,
-  label: "FINANCIAL PREPAREDNESS",
-},
+    id: "05",
+    title: "Stay Financially Prepared",
+    description:
+      "Planning ahead can help you handle eligible unexpected expenses with greater confidence.",
+    icon: WalletCards,
+    label: "FINANCIAL PREPAREDNESS",
+  },
 ];
 
 const ReasonCard = ({ reason, className = "" }) => {
@@ -71,24 +68,23 @@ const ReasonCard = ({ reason, className = "" }) => {
           {reason.id}
         </span>
 
-        <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#E2E8F0]  group-hover:translate-x-0.5 group-hover:-translate-y-0.5 
+        <div
+          className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#E2E8F0]  group-hover:translate-x-0.5 group-hover:-translate-y-0.5 
          bg-emerald-50
                     text-[#2c8e18]
                         transition-all duration-300 ease-o  ut
                       group-hover:bg-[#118A09]
                       group-hover:text-white
                         group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
-                        group-hover:scale-110">
-          <ArrowUpRight
-            size={16}
-            strokeWidth={2}
-            aria-hidden="true"
-          />
+                        group-hover:scale-110"
+        >
+          <ArrowUpRight size={16} strokeWidth={2} aria-hidden="true" />
         </div>
       </div>
 
       <div className="relative z-10 mt-7">
-        <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[#10B981]/10 bg-[#10B981]/10  
+        <div
+          className="flex h-14 w-14 items-center justify-center rounded-2xl border border-[#10B981]/10 bg-[#10B981]/10  
          group-hover:-translate-y-1 
                     text-[#2c8e18]
                         transition-all duration-300 ease-o  ut
@@ -96,7 +92,8 @@ const ReasonCard = ({ reason, className = "" }) => {
                       group-hover:text-white
                         group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
                         group-hover:scale-110
-        ">
+        "
+        >
           <Icon size={25} strokeWidth={1.9} aria-hidden="true" />
         </div>
       </div>
@@ -160,7 +157,7 @@ const FinancialPreparedness = () => {
         />
 
         {/* Central protection visual */}
-        <div className="relative z-10 w-full max-w-[290px] overflow-hidden rounded-[32px] bg-gradient-to-br from-[#186A07] to-[#0B2578] p-7 text-white shadow-[0_24px_70px_rgba(11,37,120,0.18)] sm:p-8">
+        <div className="relative z-10 w-full max-w-[290px] overflow-hidden rounded-[32px] bg-linear-to-br from-[#186A07] to-[#0B2578] p-7 text-white shadow-[0_24px_70px_rgba(11,37,120,0.18)] sm:p-8">
           <div
             aria-hidden="true"
             className="absolute -right-20 -top-20 h-44 w-44 rounded-full bg-white/10 blur-3xl"
@@ -173,18 +170,11 @@ const FinancialPreparedness = () => {
 
           <div className="relative z-10 flex flex-col items-center text-center">
             <div className="mb-5 flex h-24 w-24 items-center justify-center rounded-3xl border border-white/20 bg-white/10 shadow-inner backdrop-blur-sm transition-transform duration-300 motion-safe:group-hover:scale-105">
-              <ShieldCheck
-                size={43}
-                strokeWidth={1.7}
-                aria-hidden="true"
-              />
+              <ShieldCheck size={43} strokeWidth={1.7} aria-hidden="true" />
             </div>
 
             <div className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/10 px-3 py-1.5">
-              <Sparkles
-                size={11}
-                aria-hidden="true"
-              />
+              <Sparkles size={11} aria-hidden="true" />
               <span className="text-[9px] font-bold tracking-[0.18em]">
                 FINANCIAL PREPAREDNESS
               </span>
@@ -225,30 +215,30 @@ const WhyDoYouNeedInsurance = () => {
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#10B981]/20 bg-white px-3.5 py-2 shadow-sm">
-            <ShieldCheck
-              size={14}
-              className="text-[#10B981]"
-              aria-hidden="true"
-            />
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+            </span>
 
-            <span className="text-[11px] font-bold tracking-[0.16em] text-[#186A07]">
+            <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
               WHY INSURANCE MATTERS
             </span>
           </div>
 
-          <h2
-            id="why-insurance-heading"
-            className="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight text-[#0F172A] sm:text-5xl lg:text-[52px]"
-          >
+          {/* Heading */}
+
+          <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
             Why Do You Need{" "}
-            <span className="text-[#186A07]">Insurance?</span>
+            <span className="block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+              Insurance?
+            </span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#64748B] sm:text-lg">
             Life can bring unexpected expenses. Insurance can help you prepare
-            for certain financial risks, protect what you&apos;ve built and
-            move forward with greater confidence.
+            for certain financial risks, protect what you&apos;ve built and move
+            forward with greater confidence.
           </p>
         </div>
 
@@ -311,8 +301,7 @@ const WhyDoYouNeedInsurance = () => {
         <div className="mt-8 text-center lg:hidden">
           <div className="mx-auto mb-3 h-px w-10 bg-[#10B981]/30" />
           <p className="mx-auto max-w-sm text-xs font-semibold leading-5 text-[#64748B]">
-            Preparedness starts with understanding the risks that matter to
-            you.
+            Preparedness starts with understanding the risks that matter to you.
           </p>
         </div>
 

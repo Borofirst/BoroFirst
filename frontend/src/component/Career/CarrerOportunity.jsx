@@ -69,9 +69,9 @@ const WhyJoinBorofirst = () => {
           pointer-events-none
           absolute inset-0
           opacity-[0.16]
-          bg-[linear-gradient(rgba(24,106,7,0.10)_1px,transparent_1px),linear-gradient(90deg,rgba(24,106,7,0.10)_1px,transparent_1px)]
+          bg-[linear-linear(rgba(24,106,7,0.10)_1px,transparent_1px),linear-linear(90deg,rgba(24,106,7,0.10)_1px,transparent_1px)]
           bg-size-[52px_52px]
-          mask-[linear-gradient(to_bottom,black,transparent_85%)]
+          mask-[linear-linear(to_bottom,black,transparent_85%)]
         "
       />
 
@@ -115,7 +115,7 @@ const WhyJoinBorofirst = () => {
             "
           >
             More Than a Job.{" "}
-            <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
               Build Your Future With Us.
             </span>
           </h2>
@@ -142,17 +142,16 @@ const WhyJoinBorofirst = () => {
           "
         >
           {reasons.map((reason) => {
-          
-            return(
-          <>
-              <CommenCar2 reason={reason} key={reason.number}/>
-          </>
-            )       
+            return (
+              <>
+                <CommenCar2 reason={reason} key={reason.number} />
+              </>
+            );
           })}
         </div>
 
         {/* Bottom Highlight */}
-        <div className="mt-10 overflow-hidden rounded-[1.5rem] border border-slate-200/70 bg-gradient-to-r from-[#F7FBF6] via-white to-[#F5F8FF] p-5 sm:mt-12 sm:p-6">
+        <div className="mt-10 overflow-hidden rounded-[1.5rem] border border-slate-200/70 bg-linear-to-r from-[#F7FBF6] via-white to-[#F5F8FF] p-5 sm:mt-12 sm:p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-start gap-4">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-[#186A07] shadow-sm ring-1 ring-slate-100">
@@ -165,8 +164,8 @@ const WhyJoinBorofirst = () => {
                 </h3>
 
                 <p className="mt-1 text-xs leading-5 text-slate-500">
-                  Explore opportunities across different teams and career
-                  paths at Borofirst.
+                  Explore opportunities across different teams and career paths
+                  at Borofirst.
                 </p>
               </div>
             </div>
@@ -181,7 +180,7 @@ const WhyJoinBorofirst = () => {
                 justify-center
                 gap-2
                 rounded-xl
-                bg-gradient-to-r
+                bg-linear-to-r
                 from-[#186A07]
                 to-[#0B2578]
                 px-5

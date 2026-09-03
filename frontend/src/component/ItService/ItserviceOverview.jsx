@@ -24,7 +24,7 @@ const ITServicesOverview = () => {
         "Enterprise Applications",
         "Web Applications",
       ],
-      gradient: "from-[#186A07] to-[#0B2578]",
+      linear: "from-[#186A07] to-[#0B2578]",
       softBg: "bg-[#F4FAF1]",
       iconColor: "text-[#186A07]",
     },
@@ -35,12 +35,8 @@ const ITServicesOverview = () => {
       description:
         "Create modern, responsive and high-performance websites and web applications designed for growth.",
       icon: FaGlobe,
-      features: [
-        "Business Websites",
-        "Web Applications",
-        "Customer Portals",
-      ],
-      gradient: "from-[#0B2578] to-[#186A07]",
+      features: ["Business Websites", "Web Applications", "Customer Portals"],
+      linear: "from-[#0B2578] to-[#186A07]",
       softBg: "bg-[#F2F5FC]",
       iconColor: "text-[#0B2578]",
     },
@@ -56,7 +52,7 @@ const ITServicesOverview = () => {
         "iOS Applications",
         "Cross-Platform Apps",
       ],
-      gradient: "from-[#186A07] to-[#0B2578]",
+      linear: "from-[#186A07] to-[#0B2578]",
       softBg: "bg-[#F4FAF1]",
       iconColor: "text-[#186A07]",
     },
@@ -72,7 +68,7 @@ const ITServicesOverview = () => {
         "Intelligent Data Processing",
         "AI Integration",
       ],
-      gradient: "from-[#0B2578] to-[#186A07]",
+      linear: "from-[#0B2578] to-[#186A07]",
       softBg: "bg-[#F2F5FC]",
       iconColor: "text-[#0B2578]",
       featured: true,
@@ -89,7 +85,7 @@ const ITServicesOverview = () => {
         "Process Automation",
         "Intelligent Workflows",
       ],
-      gradient: "from-[#186A07] to-[#0B2578]",
+      linear: "from-[#186A07] to-[#0B2578]",
       softBg: "bg-[#F4FAF1]",
       iconColor: "text-[#186A07]",
     },
@@ -105,7 +101,7 @@ const ITServicesOverview = () => {
         "Third-Party Integration",
         "System Connectivity",
       ],
-      gradient: "from-[#0B2578] to-[#186A07]",
+      linear: "from-[#0B2578] to-[#186A07]",
       softBg: "bg-[#F2F5FC]",
       iconColor: "text-[#0B2578]",
     },
@@ -152,7 +148,7 @@ const ITServicesOverview = () => {
             absolute
             inset-0
             opacity-[0.018]
-            [background-image:linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+            [background-image:linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
             [background-size:70px_70px]
           "
         />
@@ -190,7 +186,6 @@ const ITServicesOverview = () => {
             "
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[#186A07]" />
-
             What We Do
           </div>
 
@@ -211,7 +206,7 @@ const ITServicesOverview = () => {
             <span
               className="
                 ml-2
-                bg-gradient-to-r
+                bg-linear-to-r
                 from-[#186A07]
                 to-[#0B2578]
                 bg-clip-text
@@ -281,7 +276,7 @@ const ITServicesOverview = () => {
                 "
               >
                 {/* =================================================
-                    TOP GRADIENT LINE
+                    TOP linear LINE
                 ================================================== */}
 
                 <div
@@ -291,8 +286,8 @@ const ITServicesOverview = () => {
                     top-0
                     h-[3px]
                     w-0
-                    bg-gradient-to-r
-                    ${service.gradient}
+                    bg-linear-to-r
+                    ${service.linear}
                     transition-all
                     duration-500
                     group-hover:w-full
@@ -343,7 +338,7 @@ const ITServicesOverview = () => {
                       transition-all
                       duration-500
                       group-hover:scale-105
-                      group-hover:bg-gradient-to-br
+                      group-hover:bg-linear-to-br
                       group-hover:from-[#186A07]
                       group-hover:to-[#0B2578]
                       group-hover:text-white
@@ -454,7 +449,6 @@ const ITServicesOverview = () => {
                   "
                 >
                   Explore Service
-
                   <FaArrowRight
                     size={12}
                     className="
@@ -517,7 +511,7 @@ const ITServicesOverview = () => {
             rounded-3xl
             border
             border-[#186A07]/10
-            bg-gradient-to-br
+            bg-linear-to-br
             from-[#F4FAF1]
             via-white
             to-[#F2F5FC]
@@ -531,7 +525,7 @@ const ITServicesOverview = () => {
             lg:px-10
           "
         >
-          {/* Decorative Gradient */}
+          {/* Decorative linear */}
 
           <div
             className="
@@ -576,7 +570,7 @@ const ITServicesOverview = () => {
               justify-center
               gap-2
               rounded-xl
-              bg-gradient-to-r
+              bg-linear-to-r
               from-[#186A07]
               to-[#0B2578]
               px-6
@@ -593,7 +587,6 @@ const ITServicesOverview = () => {
             "
           >
             Start a Conversation
-
             <FaArrowRight
               size={13}
               className="transition-transform duration-300 group-hover:translate-x-1"

@@ -1,5 +1,4 @@
-import {careerCategories} from "../../data/careerdata"
-
+import { careerCategories } from "../../data/careerdata";
 
 import {
   ArrowUpRight,
@@ -33,11 +32,11 @@ const CareerCard = ({
         />
 
         {/* Image Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/65 via-slate-950/10 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-slate-950/65 via-slate-950/10 to-transparent" />
 
         {/* Color Glow */}
         <div
-          className={`absolute -right-16 -top-16 h-40 w-40 rounded-full bg-gradient-to-br ${accent} blur-3xl`}
+          className={`absolute -right-16 -top-16 h-40 w-40 rounded-full bg-linear-to-br ${accent} blur-3xl`}
         />
 
         {/* Icon */}
@@ -64,9 +63,7 @@ const CareerCard = ({
 
       {/* Content */}
       <div className="flex flex-1 flex-col p-6 sm:p-7">
-        <p className="text-sm leading-6 text-slate-500">
-          {description}
-        </p>
+        <p className="text-sm leading-6 text-slate-500">{description}</p>
 
         {/* Career Count */}
         <div className="mt-5 flex items-center gap-2">
@@ -77,7 +74,6 @@ const CareerCard = ({
           <span className="text-xs font-bold text-slate-700">
             {roles.length}+ Career Paths
           </span>
-
         </div>
 
         {/* Roles */}
@@ -123,13 +119,10 @@ const CareerCard = ({
             </div>
           </div>
         )}
-
       </div>
     </article>
   );
 };
-
-
 
 const CareerOpportunities = () => {
   return (
@@ -142,17 +135,13 @@ const CareerOpportunities = () => {
 
       <div className="pointer-events-none absolute -right-40 top-1/3 h-96 w-96 rounded-full bg-blue-100/30 blur-3xl" />
 
-      <div className="pointer-events-none absolute inset-0 opacity-[0.18] [background-image:linear-gradient(rgba(24,106,7,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(24,106,7,0.1)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:linear-gradient(to_bottom,black,transparent)]" />
+      <div className="pointer-events-none absolute inset-0 opacity-[0.18] [background-image:linear-linear(rgba(24,106,7,0.1)_1px,transparent_1px),linear-linear(90deg,rgba(24,106,7,0.1)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:linear-linear(to_bottom,black,transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
         {/* Section Header */}
         <header className="mx-auto max-w-3xl text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-[#F7FBF6] px-3.5 py-2 shadow-sm">
-            <Award
-              size={14}
-              className="text-[#186A07]"
-              strokeWidth={2}
-            />
+            <Award size={14} className="text-[#186A07]" strokeWidth={2} />
 
             <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#186A07]">
               Career Opportunities
@@ -161,7 +150,7 @@ const CareerOpportunities = () => {
 
           <h2 className="text-3xl font-extrabold tracking-[-0.04em] text-slate-950 sm:text-4xl lg:text-5xl">
             Find Your{" "}
-            <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
               Opportunity
             </span>
           </h2>
@@ -174,19 +163,19 @@ const CareerOpportunities = () => {
 
         {/* Career Grid */}
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {careerCategories.map((career,index) => (
+          {careerCategories.map((career, index) => (
             <CareerCard key={index} {...career} />
           ))}
         </div>
 
         {/* Bottom CTA */}
-        <div className="relative mt-10 overflow-hidden rounded-[2rem] bg-gradient-to-r from-[#186A07] to-[#0B2578] px-6 py-8 shadow-[0_25px_60px_rgba(11,37,120,0.16)] sm:px-10 sm:py-10">
+        <div className="relative mt-10 overflow-hidden rounded-[2rem] bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-8 shadow-[0_25px_60px_rgba(11,37,120,0.16)] sm:px-10 sm:py-10">
           {/* Decorations */}
           <div className="absolute -right-16 -top-24 h-64 w-64 rounded-full border border-white/10" />
 
           <div className="absolute -bottom-32 left-1/3 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
 
-          <div className="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(rgba(255,255,255,1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,1)_1px,transparent_1px)] [background-size:35px_35px]" />
+          <div className="absolute inset-0 opacity-[0.07] [background-image:linear-linear(rgba(255,255,255,1)_1px,transparent_1px),linear-linear(90deg,rgba(255,255,255,1)_1px,transparent_1px)] [background-size:35px_35px]" />
 
           <div className="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">

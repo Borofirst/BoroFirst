@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import {
   ArrowRight,
@@ -28,15 +26,12 @@ const concepts = [
     id: "03",
     icon: Scale,
     title: "Value determines eligibility",
-    description: "The eligible amount depends on assessed value and lender terms.",
+    description:
+      "The eligible amount depends on assessed value and lender terms.",
   },
 ];
 
-const assessmentItems = [
-  "Gold purity",
-  "Gold weight",
-  "Assessed value",
-];
+const assessmentItems = ["Gold purity", "Gold weight", "Assessed value"];
 
 const GoldLoanWhatIs = () => {
   return (
@@ -61,11 +56,10 @@ const GoldLoanWhatIs = () => {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-0 h-px w-[85%] -translate-x-1/2 bg-gradient-to-r from-transparent via-[#E2E8F0] to-transparent"
+        className="pointer-events-none absolute left-1/2 top-0 h-px w-[85%] -translate-x-1/2 bg-linear-to-r from-transparent via-[#E2E8F0] to-transparent"
       />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-
         {/* =====================================================
             HEADER
         ====================================================== */}
@@ -109,41 +103,31 @@ const GoldLoanWhatIs = () => {
         ====================================================== */}
 
         <div className="grid items-center gap-16 lg:grid-cols-[1fr_0.88fr] lg:gap-20">
-
           {/* ===================================================
               LEFT CONTENT
           ==================================================== */}
 
           <div>
-
             {/* Main Explanation */}
             <div className="relative max-w-2xl">
-
               <span
                 aria-hidden="true"
-                className="absolute -left-5 top-1 hidden h-16 w-[3px] rounded-full bg-gradient-to-b from-[#D4AF37] to-transparent sm:block"
+                className="absolute -left-5 top-1 hidden h-16 w-[3px] rounded-full bg-linear-to-b from-[#D4AF37] to-transparent sm:block"
               />
 
               <p className="text-[17px] font-medium leading-8 text-[#334155] sm:text-[19px] sm:leading-9">
                 A{" "}
-                <strong className="font-bold text-[#0B2578]">
-                  gold loan
-                </strong>{" "}
+                <strong className="font-bold text-[#0B2578]">gold loan</strong>{" "}
                 is a secured loan where eligible gold jewellery is pledged as
                 collateral to obtain funds.
               </p>
 
               <p className="mt-5 text-sm leading-7 text-[#64748B] sm:text-[15px] sm:leading-8">
                 The lender evaluates the gold's{" "}
-                <span className="font-semibold text-[#0F172A]">
-                  purity
-                </span>
-                ,{" "}
-                <span className="font-semibold text-[#0F172A]">
-                  weight
-                </span>{" "}
-                and other applicable factors before determining the eligible
-                loan amount.
+                <span className="font-semibold text-[#0F172A]">purity</span>,{" "}
+                <span className="font-semibold text-[#0F172A]">weight</span> and
+                other applicable factors before determining the eligible loan
+                amount.
               </p>
 
               <p className="mt-5 text-sm leading-7 text-[#64748B] sm:text-[15px] sm:leading-8">
@@ -158,7 +142,6 @@ const GoldLoanWhatIs = () => {
             ================================================== */}
 
             <div className="mt-9 overflow-hidden rounded-2xl border border-[#E2E8F0] bg-white shadow-[0_12px_35px_rgba(15,23,42,0.045)]">
-
               <div className="flex items-center gap-3 border-b border-[#E2E8F0] px-5 py-4">
                 <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#0B2578]/[0.07] text-[#0B2578]">
                   <Calculator size={16} />
@@ -241,20 +224,18 @@ const GoldLoanWhatIs = () => {
           ==================================================== */}
 
           <div className="relative mx-auto w-full max-w-[500px] lg:ml-auto">
-
             {/* Outer Glow */}
             <div
               aria-hidden="true"
-              className="absolute -inset-8 rounded-[45px] bg-gradient-to-br from-[#D4AF37]/10 via-transparent to-[#10B981]/10 blur-2xl"
+              className="absolute -inset-8 rounded-[45px] bg-linear-to-br from-[#D4AF37]/10 via-transparent to-[#10B981]/10 blur-2xl"
             />
 
             {/* Main Visual */}
             <div className="relative min-h-[510px] overflow-hidden rounded-[34px] border border-[#E2E8F0] bg-white shadow-[0_30px_80px_rgba(15,23,42,0.09)] sm:min-h-[560px]">
-
-              {/* Soft gradient */}
+              {/* Soft linear */}
               <div
                 aria-hidden="true"
-                className="absolute inset-0 bg-[radial-gradient(circle_at_50%_38%,rgba(212,175,55,0.12),transparent_32%),radial-gradient(circle_at_80%_90%,rgba(16,185,129,0.07),transparent_35%)]"
+                className="absolute inset-0 bg-[radial-linear(circle_at_50%_38%,rgba(212,175,55,0.12),transparent_32%),radial-linear(circle_at_80%_90%,rgba(16,185,129,0.07),transparent_35%)]"
               />
 
               {/* Decorative rings */}
@@ -273,7 +254,6 @@ const GoldLoanWhatIs = () => {
               ================================================== */}
 
               <div className="absolute left-6 right-6 top-6 z-30 flex items-center justify-between">
-
                 <div>
                   <p className="text-[9px] font-black tracking-[0.25em] text-[#0B2578]">
                     BOROFIRST
@@ -303,7 +283,7 @@ const GoldLoanWhatIs = () => {
                 </div>
 
                 {/* Pendant */}
-                <div className="absolute bottom-0 left-1/2 flex h-14 w-14 -translate-x-1/2 items-center justify-center rounded-full border-[5px] border-[#D4AF37] bg-gradient-to-br from-[#FFF5B5] via-[#D4AF37] to-[#A67D12] shadow-[0_12px_30px_rgba(201,162,39,0.28)]">
+                <div className="absolute bottom-0 left-1/2 flex h-14 w-14 -translate-x-1/2 items-center justify-center rounded-full border-[5px] border-[#D4AF37] bg-linear-to-br from-[#FFF5B5] via-[#D4AF37] to-[#A67D12] shadow-[0_12px_30px_rgba(201,162,39,0.28)]">
                   <div className="h-5 w-5 rotate-45 rounded-[4px] border-2 border-[#FFF8D7] bg-[#C9A227]" />
                 </div>
               </div>
@@ -318,7 +298,7 @@ const GoldLoanWhatIs = () => {
               >
                 <div className="absolute left-1/2 top-7 h-20 w-20 -translate-x-1/2 rounded-full border-[8px] border-[#D4AF37] shadow-[0_10px_25px_rgba(201,162,39,0.2)]" />
 
-                <div className="absolute left-1/2 top-0 h-9 w-9 -translate-x-1/2 rotate-45 rounded-md border-4 border-[#FFF1A5] bg-gradient-to-br from-[#FFF6BD] to-[#C9A227]" />
+                <div className="absolute left-1/2 top-0 h-9 w-9 -translate-x-1/2 rotate-45 rounded-md border-4 border-[#FFF1A5] bg-linear-to-br from-[#FFF6BD] to-[#C9A227]" />
               </div>
 
               {/* =================================================
@@ -326,14 +306,11 @@ const GoldLoanWhatIs = () => {
               ================================================== */}
 
               <div className="absolute left-1/2 top-[43%] z-20 w-[74%] -translate-x-1/2 -translate-y-1/2">
-
                 <div className="relative overflow-hidden rounded-[28px] border border-white bg-white/95 p-5 shadow-[0_25px_65px_rgba(11,37,120,0.14)] backdrop-blur-xl sm:p-6">
-
                   {/* Gold line */}
-                  <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-[#D4AF37] via-[#10B981] to-[#0B2578]" />
+                  <div className="absolute left-0 top-0 h-1 w-full bg-linear-to-r from-[#D4AF37] via-[#10B981] to-[#0B2578]" />
 
                   <div className="flex items-center justify-between">
-
                     <div>
                       <p className="text-[8px] font-bold uppercase tracking-[0.2em] text-[#94A3B8]">
                         Secured by
@@ -351,9 +328,7 @@ const GoldLoanWhatIs = () => {
 
                   {/* Assessment Box */}
                   <div className="mt-5 rounded-2xl border border-[#EDE3C5] bg-[#FFFCF5] p-4">
-
                     <div className="flex items-center gap-3">
-
                       <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#D4AF37]/15 text-[#C9A227]">
                         <Scale size={17} />
                       </div>
@@ -371,7 +346,6 @@ const GoldLoanWhatIs = () => {
 
                     {/* Progress */}
                     <div className="mt-5 space-y-3">
-
                       <div>
                         <div className="mb-1.5 flex justify-between">
                           <span className="text-[9px] text-[#64748B]">
@@ -403,31 +377,27 @@ const GoldLoanWhatIs = () => {
                           <div className="h-full w-[68%] rounded-full bg-[#10B981]" />
                         </div>
                       </div>
-
                     </div>
                   </div>
 
                   {/* Flow */}
                   <div className="mt-5 flex items-center justify-center">
-
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#D4AF37]/10 text-[#C9A227]">
                       <Gem size={13} />
                     </div>
 
-                    <div className="h-px w-9 bg-gradient-to-r from-[#D4AF37] to-[#10B981]" />
+                    <div className="h-px w-9 bg-linear-to-r from-[#D4AF37] to-[#10B981]" />
 
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#10B981]/10 text-[#10B981]">
                       <Calculator size={13} />
                     </div>
 
-                    <div className="h-px w-9 bg-gradient-to-r from-[#10B981] to-[#0B2578]" />
+                    <div className="h-px w-9 bg-linear-to-r from-[#10B981] to-[#0B2578]" />
 
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0B2578] text-white">
                       <Check size={13} strokeWidth={3} />
                     </div>
-
                   </div>
-
                 </div>
               </div>
 
@@ -451,9 +421,7 @@ const GoldLoanWhatIs = () => {
               ================================================== */}
 
               <div className="absolute left-5 top-[31%] z-30 animate-[softFloat_5s_ease-in-out_infinite] sm:left-6">
-
                 <div className="flex items-center gap-2 rounded-2xl border border-white bg-white/90 px-3 py-2.5 shadow-[0_12px_30px_rgba(15,23,42,0.08)] backdrop-blur-md">
-
                   <span className="h-2 w-2 rounded-full bg-[#D4AF37] shadow-[0_0_0_4px_rgba(212,175,55,0.10)]" />
 
                   <div>
@@ -465,14 +433,11 @@ const GoldLoanWhatIs = () => {
                       Eligible Gold
                     </p>
                   </div>
-
                 </div>
               </div>
 
               <div className="absolute right-5 top-[32%] z-30 animate-[softFloatReverse_6s_ease-in-out_infinite] sm:right-6">
-
                 <div className="flex items-center gap-2 rounded-2xl border border-white bg-white/90 px-3 py-2.5 shadow-[0_12px_30px_rgba(15,23,42,0.08)] backdrop-blur-md">
-
                   <span className="h-2 w-2 rounded-full bg-[#10B981] shadow-[0_0_0_4px_rgba(16,185,129,0.10)]" />
 
                   <div>
@@ -484,7 +449,6 @@ const GoldLoanWhatIs = () => {
                       Value Evaluated
                     </p>
                   </div>
-
                 </div>
               </div>
 
@@ -493,11 +457,8 @@ const GoldLoanWhatIs = () => {
               ================================================== */}
 
               <div className="absolute bottom-6 left-1/2 z-30 w-[82%] -translate-x-1/2">
-
                 <div className="flex items-center justify-between rounded-2xl border border-[#E2E8F0] bg-white/95 px-4 py-3 shadow-[0_12px_35px_rgba(15,23,42,0.07)] backdrop-blur-md">
-
                   <div className="flex items-center gap-3">
-
                     <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#10B981]/10 text-[#10B981]">
                       <ShieldCheck size={14} />
                     </div>
@@ -511,14 +472,9 @@ const GoldLoanWhatIs = () => {
                         Gold → Assessed Value
                       </p>
                     </div>
-
                   </div>
 
-                  <ArrowRight
-                    size={15}
-                    className="text-[#0B2578]"
-                  />
-
+                  <ArrowRight size={15} className="text-[#0B2578]" />
                 </div>
               </div>
 
@@ -536,7 +492,6 @@ const GoldLoanWhatIs = () => {
               >
                 <Sparkles size={17} />
               </div>
-
             </div>
           </div>
         </div>

@@ -1,4 +1,12 @@
-import { ArrowRight, Building2, CheckCircle2, Landmark, ShieldCheck, Users, WalletCards } from "lucide-react";
+import {
+  ArrowRight,
+  Building2,
+  CheckCircle2,
+  Landmark,
+  ShieldCheck,
+  Users,
+  WalletCards,
+} from "lucide-react";
 
 const financialNetwork = [
   {
@@ -36,8 +44,6 @@ export default function WhoIsBorofirst() {
       aria-labelledby="who-is-borofirst-heading"
       className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-32"
     >
-   
-
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         {/* Section heading */}
         <div className="mb-14 max-w-3xl lg:mb-20">
@@ -51,14 +57,14 @@ export default function WhoIsBorofirst() {
             className="text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight"
           >
             Connecting people with
-            <span className="block bg-gradient-to-r from-[#0B2578] to-[#186A07] bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-[#0B2578] to-[#186A07] bg-clip-text text-transparent">
               better financial possibilities.
             </span>
           </h2>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-slate-500 sm:text-lg sm:leading-8">
-            Borofirst brings customers and financial solutions closer through
-            a modern, transparent and customer-focused financial services
+            Borofirst brings customers and financial solutions closer through a
+            modern, transparent and customer-focused financial services
             experience.
           </p>
         </div>
@@ -71,17 +77,17 @@ export default function WhoIsBorofirst() {
               {/* Decorative glow */}
               <div
                 aria-hidden="true"
-                className="absolute -inset-6 rounded-[2.75rem] bg-gradient-to-br from-emerald-100/70 via-transparent to-blue-100/70 blur-2xl"
+                className="absolute -inset-6 rounded-[2.75rem] bg-linear-to-br from-emerald-100/70 via-transparent to-blue-100/70 blur-2xl"
               />
 
               {/* Main visual card */}
-              <div className="relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-gradient-to-br from-slate-50 via-white to-blue-50 p-3 shadow-[0_30px_80px_rgba(15,23,42,0.10)]">
-                <div className="relative min-h-[480px] overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-[#f2faf3] via-white to-[#eff4ff] sm:min-h-[540px]">
+              <div className="relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-linear-to-br from-slate-50 via-white to-blue-50 p-3 shadow-[0_30px_80px_rgba(15,23,42,0.10)]">
+                <div className="relative min-h-[480px] overflow-hidden rounded-[1.5rem] bg-linear-to-br from-[#f2faf3] via-white to-[#eff4ff] sm:min-h-[540px]">
                   {/* Decorative financial network graphic */}
                   <div className="absolute inset-0">
                     <div className="absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full border border-emerald-100 bg-white/70 shadow-[0_20px_60px_rgba(15,23,42,0.06)]" />
 
-                    <div className="absolute left-1/2 top-1/2 flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2rem] bg-gradient-to-br from-[#0B2578] to-[#186A07] text-white shadow-[0_20px_45px_rgba(11,37,120,0.25)]">
+                    <div className="absolute left-1/2 top-1/2 flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2rem] bg-linear-to-br from-[#0B2578] to-[#186A07] text-white shadow-[0_20px_45px_rgba(11,37,120,0.25)]">
                       <div className="text-center">
                         <div className="text-xl font-black tracking-tight">
                           BORO
@@ -93,43 +99,31 @@ export default function WhoIsBorofirst() {
                     </div>
 
                     {/* Connecting lines */}
-                    <div className="absolute left-1/2 top-[28%] h-[22%] w-px -translate-x-1/2 bg-gradient-to-b from-emerald-200 to-[#0B2578]/20" />
-                    <div className="absolute left-[27%] top-1/2 h-px w-[23%] bg-gradient-to-r from-emerald-200 to-[#0B2578]/20" />
-                    <div className="absolute right-[27%] top-1/2 h-px w-[23%] bg-gradient-to-l from-emerald-200 to-[#0B2578]/20" />
-                    <div className="absolute bottom-[28%] left-1/2 h-[22%] w-px -translate-x-1/2 bg-gradient-to-t from-emerald-200 to-[#0B2578]/20" />
+                    <div className="absolute left-1/2 top-[28%] h-[22%] w-px -translate-x-1/2 bg-linear-to-b from-emerald-200 to-[#0B2578]/20" />
+                    <div className="absolute left-[27%] top-1/2 h-px w-[23%] bg-linear-to-r from-emerald-200 to-[#0B2578]/20" />
+                    <div className="absolute right-[27%] top-1/2 h-px w-[23%] bg-linear-to-l from-emerald-200 to-[#0B2578]/20" />
+                    <div className="absolute bottom-[28%] left-1/2 h-[22%] w-px -translate-x-1/2 bg-linear-to-t from-emerald-200 to-[#0B2578]/20" />
 
                     {/* Network nodes */}
                     <div className="absolute left-1/2 top-[15%] -translate-x-1/2">
-                      <NetworkNode
-                        icon={Landmark}
-                        label="Banks"
-                      />
+                      <NetworkNode icon={Landmark} label="Banks" />
                     </div>
 
                     <div className="absolute left-[8%] top-1/2 -translate-y-1/2">
-                      <NetworkNode
-                        icon={Building2}
-                        label="NBFCs"
-                      />
+                      <NetworkNode icon={Building2} label="NBFCs" />
                     </div>
 
                     <div className="absolute right-[8%] top-1/2 -translate-y-1/2">
-                      <NetworkNode
-                        icon={WalletCards}
-                        label="Housing"
-                      />
+                      <NetworkNode icon={WalletCards} label="Housing" />
                     </div>
 
                     <div className="absolute bottom-[15%] left-1/2 -translate-x-1/2">
-                      <NetworkNode
-                        icon={Users}
-                        label="Customers"
-                      />
+                      <NetworkNode icon={Users} label="Customers" />
                     </div>
                   </div>
 
-                  {/* Bottom gradient */}
-                  <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-white/90 to-transparent" />
+                  {/* Bottom linear */}
+                  <div className="absolute inset-x-0 bottom-0 h-36 bg-linear-to-t from-white/90 to-transparent" />
 
                   {/* Small trust badge */}
                   <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/90 bg-white/90 p-4 shadow-[0_15px_35px_rgba(15,23,42,0.08)] backdrop-blur-md sm:left-6 sm:right-6">
@@ -176,20 +170,20 @@ export default function WhoIsBorofirst() {
               <div className="mt-6 space-y-4 text-base leading-7 text-slate-500">
                 <p>
                   Borofirst is a modern financial services platform that
-                  connects customers with suitable financial solutions through
-                  a growing network of banks, NBFCs, housing finance companies
-                  and other financial institutions.
+                  connects customers with suitable financial solutions through a
+                  growing network of banks, NBFCs, housing finance companies and
+                  other financial institutions.
                 </p>
 
                 <p>
                   We aim to make the financial journey easier to understand by
-                  helping individuals, families and businesses explore
-                  available options based on their requirements.
+                  helping individuals, families and businesses explore available
+                  options based on their requirements.
                 </p>
               </div>
 
               {/* Purpose */}
-              <div className="relative mt-8 overflow-hidden rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50/80 via-white to-blue-50/50 p-6 sm:p-7">
+              <div className="relative mt-8 overflow-hidden rounded-3xl border border-emerald-100 bg-linear-to-br from-emerald-50/80 via-white to-blue-50/50 p-6 sm:p-7">
                 <div
                   aria-hidden="true"
                   className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-emerald-100/60 blur-2xl"
@@ -213,8 +207,8 @@ export default function WhoIsBorofirst() {
                   </div>
 
                   <p className="mt-5 text-sm leading-6 text-slate-600 sm:text-base">
-                    To make financial access simpler, more transparent and
-                    more convenient for individuals, families and businesses.
+                    To make financial access simpler, more transparent and more
+                    convenient for individuals, families and businesses.
                   </p>
 
                   <div className="mt-5 space-y-3">
@@ -236,7 +230,6 @@ export default function WhoIsBorofirst() {
 
               {/* CTA */}
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-
                 <a
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3.5 text-sm font-bold text-slate-600 transition-colors duration-300 hover:text-[#186A07]"
@@ -263,8 +256,8 @@ export default function WhoIsBorofirst() {
             </div>
 
             <p className="mt-2 max-w-lg text-sm leading-6 text-slate-500">
-              We work across a growing network of financial institutions to
-              help customers explore relevant financial possibilities.
+              We work across a growing network of financial institutions to help
+              customers explore relevant financial possibilities.
             </p>
           </div>
 
@@ -291,7 +284,7 @@ export default function WhoIsBorofirst() {
                     {description}
                   </p>
                 </div>
-              )
+              ),
             )}
           </div>
         </div>
@@ -336,9 +329,7 @@ function NetworkNode({ icon: Icon, label }) {
         <Icon size={20} strokeWidth={1.7} />
       </div>
 
-      <span className="mt-2 text-[11px] font-bold text-slate-500">
-        {label}
-      </span>
+      <span className="mt-2 text-[11px] font-bold text-slate-500">{label}</span>
     </div>
   );
 }

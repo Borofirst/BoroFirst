@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   ArrowRight,
@@ -8,10 +7,9 @@ import {
   ShieldCheck,
   TrendingUp,
   Wallet,
-    WalletCards,
+  WalletCards,
   Zap,
 } from "lucide-react";
-
 
 const trustItems = [
   {
@@ -36,34 +34,29 @@ const floatingCards = [
     icon: CheckCircle2,
     title: "Eligibility Check",
     description: "Quick & Simple",
-    position:
-      "left-0 top-12 lg:-left-16 lg:top-16",
+    position: "left-0 top-12 lg:-left-16 lg:top-16",
   },
   {
     icon: TrendingUp,
     title: "Flexible Options",
     description: "Based on your profile",
-    position:
-      "right-0 top-4 lg:-right-10 lg:top-10",
+    position: "right-0 top-4 lg:-right-10 lg:top-10",
   },
   {
     icon: ShieldCheck,
     title: "Secure Process",
     description: "Trusted journey",
-    position:
-      "bottom-4 right-2 lg:-right-6 lg:bottom-10",
+    position: "bottom-4 right-2 lg:-right-6 lg:bottom-10",
   },
 ];
 
 const PersonalLoanHero = () => {
   const handleEligibility = () => {
     // Replace with your eligibility section ID or route.
-    document
-      .getElementById("loan-eligibility")
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    document.getElementById("loan-eligibility")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   const handleApply = () => {
@@ -89,7 +82,7 @@ const PersonalLoanHero = () => {
           className="absolute inset-0 opacity-[0.025]"
           style={{
             backgroundImage:
-              "linear-gradient(#0F172A 1px, transparent 1px), linear-gradient(90deg, #0F172A 1px, transparent 1px)",
+              "linear-linear(#0F172A 1px, transparent 1px), linear-linear(90deg, #0F172A 1px, transparent 1px)",
             backgroundSize: "48px 48px",
           }}
         />
@@ -103,11 +96,10 @@ const PersonalLoanHero = () => {
 
           <div className="max-w-2xl">
             {/* Badge */}
-     
-            
+
             <div className="lap-hero-eyebrow  inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
               <Wallet size={15} />
-                PERSONAL LOAN
+              PERSONAL LOAN
             </div>
 
             {/* Heading */}
@@ -117,21 +109,16 @@ const PersonalLoanHero = () => {
                 Simple,
                 <span className="absolute -bottom-1 left-0 h-1 w-full rounded-full bg-emerald-200/70" />
               </span>{" "}
-              <span className="text-[#0B2578]">
-                Fast &
-              </span>{" "}
-              <span className="text-[#186A07]">
-                 Transparent
-              </span>
+              <span className="text-[#0B2578]">Fast &</span>{" "}
+              <span className="text-[#186A07]">Transparent</span>
             </h1>
 
             {/* Description */}
             <p className="mt-6 max-w-xl text-base leading-7 text-[#64748B] sm:text-lg sm:leading-8">
-              Whether you're managing an unexpected expense,
-              planning a wedding, renovating your home or
-              achieving a personal goal, explore suitable
-              personal loan options through a simple and
-              transparent process.
+              Whether you're managing an unexpected expense, planning a wedding,
+              renovating your home or achieving a personal goal, explore
+              suitable personal loan options through a simple and transparent
+              process.
             </p>
 
             {/* CTA Buttons */}
@@ -142,7 +129,6 @@ const PersonalLoanHero = () => {
                 className="group inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-600 hover:shadow-xl hover:shadow-emerald-500/25 focus:outline-none focus:ring-4 focus:ring-emerald-500/20"
               >
                 Check Your Eligibility
-
                 <ArrowRight
                   size={18}
                   className="transition-transform duration-300 group-hover:translate-x-1"
@@ -164,10 +150,7 @@ const PersonalLoanHero = () => {
                 const Icon = item.icon;
 
                 return (
-                  <div
-                    key={item.title}
-                    className="flex items-start gap-3"
-                  >
+                  <div key={item.title} className="flex items-start gap-3">
                     <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-[#186A07]">
                       <Icon size={17} />
                     </div>
@@ -195,8 +178,7 @@ const PersonalLoanHero = () => {
               />
 
               <span>
-                Simple, transparent and customer-focused loan
-                assistance.
+                Simple, transparent and customer-focused loan assistance.
               </span>
             </div>
           </div>
@@ -226,8 +208,8 @@ const PersonalLoanHero = () => {
                     index === 0
                       ? "animate-[float_5s_ease-in-out_infinite]"
                       : index === 1
-                      ? "animate-[float_6s_ease-in-out_infinite]"
-                      : "animate-[float_7s_ease-in-out_infinite]"
+                        ? "animate-[float_6s_ease-in-out_infinite]"
+                        : "animate-[float_7s_ease-in-out_infinite]"
                   }`}
                 >
                   <div className="flex items-center gap-3">
@@ -251,25 +233,23 @@ const PersonalLoanHero = () => {
             {/* =================================================
                 MAIN LOAN CARD
             ================================================== */}
-                 <div className="lap-hero-image relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[#F8FAFC] shadow-2xl shadow-slate-200/70">
-
+            <div className="lap-hero-image relative overflow-hidden rounded-[28px] border border-[#E2E8F0] bg-[#F8FAFC] shadow-2xl shadow-slate-200/70">
               <img
                 src="/personalLoan.png"
                 alt="Indian property owners standing outside a modern property"
                 className="h-[480px] w-full object-contain transition duration-1000 ease-out hover:scale-[1.02] sm:h-[560px] lg:h-[620px]"
               />
 
-              {/* Subtle image gradient */}
+              {/* Subtle image linear */}
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B2578]/25 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-[#0B2578]/25 via-transparent to-transparent" />
 
               {/* Small property label */}
 
               <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/30 bg-white/90 p-4 shadow-lg backdrop-blur-md sm:bottom-6 sm:left-6 sm:right-auto sm:min-w-[250px]">
-
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-[#2c8e18]">
-                    <WalletCards size={20}/>
+                    <WalletCards size={20} />
                   </div>
 
                   <div>
@@ -284,11 +264,13 @@ const PersonalLoanHero = () => {
                 </div>
               </div>
             </div>
-         
+
             {/* Bottom mini card */}
             <div className="absolute -bottom-6 left-1/2 z-20 hidden -translate-x-1/2 items-center gap-3 rounded-2xl border border-white/80 bg-white/95 px-4 py-3 shadow-xl shadow-slate-900/10 backdrop-blur-md sm:flex">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-50 text-[#186A07]
-">
+              <div
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-50 text-[#186A07]
+"
+              >
                 <CheckCircle2 size={18} />
               </div>
 
@@ -306,17 +288,14 @@ const PersonalLoanHero = () => {
         </div>
 
         {/* Bottom trust strip */}
-   
       </div>
 
       {/* =====================================================
           CUSTOM FLOAT ANIMATION
           Tailwind arbitrary animation used intentionally.
       ====================================================== */}
-
     </section>
   );
 };
 
 export default PersonalLoanHero;
-

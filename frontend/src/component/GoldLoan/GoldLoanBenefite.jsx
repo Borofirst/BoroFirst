@@ -67,7 +67,7 @@ const GoldLoanBenefits = () => {
     <section
       id="gold-loan-benefits"
       aria-labelledby="gold-loan-benefits-title"
-      className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[#F8FAFC] py-20 sm:py-24 lg:py-28"
     >
       {/* Background decoration */}
       <div

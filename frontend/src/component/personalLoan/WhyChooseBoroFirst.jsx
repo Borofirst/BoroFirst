@@ -93,25 +93,19 @@ const journeyPoints = [
    COMPONENT
 ========================================================= */
 
-const WhyChooseBoroFirst = ({
-  id = "why-borofirst",
-}) => {
+const WhyChooseBoroFirst = ({ id = "why-borofirst" }) => {
   const handleEligibility = () => {
-    document
-      .getElementById("loan-eligibility")
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    document.getElementById("loan-eligibility")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   const handleApply = () => {
-    document
-      .getElementById("loan-application")
-      ?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    document.getElementById("loan-application")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   return (
@@ -138,19 +132,7 @@ const WhyChooseBoroFirst = ({
         className="pointer-events-none absolute bottom-0 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-emerald-200/10 blur-3xl"
       />
 
-      {/* Subtle grid */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-[0.025]"
-        style={{
-          backgroundImage:
-            "linear-gradient(#0B2578 1px, transparent 1px), linear-gradient(90deg, #0B2578 1px, transparent 1px)",
-          backgroundSize: "42px 42px",
-        }}
-      />
-
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-
         {/* =====================================================
             HEADER
         ====================================================== */}
@@ -158,37 +140,33 @@ const WhyChooseBoroFirst = ({
         <div className="mx-auto max-w-3xl text-center">
           {/* Badge */}
 
-                                            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
-                        <span className="relative flex h-2.5 w-2.5">
-                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
-                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
-                        </span>
-          
-                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
-                               
-           Why BoroFirst
-                        </span>
-                      </div>
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+            </span>
 
-            {/* Heading */}
+            <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+              Why BoroFirst
+            </span>
+          </div>
 
+          {/* Heading */}
 
-                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
-                             Why Choose a{" "}
-                        <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
-                           BoroFirst
+          <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+            Why Choose a{" "}
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+              BoroFirst
             </span>{" "}
             for Your Personal Loan?
-                        
-                      </h2>
+          </h2>
 
           {/* Description */}
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#64748B] sm:text-base">
-            At BoroFirst, we aim to make your personal loan
-            journey simpler, clearer and more convenient. From
-            understanding your requirements to exploring suitable
-            loan options, we help you navigate the process with
-            greater confidence.
+            At BoroFirst, we aim to make your personal loan journey simpler,
+            clearer and more convenient. From understanding your requirements to
+            exploring suitable loan options, we help you navigate the process
+            with greater confidence.
           </p>
         </div>
 
@@ -197,14 +175,12 @@ const WhyChooseBoroFirst = ({
         ====================================================== */}
 
         <div className="mt-14 grid gap-6 lg:grid-cols-12 lg:gap-8">
-
           {/* ===================================================
               LEFT — TRUST CARD
           ==================================================== */}
 
           <div className="lg:col-span-5">
-            <div className="group relative h-full min-h-[480px] overflow-hidden rounded-3xl bg-gradient-to-br from-[#186A07] via-[#119f39] to-[#0B2578] p-7 text-white shadow-xl shadow-slate-300/30 sm:p-9">
-
+            <div className="group relative h-full min-h-[480px] overflow-hidden rounded-3xl bg-linear-to-br from-[#186A07] via-[#119f39] to-[#0B2578] p-7 text-white shadow-xl shadow-slate-300/30 sm:p-9">
               {/* Decorative glow */}
               <div
                 aria-hidden="true"
@@ -228,7 +204,6 @@ const WhyChooseBoroFirst = ({
               />
 
               <div className="relative flex h-full flex-col">
-
                 {/* Icon */}
                 <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/15 bg-white/10 shadow-lg backdrop-blur-sm">
                   <ShieldCheck
@@ -246,16 +221,13 @@ const WhyChooseBoroFirst = ({
 
                   <h3 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
                     Your Loan Journey,
-                    <span className="block text-emerald-200">
-                      Simplified.
-                    </span>
+                    <span className="block text-emerald-200">Simplified.</span>
                   </h3>
 
                   <p className="mt-5 max-w-md text-sm leading-7 text-white/75 sm:text-base">
-                    From eligibility assessment to lender
-                    coordination, BoroFirst is designed to make
-                    the personal loan journey easier to understand
-                    and navigate.
+                    From eligibility assessment to lender coordination,
+                    BoroFirst is designed to make the personal loan journey
+                    easier to understand and navigate.
                   </p>
                 </div>
 
@@ -287,7 +259,6 @@ const WhyChooseBoroFirst = ({
                     ))}
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -309,12 +280,14 @@ const WhyChooseBoroFirst = ({
                   }}
                 >
                   {/* Icon */}
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl  bg-emerald-50   text-[#2c8e18]
+                  <div
+                    className="flex h-11 w-11 items-center justify-center rounded-xl  bg-emerald-50   text-[#2c8e18]
                         transition-all duration-300 ease-out
                       group-hover:bg-[#118A09]
                       group-hover:text-white
                         group-hover:shadow-[0_6px_15px_rgba(16,185,129,0.25)]
-                        group-hover:scale-110">
+                        group-hover:scale-110"
+                  >
                     <Icon size={20} />
                   </div>
 
@@ -405,10 +378,9 @@ const WhyChooseBoroFirst = ({
             </h3>
 
             <p className="mt-4 text-sm leading-7 text-[#64748B] sm:text-base">
-              Whether you're planning a wedding, managing an
-              unexpected expense, consolidating eligible
-              obligations or pursuing an important personal goal,
-              BoroFirst helps you explore your financing options
+              Whether you're planning a wedding, managing an unexpected expense,
+              consolidating eligible obligations or pursuing an important
+              personal goal, BoroFirst helps you explore your financing options
               with greater clarity.
             </p>
 

@@ -1,13 +1,259 @@
+
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
   <head>
+    <!-- =====================================================
+         DOCUMENT CONFIGURATION
+    ====================================================== -->
+
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="theme-color"
+      content="#0B2578"
+    />
+
+    <meta
+      name="color-scheme"
+      content="light"
+    />
+
+    <meta
+      name="format-detection"
+      content="telephone=no"
+    />
+
+    <!-- =====================================================
+         DEFAULT WEBSITE TITLE
+         
+         Individual React pages will override this through SEO.jsx.
+    ====================================================== -->
+
+    <title>
+      Borofirst | Smart Financial Solutions & Loans
+    </title>
+
+    <!-- =====================================================
+         DEFAULT DESCRIPTION
+    ====================================================== -->
+
+    <meta
+      name="description"
+      content="Borofirst provides smart, transparent and customer-focused financial solutions including personal loans, home loans, business loans and other lending solutions."
+    />
+
+    <meta
+      name="author"
+      content="Borofirst"
+    />
+
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- =====================================================
+         CANONICAL URL
+         
+         CHANGE THIS TO YOUR REAL PRODUCTION DOMAIN.
+    ====================================================== -->
+
+    <link
+      rel="canonical"
+      href="https://borofirst.com/"
+    />
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="/logo.png"
+    />
+
+
+
+    <link
+      rel="apple-touch-icon"
+      href="/logo.png"
+    />
+
+  <meta
+    name="application-name"
+    content="Borofirst"
+  />
+
+  <meta
+    name="apple-mobile-web-app-title"
+    content="Borofirst"
+  />
+
+
+
+
+
+
+    <!-- =====================================================
+         SOCIAL MEDIA / OPEN GRAPH DEFAULTS
+    ====================================================== -->
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Borofirst"
+    />
+
+    <meta
+      property="og:title"
+      content="Borofirst | Smart Financial Solutions & Loans"
+    />
+
+    <meta
+      property="og:description"
+      content="Explore smart, transparent and customer-focused financial solutions with Borofirst."
+    />
+
+    <meta
+      property="og:url"
+      content="https://borofirst.com/"
+    />
+
+    <meta
+      property="og:image"
+      content="https://borofirst.com/og-image.png"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Borofirst - Smart Financial Solutions"
+    />
+
+    <meta
+      property="og:locale"
+      content="en_IN"
+    />
+
+    <!-- =====================================================
+         X / TWITTER DEFAULT CARD
+    ====================================================== -->
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content="BOROFIRST | Smart Financial Solutions & Loans"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Smart and customer-focused financial solutions from BOROFIRST."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://borofirst.com/og-image.png"
+    />
+
+    <!-- =====================================================
+         REFERRER POLICY
+    ====================================================== -->
+
+    <meta
+      name="referrer"
+      content="strict-origin-when-cross-origin"
+    />
+
+
+
+    <!-- =====================================================
+         ORGANIZATION STRUCTURED DATA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BOROFIRST",
+        "url": "https://borofirst.com/",
+        "logo": "https://borofirst.com/logo.jpg",
+        "description": "BOROFIRST provides customer-focused financial and lending solutions.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Borofirst"
+        }
+      }
+    </script>
+
+    <!-- =====================================================
+         WEBSITE STRUCTURED DATA
+    ====================================================== -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Borofirst",
+  "url": "https://borofirst.com/",
+  "logo": "https://borofirst.com/logo.png"
+}
+</script>
   </head>
+
   <body>
-    <div id="root"></div>
+    <!-- =====================================================
+         ACCESSIBILITY / JAVASCRIPT FALLBACK
+    ====================================================== -->
+
+    <noscript>
+      <div
+        style="
+          padding: 24px;
+          text-align: center;
+          font-family: Arial, sans-serif;
+        "
+      >
+        <strong>BOROFIRST</strong>
+
+        <p>
+          JavaScript is required to use the complete
+          BOROFIRST website experience.
+        </p>
+
+        <p>
+          Please enable JavaScript in your browser.
+        </p>
+      </div>
+    </noscript>
+
+    <!-- =====================================================
+         REACT ROOT
+    ====================================================== -->
+    
+       <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- =====================================================
+         VITE / REACT ENTRY POINT
+    ====================================================== -->
+
   </body>
 </html>

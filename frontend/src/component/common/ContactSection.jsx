@@ -9,15 +9,9 @@ import {
   FaYoutube,
   FaArrowRight,
   FaCheckCircle,
-
 } from "react-icons/fa";
 
-import {
-
-  MdLocationOn,
-  MdAccessTime,
-
-} from "react-icons/md";
+import { MdLocationOn, MdAccessTime } from "react-icons/md";
 
 import { BsPatchQuestionFill } from "react-icons/bs";
 import { submitContactForm } from "../../service/contectService";
@@ -212,8 +206,6 @@ const ContactSection = () => {
       setLoading(true);
       setSuccess("");
 
-     
-
       const response = await submitContactForm(formData);
       console.log(response);
 
@@ -260,7 +252,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden bg-gray-50 py-24 " >
+    <section
+      id="contact"
+      className="relative overflow-hidden bg-gray-50 py-24 "
+    >
       {/* Background Decoration */}
 
       <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-emerald-100 blur-3xl opacity-40"></div>
@@ -276,30 +271,22 @@ const ContactSection = () => {
           <div className="lg:sticky lg:top-24 h-fit">
             {/* Badge */}
 
-               <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
-              <BsPatchQuestionFill
-                size={18}
-                className="text-[#186A07]"
-            
-              />
+            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
+              <BsPatchQuestionFill size={18} className="text-[#186A07]" />
 
               <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
-               Need Financial Assistance?
+                Need Financial Assistance?
               </span>
             </div>
 
             {/* Heading */}
 
-       
-
-
-                        <h2 className="max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
-                    Connect with us now{" "}
-              <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
-                  Financial Goals{" "}
+            <h2 className="max-w-2xl text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+              Connect with us now{" "}
+              <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+                Financial Goals{" "}
               </span>
             </h2>
-           
 
             {/* Description */}
 
@@ -358,7 +345,6 @@ const ContactSection = () => {
                     >
                       <Icon size={24} />
                     </div>
-              
 
                     <div>
                       <h3 className="font-semibold text-gray-900">
@@ -416,6 +402,7 @@ const ContactSection = () => {
                     <a
                       key={index}
                       href={social.href}
+                      aria-label="BOROFIRST on Social Link"
                       className="
                         group
                         flex
@@ -440,9 +427,8 @@ const ContactSection = () => {
                         hover:shadow-lg
                       "
                     >
-                      <Icon size={20} />
+                      <Icon size={20} aria-hidden="true" />
                     </a>
-                    
                   );
                 })}
               </div>
@@ -461,17 +447,13 @@ const ContactSection = () => {
             {/* Form Heading */}
 
             <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
-              <MessageCircleHeart
-                size={18}
-                className="text-[#186A07]"
-            
-              />
+              <div className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/70 px-3.5 py-2">
+                <MessageCircleHeart size={18} className="text-[#186A07]" />
 
-              <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
-               Contact Form
-              </span>
-            </div>
+                <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
+                  Contact Form
+                </span>
+              </div>
 
               <h3 className="mt-5 text-3xl font-bold text-gray-900">
                 Send Us a Message
@@ -491,7 +473,10 @@ const ContactSection = () => {
 
               <div className="grid gap-6 md:grid-cols-2">
                 <div>
-                  <label className="mb-2 block font-medium text-gray-700">
+                  <label
+                    htmlFor="name"
+                    className="mb-2 block font-medium text-gray-700"
+                  >
                     Full Name
                   </label>
 
@@ -519,7 +504,10 @@ const ContactSection = () => {
                 </div>
 
                 <div>
-                  <label className="mb-2 block font-medium text-gray-700">
+                  <label
+                    htmlFor="email"
+                    className="mb-2 block font-medium text-gray-700"
+                  >
                     Email Address
                   </label>
 
@@ -529,7 +517,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="example@email.com"
-                   className="
+                    className="
   w-full rounded-xl border border-slate-200 bg-white
   px-4 py-3 text-sm text-slate-900
   outline-none
@@ -550,7 +538,10 @@ const ContactSection = () => {
 
               <div className="grid gap-6 md:grid-cols-2">
                 <div>
-                  <label className="mb-2 block font-medium text-gray-700">
+                  <label
+                    htmlFor="phone"
+                    className="mb-2 block font-medium text-gray-700"
+                  >
                     Mobile Number
                   </label>
 
@@ -560,7 +551,7 @@ const ContactSection = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+91 9876543210"
-                   className="
+                    className="
   w-full rounded-xl border border-slate-200 bg-white
   px-4 py-3 text-sm text-slate-900
   outline-none
@@ -577,7 +568,10 @@ const ContactSection = () => {
                 </div>
 
                 <div>
-                  <label className="mb-2 block font-medium text-gray-700">
+                  <label
+                    htmlFor="city"
+                    className="mb-2 block font-medium text-gray-700"
+                  >
                     City
                   </label>
 
@@ -587,7 +581,7 @@ const ContactSection = () => {
                     value={formData.city}
                     onChange={handleChange}
                     placeholder="New Delhi"
-                  className="
+                    className="
   w-full rounded-xl border border-slate-200 bg-white
   px-4 py-3 text-sm text-slate-900
   outline-none
@@ -608,7 +602,10 @@ const ContactSection = () => {
 
               <div className="grid gap-6 md:grid-cols-2">
                 <div>
-                  <label className="mb-2 block font-medium text-gray-700">
+                  <label
+                    htmlFor="loanType"
+                    className="mb-2 block font-medium text-gray-700"
+                  >
                     Loan Type
                   </label>
 
@@ -643,7 +640,10 @@ const ContactSection = () => {
                 </div>
 
                 <div>
-                  <label className="mb-2 block font-medium text-gray-700">
+                  <label
+                    htmlFor="loanAmount"
+                    className="mb-2 block font-medium text-gray-700"
+                  >
                     Loan Amount
                   </label>
 
@@ -653,7 +653,7 @@ const ContactSection = () => {
                     value={formData.loanAmount}
                     onChange={handleChange}
                     placeholder="₹ 10,00,000"
-                   className="
+                    className="
   w-full rounded-xl border border-slate-200 bg-white
   px-4 py-3 text-sm text-slate-900
   outline-none
@@ -677,7 +677,10 @@ const ContactSection = () => {
               )}
 
               <div>
-                <label className="mb-2 block font-medium text-gray-700">
+                <label
+                  htmlFor="purpose"
+                  className="mb-2 block font-medium text-gray-700"
+                >
                   Purpose
                 </label>
 
@@ -687,7 +690,7 @@ const ContactSection = () => {
                   value={formData.purpose}
                   onChange={handleChange}
                   placeholder="Tell us why you need financial assistance..."
-                 className="
+                  className="
   w-full rounded-xl border border-slate-200 bg-white
   px-4 py-3 text-sm text-slate-900
   outline-none
@@ -702,7 +705,10 @@ const ContactSection = () => {
               {/* Message */}
 
               <div>
-                <label className="mb-2 block font-medium text-gray-700">
+                <label
+                  htmlFor="message"
+                  className="mb-2 block font-medium text-gray-700"
+                >
                   Message (Optional)
                 </label>
 

@@ -161,17 +161,25 @@ const InsuranceComparison = () => {
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         {/* Header */}
         <div className="mx-auto mb-12 max-w-3xl text-center">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#10B981]/20 bg-white px-3.5 py-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[#186A07] shadow-sm">
-            <Sparkles
-              size={14}
-              aria-hidden="true"
-            />
-            Insurance Assistance
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+            </span>
+
+            <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+              Insurance Assistance
+            </span>
           </div>
 
-          <h2 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-[#0F172A] sm:text-5xl lg:text-[52px]">
+          {/* Heading */}
+
+          <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
             Not Sure Which{" "}
-            <span className="text-[#186A07]">Insurance</span> You Need?
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+              Insurance
+            </span>
+            You Need?
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-[#64748B] sm:text-lg">
@@ -227,9 +235,7 @@ const InsuranceComparison = () => {
                     </div>
 
                     <div className="min-w-0 flex-1">
-                      <p className="font-bold text-[#0F172A]">
-                        {option.title}
-                      </p>
+                      <p className="font-bold text-[#0F172A]">{option.title}</p>
 
                       <p className="mt-0.5 text-sm text-[#64748B]">
                         {option.subtitle}
@@ -266,11 +272,8 @@ const InsuranceComparison = () => {
               {/* Category Header */}
               <div className="flex flex-wrap items-start justify-between gap-5">
                 <div className="flex items-center gap-4">
-                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#186A07] to-[#0B2578] text-white shadow-[0_12px_30px_rgba(11,37,120,0.15)]">
-                    <SelectedIcon
-                      size={28}
-                      aria-hidden="true"
-                    />
+                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-[#186A07] to-[#0B2578] text-white shadow-[0_12px_30px_rgba(11,37,120,0.15)]">
+                    <SelectedIcon size={28} aria-hidden="true" />
                   </div>
 
                   <div>
@@ -300,10 +303,7 @@ const InsuranceComparison = () => {
               <div className="mt-7 rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] p-5">
                 <div className="flex items-start gap-3">
                   <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#10B981]/10 text-[#186A07]">
-                    <ShieldCheck
-                      size={17}
-                      aria-hidden="true"
-                    />
+                    <ShieldCheck size={17} aria-hidden="true" />
                   </div>
 
                   <div>

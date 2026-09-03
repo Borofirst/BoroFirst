@@ -33,8 +33,7 @@ const floatingCards = [
     title: "Great Teams",
     text: "Collaborate & innovate",
     icon: Users,
-    position:
-      "left-[-1rem] bottom-[8%] sm:left-[-2rem] lg:left-[-3rem]",
+    position: "left-[-1rem] bottom-[8%] sm:left-[-2rem] lg:left-[-3rem]",
   },
   {
     title: "Your Opportunity",
@@ -66,12 +65,12 @@ const CareerHero = () => {
       {/* Background */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_8%_20%,rgba(24,106,7,0.09),transparent_30%),radial-gradient(circle_at_90%_20%,rgba(11,37,120,0.08),transparent_32%),linear-gradient(to_bottom,#ffffff,#f7fbf6_58%,#ffffff)]"
+        className="absolute inset-0 -z-20 bg-[radial-linear(circle_at_8%_20%,rgba(24,106,7,0.09),transparent_30%),radial-linear(circle_at_90%_20%,rgba(11,37,120,0.08),transparent_32%),linear-linear(to_bottom,#ffffff,#f7fbf6_58%,#ffffff)]"
       />
 
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 opacity-[0.18] bg-[linear-gradient(rgba(24,106,7,0.13)_1px,transparent_1px),linear-gradient(90deg,rgba(24,106,7,0.13)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:linear-gradient(to_bottom,black,transparent_75%)]"
+        className="absolute inset-0 -z-10 opacity-[0.18] bg-[linear-linear(rgba(24,106,7,0.13)_1px,transparent_1px),linear-linear(90deg,rgba(24,106,7,0.13)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:linear-linear(to_bottom,black,transparent_75%)]"
       />
 
       <div
@@ -105,7 +104,7 @@ const CareerHero = () => {
               Build Your Career.
               <span className="mt-1 block">
                 Shape{" "}
-                <span className="bg-gradient-to-r from-[#186A07] via-[#16813c] to-[#0B2578] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#186A07] via-[#16813c] to-[#0B2578] bg-clip-text text-transparent">
                   Better Financial Journeys.
                 </span>
               </span>
@@ -122,7 +121,7 @@ const CareerHero = () => {
               <button
                 type="button"
                 onClick={scrollToOpportunities}
-                className="group inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#186A07] to-[#0B2578] px-5 py-3.5 text-sm font-bold text-white shadow-[0_12px_28px_rgba(11,37,120,0.16)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_35px_rgba(11,37,120,0.22)] focus:outline-none focus:ring-4 focus:ring-emerald-100"
+                className="group inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-5 py-3.5 text-sm font-bold text-white shadow-[0_12px_28px_rgba(11,37,120,0.16)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_35px_rgba(11,37,120,0.22)] focus:outline-none focus:ring-4 focus:ring-emerald-100"
               >
                 Explore Opportunities
                 <ArrowRight
@@ -177,44 +176,42 @@ const CareerHero = () => {
           {/* Visual */}
           <div className="relative mx-auto w-full max-w-[650px] lg:max-w-none">
             {/* Decorative glow */}
-           
-                 <img
+
+            <img
               src="/opportunity.png"
               alt="Happy couple outside their home"
               className="h-[500px] scale-x-[-1] w-full rounded-[26px] object-cover"
             />
-         
 
-              {/* Floating cards */}
-              {floatingCards.map(({ title, text, icon: Icon, position }) => (
-                <div
-                  key={title}
-                  className={`absolute z-50 ${position} hidden min-w-[175px] rounded-2xl border border-white/80 bg-white/90 p-3 shadow-[0_18px_45px_rgba(15,23,42,0.12)] backdrop-blur-xl sm:flex sm:items-center sm:gap-3 lg:min-w-[195px]`}
-                >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#EAF5E8] text-[#186A07]">
-                    <Icon size={20} strokeWidth={1.8} />
-                  </div>
-
-                  <div>
-                    <p className="text-xs font-extrabold text-slate-900">
-                      {title}
-                    </p>
-                    <p className="mt-1 text-[10px] font-medium text-slate-400">
-                      {text}
-                    </p>
-                  </div>
+            {/* Floating cards */}
+            {floatingCards.map(({ title, text, icon: Icon, position }) => (
+              <div
+                key={title}
+                className={`absolute z-50 ${position} hidden min-w-[175px] rounded-2xl border border-white/80 bg-white/90 p-3 shadow-[0_18px_45px_rgba(15,23,42,0.12)] backdrop-blur-xl sm:flex sm:items-center sm:gap-3 lg:min-w-[195px]`}
+              >
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#EAF5E8] text-[#186A07]">
+                  <Icon size={20} strokeWidth={1.8} />
                 </div>
-              ))}
 
-              {/* Mobile visual badge */}
-              <div className="absolute bottom-[-0.5rem] left-1/2 z-50 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white bg-white/95 px-3 py-2 text-[10px] font-bold text-slate-600 shadow-lg backdrop-blur sm:hidden">
-                <span className="h-2 w-2 rounded-full bg-[#186A07]" />
-                People • Technology • Finance • Growth
+                <div>
+                  <p className="text-xs font-extrabold text-slate-900">
+                    {title}
+                  </p>
+                  <p className="mt-1 text-[10px] font-medium text-slate-400">
+                    {text}
+                  </p>
+                </div>
               </div>
+            ))}
+
+            {/* Mobile visual badge */}
+            <div className="absolute bottom-[-0.5rem] left-1/2 z-50 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white bg-white/95 px-3 py-2 text-[10px] font-bold text-slate-600 shadow-lg backdrop-blur sm:hidden">
+              <span className="h-2 w-2 rounded-full bg-[#186A07]" />
+              People • Technology • Finance • Growth
             </div>
           </div>
         </div>
-   
+      </div>
 
       {/* Bottom transition */}
       <div className="mx-auto max-w-7xl px-5 pb-10 sm:px-8 lg:px-10">

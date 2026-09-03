@@ -124,6 +124,8 @@ const Navbar = () => {
             <img
               src="/Borofirst-Logos-1-1.webp"
               alt="Borofirst Logo"
+                width="150"
+                 height="50"
               className="
                 h-12
                 w-auto

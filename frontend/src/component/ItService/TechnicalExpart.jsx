@@ -24,7 +24,11 @@ const TechnologyExpertise = () => {
       description:
         "Modern, scalable software solutions designed around your business processes and customer needs.",
       icon: FaCode,
-      technologies: ["Web Applications", "Enterprise Software", "Custom Platforms"],
+      technologies: [
+        "Web Applications",
+        "Enterprise Software",
+        "Custom Platforms",
+      ],
       accent: "green",
     },
     {
@@ -42,7 +46,11 @@ const TechnologyExpertise = () => {
       description:
         "Flexible and scalable cloud infrastructure designed for reliability, performance, and business growth.",
       icon: FaCloud,
-      technologies: ["Cloud Infrastructure", "Cloud Applications", "Scalable Systems"],
+      technologies: [
+        "Cloud Infrastructure",
+        "Cloud Applications",
+        "Scalable Systems",
+      ],
       accent: "green",
     },
     {
@@ -60,7 +68,11 @@ const TechnologyExpertise = () => {
       description:
         "Structured and secure data systems that help businesses manage information and turn data into useful insights.",
       icon: FaDatabase,
-      technologies: ["Database Systems", "Data Processing", "Business Analytics"],
+      technologies: [
+        "Database Systems",
+        "Data Processing",
+        "Business Analytics",
+      ],
       accent: "green",
     },
     {
@@ -69,7 +81,11 @@ const TechnologyExpertise = () => {
       description:
         "Security-focused technology architecture designed to protect systems, data, applications, and business operations.",
       icon: FaShieldAlt,
-      technologies: ["Secure Architecture", "Data Protection", "Infrastructure"],
+      technologies: [
+        "Secure Architecture",
+        "Data Protection",
+        "Infrastructure",
+      ],
       accent: "blue",
     },
   ];
@@ -92,12 +108,22 @@ const TechnologyExpertise = () => {
     {
       name: "AI & Automation",
       icon: FaBrain,
-      items: ["AI Solutions", "Workflow Automation", "AI Assistants", "Intelligent Processing"],
+      items: [
+        "AI Solutions",
+        "Workflow Automation",
+        "AI Assistants",
+        "Intelligent Processing",
+      ],
     },
     {
       name: "Cloud & Data",
       icon: FaCloud,
-      items: ["Cloud Infrastructure", "Databases", "Data Processing", "Analytics"],
+      items: [
+        "Cloud Infrastructure",
+        "Databases",
+        "Data Processing",
+        "Analytics",
+      ],
     },
   ];
 
@@ -140,12 +166,12 @@ const TechnologyExpertise = () => {
         className="pointer-events-none absolute inset-0 opacity-[0.02]"
         style={{
           backgroundImage:
-            "linear-gradient(#0B2578 1px, transparent 1px), linear-gradient(90deg, #186A07 1px, transparent 1px)",
+            "linear-linear(#0B2578 1px, transparent 1px), linear-linear(90deg, #186A07 1px, transparent 1px)",
           backgroundSize: "50px 50px",
           maskImage:
-            "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+            "linear-linear(to bottom, transparent, black 15%, black 85%, transparent)",
           WebkitMaskImage:
-            "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+            "linear-linear(to bottom, transparent, black 15%, black 85%, transparent)",
         }}
       />
 
@@ -172,7 +198,7 @@ const TechnologyExpertise = () => {
 
           <h2 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
             Technology That{" "}
-            <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
               Moves Business Forward
             </span>
           </h2>
@@ -181,8 +207,8 @@ const TechnologyExpertise = () => {
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-500 sm:text-lg sm:leading-8">
             From software development and AI automation to cloud, APIs, data,
-            and security, BOROFIRST brings the technology capabilities needed
-            to build smarter digital businesses.
+            and security, BOROFIRST brings the technology capabilities needed to
+            build smarter digital businesses.
           </p>
         </div>
 
@@ -232,13 +258,13 @@ const TechnologyExpertise = () => {
                   hover:shadow-[0_22px_55px_rgba(11,37,120,0.11)]
                 "
               >
-                {/* Top Gradient Line */}
+                {/* Top linear Line */}
 
                 <div
                   className={`absolute left-0 right-0 top-0 h-[3px] ${
                     isGreen
-                      ? "bg-gradient-to-r from-[#186A07] to-[#0B2578]"
-                      : "bg-gradient-to-r from-[#0B2578] to-[#186A07]"
+                      ? "bg-linear-to-r from-[#186A07] to-[#0B2578]"
+                      : "bg-linear-to-r from-[#0B2578] to-[#186A07]"
                   }`}
                 />
 
@@ -293,7 +319,6 @@ const TechnologyExpertise = () => {
 
                   <div className="mt-6 flex items-center gap-2 text-xs font-bold text-slate-400 transition-all duration-300 group-hover:gap-3 group-hover:text-[#186A07]">
                     Explore Capability
-
                     <FaArrowRight
                       size={10}
                       className="transition-transform duration-300 group-hover:translate-x-1"
@@ -319,7 +344,7 @@ const TechnologyExpertise = () => {
         ========================================= */}
 
         <div className="mt-16">
-          <div className="relative overflow-hidden rounded-[30px] border border-slate-200 bg-gradient-to-br from-[#F4FAF1] via-white to-[#F2F5FC] p-6 shadow-[0_20px_60px_rgba(11,37,120,0.07)] sm:p-8 lg:p-10">
+          <div className="relative overflow-hidden rounded-[30px] border border-slate-200 bg-linear-to-br from-[#F4FAF1] via-white to-[#F2F5FC] p-6 shadow-[0_20px_60px_rgba(11,37,120,0.07)] sm:p-8 lg:p-10">
             {/* Decorative Circles */}
 
             <div
@@ -377,7 +402,7 @@ const TechnologyExpertise = () => {
                       {/* Icon + Name */}
 
                       <div className="flex items-center gap-3">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#F4FAF1] to-[#F2F5FC] text-[#186A07] ring-1 ring-[#186A07]/10 transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-[#186A07] group-hover:to-[#0B2578] group-hover:text-white">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-linear-to-br from-[#F4FAF1] to-[#F2F5FC] text-[#186A07] ring-1 ring-[#186A07]/10 transition-all duration-300 group-hover:bg-linear-to-br group-hover:from-[#186A07] group-hover:to-[#0B2578] group-hover:text-white">
                           <Icon size={16} />
                         </div>
 
@@ -414,26 +439,20 @@ const TechnologyExpertise = () => {
 
         <div className="mt-14 flex flex-col items-center justify-center text-center">
           <div className="flex items-center gap-3">
-            <span className="h-px w-12 bg-gradient-to-r from-transparent to-[#186A07]/30 sm:w-20" />
+            <span className="h-px w-12 bg-linear-to-r from-transparent to-[#186A07]/30 sm:w-20" />
 
-            <FaChartLine
-              size={14}
-              className="text-[#186A07]"
-            />
+            <FaChartLine size={14} className="text-[#186A07]" />
 
-            <span className="h-px w-12 bg-gradient-to-l from-transparent to-[#0B2578]/30 sm:w-20" />
+            <span className="h-px w-12 bg-linear-to-l from-transparent to-[#0B2578]/30 sm:w-20" />
           </div>
 
           <p className="mt-4 max-w-2xl text-sm font-medium leading-6 text-slate-500">
-            Technology should not simply support your business — it should
-            help your business{" "}
+            Technology should not simply support your business — it should help
+            your business{" "}
             <span className="font-semibold text-[#186A07]">
               operate smarter
             </span>
-            ,{" "}
-            <span className="font-semibold text-[#0B2578]">
-              scale faster
-            </span>
+            , <span className="font-semibold text-[#0B2578]">scale faster</span>
             , and stay ready for what comes next.
           </p>
         </div>

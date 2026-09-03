@@ -101,12 +101,12 @@ const HowOurITSolutionsWork = () => {
         className="pointer-events-none absolute inset-0 opacity-[0.025]"
         style={{
           backgroundImage:
-            "linear-gradient(#0B2578 1px, transparent 1px), linear-gradient(90deg, #186A07 1px, transparent 1px)",
+            "linear-linear(#0B2578 1px, transparent 1px), linear-linear(90deg, #186A07 1px, transparent 1px)",
           backgroundSize: "48px 48px",
           maskImage:
-            "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+            "linear-linear(to bottom, transparent, black 15%, black 85%, transparent)",
           WebkitMaskImage:
-            "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+            "linear-linear(to bottom, transparent, black 15%, black 85%, transparent)",
         }}
       />
 
@@ -133,7 +133,7 @@ const HowOurITSolutionsWork = () => {
 
           <h2 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
             From Business Challenge to{" "}
-            <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
               Digital Solution
             </span>
           </h2>
@@ -155,14 +155,14 @@ const HowOurITSolutionsWork = () => {
 
           <div
             aria-hidden="true"
-            className="absolute left-[12%] right-[12%] top-[54px] hidden h-px bg-gradient-to-r from-[#186A07]/20 via-[#0B2578]/35 to-[#186A07]/20 lg:block"
+            className="absolute left-[12%] right-[12%] top-[54px] hidden h-px bg-linear-to-r from-[#186A07]/20 via-[#0B2578]/35 to-[#186A07]/20 lg:block"
           />
 
           {/* Animated line */}
 
           <div
             aria-hidden="true"
-            className="absolute left-[12%] right-[12%] top-[54px] hidden h-px bg-gradient-to-r from-[#186A07] via-[#0B2578] to-[#186A07] opacity-20 lg:block"
+            className="absolute left-[12%] right-[12%] top-[54px] hidden h-px bg-linear-to-r from-[#186A07] via-[#0B2578] to-[#186A07] opacity-20 lg:block"
           />
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-5">
@@ -171,10 +171,7 @@ const HowOurITSolutionsWork = () => {
               const isGreen = step.accent === "green";
 
               return (
-                <article
-                  key={step.number}
-                  className="group relative"
-                >
+                <article key={step.number} className="group relative">
                   {/* =========================================
                       Step Number / Icon
                   ========================================= */}
@@ -184,9 +181,7 @@ const HowOurITSolutionsWork = () => {
 
                     <div
                       className={`absolute h-[84px] w-[84px] rounded-full blur-xl transition-all duration-500 group-hover:scale-125 ${
-                        isGreen
-                          ? "bg-[#186A07]/10"
-                          : "bg-[#0B2578]/10"
+                        isGreen ? "bg-[#186A07]/10" : "bg-[#0B2578]/10"
                       }`}
                     />
 
@@ -194,18 +189,16 @@ const HowOurITSolutionsWork = () => {
 
                     <div
                       className={`relative flex h-[76px] w-[76px] items-center justify-center rounded-full border bg-white shadow-[0_12px_35px_rgba(11,37,120,0.09)] transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-[0_18px_45px_rgba(11,37,120,0.14)] ${
-                        isGreen
-                          ? "border-[#186A07]/15"
-                          : "border-[#0B2578]/15"
+                        isGreen ? "border-[#186A07]/15" : "border-[#0B2578]/15"
                       }`}
                     >
-                      {/* Gradient Inner Circle */}
+                      {/* linear Inner Circle */}
 
                       <div
                         className={`flex h-14 w-14 items-center justify-center rounded-full text-white shadow-lg transition-all duration-500 group-hover:scale-105 ${
                           isGreen
-                            ? "bg-gradient-to-br from-[#186A07] to-[#2c8e18]"
-                            : "bg-gradient-to-br from-[#0B2578] to-[#2545a0]"
+                            ? "bg-linear-to-br from-[#186A07] to-[#2c8e18]"
+                            : "bg-linear-to-br from-[#0B2578] to-[#2545a0]"
                         }`}
                       >
                         <Icon size={20} />
@@ -237,13 +230,13 @@ const HowOurITSolutionsWork = () => {
                       hover:shadow-[0_22px_55px_rgba(11,37,120,0.11)]
                     "
                   >
-                    {/* Top Gradient Accent */}
+                    {/* Top linear Accent */}
 
                     <div
                       className={`absolute left-0 right-0 top-0 h-[3px] ${
                         isGreen
-                          ? "bg-gradient-to-r from-[#186A07] to-[#0B2578]"
-                          : "bg-gradient-to-r from-[#0B2578] to-[#186A07]"
+                          ? "bg-linear-to-r from-[#186A07] to-[#0B2578]"
+                          : "bg-linear-to-r from-[#0B2578] to-[#186A07]"
                       }`}
                     />
 
@@ -262,9 +255,7 @@ const HowOurITSolutionsWork = () => {
                       <div className="flex items-center justify-between">
                         <span
                           className={`text-[10px] font-bold uppercase tracking-[0.18em] ${
-                            isGreen
-                              ? "text-[#186A07]"
-                              : "text-[#0B2578]"
+                            isGreen ? "text-[#186A07]" : "text-[#0B2578]"
                           }`}
                         >
                           Step {step.number}
@@ -298,9 +289,7 @@ const HowOurITSolutionsWork = () => {
                             <FaCheckCircle
                               size={12}
                               className={`shrink-0 transition-transform duration-300 group-hover/item:scale-110 ${
-                                isGreen
-                                  ? "text-[#186A07]"
-                                  : "text-[#0B2578]"
+                                isGreen ? "text-[#186A07]" : "text-[#0B2578]"
                               }`}
                             />
 
@@ -317,9 +306,7 @@ const HowOurITSolutionsWork = () => {
                     <div
                       aria-hidden="true"
                       className={`pointer-events-none absolute -bottom-20 -right-20 h-36 w-36 rounded-full opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100 ${
-                        isGreen
-                          ? "bg-[#186A07]/10"
-                          : "bg-[#0B2578]/10"
+                        isGreen ? "bg-[#186A07]/10" : "bg-[#0B2578]/10"
                       }`}
                     />
                   </div>
@@ -334,12 +321,12 @@ const HowOurITSolutionsWork = () => {
         ========================================= */}
 
         <div className="mt-14 lg:mt-16">
-          <div className="relative overflow-hidden rounded-[26px] border border-slate-200 bg-gradient-to-r from-[#F4FAF1] via-white to-[#F2F5FC] p-6 shadow-[0_15px_45px_rgba(11,37,120,0.06)] sm:p-7">
-            {/* Decorative Gradient */}
+          <div className="relative overflow-hidden rounded-[26px] border border-slate-200 bg-linear-to-r from-[#F4FAF1] via-white to-[#F2F5FC] p-6 shadow-[0_15px_45px_rgba(11,37,120,0.06)] sm:p-7">
+            {/* Decorative linear */}
 
             <div
               aria-hidden="true"
-              className="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-[#0B2578]/5 to-transparent"
+              className="absolute right-0 top-0 h-full w-1/3 bg-linear-to-l from-[#0B2578]/5 to-transparent"
             />
 
             <div className="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
@@ -366,20 +353,11 @@ const HowOurITSolutionsWork = () => {
               {/* Right Benefits */}
 
               <div className="flex flex-wrap gap-2.5">
-                <MiniBenefit
-                  icon={FaCogs}
-                  text="Scalable"
-                />
+                <MiniBenefit icon={FaCogs} text="Scalable" />
 
-                <MiniBenefit
-                  icon={FaShieldAlt}
-                  text="Secure"
-                />
+                <MiniBenefit icon={FaShieldAlt} text="Secure" />
 
-                <MiniBenefit
-                  icon={FaRocket}
-                  text="Future Ready"
-                />
+                <MiniBenefit icon={FaRocket} text="Future Ready" />
               </div>
             </div>
           </div>
@@ -399,7 +377,6 @@ const HowOurITSolutionsWork = () => {
             className="group mt-4 inline-flex items-center gap-3 rounded-xl border border-[#186A07]/15 bg-white px-5 py-3 text-sm font-semibold text-[#186A07] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#186A07]/30 hover:shadow-[0_12px_30px_rgba(24,106,7,0.10)]"
           >
             Start a Conversation
-
             <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#F4FAF1] transition-all duration-300 group-hover:bg-[#186A07] group-hover:text-white">
               <FaArrowRight
                 size={10}
@@ -414,14 +391,14 @@ const HowOurITSolutionsWork = () => {
         ========================================= */}
 
         <div className="mt-14 flex items-center justify-center gap-3 text-center">
-          <span className="h-px w-10 bg-gradient-to-r from-transparent to-[#186A07]/30 sm:w-20" />
+          <span className="h-px w-10 bg-linear-to-r from-transparent to-[#186A07]/30 sm:w-20" />
 
           <p className="text-xs font-medium text-slate-400">
             Discover <span className="text-[#186A07]">. Design</span> · Build{" "}
             <span className="text-[#0B2578]">. Automate</span> · Grow
           </p>
 
-          <span className="h-px w-10 bg-gradient-to-l from-transparent to-[#0B2578]/30 sm:w-20" />
+          <span className="h-px w-10 bg-linear-to-l from-transparent to-[#0B2578]/30 sm:w-20" />
         </div>
       </div>
     </section>

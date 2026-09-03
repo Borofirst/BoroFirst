@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const CommenCar2 = ({reason}) => {
-    console.log(reason);
-    const Icon = reason.icon;
-   return (
-              <article
-                key={reason.number}
-                className="
+const CommenCar2 = ({ reason }) => {
+  console.log(reason);
+  const Icon = reason.icon;
+  return (
+    <article
+      key={reason.number}
+      className="
                   group
                   relative
                   overflow-hidden
@@ -23,10 +23,10 @@ const CommenCar2 = ({reason}) => {
                   hover:shadow-[0_20px_45px_rgba(15,23,42,0.09)]
                   sm:p-7
                 "
-              >
-                {/* Card Glow */}
-                <div
-                  className="
+    >
+      {/* Card Glow */}
+      <div
+        className="
                     pointer-events-none
                     absolute
                     -right-12
@@ -41,13 +41,13 @@ const CommenCar2 = ({reason}) => {
                     duration-500
                     group-hover:opacity-100
                   "
-                />
+      />
 
-                {/* Top Row */}
-                <div className="relative flex items-start justify-between">
-                  {/* Number */}
-                  <span
-                    className="
+      {/* Top Row */}
+      <div className="relative flex items-start justify-between">
+        {/* Number */}
+        <span
+          className="
                       text-[11px]
                       font-extrabold
                       tracking-[0.16em]
@@ -56,13 +56,13 @@ const CommenCar2 = ({reason}) => {
                       duration-300
                       group-hover:text-[#186A07]/60
                     "
-                  >
-                    {reason.number}
-                  </span>
+        >
+          {reason.number}
+        </span>
 
-                  {/* Icon */}
-                  <div
-                    className="
+        {/* Icon */}
+        <div
+          className="
                       flex
                       h-12
                       w-12
@@ -81,15 +81,15 @@ const CommenCar2 = ({reason}) => {
                       group-hover:bg-[#186A07]
                       group-hover:text-white
                     "
-                  >
-                    <Icon size={21} strokeWidth={1.8} />
-                  </div>
-                </div>
+        >
+          <Icon size={21} strokeWidth={1.8} />
+        </div>
+      </div>
 
-                {/* Content */}
-                <div className="relative mt-8">
-                  <h3
-                    className="
+      {/* Content */}
+      <div className="relative mt-8">
+        <h3
+          className="
                       text-xl
                       font-extrabold
                       tracking-tight
@@ -98,21 +98,21 @@ const CommenCar2 = ({reason}) => {
                       duration-300
                       group-hover:text-[#186A07]
                     "
-                  >
-                    {reason.title}
-                  </h3>
+        >
+          {reason.title}
+        </h3>
 
-                  <p className="mt-3 text-sm leading-6 text-slate-500">
-                    {reason.description}
-                  </p>
-                </div>
+        <p className="mt-3 text-sm leading-6 text-slate-500">
+          {reason.description}
+        </p>
+      </div>
 
-                {/* Bottom Accent */}
-                <div className="relative mt-7 flex items-center gap-2">
-                  <div className="h-px flex-1 bg-slate-100 transition-colors duration-300 group-hover:bg-emerald-100" />
+      {/* Bottom Accent */}
+      <div className="relative mt-7 flex items-center gap-2">
+        <div className="h-px flex-1 bg-slate-100 transition-colors duration-300 group-hover:bg-emerald-100" />
 
-                  <div
-                    className="
+        <div
+          className="
                       h-1.5
                       w-1.5
                       rounded-full
@@ -120,14 +120,14 @@ const CommenCar2 = ({reason}) => {
                       transition-all
                       duration-300
                       group-hover:w-8
-                      group-hover:bg-gradient-to-r
+                      group-hover:bg-linear-to-r
                       group-hover:from-[#186A07]
                       group-hover:to-[#0B2578]
                     "
-                  />
-                </div>
-              </article>
-            );
-}
+        />
+      </div>
+    </article>
+  );
+};
 
-export default CommenCar2
+export default CommenCar2;

@@ -14,8 +14,7 @@ const educationalPoints = [
     id: 1,
     icon: ShieldCheck,
     title: "Protection Against Risks",
-    description:
-      "Helps address the financial impact of unexpected events.",
+    description: "Helps address the financial impact of unexpected events.",
   },
   {
     id: 2,
@@ -37,32 +36,28 @@ const insuranceFlow = [
   {
     id: 1,
     title: "Unexpected Event",
-    description:
-      "Accident, damage, medical expense or travel emergency",
+    description: "Accident, damage, medical expense or travel emergency",
     icon: TriangleAlert,
     type: "normal",
   },
   {
     id: 2,
     title: "Financial Risk",
-    description:
-      "Unexpected expenses can put pressure on your finances.",
+    description: "Unexpected expenses can put pressure on your finances.",
     icon: WalletCards,
     type: "normal",
   },
   {
     id: 3,
     title: "Insurance Protection",
-    description:
-      "A suitable policy can help cover eligible risks.",
+    description: "A suitable policy can help cover eligible risks.",
     icon: ShieldCheck,
     type: "featured",
   },
   {
     id: 4,
     title: "Reduced Financial Burden",
-    description:
-      "Helps manage the financial impact of covered events.",
+    description: "Helps manage the financial impact of covered events.",
     icon: CircleCheck,
     type: "normal",
   },
@@ -138,7 +133,7 @@ const FlowNode = ({ item }) => {
         className="
           group relative w-full max-w-lg overflow-hidden
           rounded-3xl
-          bg-gradient-to-br from-[#186A07] to-[#0B2578]
+          bg-linear-to-br from-[#186A07] to-[#0B2578]
           p-6
           text-white
           shadow-[0_24px_55px_rgba(11,37,120,0.18)]
@@ -238,7 +233,7 @@ const FlowNode = ({ item }) => {
       <div
         className="
           absolute bottom-0 left-0 h-0.5 w-0
-          bg-gradient-to-r from-[#186A07] to-[#10B981]
+          bg-linear-to-r from-[#186A07] to-[#10B981]
           transition-all duration-500
           group-hover:w-full
         "
@@ -332,31 +327,13 @@ const WhatIsGeneralInsurance = () => {
           {/* LEFT — Educational Content */}
           <div className="max-w-xl">
             {/* Eyebrow */}
-            <div
-              className="
-                mb-5 inline-flex items-center gap-2
-                rounded-full
-                border border-[#10B981]/15
-                bg-white
-                px-3.5 py-2
-                shadow-[0_8px_25px_rgba(15,23,42,0.04)]
-              "
-            >
-              <ShieldCheck
-                size={15}
-                strokeWidth={2.2}
-                className="text-[#10B981]"
-                aria-hidden="true"
-              />
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+              </span>
 
-              <span
-                className="
-                  text-[10px] font-bold uppercase
-                  tracking-[0.16em]
-                  text-[#186A07]
-                  sm:text-[11px]
-                "
-              >
+              <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
                 Understanding Insurance
               </span>
             </div>
@@ -366,7 +343,7 @@ const WhatIsGeneralInsurance = () => {
               id="general-insurance-heading"
               className="
                 max-w-xl
-                text-4xl font-extrabold
+                text-4xl font-bold
                 leading-[1.05]
                 tracking-[-0.04em]
                 text-[#0F172A]
@@ -375,11 +352,12 @@ const WhatIsGeneralInsurance = () => {
               "
             >
               What Is{" "}
-              <span className="text-[#186A07]">
-                General Insurance
+              <span className="block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+                General Insurance ?
               </span>
-              ?
             </h2>
+
+            {/* Heading */}
 
             {/* Main explanation */}
             <p className="mt-6 max-w-xl text-base leading-7 text-[#64748B] sm:text-lg">
@@ -398,8 +376,8 @@ const WhatIsGeneralInsurance = () => {
                 text-[#64748B]
               "
             >
-              It helps you prepare financially for situations that may
-              otherwise create unexpected expenses.
+              It helps you prepare financially for situations that may otherwise
+              create unexpected expenses.
             </p>
 
             {/* Educational Points */}
@@ -446,9 +424,7 @@ const WhatIsGeneralInsurance = () => {
                   <React.Fragment key={item.id}>
                     <FlowNode item={item} />
 
-                    {index < insuranceFlow.length - 1 && (
-                      <FlowConnector />
-                    )}
+                    {index < insuranceFlow.length - 1 && <FlowConnector />}
                   </React.Fragment>
                 ))}
               </div>

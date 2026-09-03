@@ -103,23 +103,21 @@ const WhyChooseBoroFirstIT = () => {
         className="pointer-events-none absolute inset-0 opacity-[0.018]"
         style={{
           backgroundImage:
-            "linear-gradient(#0B2578 1px, transparent 1px), linear-gradient(90deg, #186A07 1px, transparent 1px)",
+            "linear-linear(#0B2578 1px, transparent 1px), linear-linear(90deg, #186A07 1px, transparent 1px)",
           backgroundSize: "52px 52px",
           maskImage:
-            "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+            "linear-linear(to bottom, transparent, black 15%, black 85%, transparent)",
           WebkitMaskImage:
-            "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)",
+            "linear-linear(to bottom, transparent, black 15%, black 85%, transparent)",
         }}
       />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-
         {/* =========================================
             Section Header
         ========================================= */}
 
         <div className="mx-auto max-w-3xl text-center">
-
           {/* Badge */}
 
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
@@ -137,7 +135,7 @@ const WhyChooseBoroFirstIT = () => {
 
           <h2 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
             Technology Built Around{" "}
-            <span className="bg-gradient-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
               Your Business
             </span>
           </h2>
@@ -145,9 +143,9 @@ const WhyChooseBoroFirstIT = () => {
           {/* Description */}
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-500 sm:text-lg sm:leading-8">
-            We combine business understanding, modern technology, security,
-            and long-term collaboration to create digital solutions designed
-            for real-world business needs.
+            We combine business understanding, modern technology, security, and
+            long-term collaboration to create digital solutions designed for
+            real-world business needs.
           </p>
         </div>
 
@@ -189,7 +187,6 @@ const WhyChooseBoroFirstIT = () => {
         ========================================= */}
 
         <div className="mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-
           {differentiators.map((item) => {
             const Icon = item.icon;
             const isGreen = item.accent === "green";
@@ -210,14 +207,13 @@ const WhyChooseBoroFirstIT = () => {
                   hover:shadow-[0_24px_60px_rgba(11,37,120,0.11)]
                 "
               >
-
                 {/* Top Accent */}
 
                 <div
                   className={`absolute left-0 right-0 top-0 h-[3px] ${
                     isGreen
-                      ? "bg-gradient-to-r from-[#186A07] to-[#0B2578]"
-                      : "bg-gradient-to-r from-[#0B2578] to-[#186A07]"
+                      ? "bg-linear-to-r from-[#186A07] to-[#0B2578]"
+                      : "bg-linear-to-r from-[#0B2578] to-[#186A07]"
                   }`}
                 />
 
@@ -240,7 +236,6 @@ const WhyChooseBoroFirstIT = () => {
                 </span>
 
                 <div className="relative">
-
                   {/* Icon */}
 
                   <div
@@ -264,19 +259,15 @@ const WhyChooseBoroFirstIT = () => {
                   {/* Number Label */}
 
                   <div className="mt-6 flex items-center gap-2">
-
                     <span
                       className={`text-[10px] font-bold uppercase tracking-[0.18em] ${
-                        isGreen
-                          ? "text-[#186A07]"
-                          : "text-[#0B2578]"
+                        isGreen ? "text-[#186A07]" : "text-[#0B2578]"
                       }`}
                     >
                       Advantage {item.number}
                     </span>
 
                     <span className="h-px w-8 bg-slate-200 transition-all duration-300 group-hover:w-12" />
-
                   </div>
 
                   {/* Title */}
@@ -294,7 +285,6 @@ const WhyChooseBoroFirstIT = () => {
                   {/* Bottom Indicator */}
 
                   <div className="mt-6 flex items-center justify-between border-t border-slate-100 pt-5">
-
                     <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
                       BOROFIRST IT
                     </span>
@@ -317,7 +307,6 @@ const WhyChooseBoroFirstIT = () => {
                         className="transition-transform duration-300 group-hover:translate-x-0.5"
                       />
                     </div>
-
                   </div>
                 </div>
 
@@ -333,11 +322,7 @@ const WhyChooseBoroFirstIT = () => {
                     opacity-0
                     transition-opacity duration-500
                     group-hover:opacity-100
-                    ${
-                      isGreen
-                        ? "bg-[#186A07]/10"
-                        : "bg-[#0B2578]/10"
-                    }
+                    ${isGreen ? "bg-[#186A07]/10" : "bg-[#0B2578]/10"}
                   `}
                 />
               </article>
@@ -355,7 +340,7 @@ const WhyChooseBoroFirstIT = () => {
               relative overflow-hidden
               rounded-[30px]
               border border-slate-200
-              bg-gradient-to-br
+              bg-linear-to-br
               from-[#F4FAF1]
               via-white
               to-[#F2F5FC]
@@ -365,7 +350,6 @@ const WhyChooseBoroFirstIT = () => {
               lg:p-10
             "
           >
-
             {/* Decorative Circle */}
 
             <div
@@ -389,13 +373,10 @@ const WhyChooseBoroFirstIT = () => {
             />
 
             <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
-
               {/* Left Content */}
 
               <div>
-
                 <div className="flex items-center gap-3">
-
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-[#186A07] shadow-sm ring-1 ring-[#186A07]/10">
                     <FaShieldAlt size={17} />
                   </div>
@@ -409,7 +390,6 @@ const WhyChooseBoroFirstIT = () => {
                       Technology That Works For Your Business
                     </h3>
                   </div>
-
                 </div>
 
                 <p className="mt-4 max-w-2xl text-sm leading-6 text-slate-500">
@@ -418,19 +398,17 @@ const WhyChooseBoroFirstIT = () => {
                   BOROFIRST focuses on building technology that is practical,
                   secure, and ready for the future.
                 </p>
-
               </div>
 
               {/* Right CTA */}
 
               <div className="lg:pr-2">
-
                 <a
                   href="/contact"
                   className="
                     group inline-flex items-center gap-3
                     rounded-xl
-                    bg-gradient-to-r
+                    bg-linear-to-r
                     from-[#186A07]
                     to-[#0B2578]
                     px-5 py-3.5
@@ -443,7 +421,6 @@ const WhyChooseBoroFirstIT = () => {
                   "
                 >
                   Build With Us
-
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white/15">
                     <FaArrowRight
                       size={10}
@@ -451,7 +428,6 @@ const WhyChooseBoroFirstIT = () => {
                     />
                   </span>
                 </a>
-
               </div>
             </div>
           </div>
@@ -462,8 +438,7 @@ const WhyChooseBoroFirstIT = () => {
         ========================================= */}
 
         <div className="mt-14 flex items-center justify-center gap-3 text-center">
-
-          <span className="h-px w-10 bg-gradient-to-r from-transparent to-[#186A07]/30 sm:w-20" />
+          <span className="h-px w-10 bg-linear-to-r from-transparent to-[#186A07]/30 sm:w-20" />
 
           <p className="text-xs font-medium text-slate-400">
             Business Understanding
@@ -473,8 +448,7 @@ const WhyChooseBoroFirstIT = () => {
             Trust
           </p>
 
-          <span className="h-px w-10 bg-gradient-to-l from-transparent to-[#0B2578]/30 sm:w-20" />
-
+          <span className="h-px w-10 bg-linear-to-l from-transparent to-[#0B2578]/30 sm:w-20" />
         </div>
       </div>
     </section>

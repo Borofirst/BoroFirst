@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   ArrowRight,
@@ -55,11 +54,9 @@ const BenefitCard = ({ benefit }) => {
       />
 
       <div className="relative">
-
         {/* Header */}
 
         <div className="flex items-start justify-between">
-
           <div
             className="
               flex
@@ -85,7 +82,6 @@ const BenefitCard = ({ benefit }) => {
           <span className="text-[11px] font-bold tracking-[0.2em] text-[#CBD5E1]">
             {benefit.id}
           </span>
-
         </div>
 
         {/* Title */}
@@ -99,7 +95,6 @@ const BenefitCard = ({ benefit }) => {
         <p className="mt-2 text-[13px] leading-6 text-[#64748B]">
           {benefit.description}
         </p>
-
       </div>
     </div>
   );
@@ -126,7 +121,6 @@ const CentralOrb = ({ config }) => {
         sm:w-[430px]
       "
     >
-
       {/* Glow */}
 
       <div
@@ -179,7 +173,6 @@ const CentralOrb = ({ config }) => {
       {/* Orbiting Elements */}
 
       <div className="absolute inset-8 animate-orbit">
-
         <span
           className="absolute left-1/2 top-[-4px] h-3 w-3 -translate-x-1/2 rounded-full shadow-[0_0_20px_rgba(16,185,129,0.5)]"
           style={{
@@ -200,7 +193,6 @@ const CentralOrb = ({ config }) => {
             backgroundColor: config.colors.accent,
           }}
         />
-
       </div>
 
       {/* Central White Orb */}
@@ -218,7 +210,7 @@ const CentralOrb = ({ config }) => {
           rounded-full
           border
           border-white
-          bg-gradient-to-br
+          bg-linear-to-br
           from-white
           via-white
           to-[#ECFDF5]
@@ -228,7 +220,6 @@ const CentralOrb = ({ config }) => {
           animate-float
         "
       >
-
         {/* Icon */}
 
         <div
@@ -244,13 +235,10 @@ const CentralOrb = ({ config }) => {
             shadow-[0_12px_30px_rgba(16,185,129,0.3)]
           "
           style={{
-            background: `linear-gradient(135deg, ${config.colors.primary}, ${config.colors.accent})`,
+            background: `linear-linear(135deg, ${config.colors.primary}, ${config.colors.accent})`,
           }}
         >
-          <Icon
-            size={29}
-            strokeWidth={1.8}
-          />
+          <Icon size={29} strokeWidth={1.8} />
         </div>
 
         {/* Brand */}
@@ -283,7 +271,6 @@ const CentralOrb = ({ config }) => {
         {/* Bottom Text */}
 
         <div className="mt-4 flex items-center gap-2">
-
           <span
             className="h-1.5 w-1.5 rounded-full"
             style={{
@@ -301,9 +288,7 @@ const CentralOrb = ({ config }) => {
               backgroundColor: config.colors.secondary,
             }}
           />
-
         </div>
-
       </div>
     </div>
   );
@@ -313,20 +298,14 @@ const CentralOrb = ({ config }) => {
    MAIN REUSABLE COMPONENT
 ========================================================= */
 
-const WhyChooseLoan = ({
-  config,
-  onPrimaryCTA,
-  onSecondaryCTA,
-}) => {
+const WhyChooseLoan = ({ config, onPrimaryCTA, onSecondaryCTA }) => {
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] py-20 sm:py-24 lg:py-32">
-
       {/* =====================================================
           BACKGROUND DECORATION
       ===================================================== */}
 
       <div className="pointer-events-none absolute inset-0">
-
         <div
           className="absolute -left-40 top-20 h-96 w-96 rounded-full blur-3xl"
           style={{
@@ -349,9 +328,6 @@ const WhyChooseLoan = ({
         />
 
         {/* Subtle Grid */}
-
-  
-
       </div>
 
       {/* =====================================================
@@ -359,13 +335,11 @@ const WhyChooseLoan = ({
       ===================================================== */}
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-
         {/* =====================================================
             HEADER
         ===================================================== */}
 
         <div className="mx-auto max-w-3xl text-center animate-fade-up">
-
           {/* Eyebrow */}
 
           <div
@@ -374,9 +348,7 @@ const WhyChooseLoan = ({
               borderColor: `${config.colors.primary}25`,
             }}
           >
-
             <span className="relative flex h-2 w-2">
-
               <span
                 className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-60"
                 style={{
@@ -390,7 +362,6 @@ const WhyChooseLoan = ({
                   backgroundColor: config.colors.primary,
                 }}
               />
-
             </span>
 
             <span
@@ -401,24 +372,21 @@ const WhyChooseLoan = ({
             >
               {config.eyebrow}
             </span>
-
           </div>
 
           {/* Heading */}
 
           <h2 className="text-3xl font-bold leading-[1.15] tracking-tight text-[#0F172A] sm:text-4xl lg:text-[44px]">
-
             {config.heading}
 
             <span
               className="mt-2 block bg-clip-text text-transparent"
               style={{
-                backgroundImage: `linear-gradient(to right, ${config.colors.accent}, ${config.colors.primary}, ${config.colors.secondary})`,
+                backgroundImage: `linear-linear(to right, ${config.colors.accent}, ${config.colors.primary}, ${config.colors.secondary})`,
               }}
             >
               {config.highlight}
             </span>
-
           </h2>
 
           {/* Description */}
@@ -426,7 +394,6 @@ const WhyChooseLoan = ({
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-[#64748B] sm:text-base sm:leading-8">
             {config.description}
           </p>
-
         </div>
 
         {/* =====================================================
@@ -434,13 +401,11 @@ const WhyChooseLoan = ({
         ===================================================== */}
 
         <div className="relative mx-auto mt-20 max-w-6xl lg:mt-24">
-
           {/* ===================================================
               DESKTOP
           =================================================== */}
 
           <div className="relative hidden min-h-[720px] lg:block">
-
             {/* Outer Orbit */}
 
             <div
@@ -458,20 +423,18 @@ const WhyChooseLoan = ({
                 borderColor: `${config.colors.primary}30`,
               }}
             />
-
             {/* Inner Orbit */}
 
             <div
               className="absolute left-1/2 top-1/2 h-[410px] w-[410px] -translate-x-1/2 -translate-y-1/2 rounded-full border"
               style={{
                 borderColor: `${config.colors.secondary}18`,
-              }} 
+              }}
             />
 
             {/* Orbiting Dots */}
 
-             <div className="absolute left-1/2 top-1/2 h-[540px] w-[540px] -translate-x-1/2 -translate-y-1/2 animate-orbit">
-
+            <div className="absolute left-1/2 top-1/2 h-[540px] w-[540px] -translate-x-1/2 -translate-y-1/2 animate-orbit">
               <span
                 className="absolute left-1/2 top-[-5px] h-3 w-3 -translate-x-1/2 rounded-full shadow-[0_0_25px_rgba(16,185,129,0.6)]"
                 style={{
@@ -492,15 +455,13 @@ const WhyChooseLoan = ({
                   backgroundColor: config.colors.accent,
                 }}
               />
-
-            </div> *
+            </div>
 
             {/* =================================================
                 BENEFIT CARDS
             ================================================= */}
 
             {config.benefits.slice(0, 5).map((benefit, index) => {
-
               const positions = [
                 "absolute left-[1%] top-[7%] w-[290px]",
                 "absolute right-[1%] top-[7%] w-[290px]",
@@ -530,7 +491,6 @@ const WhyChooseLoan = ({
             {/* Central Orb */}
 
             <CentralOrb config={config} />
-
           </div>
 
           {/* ===================================================
@@ -538,11 +498,9 @@ const WhyChooseLoan = ({
           =================================================== */}
 
           <div className="lg:hidden">
-
             <CentralOrb config={config} />
 
             <div className="mt-14 grid gap-4">
-
               {config.benefits.map((benefit, index) => (
                 <div
                   key={benefit.id}
@@ -554,11 +512,8 @@ const WhyChooseLoan = ({
                   <BenefitCard benefit={benefit} />
                 </div>
               ))}
-
             </div>
-
           </div>
-
         </div>
 
         {/* =====================================================
@@ -566,9 +521,7 @@ const WhyChooseLoan = ({
         ===================================================== */}
 
         <div className="mt-24 lg:mt-32">
-
           <div className="mx-auto max-w-2xl text-center animate-fade-up">
-
             <span
               className="text-[10px] font-bold tracking-[0.22em] sm:text-xs"
               style={{
@@ -585,30 +538,24 @@ const WhyChooseLoan = ({
             <p className="mt-4 text-sm leading-7 text-[#64748B]">
               {config.journey.description}
             </p>
-
           </div>
 
           {/* Journey Items */}
 
           <div className="relative mt-14">
-
             {/* Desktop Line */}
 
             <div className="absolute left-[12%] right-[12%] top-10 hidden h-px bg-[#E2E8F0] lg:block">
-
               <div
                 className="h-full origin-left animate-line-grow"
                 style={{
-                  background: `linear-gradient(to right, ${config.colors.primary}, ${config.colors.primary}, ${config.colors.secondary})`,
+                  background: `linear-linear(to right, ${config.colors.primary}, ${config.colors.primary}, ${config.colors.secondary})`,
                 }}
               />
-
             </div>
 
             <div className="grid gap-8 lg:grid-cols-4">
-
               {config.journey.items.map((item, index) => {
-
                 const Icon = item.icon;
 
                 return (
@@ -619,11 +566,9 @@ const WhyChooseLoan = ({
                       animationDelay: `${index * 120}ms`,
                     }}
                   >
-
                     {/* Icon Circle */}
 
                     <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border-8 border-[#F8FAFC] bg-white shadow-[0_10px_30px_rgba(15,23,42,0.08)] transition-all duration-500 group-hover:-translate-y-2">
-
                       <div
                         className="
                           flex
@@ -641,23 +586,19 @@ const WhyChooseLoan = ({
                         style={{
                           backgroundColor: `${config.colors.primary}12`,
                           color: config.colors.accent,
-
                         }}
                         onMouseEnter={(e) => {
                           e.currentTarget.style.backgroundColor =
                             config.colors.accent;
-                             e.currentTarget.style.color ="white";
-                            
+                          e.currentTarget.style.color = "white";
                         }}
                         onMouseLeave={(e) => {
-                          e.currentTarget.style.backgroundColor =
-                            `${config.colors.primary}12`;
-                            e.currentTarget.style.color=config.colors.accent;
+                          e.currentTarget.style.backgroundColor = `${config.colors.primary}12`;
+                          e.currentTarget.style.color = config.colors.accent;
                         }}
                       >
                         <Icon size={22} />
                       </div>
-
                     </div>
 
                     <span className="mt-5 block text-[10px] font-bold tracking-[0.2em] text-[#94A3B8]">
@@ -671,13 +612,10 @@ const WhyChooseLoan = ({
                     <p className="mx-auto mt-2 max-w-[210px] text-xs leading-5 text-[#64748B]">
                       {item.text}
                     </p>
-
                   </div>
                 );
               })}
-
             </div>
-
           </div>
         </div>
 
@@ -699,10 +637,9 @@ const WhyChooseLoan = ({
             lg:py-14
           "
           style={{
-            background: `linear-gradient(135deg, ${config.colors.secondary}, ${config.colors.secondary}, ${config.colors.accent})`,
+            background: `linear-linear(135deg, ${config.colors.secondary}, ${config.colors.secondary}, ${config.colors.accent})`,
           }}
         >
-
           {/* Glow */}
 
           <div className="absolute -right-20 -top-32 h-80 w-80 rounded-full bg-[#10B981]/20 blur-3xl" />
@@ -710,22 +647,15 @@ const WhyChooseLoan = ({
           <div className="absolute -bottom-32 left-1/3 h-72 w-72 rounded-full bg-[#10B981]/10 blur-3xl" />
 
           <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-
             {/* CTA Content */}
 
             <div className="max-w-2xl">
-
               <div className="mb-4 flex items-center gap-2">
-
-                <Sparkles
-                  size={16}
-                  className="text-[#6EE7B7]"
-                />
+                <Sparkles size={16} className="text-[#6EE7B7]" />
 
                 <span className="text-[10px] font-bold tracking-[0.2em] text-[#A7F3D0]">
                   {config.cta.eyebrow}
                 </span>
-
               </div>
 
               <h3 className="text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-4xl">
@@ -735,13 +665,11 @@ const WhyChooseLoan = ({
               <p className="mt-4 text-sm leading-7 text-white/65 sm:text-base">
                 {config.cta.description}
               </p>
-
             </div>
 
             {/* CTA Buttons */}
 
             <div className="flex flex-col gap-3 sm:flex-row">
-
               <button
                 onClick={onPrimaryCTA}
                 className="
@@ -792,16 +720,12 @@ const WhyChooseLoan = ({
               >
                 {config.cta.secondaryButton}
               </button>
-
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );
 };
 
 export default WhyChooseLoan;
-

@@ -54,21 +54,30 @@ const GoldLoanDocuments = () => {
 
         {/* Header */}
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <span className="mb-4 inline-flex items-center rounded-full border border-emerald-100 bg-emerald-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-emerald-700">
-            Simple Documentation
-          </span>
 
-       
-        <h2
-            id="gold-loan-heading"
-            className="max-w-2xl text-4xl font-extrabold leading-[1.08] tracking-[-0.045em] text-[#186A07] sm:text-5xl lg:text-[3.7rem]"
-          >
-            Documents{" "}
-            <span className="relative inline-block text-[#0F172A]">
-               You'll Need
-         
-            </span>
-          </h2>
+                                                                     <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+                        <span className="relative flex h-2.5 w-2.5">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
+                        </span>
+          
+                        <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+                               
+             Simple Documentation
+                        </span>
+                      </div>
+
+            {/* Heading */}
+
+
+                   <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+                                 Documents{" "}
+                        <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                          You'll Need
+                            
+                        </span>
+                       
+                      </h2>
 
           <p className="mt-4 text-sm leading-6 text-slate-500 sm:text-base">
             Keep your basic KYC documents ready for a smooth Gold Loan
@@ -141,7 +150,7 @@ const GoldLoanDocuments = () => {
 
           <button
             type="button"
-            className="group inline-flex shrink-0 items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-emerald-700 hover:shadow-lg"
+            className="group inline-flex shrink-0 items-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300  hover:shadow-lg"
           >
             Apply for Gold Loan
             <ArrowRight
