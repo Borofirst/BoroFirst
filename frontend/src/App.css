@@ -44,7 +44,7 @@ Even better: You can change origin
 
 Once the company repository is ready, if you no longer need to push to your personal repository, you can make the company repository your main remote:
 
-git remote set-url origin https://github.com/COMPANY/borofirst-website.git
+git remote set-url origin https://github.com/Borofirst/BoroFirst.git
 
 Then:
 
