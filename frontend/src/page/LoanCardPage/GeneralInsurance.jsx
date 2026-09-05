@@ -12,13 +12,20 @@ import InsuranceComparison from '../../component/GeneralInsurance/InsuranceCampa
 import ContactSection from '../../component/common/ContactSection';
 import FAQSection from '../../component/common/FAQSection';
 import { generalInsuranceFAQs } from '../../data/HomePageFAQDATA';
+import SEO from '../../component/Seo';
 
 
 
 const GeneralInsurance = () => {
   return (
-    <div>
-      <GeneralInsuranceHero/>
+    <>
+    <SEO
+  title="General Insurance | Protect What Matters Most | Borofirst"
+  description="Explore general insurance solutions with Borofirst designed to help protect your vehicle, property, health and valuable assets with reliable coverage and customer-focused support."
+  canonical="https://www.borofirst.com/general-insurance"
+/>
+<main>
+  <GeneralInsuranceHero/>
       <TrustStrip/>
       <InsuranceCategorySelector/>
       <WhatIsGeneralInsurance/>
@@ -36,9 +43,8 @@ const GeneralInsurance = () => {
 <InsuranceComparison/>
 <ContactSection/>
 <FAQSection faqs={generalInsuranceFAQs}/>
-
-   
-    </div>
+</main>  
+    </>
   )
 }
 

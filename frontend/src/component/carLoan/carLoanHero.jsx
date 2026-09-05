@@ -9,6 +9,7 @@ import {
   Sparkles,
   WalletCards,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const financeHighlights = [
   {
@@ -29,6 +30,13 @@ const financeHighlights = [
 ];
 
 const CarLoanHeroSpotlight = () => {
+      const handleEligibility = () => {
+    // Replace with your eligibility section ID or route.
+    document.getElementById("loan-eligibility")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <section className="relative min-h-[760px] w-full overflow-hidden bg-[#F8FAFC] text-[#0F172A] sm:min-h-[820px] lg:min-h-[850px]">
       {/* =====================================================
@@ -89,7 +97,7 @@ const CarLoanHeroSpotlight = () => {
             absolute
             inset-0
             opacity-[0.025]
-            bg-[linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
+            bg-[linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
             bg-size-[55px_55px]
           "
         />
@@ -229,7 +237,8 @@ const CarLoanHeroSpotlight = () => {
             "
             style={{ animationDelay: "320ms" }}
           >
-            <button
+            <Link
+            to="/contact"
               className="
                 group
                 relative
@@ -277,9 +286,10 @@ const CarLoanHeroSpotlight = () => {
                 size={18}
                 className="relative transition-transform duration-300 group-hover:translate-x-1"
               />
-            </button>
+            </Link>
 
             <button
+            onClick={handleEligibility}
               className="
                 flex
                 h-14

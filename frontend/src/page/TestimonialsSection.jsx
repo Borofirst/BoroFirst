@@ -102,19 +102,12 @@ const TestimonialsSection = () => {
           </div>
 
           {/* Heading */}
-          <h2
-            className="
-              text-3xl font-extrabold
-              tracking-tight text-[#0F172A]
-              sm:text-4xl
-              lg:text-[44px]
-              lg:leading-[1.15]
-            "
-          >
-            Trusted by Customers on Their{" "}
-            <span className="text-[#186A07]">
-              Financial Journey
+                  <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+               Trusted by Customers on Their{" "}
+            <span className="lg:block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+                Financial Journey
             </span>
+           
           </h2>
 
           {/* Description */}

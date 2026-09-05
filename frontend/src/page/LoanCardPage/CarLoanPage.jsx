@@ -17,7 +17,14 @@ import { carLoanContent } from '../../data/WhyCooseData';
 
 const CarLoanPage = () => {
   return (
-    <div>
+    <>
+    <SEO
+
+  title="Car Loan | Easy & Flexible Car Finance Solutions | Borofirst"
+  description="Get closer to your dream car with Borofirst car loan solutions. Explore flexible financing options, competitive terms and a simple application experience designed to make car ownership easier."
+  canonical="https://www.borofirst.com/car-loan"
+/>
+<main>
       <CarLoanHeroSpotlight/>
       <TrustStrip/>
       <CarLoanWhatIsSection/>
@@ -34,9 +41,11 @@ const CarLoanPage = () => {
         <WhyChooseBorofirst/>
         <ContactSection/>
         <FAQSection faqs={carLoanFAQs}/>
+</main>
 
 
-    </div>
+
+    </>
   )
 }
 

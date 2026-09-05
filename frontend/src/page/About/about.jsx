@@ -87,7 +87,7 @@ export default function AboutBorofirst() {
       <SEO
         title="About Borofirst | Building Smarter Financial Solutions"
         description="Learn more about Borofirst, our approach to financial solutions, customer experience and responsible lending."
-        canonical="https://borofirst.com/about"
+        canonical="https://www.borofirst.com/about"
       />
 
       <main>

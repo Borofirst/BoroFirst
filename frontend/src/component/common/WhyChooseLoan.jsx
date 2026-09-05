@@ -235,7 +235,7 @@ const CentralOrb = ({ config }) => {
             shadow-[0_12px_30px_rgba(16,185,129,0.3)]
           "
           style={{
-            background: `linear-linear(135deg, ${config.colors.primary}, ${config.colors.accent})`,
+            background: `linear-gradient(135deg, ${config.colors.primary}, ${config.colors.accent})`,
           }}
         >
           <Icon size={29} strokeWidth={1.8} />
@@ -382,7 +382,7 @@ const WhyChooseLoan = ({ config, onPrimaryCTA, onSecondaryCTA }) => {
             <span
               className="mt-2 block bg-clip-text text-transparent"
               style={{
-                backgroundImage: `linear-linear(to right, ${config.colors.accent}, ${config.colors.primary}, ${config.colors.secondary})`,
+                backgroundImage: `linear-gradient(to right, ${config.colors.accent}, ${config.colors.primary}, ${config.colors.secondary})`,
               }}
             >
               {config.highlight}
@@ -549,7 +549,7 @@ const WhyChooseLoan = ({ config, onPrimaryCTA, onSecondaryCTA }) => {
               <div
                 className="h-full origin-left animate-line-grow"
                 style={{
-                  background: `linear-linear(to right, ${config.colors.primary}, ${config.colors.primary}, ${config.colors.secondary})`,
+                  background: `linear-gradient(to right, ${config.colors.primary}, ${config.colors.primary}, ${config.colors.secondary})`,
                 }}
               />
             </div>
@@ -637,7 +637,7 @@ const WhyChooseLoan = ({ config, onPrimaryCTA, onSecondaryCTA }) => {
             lg:py-14
           "
           style={{
-            background: `linear-linear(135deg, ${config.colors.secondary}, ${config.colors.secondary}, ${config.colors.accent})`,
+            background: `linear-gradient(135deg, ${config.colors.secondary}, ${config.colors.secondary}, ${config.colors.accent})`,
           }}
         >
           {/* Glow */}
@@ -679,17 +679,18 @@ const WhyChooseLoan = ({ config, onPrimaryCTA, onSecondaryCTA }) => {
                   justify-center
                   gap-2
                   rounded-2xl
-                  bg-[#10B981]
+                  bg-white
+                  text-[#0B2578]
                   px-6
                   py-3.5
                   text-sm
                   font-bold
-                  text-white
+                  
                   shadow-[0_12px_30px_rgba(16,185,129,0.25)]
                   transition-all
                   duration-300
                   hover:-translate-y-1
-                  hover:bg-[#0EA472]
+                  
                 "
               >
                 {config.cta.primaryButton}

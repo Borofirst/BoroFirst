@@ -50,10 +50,16 @@ const infoCards = [
 const WhatIsLAP = () => {
       const [headingRef, headingVisible] = useReveal();
   const [contentRef, contentVisible] = useReveal();
+    const handleEligibilityClick = () => {
+    document.getElementById("loan-eligibility")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <section
       id="what-is-lap"
-      className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[#F8FAFC] py-20 sm:py-24 lg:py-28"
     >
       {/* =========================================================
           BACKGROUND DECORATION
@@ -207,8 +213,8 @@ const WhatIsLAP = () => {
 
             {/* CTA */}
 
-            <a
-              href="#eligibility"
+            <button
+              onClick={handleEligibilityClick}
               className="group mt-8 inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-extrabold text-white shadow-lg shadow-emerald-500/20 transition duration-300 hover:-translate-y-0.5 hover:bg-emerald-600 hover:shadow-xl"
             >
               Check Your Eligibility
@@ -217,7 +223,7 @@ const WhatIsLAP = () => {
                 size={18}
                 className="transition-transform duration-300 group-hover:translate-x-1"
               />
-            </a>
+            </button>
           </div>
 
           {/* =====================================================

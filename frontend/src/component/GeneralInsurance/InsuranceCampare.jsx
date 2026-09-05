@@ -370,17 +370,6 @@ const InsuranceComparison = () => {
                   </p>
                 </div>
 
-                <a
-                  href="#insurance-options"
-                  className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-[#186A07] px-5 py-3 text-sm font-bold text-white shadow-[0_8px_20px_rgba(24,106,7,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0B2578] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] focus-visible:ring-offset-2"
-                >
-                  Explore Options
-                  <ArrowRight
-                    size={17}
-                    aria-hidden="true"
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </a>
               </div>
             </div>
           </div>

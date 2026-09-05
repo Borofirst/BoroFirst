@@ -9,7 +9,7 @@ const ContactUs = () => {
       <SEO
         title="Contact Borofirst | Get in Touch"
         description="Contact Borofirst to learn more about our financial solutions and loan services."
-        canonical="https://borofirst.com/contact"
+        canonical="https://www.borofirst.com/contact"
       />
 
       <main>

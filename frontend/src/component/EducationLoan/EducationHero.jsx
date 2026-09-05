@@ -16,7 +16,7 @@ const EducationLoanHero = () => {
 
   const handleEmiClick = () => {
     document
-      .getElementById("emi-calculator")
+      .getElementById("loan-EMI")
       ?.scrollIntoView({
         behavior: "smooth",
         block: "start",

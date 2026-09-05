@@ -5,7 +5,7 @@ import WhyChooseLoan from "../common/WhyChooseLoan";
 const HomeLoanWhyChoose = () => {
   const handlePrimaryCTA = () => {
     document
-      .getElementById("loan-eligibility")
+      .getElementById("contact")
       ?.scrollIntoView({
         behavior: "smooth",
         block: "start",
@@ -14,7 +14,7 @@ const HomeLoanWhyChoose = () => {
 
   const handleSecondaryCTA = () => {
     document
-      .getElementById("contact")
+      .getElementById("loan-EMI")
       ?.scrollIntoView({
         behavior: "smooth",
         block: "start",

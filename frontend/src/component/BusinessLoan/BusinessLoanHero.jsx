@@ -8,6 +8,7 @@ import {
   TrendingUp,
   WalletCards,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const trustStats = [
   {
@@ -43,6 +44,13 @@ const growthItems = [
 ];
 
 const BusinessLoanHero = () => {
+    const handleEligibility = () => {
+    // Replace with your eligibility section ID or route.
+    document.getElementById("loan-eligibility")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <section className="relative isolate overflow-hidden bg-[#F8FAFC]">
       {/* =========================================================
@@ -76,13 +84,13 @@ const BusinessLoanHero = () => {
           className="
             absolute inset-0
             opacity-[0.035]
-            [background-image:linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
-            [background-size:44px_44px]
+            bg-[linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
+            bg-size-[44px_44px]
           "
         />
       </div>
 
-      <div className="mx-auto max-w-7xl px-5 pb-10 pt-24 sm:px-6 lg:px-8 lg:pb-14 lg:pt-32">
+      <div className="mx-auto max-w-7xl px-5 pb-10 pt-30 sm:px-6 lg:px-8 lg:pb-14 lg:pt-32">
         {/* =========================================================
             MAIN HERO
         ========================================================= */}
@@ -147,7 +155,10 @@ const BusinessLoanHero = () => {
 
             {/* CTA */}
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <button
+              
+
+              
+              <Link to="/contact"
                 type="button"
                 className="
                   group inline-flex items-center justify-center gap-3
@@ -168,10 +179,12 @@ const BusinessLoanHero = () => {
                     group-hover:translate-x-1
                   "
                 />
-              </button>
+              
+</Link>
 
               <button
                 type="button"
+                onClick={handleEligibility}
                 className="
                   group inline-flex items-center justify-center gap-3
                   rounded-xl
@@ -329,7 +342,7 @@ const BusinessLoanHero = () => {
                   className="
                     absolute inset-0
                     opacity-60
-                    [background-image:linear-linear(#E2E8F0_1px,transparent_1px),linear-linear(90deg,#E2E8F0_1px,transparent_1px)]
+                    [background-image:linear-gradient(#E2E8F0_1px,transparent_1px),linear-gradient(90deg,#E2E8F0_1px,transparent_1px)]
                     [background-size:100%_35px,55px_100%]
                   "
                 />

@@ -1,7 +1,7 @@
 import React from "react";
 
 const CommenCar2 = ({ reason }) => {
-  console.log(reason);
+ 
   const Icon = reason.icon;
   return (
     <article

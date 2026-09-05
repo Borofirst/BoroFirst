@@ -6,6 +6,7 @@ import cors from "cors";
 import connectDB from "./db/db.js";
 import router from "./Router/router.contact.rout.js";
 import routerPartner from "./Router/router.become.partner.js";
+import careerRoutes from "./Router/router.career.js";
 
 
 const app = express();
@@ -26,7 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/contact", router);
 app.use("/api/partner", routerPartner);
-
+app.use("/api/career", careerRoutes);
 
 // Health check
 
@@ -36,6 +37,30 @@ app.get("/api/health", (req, res) => {
     message: "BoroFirst API is running",
   });
 });
+
+app.use((error, req, res, next) => {
+  console.error("Server Error:", error);
+
+  if (error.message?.includes("Only PDF")) {
+    return res.status(400).json({
+      success: false,
+      message: error.message,
+    });
+  }
+
+  if (error.code === "LIMIT_FILE_SIZE") {
+    return res.status(400).json({
+      success: false,
+      message: "Resume size must be 5MB or less.",
+    });
+  }
+
+  return res.status(500).json({
+    success: false,
+    message: "Something went wrong.",
+  });
+});
+
 
 
 // 404
@@ -76,3 +101,4 @@ const startServer = async () => {
 };
 
 startServer();
+

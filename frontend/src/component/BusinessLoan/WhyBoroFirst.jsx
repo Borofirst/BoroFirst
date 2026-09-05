@@ -81,6 +81,12 @@ const WhyChooseBorofirst = () => {
       block: "start",
     });
   };
+  const handleLoanEMI = () => {
+    document.getElementById("loan-EMI")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] py-16 sm:py-20 lg:py-28">
       {/* ================= BACKGROUND DECORATION ================= */}
@@ -148,24 +154,24 @@ const WhyChooseBorofirst = () => {
             {/* CTA */}
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#business-loan-options"
+              <button
+                onClick={handleLoanEMI}
                 className="group inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#10B981]/20 transition-all duration-300 hover:-translate-y-0.5  hover:shadow-xl hover:shadow-[#10B981]/25"
               >
-                Explore Business Loan Options
+                Calculate EMI
                 <ArrowUpRight
                   size={17}
                   className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 />
-              </a>
+              </button>
 
-              <a
-                href="#eligibility"
+              <button
+                
                 onClick={handleEligibilityClick}
                 className="inline-flex items-center justify-center rounded-xl border border-[#E2E8F0] bg-white px-6 py-3.5 text-sm font-bold text-[#0B2578] transition-all duration-300 hover:border-[#10B981]/40 hover:bg-[#10B981]/5"
               >
                 Check Eligibility
-              </a>
+              </button>
             </div>
           </div>
 

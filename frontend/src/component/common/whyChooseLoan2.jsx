@@ -1,7 +1,7 @@
 import React from "react";
 
 const WhyChooseLoanBlue = ({ content }) => {
-  console.log(content);
+  
 
   const CenterIcon = content.centerIcon;
 

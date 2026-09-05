@@ -10,6 +10,7 @@ import {
   WalletCards,
   Zap,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const trustItems = [
   {
@@ -59,10 +60,7 @@ const PersonalLoanHero = () => {
     });
   };
 
-  const handleApply = () => {
-    // Replace with your actual application route.
-    console.log("Apply Now clicked");
-  };
+
 
   return (
     <section className="relative isolate overflow-hidden bg-[#F8FAFC]">
@@ -82,19 +80,19 @@ const PersonalLoanHero = () => {
           className="absolute inset-0 opacity-[0.025]"
           style={{
             backgroundImage:
-              "linear-linear(#0F172A 1px, transparent 1px), linear-linear(90deg, #0F172A 1px, transparent 1px)",
+              "linear-gradient(#0F172A 1px, transparent 1px), linear-gradient(90deg, #0F172A 1px, transparent 1px)",
             backgroundSize: "48px 48px",
           }}
         />
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24 xl:py-28">
+      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-20 xl:py-15">
         <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-16 xl:gap-20">
           {/* =====================================================
               LEFT CONTENT
           ====================================================== */}
 
-          <div className="max-w-2xl">
+          <div className="max-w-2xl mt-15">
             {/* Badge */}
 
             <div className="lap-hero-eyebrow  inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-[#186A07]">
@@ -103,7 +101,7 @@ const PersonalLoanHero = () => {
             </div>
 
             {/* Heading */}
-            <h1 className=" font-extrabold leading-[1.08] tracking-tight  text-slate-900 text-4xl sm:text-5xl lg:text-[60px]">
+            <h1 className="mt-4 font-extrabold leading-[1.08] tracking-tight  text-slate-900 text-4xl sm:text-5xl lg:text-[60px]">
               Personal Loans Made{" "}
               <span className="relative inline-block text-[#186A07]">
                 Simple,
@@ -123,24 +121,24 @@ const PersonalLoanHero = () => {
 
             {/* CTA Buttons */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <button
-                type="button"
-                onClick={handleEligibility}
-                className="group inline-flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-600 hover:shadow-xl hover:shadow-emerald-500/25 focus:outline-none focus:ring-4 focus:ring-emerald-500/20"
-              >
-                Check Your Eligibility
-                <ArrowRight
-                  size={18}
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                />
-              </button>
+       
+               <Link to="/contact">
+                      <button className="rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-3 py-2 sm:px-8 sm:py-4 font-semibold text-white shadow-lg transition duration-300 hover:bg-emerald-700 hover:scale-105">
+                        Apply Now
+                      </button>
+                      </Link>
+
 
               <button
                 type="button"
-                onClick={handleApply}
-                className="inline-flex items-center justify-center rounded-xl border border-[#E2E8F0] bg-white px-7 py-3.5 text-sm font-bold text-[#0F172A] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-500/10"
+                onClick={handleEligibility}
+                className="inline-flex items-center justify-center rounded-xl border border-[#E2E8F0] bg-white px-7 py-3.5 text-sm font-bold text-[#0B2578] shadow-sm transition-all duration-300 hover:-translate-y-0.5  hover:bg-emerald-50  focus:outline-none focus:ring-4 focus:ring-emerald-500/10"
               >
-                Apply Now
+               Check Your Eligibility
+                 <ArrowRight
+                  size={18}
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                />
               </button>
             </div>
 

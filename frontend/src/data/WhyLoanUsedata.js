@@ -118,8 +118,8 @@ export const educationWhyChoose = {
     description:
       "Explore your education loan options and understand the financing possibilities available for your academic journey.",
 
-    primaryButton: "Check Education Loan Options",
-    secondaryButton: "Talk to an Expert",
+    primaryButton: "Talk to an Expert",
+    secondaryButton: "Calculate EMI",
   },
 };
 
@@ -223,8 +223,8 @@ export const homeWhyChoose = {
     description:
       "Explore your home loan options and understand the financing possibilities available for your property goals.",
 
-    primaryButton: "Check Home Loan Options",
-    secondaryButton: "Talk to an Expert",
+    primaryButton: "Talk to an Expert",
+    secondaryButton: "Calculate EMI",
   },
 };
 

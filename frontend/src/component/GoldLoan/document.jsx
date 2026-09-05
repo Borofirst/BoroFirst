@@ -48,6 +48,13 @@ const documents = [
 ];
 
 const GoldLoanDocuments = () => {
+            const contactUs = () => {
+    // Replace with your eligibility section ID or route.
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <section className="bg-slate-50 py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -149,7 +156,7 @@ const GoldLoanDocuments = () => {
           </div>
 
           <button
-            type="button"
+            onClick={contactUs}
             className="group inline-flex shrink-0 items-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300  hover:shadow-lg"
           >
             Apply for Gold Loan

@@ -65,7 +65,7 @@ const LoanCard = ({ config, theme }) => {
         <div
           className="flex h-10 w-10 items-center justify-center rounded-xl shadow-lg"
           style={{
-            background: `linear-linear(135deg, ${theme.secondary}, ${theme.primary})`,
+            background: `linear-gradient(135deg, ${theme.secondary}, ${theme.primary})`,
             boxShadow: `0 8px 20px ${theme.primary}25`,
           }}
         >
@@ -180,7 +180,7 @@ const LoanVisual = ({ config, theme }) => {
           rounded-[3rem]
         "
         style={{
-          background: `linear-linear(135deg, ${theme.backgroundFrom}, ${theme.backgroundVia}, ${theme.backgroundTo})`,
+          background: `linear-gradient(135deg, ${theme.backgroundFrom}, ${theme.backgroundVia}, ${theme.backgroundTo})`,
         }}
       >
         {/* Decorative grid */}
@@ -190,9 +190,9 @@ const LoanVisual = ({ config, theme }) => {
             absolute
             inset-0
             opacity-[0.28]
-            bg-[linear-linear(#6366F1_1px,transparent_1px),linear-linear(90deg,#6366F1_1px,transparent_1px)]
+            bg-[linear-gradient(#6366F1_1px,transparent_1px),linear-linear(90deg,#6366F1_1px,transparent_1px)]
             bg-size-[45px_45px]
-            mask-[linear-linear(to_bottom,black,transparent)]
+            mask-[linear-gradient(to_bottom,black,transparent)]
           "
         />
 
@@ -225,7 +225,7 @@ const LoanVisual = ({ config, theme }) => {
         <div
           className="absolute bottom-0 left-0 h-[34%] w-full bg-linear-to-t to-transparent"
           style={{
-            backgroundImage: `linear-linear(to top, ${theme.primary}10, transparent)`,
+            backgroundImage: `linear-gradient(to top, ${theme.primary}10, transparent)`,
           }}
         />
 
@@ -379,7 +379,7 @@ const LoanHero = ({ config, onEligibilityClick, onEmiClick }) => {
             absolute
             inset-0
             opacity-[0.025]
-            bg-[linear-linear(#2563EB_1px,transparent_1px),linear-linear(90deg,#2563EB_1px,transparent_1px)]
+            bg-[linear-gradient(#2563EB_1px,transparent_1px),linear-gradient(90deg,#2563EB_1px,transparent_1px)]
             bg-size-[55px_55px]
           "
         />
@@ -426,7 +426,7 @@ const LoanHero = ({ config, onEligibilityClick, onEmiClick }) => {
                 <p
                   className="bg-clip-text text-sm font-extrabold tracking-tight text-transparent"
                   style={{
-                    backgroundImage: `linear-linear(to right, ${theme.green}, ${theme.navy})`,
+                    backgroundImage: `linear-gradient(to right, ${theme.green}, ${theme.navy})`,
                   }}
                 >
                   BOROFIRST
@@ -487,7 +487,7 @@ const LoanHero = ({ config, onEligibilityClick, onEmiClick }) => {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  backgroundImage: `linear-linear(to right, ${theme.green}, ${theme.mid}, ${theme.navy})`,
+                  backgroundImage: `linear-gradient(to right, ${theme.green}, ${theme.mid}, ${theme.navy})`,
                 }}
               >
                 {config.highlight}
@@ -521,7 +521,7 @@ const LoanHero = ({ config, onEligibilityClick, onEmiClick }) => {
                   hover:shadow-lg
                 "
                 style={{
-                  backgroundImage: `linear-linear(to right, ${theme.green}, ${theme.navy})`,
+                  backgroundImage: `linear-gradient(to right, ${theme.green}, ${theme.navy})`,
                 }}
               >
                 {config.primaryCTA}

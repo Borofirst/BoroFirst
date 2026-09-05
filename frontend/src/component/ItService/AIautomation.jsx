@@ -148,33 +148,7 @@ const AIBusinessAutomation = () => {
               ))}
             </div>
 
-            {/* =========================================
-                CTA
-            ========================================= */}
-
-            <div className="mt-9 flex flex-wrap items-center gap-4">
-              <a
-                href="/ai-solutions"
-                className="group inline-flex items-center gap-3 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(24,106,7,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_38px_rgba(11,37,120,0.22)]"
-              >
-                Explore AI Solutions
-                <FaArrowRight
-                  size={13}
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                />
-              </a>
-
-              <a
-                href="/contact"
-                className="group inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3.5 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#186A07]/30 hover:text-[#186A07] hover:shadow-md"
-              >
-                Talk to Our Experts
-                <FaArrowRight
-                  size={12}
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                />
-              </a>
-            </div>
+        
           </div>
 
           {/* =========================================

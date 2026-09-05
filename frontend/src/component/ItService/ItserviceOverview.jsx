@@ -108,7 +108,7 @@ const ITServicesOverview = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28">
+    <section id="It-Service" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28">
       {/* =====================================================
           BACKGROUND DECORATION
       ====================================================== */}

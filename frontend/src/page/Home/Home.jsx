@@ -21,7 +21,7 @@ const Home = () => {
          <SEO
         title="BOROFIRST | Smart Financial Solutions & Loans"
         description="BOROFIRST connects customers with smart, transparent and customer-focused financial solutions including personal loans, home loans and business loans."
-        canonical="https://borofirst.com/"
+        canonical="https://www.borofirst.com/"
       />
 
       <main>

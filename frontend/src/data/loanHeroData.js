@@ -140,7 +140,7 @@ export const homeLoanHero = {
   imageAlt: "Family planning their dream home",
 
   cardTitle: "Home Loan",
-  loanAmount: "Up to ₹2 Cr",
+  loanAmount: "Up to ₹10 Cr",
   cardBottomText: "Flexible Tenure",
 
   miniLabel: "Your Dream Home",

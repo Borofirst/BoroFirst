@@ -24,7 +24,7 @@ const LoanAgaintProperty = () => {
       title="Loan Against Property | BOROFIRST"
     description=
       "Explore loan against property solutions from BOROFIRST and unlock the financial value of your property."
-    canonical= "https://borofirst.com/loan-againt-property"
+    canonical= "https://www.borofirst.com/loan-againt-property"
       />
       <main>
       <LAPHero />

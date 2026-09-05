@@ -20,6 +20,7 @@ const CareerCard = ({
   technologies,
   accent,
 }) => {
+  
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white shadow-[0_10px_40px_rgba(15,23,42,0.05)] transition-all duration-500 hover:-translate-y-2 hover:border-[#186A07]/20 hover:shadow-[0_25px_60px_rgba(15,23,42,0.12)]">
       {/* Image */}
@@ -125,6 +126,11 @@ const CareerCard = ({
 };
 
 const CareerOpportunities = () => {
+   const scrollToResume = () => {
+    document
+      .getElementById("join-our-team")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <section
       id="career-opportunities"
@@ -193,8 +199,8 @@ const CareerOpportunities = () => {
               </p>
             </div>
 
-            <a
-              href="#send-resume"
+            <button
+              onClick={scrollToResume}
               className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-[#0B2578] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               Send Your Resume
@@ -202,7 +208,7 @@ const CareerOpportunities = () => {
                 size={17}
                 className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
               />
-            </a>
+            </button>
           </div>
         </div>
       </div>

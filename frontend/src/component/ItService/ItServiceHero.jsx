@@ -16,6 +16,15 @@ import {
 } from "react-icons/fa";
 
 const ITServicesHero = () => {
+    const ExploreService = () => {
+    // Replace with your eligibility section ID or route.
+    document.getElementById("It-Service")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
+
   return (
     <section className="relative isolate overflow-hidden bg-white">
       {/* =====================================================
@@ -194,8 +203,9 @@ const ITServicesHero = () => {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               {/* Primary CTA */}
 
-              <Link
-                to="/it-services"
+              <button
+              onClick={ExploreService}
+                
                 className="
                   group
                   inline-flex
@@ -227,7 +237,7 @@ const ITServicesHero = () => {
                     group-hover:translate-x-1
                   "
                 />
-              </Link>
+              </button>
 
               {/* Secondary CTA */}
 

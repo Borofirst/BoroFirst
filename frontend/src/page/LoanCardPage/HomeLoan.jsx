@@ -25,9 +25,8 @@ export const HomeLoan = () => {
       <SEO
         title="Home Loan | Finance Your Dream Home | Borofirst"
         description="Explore home loan solutions with Borofirst and take the next step toward financing your dream home."
-        canonical="https://borofirst.com/home-loan"
+        canonical="https://www.borofirst.com/home-loan"
       />
-
       <main>
              <HomeLoanHero/>
       <TrustStrip />

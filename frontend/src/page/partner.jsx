@@ -122,25 +122,31 @@ const BankingPartners = () => {
       <div className="relative mx-auto max-w-7xl px-6">
         {/* Trust Badge */}
 
-        <div className="flex justify-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2">
-            <ShieldCheck size={18} className="text-emerald-600" />
 
-            <span className="text-sm font-semibold text-emerald-700">
-              Trusted Financial Network
-            </span>
-          </div>
-        </div>
 
         {/* Heading */}
 
         <div className="mx-auto mt-8 max-w-3xl text-center">
-          <h2 className="text-4xl font-bold text-gray-900 md:text-5xl">
-            Our Banking &
-            <span className="bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent">
-              {" "}
-              Financial Partners
+     
+                                              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#186A07]/15 bg-[#F4FAF1] px-4 py-2 shadow-sm">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#186A07]/40" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#186A07]" />
             </span>
+
+            <span className="text-xs font-bold tracking-[0.16em] text-[#186A07]">
+             Trusted Financial Network
+            </span>
+          </div>
+
+          {/* Heading */}
+
+          <h2 className=" text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 sm:text-5xl lg:text-[3.45rem]">
+              Our Banking & Financial{" "}
+            <span className="lg:block bg-linear-to-r from-[#186A07] to-[#0B2578] bg-clip-text text-transparent ">
+               Partners
+            </span>
+           
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">

@@ -55,6 +55,19 @@ const financingSteps = [
 ];
 
 const CarLoanWhatIsSection = () => {
+                    const handleEligibility = () => {
+    document.getElementById("loan-eligibility")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+                    const handleApplyCarLoan = () => {
+
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <section
       id="what-is-car-loan"
@@ -483,7 +496,8 @@ const CarLoanWhatIsSection = () => {
 
           <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row">
             <button
-              type="button"
+             
+              onClick={handleApplyCarLoan}
               className="
                 group
                 flex
@@ -512,8 +526,9 @@ const CarLoanWhatIsSection = () => {
               />
             </button>
 
+
             <button
-              type="button"
+              onClick={handleEligibility}
               className="
                 flex
                 h-11

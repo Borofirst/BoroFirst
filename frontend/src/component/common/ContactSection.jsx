@@ -194,7 +194,7 @@ const ContactSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("vk");
+   
 
     const isValid = validateForm();
 
@@ -207,8 +207,7 @@ const ContactSection = () => {
       setSuccess("");
 
       const response = await submitContactForm(formData);
-      console.log(response);
-
+      
       if (response.success) {
         setSuccess("success");
 

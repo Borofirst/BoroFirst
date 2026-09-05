@@ -24,7 +24,7 @@ const BusinessLoanPage = () => {
         <SEO
         title="Business Loan | Grow Your Business | Borofirst"
         description="Explore business financing solutions from Borofirst designed to support business expansion, working capital and growth."
-        canonical="https://borofirst.com/business-loan"
+        canonical="https://www.borofirst.com/business-loan"
       />
 
       <main>

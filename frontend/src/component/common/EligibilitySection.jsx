@@ -205,7 +205,7 @@ const LoanEligibilityChecker = () => {
   }, [formData]);
 
   const handleSubmit = (e) => {
-    console.log("veeke")
+
     e.preventDefault();
     setShowResult(true);
   };

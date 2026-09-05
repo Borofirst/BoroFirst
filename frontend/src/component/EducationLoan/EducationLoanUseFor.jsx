@@ -615,14 +615,14 @@ import WhyChooseLoan from "../common/WhyChooseLoan";
 
 const EducationLoanWhyChoose = () => {
   const handlePrimaryCTA = () => {
-    document.getElementById("loan-eligibility")?.scrollIntoView({
+    document.getElementById("contact")?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
   };
 
   const handleSecondaryCTA = () => {
-    document.getElementById("contact")?.scrollIntoView({
+    document.getElementById("loan-EMI")?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });

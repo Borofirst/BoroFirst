@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://borofirst.com/sitemap.xml
+Sitemap: https://www.borofirst.com/sitemap.xml

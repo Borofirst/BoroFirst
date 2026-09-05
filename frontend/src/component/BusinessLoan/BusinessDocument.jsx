@@ -9,6 +9,7 @@ import {
   ArrowRight,
   FileCheck2,
   ShieldCheck,
+  PhoneCall,
 } from "lucide-react";
 
 /* =========================================================
@@ -433,49 +434,109 @@ const BusinessLoanDocuments = () => {
             </div>
 
     {/* CTA */}
-     <div className="mt-8 rounded-3xl border border-[#E2E8F0] bg-white p-5 shadow-sm sm:p-6">
+     <div
+  className="
+    group
+    mt-8
+    rounded-3xl
+    border border-slate-200/80
+    bg-white
+    p-5
+    w-full
+    shadow-[0_10px_35px_rgba(15,23,42,0.05)]
+    transition-all
+    duration-300
+    hover:-translate-y-1
+    hover:border-[#186A07]/15
+    hover:shadow-[0_18px_45px_rgba(15,23,42,0.08)]
+    sm:p-6
+     text-center
+  "
+>
 
-            <div className="flex-row items-center justify-center gap-4">
-              <div className="flex h-11 w-11  shrink-0 items-center justify-center rounded-xl bg-[#0B2578] text-white">
-                <FileCheck2 size={20} />
-              </div>
+    {/* =====================================================
+        LEFT CONTENT
+    ====================================================== */}
 
-              <div>
-                <h3 className="text-base font-extrabold text-[#0F172A] sm:text-lg">
-                  Not sure which documents apply to you?
-                </h3>
+   
+    <div className="flex justify-center ">
+        <div
+    className="
+      flex h-12 w-12 shrink-0
+      items-center justify-center
+      rounded-2xl
+      bg-gradient-to-br
+      from-[#186A07]
+      to-[#0B2578]
+      text-white
+    "
+  >
+    <FileCheck2 size={21} />
+  </div>
 
-                <p className="mt-1 max-w-2xl text-sm leading-6 text-[#64748B]">
-                  Our team can help you understand the documentation
-                  generally required for your business profile before
-                  you proceed with your application.
-                </p>
-              </div>
-            </div>
+    </div>
 
-            <button
-              type="button"
-              className="
-                group inline-flex shrink-0 items-center
-                justify-center gap-2 rounded-xl
-                bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3
-                text-sm font-bold text-white
-                shadow-sm
-              
-              "
-            >
-              Check Eligibility
+    <h3 className="text-base font-extrabold m-2 text-[#0F172A] sm:text-lg">
+      Not sure which documents apply to you?
+    </h3>
 
-              <ArrowRight
-                size={17}
-                className="
-                  transition-transform duration-300
-                  group-hover:translate-x-1
-                "
-              />
-            </button>
-      
-        </div>
+    <p className="mt-1.5 max-w-2xl text-sm  leading-6 text-[#64748B]">
+      Our team can help you understand the documentation generally required
+      for your business profile before you proceed with your application.
+    </p>
+
+ 
+
+
+    {/* =====================================================
+        ACTION
+    ====================================================== */}
+
+    <a
+      href= "tel:+917060162526"
+      className="
+        group/button
+        inline-flex
+        min-h-[48px]
+        shrink-0
+        items-center
+        justify-center
+        gap-2
+        rounded-xl
+        bg-linear-to-r
+        from-[#186A07]
+        to-[#0B2578]
+        px-6
+        py-3
+        text-sm
+        font-bold
+        text-white
+        shadow-[0_8px_20px_rgba(24,106,7,0.15)]
+        transition-all
+        duration-300
+        hover:-translate-y-0.5
+        hover:shadow-[0_12px_28px_rgba(11,37,120,0.20)]
+        active:translate-y-0
+        text-center
+        m-4
+      "
+    >
+      <PhoneCall size={17}/>
+      Contact Us
+    
+      <ArrowRight
+        size={17}
+        strokeWidth={2}
+        className="
+          transition-transform
+          duration-300
+          group-hover/button:translate-x-1
+        "
+      />
+    </a>
+
+  
+</div>
 
 
 

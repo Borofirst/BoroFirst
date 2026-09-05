@@ -36,7 +36,14 @@ const LAPHero = () => {
   return (
     <section
       id="lap-home"
-      className="relative overflow-hidden  pt-12 sm:pt-15 lg:pt-30 "
+      className="relative overflow-hidden     
+  
+    bg-linear-to-br
+    from-[#EAF3E7]
+    via-[#F8FAF8]
+    to-[#E7ECF7]
+    z-10
+   pt-12 sm:pt-15 lg:pt-30 "
     >
       {/* ==========================================================
           BACKGROUND DECORATION
@@ -76,12 +83,15 @@ const LAPHero = () => {
           className="
             absolute
             inset-0
+            z-20
             opacity-[0.025]
-            bg-[linear-linear(#0B2578_1px,transparent_1px),linear-linear(90deg,#0B2578_1px,transparent_1px)]
+            bg-[linear-gradient(#0B2578_1px,transparent_1px),linear-gradient(90deg,#0B2578_1px,transparent_1px)]
             bg-size-[60px_60px]
           "
         />
+  
       </div>
+
 
       {/* ==========================================================
           MAIN CONTAINER
@@ -132,7 +142,7 @@ const LAPHero = () => {
               {/* Primary */}
 
               <a
-                href="#eligibility"
+                href="/contact"
                 className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-extrabold text-white shadow-lg shadow-emerald-500/20 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-emerald-500/25"
               >
                 Apply Now

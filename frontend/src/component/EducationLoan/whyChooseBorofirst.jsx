@@ -65,6 +65,13 @@ const borofirstApproach = [
 ];
 
 const WhyChooseBorofirst = () => {
+    const handleEligibility = () => {
+    // Replace with your eligibility section ID or route.
+    document.getElementById("loan-eligibility")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <section
       aria-labelledby="why-borofirst-heading"
@@ -447,6 +454,7 @@ const WhyChooseBorofirst = () => {
 
       <button
         type="button"
+        onClick={handleEligibility}
         className="
           group
           inline-flex
@@ -489,8 +497,8 @@ const WhyChooseBorofirst = () => {
 
       {/* Secondary */}
 
-      <button
-        type="button"
+      <a
+        href="tel:+917060162526"
         className="
           inline-flex
           min-h-11
@@ -520,7 +528,7 @@ const WhyChooseBorofirst = () => {
         "
       >
         Talk to an Expert
-      </button>
+      </a>
 
     </div>
 

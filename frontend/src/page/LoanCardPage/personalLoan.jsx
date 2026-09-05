@@ -24,7 +24,7 @@ const PersonalLoan = () => {
       <SEO
         title="Personal Loan | Flexible Financing Solutions | Borofirst"
         description="Explore flexible personal loan solutions from Borofirst designed to support your financial goals with transparent and customer-focused financial services."
-        canonical="https://borofirst.com/personal-loan"
+        canonical="https://www.borofirst.com/personal-loan"
       />
 
       <main>

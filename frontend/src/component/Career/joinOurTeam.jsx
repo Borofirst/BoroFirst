@@ -18,6 +18,7 @@ import {
   Users,
   X,
 } from "lucide-react";
+import { submitCareerForm } from "../../service/contectService";
 
 const departmentPositions = {
   Marketing: [
@@ -237,41 +238,57 @@ const JoinOurTeam = () => {
     return Object.keys(nextErrors).length === 0 && Boolean(resume);
   };
 
+
+
   const handleResumeChange = (event) => {
-    const file = event.target.files?.[0];
+  const file = event.target.files?.[0];
 
-    if (!file) return;
+  if (!file) return;
 
-    const allowedTypes = [
-      "application/pdf",
-      "application/msword",
-      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    ];
+  const allowedTypes = [
+    "application/pdf",
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  ];
 
-    const allowedExtensions = [".pdf", ".doc", ".docx"];
-    const extension = file.name.toLowerCase().slice(file.name.lastIndexOf("."));
+  const allowedExtensions = [
+    ".pdf",
+    ".doc",
+    ".docx",
+  ];
 
-    if (
-      !allowedTypes.includes(file.type) &&
-      !allowedExtensions.includes(extension)
-    ) {
-      setResume(null);
-      setResumeError("Please upload a PDF, DOC, or DOCX file.");
-      event.target.value = "";
-      return;
-    }
+  const extension = file.name
+    .toLowerCase()
+    .slice(file.name.lastIndexOf("."));
 
-    if (file.size > 5 * 1024 * 1024) {
-      setResume(null);
-      setResumeError("Resume size must be 5MB or less.");
-      event.target.value = "";
-      return;
-    }
+  const isValidType =
+    allowedTypes.includes(file.type) ||
+    allowedExtensions.includes(extension);
 
-    setResume(file);
-    setResumeError("");
-  };
+  if (!isValidType) {
+    setResume(null);
+    setResumeError(
+      "Please upload a PDF, DOC, or DOCX file."
+    );
 
+    event.target.value = "";
+    return;
+  }
+
+  if (file.size > 5 * 1024 * 1024) {
+    setResume(null);
+    setResumeError(
+      "Resume size must be 5MB or less."
+    );
+
+    event.target.value = "";
+    return;
+  }
+
+
+  setResume(file);
+  setResumeError("");
+};
   const removeResume = () => {
     setResume(null);
     setResumeError("");
@@ -287,14 +304,50 @@ const JoinOurTeam = () => {
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
 
-    if (!validateForm()) return;
 
-    setIsSubmitting(true);
+const handleSubmit = async (event) => {
+  event.preventDefault();
 
-    await new Promise((resolve) => setTimeout(resolve, 900));
+  if (!validateForm()) return;
+
+  setIsSubmitting(true);
+
+  try {
+    const formData = new FormData();
+
+    formData.append("fullName", form.fullName);
+    formData.append("email", form.email);
+    formData.append("phone", form.phone);
+    formData.append("department", form.department);
+    formData.append("position", form.position);
+    formData.append("message", form.message || "");
+
+    // IMPORTANT
+    if (resume instanceof File) {
+      formData.append("resume", resume, resume.name);
+    } else {
+      throw new Error("Please select a resume.");
+    }
+
+    // Check exactly what is being sent
+// ===== FORM DATA =====
+
+    for (const [key, value] of formData.entries()) {
+      if (value instanceof File) {
+        console.log(
+          key,
+          "FILE:",
+          value.name,
+          value.type,
+          value.size
+        );
+      } else {
+        console.log(key, value);
+      }
+    }
+
+    await submitCareerForm(formData);
 
     setIsSubmitting(false);
     setSubmitted(true);
@@ -303,8 +356,20 @@ const JoinOurTeam = () => {
       behavior: "smooth",
       block: "start",
     });
-  };
+  } catch (error) {
+    console.error(
+      "Application submission failed:",
+      error
+    );
 
+    setIsSubmitting(false);
+
+    alert(
+      error.message ||
+        "Unable to submit application. Please try again."
+    );
+  }
+};
   const resetForm = () => {
     setForm(initialForm);
     setResume(null);
@@ -459,6 +524,7 @@ const JoinOurTeam = () => {
                       onSubmit={handleSubmit}
                       noValidate
                       className="space-y-5"
+
                     >
                       {/* Name + Email */}
                       <div className="grid gap-5 sm:grid-cols-2">

@@ -10,8 +10,8 @@
 
 
 /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
-                                       {/* text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight */}
-{/* bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] bg-clip-text text-transparent  */}
+                                       /* text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.15] tracking-tight */
+/* bg-linear-to-r from-[#186A07] via-[#10B981] to-[#0B2578] bg-clip-text text-transparent  */
 
 /* bg-emerald-50
                     text-[#2c8e18]
@@ -22,7 +22,7 @@
                         group-hover:scale-110 */
 
                         /* background */
-                                {/* Subtle grid */}
+                                /* Subtle grid */
       /* <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-[0.025]"

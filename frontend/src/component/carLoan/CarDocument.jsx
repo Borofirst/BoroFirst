@@ -82,6 +82,14 @@ const DocumentsRequired = () => {
 
   const vehicle = vehicleDocuments[loanType];
 
+                    const handleApplyCarLoan = () => {
+    // Replace with your eligibility section ID or route.
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <section className="bg-[#F8FAFC] py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -273,6 +281,7 @@ const DocumentsRequired = () => {
           </div>
 
           <button
+          onClick={handleApplyCarLoan}
             type="button"
             className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-5 py-3 text-sm font-semibold text-white transition-all duration-300  sm:w-auto"
           >

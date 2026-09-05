@@ -21,7 +21,7 @@ export const EducationLoanPage=()=>{
       title="Education Loan | Borofirst"
     description=
       "Explore loan against property solutions from BOROFIRST and unlock the financial value of your property."
-    canonical= "https://borofirst.com/education-loan"
+    canonical= "https://www.borofirst.com/education-loan"
       />
 
       <main>

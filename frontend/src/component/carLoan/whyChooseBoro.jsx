@@ -57,6 +57,14 @@ const reasons = [
 ];
 
 const WhyChooseBorofirst = () => {
+                                    const handleEligibility = () => {
+    // Replace with your eligibility section ID or route.
+    document.getElementById("loan-eligibility")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28">
       {/* Background decoration */}
@@ -213,8 +221,10 @@ const WhyChooseBorofirst = () => {
               </p>
             </div>
 
+
             <button
               type="button"
+              onClick={handleEligibility}
               className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-slate-900 shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
             >
               Check Your Eligibility

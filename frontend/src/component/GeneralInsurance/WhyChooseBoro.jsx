@@ -278,15 +278,11 @@ const WhyChooseBOROFIRST = () => {
             </div>
 
             <a
-              href="#insurance"
-              className="group inline-flex w-fit shrink-0 items-center gap-2 rounded-full border border-[#10B981]/20 bg-white px-5 py-3 text-sm font-semibold text-[#186A07] shadow-sm transition-all duration-300 hover:border-[#10B981]/40 hover:text-[#0B2578] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] focus-visible:ring-offset-2 motion-reduce:transition-none"
+              href="/contact"
+              className="group inline-flex w-fit shrink-0 items-center gap-2 bg-linear-to-br from-[#186A07] to-[#0B2578] rounded-2xl border border-[#10B981]/20  px-5 py-3 text-base font-semibold text-white shadow-sm transition-all duration-300 hover:border-[#10B981]/40 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10B981] focus-visible:ring-offset-2 motion-reduce:transition-none"
             >
-              Explore BOROFIRST
-              <ArrowRight
-                aria-hidden="true"
-                size={17}
-                className="transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none"
-              />
+              Apply Now
+           
             </a>
           </div>
 

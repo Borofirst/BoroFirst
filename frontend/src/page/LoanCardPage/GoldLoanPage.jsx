@@ -13,11 +13,18 @@ import {goldLoanProcess} from '../../data/stepProcess'
 import ContactSection from '../../component/common/ContactSection'
 import FAQSection from '../../component/common/FAQSection'
 import { goldLoanFAQs } from '../../data/HomePageFAQDATA'
+import SEO from '../../component/Seo'
 
 
 const GoldLoanPage = () => {
   return (
-    <div>
+    <>
+    <SEO
+  title="Gold Loan Solutions | Unlock the Value of Your Gold | Borofirst"
+  description="Turn your eligible gold assets into financial opportunities with Borofirst gold loan solutions. Explore a convenient, transparent and flexible approach to financing your important needs."
+  canonical="https://www.borofirst.com/gold-loan"
+/>
+<main>
       <GoldLoanHero/>
       <TrustStrip/>
       <GoldLoanWhatIs/>
@@ -34,8 +41,8 @@ const GoldLoanPage = () => {
         />
         <ContactSection/>
 <FAQSection faqs={goldLoanFAQs}/>
-
-    </div>
+</main>
+    </>
   )
 }
 

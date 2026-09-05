@@ -9,6 +9,7 @@ import {
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const insuranceItems = [
   {
@@ -52,6 +53,14 @@ const trustPoints = [
 ];
 
 const GeneralInsuranceHero = () => {
+
+                    const InsuranceComparison = () => {
+    // Replace with your eligibility section ID or route.
+    document.getElementById("insurance-comparison")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <section className="relative isolate overflow-hidden bg-[#F8FAFC]">
       {/* =========================================================
@@ -122,7 +131,8 @@ const GeneralInsuranceHero = () => {
 
             {/* CTA */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <button
+              <Link
+                to="/contact"
                 type="button"
                 className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-6 py-3.5 text-sm font-bold text-white shadow-[0_14px_30px_rgba(11,37,120,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_38px_rgba(11,37,120,0.25)] focus:outline-none focus:ring-4 focus:ring-[#10B981]/20"
               >
@@ -131,10 +141,11 @@ const GeneralInsuranceHero = () => {
                   size={18}
                   className="transition-transform duration-300 group-hover:translate-x-1"
                 />
-              </button>
+              </Link>
 
               <button
                 type="button"
+                onClick={InsuranceComparison }
                 className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-2xl border border-[#E2E8F0] bg-white px-6 py-3.5 text-sm font-bold text-[#0F172A] shadow-[0_8px_25px_rgba(15,23,42,0.04)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#10B981]/30 hover:bg-[#F8FAFC] hover:text-[#186A07] focus:outline-none focus:ring-4 focus:ring-[#10B981]/15"
               >
                 <ShieldCheck size={18} />

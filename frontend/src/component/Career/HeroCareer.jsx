@@ -53,7 +53,7 @@ const CareerHero = () => {
 
   const scrollToResume = () => {
     document
-      .getElementById("send-resume")
+      .getElementById("join-our-team")
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 

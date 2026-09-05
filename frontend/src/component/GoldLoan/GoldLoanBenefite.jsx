@@ -153,16 +153,16 @@ const GoldLoanBenefits = () => {
               </div>
             </div>
 
-            <button
-              type="button"
-              className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-[#0B2578] px-5 py-3 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#092064] focus:outline-none focus:ring-2 focus:ring-[#0B2578] focus:ring-offset-2"
+            <a 
+              href="tel:+917060162526"
+              className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-5 py-3 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#092064] focus:outline-none focus:ring-2 focus:ring-[#0B2578] focus:ring-offset-2"
             >
               Explore Gold Loan
               <ArrowUpRight
                 size={16}
                 className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               />
-            </button>
+            </a>
           </div>
         </div>
 

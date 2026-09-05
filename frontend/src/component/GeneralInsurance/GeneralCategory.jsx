@@ -65,6 +65,14 @@ const insuranceCategories = [
 ];
 
 const InsuranceCategorySelector = () => {
+
+                    const InsuranceComparison = () => {
+    // Replace with your eligibility section ID or route.
+    document.getElementById("insurance-comparison")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <section
       aria-labelledby="insurance-category-heading"
@@ -226,14 +234,14 @@ const InsuranceCategorySelector = () => {
                 ================================================== */}
                 <div className="relative mt-6 flex items-center justify-between">
                   <span className="text-xs font-bold text-[#0B2578] transition-colors duration-300 group-hover:text-[#186A07]">
-                    Explore {category.title}
+                    {/* Explore {category.title} */}
                   </span>
 
-                  <ArrowRight
+                  {/* <ArrowRight
                     size={16}
                     className="text-[#10B981] transition-transform duration-300 group-hover:translate-x-1"
                     aria-hidden="true"
-                  />
+                  /> */}
                 </div>
               </a>
             );
@@ -282,9 +290,10 @@ const InsuranceCategorySelector = () => {
               </div>
             </div>
 
+
             {/* CTA */}
-            <a
-              href=""
+            <button
+            onClick={InsuranceComparison}
               className="group inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-[#186A07] to-[#0B2578] px-5 py-3 text-sm font-bold text-white shadow-[0_10px_25px_rgba(11,37,120,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_15px_30px_rgba(11,37,120,0.22)] focus:outline-none focus:ring-4 focus:ring-[#10B981]/20"
             >
               Find My Insurance
@@ -292,7 +301,7 @@ const InsuranceCategorySelector = () => {
                 size={17}
                 className="transition-transform duration-300 group-hover:translate-x-1"
               />
-            </a>
+            </button>
           </div>
         </div>
       </div>

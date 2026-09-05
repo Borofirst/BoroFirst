@@ -286,9 +286,9 @@ const BecomePartner = () => {
       | POST /api/partners
       |
       */
-      console.log(formData);
+    
       const response = await submitPartnerForm(formData);
-      console.log(response);
+    
       /*submitPartnerForm
       |--------------------------------------------------------------------------
       | Parse backend response
@@ -345,7 +345,7 @@ const BecomePartner = () => {
       <SEO
         title="Become a Partner | Borofirst"
         description="Partner with Borofirst to expand your financial network and create better financial possibilities for customers."
-        canonical="https://borofirst.com/partner"
+        canonical="https://www.borofirst.com/partner"
       />
 
       <main className="overflow-hidden bg-white text-slate-900">
